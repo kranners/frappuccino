@@ -1,0 +1,239 @@
+{
+  "main": {
+    "id": "6413f0b19740190d",
+    "type": "split",
+    "children": [
+      {
+        "id": "64b0c0400abca3c7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "616928e843dcac80",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Node.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "751d95775c2e1e15",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Strings.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aaa29120f0c387f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Arrays.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4aaea941ab94fafd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Astro.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "96cc23ce6ac738c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web Terminology.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f9ae6afc61bee28b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Vitepress.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3ad8563e3f560639",
+    "type": "split",
+    "children": [
+      {
+        "id": "b278b3e594fce4f4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1879734b76fa3070",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ef212bfdb1978208",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7546db1618a8a9e3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "1688368dd44384b0",
+    "type": "split",
+    "children": [
+      {
+        "id": "1b7a33cb9032303c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "35301dc80e33281d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Vitepress.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "23736ca00c1e3535",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Vitepress.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c85cb08c4117f68d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "19077598d3f91308",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Vitepress.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "f9ae6afc61bee28b",
+  "lastOpenFiles": [
+    "Meaning of Taikyoku.md",
+    "Vite.md",
+    "Node.md",
+    "Arrays.md",
+    "Strings.md",
+    "Web Terminology.md",
+    "Astro.md",
+    "Command Line.md",
+    "TypeScript.md",
+    "Vitepress.md",
+    "GraphQL Fragments.md",
+    "GraphQL.md",
+    "GraphQL Query.md",
+    "Git.md",
+    "Meaning of Gassho.md",
+    "iCloud Drive.md",
+    "index.md",
+    "zod.md",
+    "yarn.md",
+    "Vitest.md",
+    "Software Licensing.md",
+    "Sets.md",
+    "React Hook Form.md",
+    "Promises.md",
+    "Prints.md",
+    "Prettier.md"
+  ]
+}
