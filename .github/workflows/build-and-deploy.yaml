@@ -1,0 +1,22 @@
+name: Build and deploy
+on: push
+jobs:
+  build:
+    name: Setup and build
+    runs-on: ubuntu-latest
+    steps:
+      # https://github.com/actions/checkout
+			- uses: actions/checkout@v3
+			# https://github.com/actions/setup-node
+			- uses: actions/setup-node@v1
+			  with:
+				  node-version: 16.19.0
+      - name: Install dependencies
+			  run: yarn --frozen-lockfile
+      - name: Build static site
+			  run: yarn docs:build
+      - name: Upload completed build
+        uses: actions/upload-artifact@v3
+          with:
+            name: static-build-result
+            path: docs/.vitepress/dist
