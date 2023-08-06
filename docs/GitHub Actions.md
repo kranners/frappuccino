@@ -98,6 +98,13 @@ steps:
 	  run: do-something-with "$BIG_SECRET" --as "$USER_NAME"
 ```
 
+Or, to insert them directly into the command:
+```yaml
+steps:
+	- run: |
+		do-something-with "${{ secrets.MyBigFatSecret }}"
+```
+
 GitHub maintains a [list of default environment variables](https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables).
 
 For more information see the [API reference for variables](https://docs.github.com/en/rest/actions/variables?apiVersion=2022-11-28).
