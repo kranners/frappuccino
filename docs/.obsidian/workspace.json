@@ -73,14 +73,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vitepress.md",
+                "file": "Command Line.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "669b806a01f09a0c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GitHub Actions.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -109,7 +121,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "ftp",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -126,7 +138,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -146,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Vitepress.md",
+                "file": "GitHub Actions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +176,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Vitepress.md",
+                "file": "GitHub Actions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +199,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vitepress.md"
+                "file": "GitHub Actions.md"
               }
             }
           }
@@ -207,8 +220,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f9ae6afc61bee28b",
+  "active": "669b806a01f09a0c",
   "lastOpenFiles": [
+    "Command Line.md",
+    "GitHub Actions.md",
+    "Vitepress.md",
+    "Hostinger.md",
     "Meaning of Taikyoku.md",
     "Vite.md",
     "Node.md",
@@ -216,9 +233,7 @@
     "Strings.md",
     "Web Terminology.md",
     "Astro.md",
-    "Command Line.md",
     "TypeScript.md",
-    "Vitepress.md",
     "GraphQL Fragments.md",
     "GraphQL.md",
     "GraphQL Query.md",
@@ -232,8 +247,6 @@
     "Software Licensing.md",
     "Sets.md",
     "React Hook Form.md",
-    "Promises.md",
-    "Prints.md",
-    "Prettier.md"
+    "Promises.md"
   ]
 }

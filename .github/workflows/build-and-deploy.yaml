@@ -35,4 +35,4 @@ jobs:
         run: sudo apt-get install -y lftp
       - name: Deploy to Hostinger
         run: |
-          lftp -u "${{ secrets.FTP_USERNAME }}",'${{ secrets.FTP_PASSWORD }}' ${{ vars.FTP_ADDRESS }} -e "set ssl:verify-certificate false ; mirror -R --parallel site . ; quit"
+          lftp -u "${{ secrets.FTP_USERNAME }}",'${{ secrets.FTP_PASSWORD }}' ${{ secrets.FTP_ADDRESS }} -e "set ssl:verify-certificate false ; mirror -R --parallel site . ; quit"
