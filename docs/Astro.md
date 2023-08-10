@@ -27,10 +27,93 @@ The point of this is to make things fast 🏎.
 
 # Components
 
+Astro components (indicated by `.astro` file extensions) are much closer to plain HTML/JS than something like a [React component](React#Components).
+
+Components are typically in UpperCamelCased files ending with `.astro`.
+
+*Sample.astro*
+```tsx
+---
+// Props definitions must be called Props.
+interface Props {
+	name: string;
+}
+
+const { name } = Astro.props;
+---
+
+<h1>Hi, {name}!</h1>
+```
+
+Passing children through in Astro is used using the reserved `<slot />` component.
+
+*Wrapper.astro*
+```tsx
+---
+// We don't necessarily need an interface.
+const { name } = Astro.props;
+---
+
+<div>
+	<h1>Hi, {name}!</h1>
+	<!-- Component children are rendered here. -->
+	<slot />
+	<h2>Bye {name} :(</h2>
+</div>
+```
+
+## External components and directives
+
+A component built in [[React]] or [[Svelte]] or [[Vue]] will likely need to load some [[JavaScript]] code before it executes.
+
+Astro by default won't do this, so a major pitfall to worry about is whether or not your component is properly hydrated.
+
+To do this, you'll need to use one of [Astro's client directives](https://docs.astro.build/en/reference/directives-reference/#client-directives).
+
+```tsx
+---
+import MyReactComponent from './components/ReactComponent';
+---
+
+// This will likely not work! The component needs to be hydrated.
+<MyReactComponent />
+
+// This version will hydrate the component on page load, high priority.
+<MyReactComponent client:load />
+
+// This version will hydrate the component when in view, low priority.
+<MyReactComponent client:visible />
+```
+
+## `Astro.glob()`, dynamic imports
+
+For managing arbitrary content, you should use the builtin [`Astro.glob()`](https://docs.astro.build/en/guides/imports/#astroglob).
+
+For importing and rendering out JSON files which look like this:
+```json
+{
+	"fruit": "banana"
+}
+```
+
+```tsx
+---
+type ExpectedOutput = {
+	fruit: string;
+}
+
+// IDE will tell you how many files this matches.
+const sources = await Astro.glob<ExpectedOutput>('./*.json');
+
+// [ 'banana' ]
+const fruits = sources.map((source) => source.fruit);
+---
+<div>{fruits}</div>
+```
+
 ### Node builtins
 
 Astro components support [[Node]] builtins [out of the box](https://docs.astro.build/en/guides/imports/#node-builtins), although it is not necessarily recommended to use.
-
 
 
 # Integrations

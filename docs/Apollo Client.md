@@ -13,7 +13,7 @@ You can manually store [[GraphQL Fragments]] directly into the cache by using [`
 ### Mutations
 
 Mutations are executed using the `useMutation` [[React]] hook.
-Call that hook inside a [[React Component]] and pass it a [[GraphQL]] mutation to execute.
+Call that hook inside a [React component](React#Components) and pass it a [[GraphQL]] mutation to execute.
 
 Example:
 ```ts

@@ -4,6 +4,10 @@ tags: node, javascript, typescript, programming
 
 NodeJS is a backend runtime for [[JavaScript]].
 
+# Troubleshooting
+
+> I can't import any Node libraries!
+
 If Node types are not present, you can install them with `yarn` using:
 ```shell
 yarn add -D @types/node
