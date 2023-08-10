@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git.md",
+                "file": "GraphQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git.md",
+                "file": "GraphQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git.md",
+                "file": "GraphQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git.md"
+                "file": "GraphQL.md"
               }
             }
           }
@@ -197,6 +197,9 @@
   },
   "active": "941aedcac0a1fd0e",
   "lastOpenFiles": [
+    "GraphQL Fragments.md",
+    "GraphQL.md",
+    "Git.md",
     "Tailwind.md",
     "Node.md",
     "Strings.md",
@@ -214,10 +217,7 @@
     "Arrays.md",
     "Web Terminology.md",
     "TypeScript.md",
-    "GraphQL Fragments.md",
-    "GraphQL.md",
     "GraphQL Query.md",
-    "Git.md",
     "Meaning of Gassho.md",
     "iCloud Drive.md",
     "index.md",
