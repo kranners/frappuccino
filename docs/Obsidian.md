@@ -8,7 +8,7 @@ tags: meta, obsidian, tags, search, query, graph
 
 Everyone has their own note-taking methods, and unique setups. Here's some general tips I think *everyone* could benefit from.
 
-To be a true Obsidian user, you must look up [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten#:~:text=A%20Zettelkasten%20(German%20for%20%22slip,such%20as%20numbers%20and%20tags.) at least once.
+To be a true Obsidian user, you must look up [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) at least once.
 
 ## General note guidelines
 

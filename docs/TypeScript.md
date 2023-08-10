@@ -87,3 +87,15 @@ type Sales = {
 	[key: string]: number;
 }
 ```
+
+So to make a mapping between `Fruit`s and `Price`s, it looks like:
+
+```typescript
+type FruitPriceMapping = {
+	[key: Fruit]: Price;
+}
+
+const MAPPING: FruitPriceMapping = {
+	'apple': { value: 25, currency: 'aud' },
+}
+```
