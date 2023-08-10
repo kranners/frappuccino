@@ -10,8 +10,11 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      { text: "Promises", link: "/Promises" },
-      { text: "Arrays", link: "/Arrays" },
+      { text: "About", link: "/About" },
+      {
+        text: "Changelog",
+        link: "https://github.com/kranners/frappuccino/commits/main",
+      },
     ],
 
     sidebar: generateSidebar({
@@ -29,12 +32,13 @@ export default defineConfig({
 
     externalLinkIcon: true,
   },
+  ignoreDeadLinks: true,
   markdown: {
     config: (md) => {
       md.use(
         wikilinks({
           baseURL: "/",
-          generatePagePathFromLabel: (label) => label.replace(/\s/g, "%20"),
+          postProcessPageName: (label) => label.trim().replace(/\s/g, "%20"),
         })
       );
     },
