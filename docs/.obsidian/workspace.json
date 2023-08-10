@@ -56,19 +56,31 @@
             }
           },
           {
+            "id": "f6d1b4b61e9dc62b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Strings.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "a84b27d2992e057f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Apollo Client.md",
+                "file": "Vitepress.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -97,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "React Component",
+                "query": "wikilinks",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -114,7 +126,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -134,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GraphQL.md",
+                "file": "Vitepress.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GraphQL.md",
+                "file": "Vitepress.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GraphQL.md"
+                "file": "Vitepress.md"
               }
             }
           }
@@ -195,22 +208,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "941aedcac0a1fd0e",
+  "active": "a84b27d2992e057f",
   "lastOpenFiles": [
-    "GraphQL Fragments.md",
+    "Apollo Client.md",
+    "Strings.md",
+    "Meaning of Gassho.md",
+    "Japanese Math Terms.md",
+    "Vitepress.md",
+    "Obsidian.md",
+    "About.md",
     "GraphQL.md",
+    "GraphQL Fragments.md",
     "Git.md",
     "Tailwind.md",
     "Node.md",
-    "Strings.md",
     "Web Components.md",
     "Astro.md",
-    "Apollo Client.md",
     "React Component.md",
     "Software Licensing.md",
     "GitHub Actions.md",
     "Command Line.md",
-    "Vitepress.md",
     "Hostinger.md",
     "Meaning of Taikyoku.md",
     "Vite.md",
@@ -218,10 +235,6 @@
     "Web Terminology.md",
     "TypeScript.md",
     "GraphQL Query.md",
-    "Meaning of Gassho.md",
-    "iCloud Drive.md",
-    "index.md",
-    "zod.md",
-    "yarn.md"
+    "iCloud Drive.md"
   ]
 }

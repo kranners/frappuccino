@@ -3,6 +3,8 @@ title: Vitepress
 tags: vitepress, vite, obsidian, meta, typescript, javascript
 ---
 
+# Vitepress
+
 [Vitepress](https://vitepress.dev/guide/getting-started) is a static site generator built on [[Vite]], using [[Markdown]] documents for the content.
 
 It's what my wiki is built using! 🚀
@@ -32,6 +34,18 @@ title: Vitepress
 tags: vitepress, vite, obsidian, meta, typescript
 ---
 ```
+
+## Site config
+
+#### Dead links
+
+By default, [Vitepress will fail build if it detects dead links](https://vitepress.dev/reference/site-config#ignoredeadlinks). To get rid of this behaviour, add:
+```typescript
+export default {
+	ignoreDeadLinks: true,
+}
+```
+To your Vitepress *site config* (not the theme section).
 
 ## Theme config
 
@@ -100,5 +114,24 @@ export default defineConfig({
 });
 ```
 
-#### Options
+#### Inner workings
 
+Generally how this function works is something like the following:
+```typescript
+function wikilink(match: string): string {
+	let label = match;
+
+	let pageName = options.generatePageNameFromLabel(label);
+
+	// Apply postprocessing options
+	label = options.postProcessLabel(label)
+	pageName = options.postProcessPageName(pageName)
+
+	// Make the href.
+	const href = options.baseUrl + pageName + options.uriSuffix;
+
+	return `<a href=${href}>${label}</a>`;
+}
+```
+
+To fix things like URL encoding in the link, you should use either `generatePageNameFromLabel` or `postProcessPageName`.

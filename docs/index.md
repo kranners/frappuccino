@@ -7,17 +7,17 @@ hero:
   text: "For everything I end up Googling"
   actions:
     - theme: brand
-      text: TypeScript
-      link: /Typescript
+      text: About
+      link: /About
     - theme: alt
-      text: Arrays in JS
-      link: /Arrays
+      text: Vitepress
+      link: /Vitepress
 
 features:
-  - icon: 🧑‍💻
+  - icon: 💻
     title: Big ol' Cache
     details: If Google is the database, this is my cache.
-  - icon: 🪴
+  - icon: 🌱
     title: Growing garden
     details: This wiki will evolve and change as I look up more stuff.
   - icon: 👻

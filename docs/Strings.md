@@ -2,13 +2,28 @@
 tags: javascript, typescript, js, ts, strings
 ---
 
-## Removing suffix from string
+## Removing suffix or prefix from string
 
 To remove the end of a string from a regular string, the general solution is `String.slice`.
 
 ```js
 const fruit = "apple";
-fruit.slice(0, 2); // app
+
+// Remove a suffix - "app"
+fruit.slice(0, 2);
+
+// Remove a prefix - "le"
+fruit.slice(-2);
+```
+
+If specifically trimming whitespace, it'd be better to use the [`String.prototype.trim()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim) function.
+
+```javascript
+const fruit = "       apple      ";
+
+// "apple";
+fruit.trim();
+// Note that after this point, the original string is NOT modified.
 ```
 
 ## [String.prototype.includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
