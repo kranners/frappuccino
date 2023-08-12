@@ -51,7 +51,11 @@ They also offer [support and guides for people moving into management-related ro
 
 ## Membership Costs
 
-| Category | Before tax deduction | After tax deduction |
-| --- | --- | --- |
-| 
+Assuming a generic Victorian mid-level software engineering salary of $120,000 annual base rate.
+For a higher salary, you could have up to 45% off.
+Salaries above $75,000 but in lower tax brackets will have the highest union membership fee.
 
+| Category | Before tax deduction | After 100% tax deduction |
+| --- | --- | --- |
+| Full membership | $848 | $559.88 |
+| Graduate | $339 | $223.74 |
