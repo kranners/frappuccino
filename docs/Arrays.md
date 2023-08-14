@@ -2,6 +2,8 @@
 tags: arrays, javascript, typescript, iterating, programming, reduce, prototype
 ---
 
+# Arrays
+
 Arrays are the typical way to manage groups of values in [[JavaScript]].
 
 # Accessing arrays

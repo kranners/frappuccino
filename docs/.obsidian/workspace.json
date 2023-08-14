@@ -80,12 +80,24 @@
             }
           },
           {
-            "id": "653cb98477255ad8",
+            "id": "7b04ff5e22ef7e71",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meaning of Gassho.md",
+                "file": "DOM.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ef8ac96b5192e2d4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web Terminology.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "index sign",
+                "query": "reducer",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -138,7 +150,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -158,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Meaning of Gassho.md",
+                "file": "DOM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Meaning of Gassho.md",
+                "file": "DOM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +211,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Meaning of Gassho.md"
+                "file": "DOM.md"
               }
             }
           }
@@ -219,17 +232,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "653cb98477255ad8",
+  "active": "7b04ff5e22ef7e71",
   "lastOpenFiles": [
+    "Web Terminology.md",
+    "Meaning of Gassho.md",
+    "TypeScript.md",
+    "DOM.md",
+    "Web Components.md",
+    "Strings.md",
+    "Arrays.md",
     "Meaning of Taikyoku.md",
     "Software Union.md",
-    "TypeScript.md",
-    "Strings.md",
-    "Web Components.md",
     "Obsidian.md",
     "Vitepress.md",
     "Apollo Client.md",
-    "Meaning of Gassho.md",
     "Japanese Math Terms.md",
     "About.md",
     "GraphQL.md",
@@ -243,9 +259,6 @@
     "GitHub Actions.md",
     "Command Line.md",
     "Hostinger.md",
-    "Vite.md",
-    "Arrays.md",
-    "Web Terminology.md",
-    "GraphQL Query.md"
+    "Vite.md"
   ]
 }

@@ -2,6 +2,8 @@
 tags: web, terminology, programming, javascript
 ---
 
+# Web Terminology
+
 ## Hydration
 
 [Hydration](https://www.builder.io/blog/why-progressive-hydration-is-harder-than-you-think) is adding dynamic behaviour to otherwise static or declarative content.
@@ -72,3 +74,16 @@ Read in the first 16 bytes of the file, convert them into string hex values, the
 You'll pretty much never need to do this, unless handling a file input with no library in raw [[JavaScript]] from scratch.
 
 If in [[Node]], you can do something similar using the `fs` library.
+
+## Fragments
+
+A fragment (in [[JavaScript]], a [DocumentFragment](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment)) represents a minimal [[DOM]] node.
+
+For example, a minimal [React component](React#Components) would contain only a single fragment, and look like this:
+
+```jsx
+import React from 'react';
+
+// The <></> bit is the fragment.
+const Minimal = () => <></>;
+```
