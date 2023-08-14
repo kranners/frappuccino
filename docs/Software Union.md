@@ -24,7 +24,7 @@ If you don't need those services, or don't think it's worth it, then you *should
 
 ## What is the software union?
 
-*(In Australia)*
+*(In Australia 🦘)*
 
 Software engineers and similar roles (QA Engineer, DevOps Engineer, etc) do not have a specific union in Australia.
 
