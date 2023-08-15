@@ -100,3 +100,42 @@ const MAPPING: FruitPriceMapping = {
 
 This is usually used for extracting types from inside of generic wrapper types.
 
+Say you have a type which could either contain or not contain a key of `banana`.
+
+```typescript
+// Defines a generic which always has a 'banana' key
+type HasBanana<T> = { banana: T };
+
+// Defines a generic which MIGHT have a 'banana' key
+type MaybeBanana<T> = { banana?: T };
+
+// Defines a generic which definitely does not have a 'banana' key
+type IDontHaveBanana<T = void> = [];
+```
+
+To 'unwrap' this into the type of the value of `'banana'` is where `infer` comes in.
+
+```typescript
+type BananaOf<T> = T extends MaybeBanana<infer Banana> ? Banana : never;
+
+// Exists<T> = T
+type Exists<T> = BananaOf<HasBanana<T>>;
+
+// Maybe = T
+// If we extend HasBanana instead, this is Maybe = never
+type Maybe<T> = BananaOf<MaybeBanana<T>>;
+
+// Never = never
+type Nope<T> = BananaOf<IDontHaveBanana>;
+```
+
+You can do the same thing to the return types of functions.
+
+```typescript
+type FunctionReturns<T> = T extends () => infer Return ? Return : void;
+
+type StringFunction = () => string;
+
+// Str = string
+type Str = FunctionReturns<StringFunction>;
+```
