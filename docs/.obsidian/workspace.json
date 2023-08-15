@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web Terminology.md",
+                "file": "TypeScript.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web Terminology.md",
+                "file": "TypeScript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web Terminology.md",
+                "file": "TypeScript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web Terminology.md"
+                "file": "TypeScript.md"
               }
             }
           }
@@ -162,12 +162,12 @@
   },
   "active": "ef8ac96b5192e2d4",
   "lastOpenFiles": [
+    "Web Terminology.md",
     "DOM.md",
     "TypeScript.md",
     "Strings.md",
     "GraphQL.md",
     "Web Components.md",
-    "Web Terminology.md",
     "Meaning of Gassho.md",
     "Arrays.md",
     "Meaning of Taikyoku.md",

@@ -4,12 +4,6 @@ tags: typescript, javascript, programming
 
 TypeScript is a strongly-typed (questionably) superset of [[JavaScript]].
 
-### Related pages
-
-```query
-tag:typescript -file:TypeScript
-```
-
 ### Initialising a TypeScript project
 
 This setup will use [[npm]], although you could just as easily use [[yarn]].
@@ -99,3 +93,10 @@ const MAPPING: FruitPriceMapping = {
 	'apple': { value: 25, currency: 'aud' },
 }
 ```
+
+#### The `infer` keyword
+
+[The `infer` keyword](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#inferring-within-conditional-types) is used for declaring a new inline generic type inside of another type declaration.
+
+This is usually used for extracting types from inside of generic wrapper types.
+
