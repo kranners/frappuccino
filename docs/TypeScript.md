@@ -72,7 +72,7 @@ Some examples:
 
 # Usage
 
-#### Index signatures
+## Index signatures
 
 To define an object with a particular key/value signature, it looks like:
 
@@ -94,39 +94,69 @@ const MAPPING: FruitPriceMapping = {
 }
 ```
 
-#### The `infer` keyword
+## Conditional types
+
+[A conditional type](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html) is a kind of [generic type](https://www.typescriptlang.org/docs/handbook/2/generics.html) which passes the generic through a condition before resolving to one of two types.
+
+**Syntax**
+```typescript
+type Conditional<T> = T extends Condition ? TrueType : FalseType;
+```
+
+This happens at compile-time.
+
+Say, we have a `Success` type which contains some data, and we want to get the type of that data at compile time.
+
+```typescript
+type Success = { success: true, data: unknown };
+type Failure = { success: false, error: Error };
+
+// Error! Type "data" cannot be used to index type T.
+type SuccessData<T> = T["data"];
+```
+
+To fix this issue, you could restrict that `SuccessData` **only** takes in a `Success` object.
+
+```typescript
+// This is happy now :)
+type SuccessData<T extends Success> = T["data"];
+
+// However, if we try to use this in practice it'll end up less good.
+const response: Success | Failure = goGetAnAPI();
+
+// Error! The response object might not have a data key.
+const data: SuccessData<typeof response> = response.data;
+```
+
+However you run into that last issue. No bueno.
+A solution here would be to let `SuccessData` take in anything, and only unwrap if it's required.
+Otherwise, default to something like `never` to indicate that its value is not to be used.
+
+```typescript
+type SuccessData<T> = T extends Success ? T["data"] : never;
+
+// never | unknown
+const data: SuccessData<typeof response>;
+```
+
+## The `infer` keyword
 
 [The `infer` keyword](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#inferring-within-conditional-types) is used for declaring a new inline generic type inside of another type declaration.
 
-This is usually used for extracting types from inside of generic wrapper types.
+This is usually used for extracting types from inside of generic wrapper and conditional types.
 
-Say you have a type which could either contain or not contain a key of `banana`.
+That is a pretty meaningless statement, so here are some examples.
+
+You could use this as an alternative for the `T["data"]` from before, to get the success data.
 
 ```typescript
-// Defines a generic which always has a 'banana' key
-type HasBanana<T> = { banana: T };
-
-// Defines a generic which MIGHT have a 'banana' key
-type MaybeBanana<T> = { banana?: T };
-
-// Defines a generic which definitely does not have a 'banana' key
-type IDontHaveBanana<T = void> = [];
+type SuccessData<T> = T extends { data: infer Data } : Data : never;
 ```
 
-To 'unwrap' this into the type of the value of `'banana'` is where `infer` comes in.
+You could use this to unwrap an array into its type.
 
 ```typescript
-type BananaOf<T> = T extends MaybeBanana<infer Banana> ? Banana : never;
-
-// Exists<T> = T
-type Exists<T> = BananaOf<HasBanana<T>>;
-
-// Maybe = T
-// If we extend HasBanana instead, this is Maybe = never
-type Maybe<T> = BananaOf<MaybeBanana<T>>;
-
-// Never = never
-type Nope<T> = BananaOf<IDontHaveBanana>;
+type ArrayType<T> = T extends Array<infer Item> : Item : T;
 ```
 
 You can do the same thing to the return types of functions.
