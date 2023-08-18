@@ -76,3 +76,7 @@ To get the current browser [[Timezone]], use the [`Intl` builtin `resolvedOption
 // Australia/Melbourne
 const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 ```
+
+### `Temporal`
+
+[Temporal](https://tc39.es/proposal-temporal/docs/) is a proposed new namespace to be added into [[ECMAScript]], which hopes to fix the glaring issues with the Date prototype.

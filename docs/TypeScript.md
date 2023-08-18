@@ -2,6 +2,8 @@
 tags: typescript, javascript, programming
 ---
 
+# Typescript
+
 TypeScript is a strongly-typed (questionably) superset of [[JavaScript]].
 
 ### Initialising a TypeScript project
