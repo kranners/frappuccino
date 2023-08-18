@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ECMAScript.md",
+                "file": "JavaScript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ECMAScript.md",
+                "file": "JavaScript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ECMAScript.md"
+                "file": "JavaScript.md"
               }
             }
           }
@@ -196,12 +196,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2b43ba92eabc5023",
+  "active": "fdaee1735581a6e8",
   "lastOpenFiles": [
+    "Dates in JavaScript.md",
+    "ECMAScript.md",
     "TypeScript.md",
     "DOM.md",
-    "ECMAScript.md",
-    "Dates in JavaScript.md",
     "JavaScript.md",
     "Web Terminology.md",
     "Strings.md",
