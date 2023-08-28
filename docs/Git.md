@@ -2,9 +2,31 @@
 tags: git, software, programming, version control
 ---
 
+# Git
+
 [Git](https://git-scm.com/) is a commonly used [[Command Line]] tool for version management of code.
 
-### Changing a given commit from the past (time travel)
+## Setup
+
+#### Name and email
+
+```shell
+git config --global --edit
+```
+
+Then uncomment and change the email, usually to whichever is your primary [[GitHub]] email.
+
+#### `autoSetupRemote`
+
+This option is for automatically setting the remote branch when pushing to a new remote.
+This is useful for if you're going to be pushing to new feature branches often.
+
+You can set this option in one command:
+```shell
+git config --global --add --bool push.autoSetupRemote true
+```
+## Usage
+#### Changing a given commit from the past (time travel)
 
 1. Find the commit on the file that you want to change, so like
 
@@ -58,13 +80,13 @@ git push --force
 
 to fix up the change.
 
-### Storing credentials on MacOSX
+#### Storing credentials on MacOSX
 
 ```bash
 git config --global credential.helper osxkeychain
 ```
 
-## Interactive add (`git add -i`)
+#### Interactive add (`git add -i`)
 
 > "Help! I've done a bunch of work without committing, but I want my commit history to stay clean!"
 
@@ -88,3 +110,25 @@ Patch the addition with `p` (for `patch`)
 Then add in either individual files like `1,3` or a range of files like `1-3` (would select 1, 2, 3).
 
 This will review each selected file individually, then go through each hunk and either stage with `y`, stage the remaining hunks with `a` (for `all`), or skip it with `n`.
+
+#### Move commits to another branch
+
+Usually this will mean moving commits away from `main` or `master` to a new branch, say `feature`.
+
+1. Make and checkout the new branch
+```shell
+git checkout -b feature
+```
+
+2. Merge the commits into the new branch
+```shell
+git merge main
+```
+
+3. Move back to the old branch and remove the unwanted commits.
+```shell
+git checkout main
+
+# If you have 3 commits, reset 3.
+git reset --hard HEAD~3
+```

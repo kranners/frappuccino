@@ -4,83 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "64b0c0400abca3c7",
+        "id": "2849478136488252",
         "type": "tabs",
         "children": [
           {
-            "id": "7b04ff5e22ef7e71",
+            "id": "a221d7c4ec6f5e42",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DOM.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ef8ac96b5192e2d4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TypeScript.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fdaee1735581a6e8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JavaScript.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3990fd3b21962b44",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fnm.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "97fd53ef40013dab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dates in JavaScript.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2b43ba92eabc5023",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ECMAScript.md",
+                "file": "NEM12 and NEM13.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -146,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fnm.md",
+                "file": "NEM12 and NEM13.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fnm.md",
+                "file": "NEM12 and NEM13.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fnm.md"
+                "file": "NEM12 and NEM13.md"
               }
             }
           }
@@ -207,17 +146,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3990fd3b21962b44",
+  "active": "a221d7c4ec6f5e42",
   "lastOpenFiles": [
+    "Git.md",
     "Neovim.md",
+    "pyenv.md",
+    "DOM.md",
+    "TypeScript.md",
+    "JavaScript.md",
+    "fnm.md",
     "Dates in JavaScript.md",
     "ECMAScript.md",
+    "yarn.md",
     "GraphQL Fragments.md",
     "GraphQL.md",
     "GraphQL Query.md",
-    "JavaScript.md",
-    "TypeScript.md",
-    "DOM.md",
     "Web Terminology.md",
     "Strings.md",
     "Web Components.md",
@@ -230,10 +173,6 @@
     "Apollo Client.md",
     "Japanese Math Terms.md",
     "About.md",
-    "Git.md",
-    "Tailwind.md",
-    "Node.md",
-    "Astro.md",
-    "React Component.md"
+    "Tailwind.md"
   ]
 }
