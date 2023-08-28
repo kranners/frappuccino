@@ -2,8 +2,20 @@
 tags: command line, node, javascript, typescript, terminal, zsh
 ---
 
+# fnm
+
 [`fnm`](https://github.com/Schniz/fnm) is a [[Command Line]] tool for managing [[Node]] versions.
 
+## Installation
+
+```shell
+brew install fnm
+
+# Add the line to your ~/.zshrc or ~/.bashrc, whichever is relevant.
+echo 'eval "$(fnm env --use-on-cd)"' >> ~/.zshrc
+```
+
+## Usage
 #### Using the correct version in a pre-set repository
 
 To get started, just use `fns use`.
