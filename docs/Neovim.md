@@ -31,6 +31,25 @@ set relativenumber
 ```lua
 vim.opt.relativenumber = true
 ```
+
+### VSCode Comments
+
+If using VSCode Neovim, then the usual comment hotkey (⌘+/) won't work. To fix this, add the following to the Neovim config:
+
+```lua
+-- Fix CMD+/ keybinding for vscode 
+vim.api.nvim_set_keymap('x', 'gc', '<Plug>VSCodeCommentary', {}) vim.api.nvim_set_keymap('n', 'gc', '<Plug>VSCodeCommentary', {}) vim.api.nvim_set_keymap('o', 'gc', '<Plug>VSCodeCommentary', {}) vim.api.nvim_set_keymap('n', 'gcc', '<Plug>VSCodeCommentaryLine', {}) vim.api.nvim_set_keymap('n', '<D-/>', 'gcc', {}) vim.api.nvim_set_keymap('x', '<D-/>', 'gc', {})
+```
+
+Finally, under [[VSCode]]'s `keybindings.json`, add the following:
+```json
+{
+    "command": "vscode-neovim.send",
+    "key": "cmd+/",
+    "when": "editorTextFocus && neovim.mode != insert",
+    "args": "<D-/>"
+}
+```
 ## Plugins
 
 #### lazy.nvim
