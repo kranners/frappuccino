@@ -16,6 +16,13 @@ yarn add -D prettier
 echo {} > .prettierrc.json
 ```
 
+### Usage
+
+```shell
+# Format and write inplace a single file.
+yarn prettier --write <file>
+```
+
 # Configuration
 
 ### Tabs
