@@ -9,4 +9,3 @@ tags: docker, containers, development
 ### Installation
 
 Docker is installed [from their website](https://www.docker.com/). Using [[Homebrew]] will only install the CLI, not the Docker Engine itself.
-
