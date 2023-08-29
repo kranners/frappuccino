@@ -162,6 +162,8 @@ const salesByFruit = sales.reduce((acc, { fruit, price }) => {
 
 The rest of this section will be for `Array.prototype.toSorted()` instead, as that is the modern copying version.
 
+**NOTE:** [As of Typescript 5.2, there are definitions for the copying array methods.](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2/#copying-array-methods)
+
 #### Syntax
 
 ```js

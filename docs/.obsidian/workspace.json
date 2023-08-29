@@ -42,9 +42,45 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b4cf101f8c72cc97",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Redis.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "eeb6bbd15c269ea7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Arrays.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cb986f5f20f2e24d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Docker.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -110,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nvm.md",
+                "file": "Docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "nvm.md",
+                "file": "Docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "nvm.md"
+                "file": "Docker.md"
               }
             }
           }
@@ -171,10 +207,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ada0683aab6c7ac1",
+  "active": "cb986f5f20f2e24d",
   "lastOpenFiles": [
-    "Neovim.md",
+    "Arrays.md",
+    "Docker.md",
+    "Java Runtime.md",
+    "Redis.md",
     "nvm.md",
+    "Neovim.md",
     "MobX.md",
     "pyenv.md",
     "Prettier.md",
@@ -194,10 +234,6 @@
     "GraphQL Query.md",
     "Web Terminology.md",
     "Strings.md",
-    "Web Components.md",
-    "Meaning of Gassho.md",
-    "Arrays.md",
-    "Meaning of Taikyoku.md",
-    "Software Union.md"
+    "Web Components.md"
   ]
 }
