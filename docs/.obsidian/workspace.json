@@ -4,95 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "7b097a8f8731e337",
+        "id": "5a7adc41d9487118",
         "type": "tabs",
         "children": [
           {
-            "id": "badf3a0493c02977",
+            "id": "b5e2d7f11c8eb185",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pyenv.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b6c0386dc503cb91",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Neovim.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ada0683aab6c7ac1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "nvm.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b4cf101f8c72cc97",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Redis.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "eeb6bbd15c269ea7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Arrays.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cb986f5f20f2e24d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Docker.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "304a522ace0342ab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Git.md",
+                "file": "JavaScript.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "vertical"
@@ -121,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "reducer",
+                "query": "type check",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -138,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -158,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git.md",
+                "file": "JavaScript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git.md",
+                "file": "JavaScript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git.md"
+                "file": "JavaScript.md"
               }
             }
           }
@@ -219,12 +147,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "304a522ace0342ab",
+  "active": "b5e2d7f11c8eb185",
   "lastOpenFiles": [
+    "Strings.md",
+    "JavaScript.md",
+    "Git.md",
+    "Java Runtime.md",
+    "Homebrew.md",
     "DisplayLink.md",
     "Docker.md",
     "Arrays.md",
-    "Java Runtime.md",
     "Redis.md",
     "nvm.md",
     "Neovim.md",
@@ -234,18 +166,14 @@
     "GitHub.md",
     "npm.md",
     "NEM12 and NEM13.md",
-    "Git.md",
     "DOM.md",
     "TypeScript.md",
-    "JavaScript.md",
     "fnm.md",
     "Dates in JavaScript.md",
     "ECMAScript.md",
     "yarn.md",
     "GraphQL Fragments.md",
     "GraphQL.md",
-    "GraphQL Query.md",
-    "Web Terminology.md",
-    "Strings.md"
+    "GraphQL Query.md"
   ]
 }
