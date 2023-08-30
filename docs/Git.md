@@ -132,3 +132,6 @@ git checkout main
 # If you have 3 commits, reset 3.
 git reset --hard HEAD~3
 ```
+
+#### Remove all untracked files
+
