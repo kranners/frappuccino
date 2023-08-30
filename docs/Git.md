@@ -135,3 +135,18 @@ git reset --hard HEAD~3
 
 #### Remove all untracked files
 
+To just remove all untracked files, folders, or ignored files it's:
+
+```shell
+# Clean untracked files.
+git clean -f
+
+# Clean untracked directories.
+git clean -d
+
+# Also clean ignored files.
+git clean -f -x
+
+# Clean everything!
+git clean -fdx
+```
