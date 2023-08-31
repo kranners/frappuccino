@@ -19,6 +19,11 @@ After installation, to actually enable the Command Line Tools:
 sudo xcode-select --reset
 ```
 
+If you are on Apple Chip, you'll need to install [Rosetta](https://en.wikipedia.org/wiki/Rosetta_(software)) or else things will start breaking:
+```shell
+softwareupdate --install-rosetta --agree-to-license
+```
+
 ## Simulators
 
 Simulators are available for all [[Apple]] devices, and simulate hardware as best they can. They are not perfect, and are not performant or have feature parity against real devices.

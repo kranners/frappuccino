@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "473ab9b7859a94f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Android Studio.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -111,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Xcode.md",
+                "file": "Android Studio.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Xcode.md",
+                "file": "Android Studio.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Xcode.md"
+                "file": "Android Studio.md"
               }
             }
           }
@@ -172,10 +184,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "48508f45f244a510",
+  "active": "473ab9b7859a94f2",
   "lastOpenFiles": [
-    "rbenv.md",
     "Xcode.md",
+    "Android Studio.md",
+    "rbenv.md",
     "JavaScript.md",
     "Strings.md",
     "Git.md",
@@ -198,7 +211,6 @@
     "fnm.md",
     "Dates in JavaScript.md",
     "ECMAScript.md",
-    "yarn.md",
-    "GraphQL Fragments.md"
+    "yarn.md"
   ]
 }
