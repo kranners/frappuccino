@@ -111,6 +111,17 @@ Then add in either individual files like `1,3` or a range of files like `1-3` (w
 
 This will review each selected file individually, then go through each hunk and either stage with `y`, stage the remaining hunks with `a` (for `all`), or skip it with `n`.
 
+#### "Uncommit" some committed changes
+
+To do this, use `git reset` without either the `--soft` or `--hard` flags.
+
+```shell
+# "Uncommit" once
+git reset HEAD~1
+
+> Unstaged changes after reset:
+> ...
+```
 #### Move commits to another branch
 
 Usually this will mean moving commits away from `main` or `master` to a new branch, say `feature`.
