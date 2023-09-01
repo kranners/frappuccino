@@ -18,6 +18,9 @@ For more complete information, check out [Java Is Still Free](https://medium.com
 # Install the JDK itself
 brew install openjdk
 
+# Install version 11, usually more compatible.
+brew install openjdk@11
+
 # Follow the instructions under 'Caveats'. Usually it'll be
 sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 ```

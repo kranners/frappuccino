@@ -8,6 +8,7 @@ tags: android, java, development, mobile
 
 It's best installed from [its download site](https://developer.android.com/studio).
 
+Beyond here you will definitely need a [[Java Runtime]].
 ### Install SDK and CLI tools
 
 To install the Android SDK:
