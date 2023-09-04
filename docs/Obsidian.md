@@ -44,6 +44,24 @@ Tags can be added to anywhere with the hash (#) key, like `#cool-tag` but for wh
 
 ## Plugins
 
+### Tasks
+
+[Tasks](https://github.com/obsidian-tasks-group/obsidian-tasks) is a plugin for supporting to-do lists, to-do items, and querying over them.
+
+To write a new task, it appears like this in [[Markdown]]:
+```markdown
+- [ ] This is task
+- [ ] This is another task
+- [x] This task is finished!
+```
+
+You can query over tasks, using a self-explanatory query language for example:
+```
+not done
+due before tomorrow
+sort by due reverse
+```
+
 ### Obsidian Git
 
 [Obsidian Git](https://publish.obsidian.md/git-doc/Start+here) is a plugin for automatically syncing an [[Obsidian]] vault to a [[Git]] repository.
