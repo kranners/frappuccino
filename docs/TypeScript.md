@@ -72,6 +72,47 @@ Some examples:
 }
 ```
 
+### JavaScript
+
+By default, TypeScript will not allow [[JavaScript]] files to exist in source alongside TypeScript ones.
+
+To allow for all JS files, the option is `allowJs`.
+To do analysis on JS files for incorrect usage, the option is `checkJs`.
+```json
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": true
+	}
+}
+```
+
+### Type Definitions ([[Jest]], [[Node]], [[React]])
+
+On initial TypeScript installation, any existing Jest tests may start failing like:
+```
+Cannot find name 'describe'. Do you need to install type definitions for a test runner?
+Cannot find name 'it'. Do you need to install type definitions for a test runner?
+Cannot find name 'expect'.
+Cannot find name 'test'. Do you need to install type definitions for a test runner?
+```
+
+To fix, you'll need to install the requisite type definitions from `@types`.
+
+```shell
+# Some example types
+yarn add -D @types/jest @types/node @types/react
+```
+
+Then add them under `compilerOptions.types`:
+```json
+{
+	"compilerOptions": {
+		"types": ["jest", "node", "react"]
+	}
+}
+```
+
 # Usage
 
 ## Index signatures
