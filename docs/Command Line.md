@@ -96,3 +96,15 @@ for filename in ./*.zip; do
 	unzip $filename
 done
 ```
+
+#### Count stuff
+
+Pipe them into [`wc`](https://ss64.com/bash/wc.html).
+
+To count files in a folder:
+```shell
+# The -l flag counts lines specifically.
+ls folder | wc -l
+
+> 1330
+```

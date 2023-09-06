@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript.md",
+                "file": "GitHub Actions.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rbenv",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,8 +90,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -111,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TypeScript.md",
+                "file": "GitHub Actions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TypeScript.md",
+                "file": "GitHub Actions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TypeScript.md"
+                "file": "GitHub Actions.md"
               }
             }
           }
@@ -174,8 +173,10 @@
   },
   "active": "93c754b1b4b1f0b8",
   "lastOpenFiles": [
-    "Turborepo.md",
+    "yarn.md",
+    "Command Line.md",
     "TypeScript.md",
+    "Turborepo.md",
     "Android Studio.md",
     "Obsidian.md",
     "rbenv.md",
@@ -197,8 +198,6 @@
     "Prettier.md",
     "GitHub.md",
     "npm.md",
-    "NEM12 and NEM13.md",
-    "DOM.md",
-    "Dates in JavaScript.md"
+    "NEM12 and NEM13.md"
   ]
 }
