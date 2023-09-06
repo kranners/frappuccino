@@ -76,8 +76,8 @@ Some examples:
 
 By default, TypeScript will not allow [[JavaScript]] files to exist in source alongside TypeScript ones.
 
-To allow for all JS files, the option is `allowJs`.
-To do analysis on JS files for incorrect usage, the option is `checkJs`.
+To allow for all JS files, the option is [`allowJs`](https://www.typescriptlang.org/tsconfig#allowJs).
+To do analysis on JS files for incorrect usage, the option is [`checkJs`](https://www.typescriptlang.org/tsconfig#checkJs).
 ```json
 {
 	"compilerOptions": {

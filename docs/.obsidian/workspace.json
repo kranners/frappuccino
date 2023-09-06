@@ -174,6 +174,8 @@
   },
   "active": "93c754b1b4b1f0b8",
   "lastOpenFiles": [
+    "Android Studio.md",
+    "TypeScript.md",
     "Obsidian.md",
     "rbenv.md",
     "pyenv.md",
@@ -183,7 +185,6 @@
     "Turborepo.md",
     "Git.md",
     "Xcode.md",
-    "Android Studio.md",
     "JavaScript.md",
     "Strings.md",
     "Homebrew.md",
@@ -198,7 +199,6 @@
     "npm.md",
     "NEM12 and NEM13.md",
     "DOM.md",
-    "TypeScript.md",
     "Dates in JavaScript.md"
   ]
 }
