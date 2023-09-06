@@ -26,6 +26,8 @@ npx tsc --init
 
 # Configuration
 
+**NOTE:** If you just want 'a good config', there are [many official recommended versions for you](https://github.com/tsconfig/bases).
+
 ### Module
 
 Sets the module (or import) system for the project.
