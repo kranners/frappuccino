@@ -139,6 +139,27 @@ const MAPPING: FruitPriceMapping = {
 }
 ```
 
+## Generic functions
+
+[Generic functions](https://www.typescriptlang.org/docs/handbook/2/generics.html#hello-world-of-generics) are strongly-typed functions which take in a type parameter, which can be used in the signature of the function.
+
+```typescript
+type Maybe = unknown | undefined;
+
+function unwrap<T extends Maybe>(maybe: T = null): unknown | null {
+	return maybe;
+}
+
+function asList<T>(item: T): Array<T> {
+	return [ item ];
+}
+```
+
+`const` arrow function generics have a bit of a wonky syntax when dealing in `.tsx` files:
+```tsx
+
+```
+
 ## Conditional types
 
 [A conditional type](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html) is a kind of [generic type](https://www.typescriptlang.org/docs/handbook/2/generics.html) which passes the generic through a condition before resolving to one of two types.

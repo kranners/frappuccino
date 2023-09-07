@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GitHub Actions.md",
+                "file": "TypeScript.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GitHub Actions.md",
+                "file": "TypeScript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GitHub Actions.md",
+                "file": "TypeScript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GitHub Actions.md"
+                "file": "TypeScript.md"
               }
             }
           }
@@ -173,11 +173,13 @@
   },
   "active": "93c754b1b4b1f0b8",
   "lastOpenFiles": [
+    "JavaScript.md",
+    "Android Studio.md",
+    "TypeScript.md",
+    "GitHub Actions.md",
     "yarn.md",
     "Command Line.md",
-    "TypeScript.md",
     "Turborepo.md",
-    "Android Studio.md",
     "Obsidian.md",
     "rbenv.md",
     "pyenv.md",
@@ -186,7 +188,6 @@
     "Java Runtime.md",
     "Git.md",
     "Xcode.md",
-    "JavaScript.md",
     "Strings.md",
     "Homebrew.md",
     "DisplayLink.md",
@@ -197,7 +198,6 @@
     "MobX.md",
     "Prettier.md",
     "GitHub.md",
-    "npm.md",
-    "NEM12 and NEM13.md"
+    "npm.md"
   ]
 }
