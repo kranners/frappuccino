@@ -157,9 +157,18 @@ function asList<T>(item: T): Array<T> {
 
 `const` arrow function generics have a bit of a wonky syntax when dealing in `.tsx` files:
 ```tsx
+// This is the most commonly accepted answer.
+// The comma indicates that this is a generic type with only one argument.
+const asList<T, >(item: T) => [ item ];
 
+// This also works, but is considered more of a hack.
+const asList<T extends unknown>(item: T) => [ item ];
+
+// This ALSO works but is considered even more of a hack.
+const asList<T extends {}>(item: T) => [ item ];
 ```
 
+This is because the parser can't distinguish between `<T>` (as in a generic) and `<T/>` (as in a HTML tag).
 ## Conditional types
 
 [A conditional type](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html) is a kind of [generic type](https://www.typescriptlang.org/docs/handbook/2/generics.html) which passes the generic through a condition before resolving to one of two types.
