@@ -78,7 +78,7 @@ function error(message) {
 This logger example could be rewritten like:
 ```javascript
 function logger(stream) {
-	return log(message) {
+	return function log(message) {
 		stream.write(message + '\n');
 	}
 }
