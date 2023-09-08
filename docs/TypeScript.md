@@ -8,7 +8,7 @@ TypeScript is a strongly-typed (questionably) superset of [[JavaScript]].
 
 ### Initialising a TypeScript project
 
-This setup will use [[npm]], although you could just as easily use [[yarn]].
+This setup will use [[yarn]], although you could just as easily use [[npm]].
 
 ```shell
 # Create a new project folder
@@ -20,8 +20,8 @@ git init
 npm init
 
 # Install and initialise TypeScript
-npm install -D typescript
-npx tsc --init
+yarn add -D typescript
+yarn tsc --init
 ```
 
 # Configuration

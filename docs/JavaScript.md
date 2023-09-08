@@ -21,6 +21,72 @@ Modern Frontend typically uses a combination of [[React]], [[Vue]] or [[Svelte]]
 
 # Usage
 
+## Currying
+
+[Currying](https://javascript.info/currying-partials) is effectively just a function that returns other functions.
+
+You could think of it as a [Factory](https://refactoring.guru/design-patterns/factory-method) pattern for functions, rather than for classes.
+
+> *"What? Why?"*
+> Everyone, probably.
+
+Let's say you want a function which makes database queries. But, you don't know the connection detail until runtime.
+
+You could do something like this:
+```javascript
+function query(input) {
+	const DB_ADDRESS = env.get("DB_ADDRESS");
+	const DB_PORT = env.get("DB_PORT");
+	...
+
+	const connection = new DatabaseConnection(DB_ADDRESS, DB_PORT, ...);
+	return connection.execute(input);
+}
+```
+This does solve the problem, but you end up with a lot of responsibilities for this one function.
+
+Currying would allow you to move all of this into a seperate, builder function, which then allows you to call the query much easier:
+```javascript
+function queryer({ DB_ADDRESS, DB_PORT, ... }) {
+	// NOTE: This means we only make one connection, too! :)
+	const connection = new DatabaseConnection(DB_ADDRESS, DB_PORT, ...);
+
+	return function query(input) {
+		return connection.execute(input);
+	}
+}
+
+// This would be used like the following:
+const query = queryer(env);
+
+// This could then be repeated down the line:
+const users = query(`SELECT * FROM Users;`);
+```
+
+Think of currying like 'configuring' a function, especially useful when you need multiple different versions of the same function:
+```javascript
+function info(message) {
+	process.stdout.write(message + '\n');
+}
+
+// This is practically identical to the other function!
+function error(message) {
+	process.stderr.write(message + '\n');
+}
+```
+
+This logger example could be rewritten like:
+```javascript
+function logger(stream) {
+	return log(message) {
+		stream.write(message + '\n');
+	}
+}
+
+const info = logger(process.stdout);
+const error = logger(process.stderr);
+```
+
 # `var` vs `let` vs `const`
 
 **TLDR: Use `const`. Don't use anything else. 🙏**

@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TypeScript.md",
+                "file": "JavaScript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TypeScript.md",
+                "file": "JavaScript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TypeScript.md"
+                "file": "JavaScript.md"
               }
             }
           }
@@ -171,11 +170,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "93c754b1b4b1f0b8",
+  "active": "b5e2d7f11c8eb185",
   "lastOpenFiles": [
+    "TypeScript.md",
     "JavaScript.md",
     "Android Studio.md",
-    "TypeScript.md",
     "GitHub Actions.md",
     "yarn.md",
     "Command Line.md",
