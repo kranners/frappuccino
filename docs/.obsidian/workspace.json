@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript.md",
+                "file": "Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaScript.md",
+                "file": "Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaScript.md",
+                "file": "Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaScript.md"
+                "file": "Python.md"
               }
             }
           }
@@ -172,8 +172,11 @@
   },
   "active": "b5e2d7f11c8eb185",
   "lastOpenFiles": [
-    "TypeScript.md",
+    "Jupyter Notebook.md",
+    "Python.md",
+    "pyenv.md",
     "JavaScript.md",
+    "TypeScript.md",
     "Android Studio.md",
     "GitHub Actions.md",
     "yarn.md",
@@ -181,7 +184,6 @@
     "Turborepo.md",
     "Obsidian.md",
     "rbenv.md",
-    "pyenv.md",
     "nvm.md",
     "fnm.md",
     "Java Runtime.md",
@@ -195,8 +197,6 @@
     "Redis.md",
     "Neovim.md",
     "MobX.md",
-    "Prettier.md",
-    "GitHub.md",
-    "npm.md"
+    "Prettier.md"
   ]
 }
