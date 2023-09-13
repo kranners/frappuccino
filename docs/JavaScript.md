@@ -21,6 +21,20 @@ Modern Frontend typically uses a combination of [[React]], [[Vue]] or [[Svelte]]
 
 # Usage
 
+## Argument destructuring
+
+[Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) is a flavor of JavaScript syntax for unpacking values from [objects](#Object) and [arrays](#Arrays).
+
+```javascript
+const prices = { banana: 2.5, apple: 1.6 };
+const { banana, apple } = prices;
+
+// 2.5
+console.log(banana);
+
+const 
+```
+
 ## Currying
 
 [Currying](https://javascript.info/currying-partials) is effectively just a function that returns other functions.
