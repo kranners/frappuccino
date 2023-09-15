@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b5e2d7f11c8eb185",
+            "id": "b0981ffc24cd8cb7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dates in JavaScript.md",
+                "file": "Spread Operator.md",
                 "mode": "source",
                 "source": false
               }
@@ -72,7 +72,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "es6",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dates in JavaScript.md",
+                "file": "Spread Operator.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dates in JavaScript.md",
+                "file": "Spread Operator.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dates in JavaScript.md"
+                "file": "Spread Operator.md"
               }
             }
           }
@@ -171,14 +171,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b5e2d7f11c8eb185",
+  "active": "b0981ffc24cd8cb7",
   "lastOpenFiles": [
     "JavaScript.md",
+    "Spread Operator.md",
     "Android Studio.md",
+    "TypeScript.md",
+    "Iterable.md",
+    "AWS.md",
+    "Dates in JavaScript.md",
     "Python.md",
     "Jupyter Notebook.md",
     "pyenv.md",
-    "TypeScript.md",
     "GitHub Actions.md",
     "yarn.md",
     "Command Line.md",
@@ -194,10 +198,6 @@
     "Homebrew.md",
     "DisplayLink.md",
     "Docker.md",
-    "Arrays.md",
-    "Redis.md",
-    "Neovim.md",
-    "MobX.md",
-    "Prettier.md"
+    "Arrays.md"
   ]
 }
