@@ -72,7 +72,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "es6",
+                "query": "macos",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,8 +89,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -173,8 +172,9 @@
   },
   "active": "b0981ffc24cd8cb7",
   "lastOpenFiles": [
-    "JavaScript.md",
+    "MacOS.md",
     "Spread Operator.md",
+    "JavaScript.md",
     "Android Studio.md",
     "TypeScript.md",
     "Iterable.md",
@@ -197,7 +197,6 @@
     "Strings.md",
     "Homebrew.md",
     "DisplayLink.md",
-    "Docker.md",
-    "Arrays.md"
+    "Docker.md"
   ]
 }
