@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spread Operator.md",
+                "file": "Rust.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spread Operator.md",
+                "file": "Rust.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spread Operator.md",
+                "file": "Rust.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spread Operator.md"
+                "file": "Rust.md"
               }
             }
           }
@@ -172,8 +172,9 @@
   },
   "active": "b0981ffc24cd8cb7",
   "lastOpenFiles": [
-    "MacOS.md",
     "Spread Operator.md",
+    "Rust.md",
+    "MacOS.md",
     "JavaScript.md",
     "Android Studio.md",
     "TypeScript.md",
@@ -196,7 +197,6 @@
     "Xcode.md",
     "Strings.md",
     "Homebrew.md",
-    "DisplayLink.md",
-    "Docker.md"
+    "DisplayLink.md"
   ]
 }
