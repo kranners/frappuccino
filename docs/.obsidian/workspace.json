@@ -20,6 +20,16 @@
             }
           },
           {
+            "id": "0ad6122f58fca437",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.13"
+              }
+            }
+          },
+          {
             "id": "93c754b1b4b1f0b8",
             "type": "leaf",
             "state": {
@@ -43,7 +53,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,7 +181,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b0981ffc24cd8cb7",
+  "active": "0ad6122f58fca437",
   "lastOpenFiles": [
     "Spread Operator.md",
     "Rust.md",

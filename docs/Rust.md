@@ -40,6 +40,28 @@ struct Greeting {
 }
 ```
 
+To define methods on structs, we use the `impl` syntax:
+```rust
+impl Greeting {
+	pub fn new(language: String, content: String) -> Greeting {
+		// Shorthand for language: language, content: content
+		Greeting { language, content }
+	}
+
+	pub fn say(&self) -> () {
+		println!("Hello in {} is: {}!", self.language, self.content);
+	}
+}
+```
+
+These can then be used later like:
+```rust
+let bonjour = Greeting::new("French", "Bonjour");
+
+// Hello in French is Bonjour!
+bonjour.say();
+```
+
 ### Random values
 
 Random numbers are generated using the [`rand`](https://docs.rs/rand/latest/rand/) standard crate.
@@ -55,6 +77,54 @@ fn main() {
     let num = rand::thread_rng().gen_range(0..100);
     println!("{}", num);
 }
+```
+
+### "Imports", using internal code from another file
+
+*Given a file structure of:*
+```
+-> src/
+	-> main.rs
+	-> user.rs
+	-> residency.rs
+```
+
+To *"import"* the contents of *user.rs* into *main.rs*, the syntax is simply:
+*main.rs*
+```rust
+mod user;
+
+// Use something from the user module.
+let user = user::User::new();
+```
+
+However, to "import" the contents of a sibling module, like *user.rs* into *residency.rs*:
+*residency.rs*
+```rust
+use crate::user;
+
+// Use something from the user crate:
+let user = crate::user::User::new();
+```
+
+This can be very verbose, luckily there are various ways to lower the boilerplate:
+*residency.rs*
+```rust
+use crate::user as user;
+
+let user = user::User::new();
+```
+
+Or, use specific bits, or everything:
+*residency.rs*
+```rust
+// Grab just the struct.
+use crate::user::User;
+
+// Use everything from the crate (this is alternate syntax to above).
+use crate::user::*;
+
+let user = User::new();
 ```
 
 ### Contiguous data
@@ -87,6 +157,7 @@ for n in a.iter() {
 // This means 'repeat the expression 1, 3 times'.
 let mut a: [i32; 3] = [1; 3];
 ```
+**NOTE:** Any type using this syntax *must* include the `Clone` trait.
 
 #### Vector
 
