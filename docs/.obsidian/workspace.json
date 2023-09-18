@@ -55,8 +55,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zsh.md",
+                "file": "Rust.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "zsh.md",
+                "file": "Rust.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zsh.md"
+                "file": "Rust.md"
               }
             }
           }
@@ -183,10 +182,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dfcfc8a83689bf58",
+  "active": "b0981ffc24cd8cb7",
   "lastOpenFiles": [
-    "iTerm2.md",
     "zsh.md",
+    "iTerm2.md",
     "Android Studio.md",
     "Command Line.md",
     "Shell.md",

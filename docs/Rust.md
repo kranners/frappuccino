@@ -131,6 +131,41 @@ use crate::user::*;
 let user = User::new();
 ```
 
+### Iterating
+
+To do a 'C-style' for loop, and iterate over a range of values:
+```rust
+for n in 0..10 {
+	println!("{}", n);
+}
+```
+### Function types
+
+#### Passing functions in as arguments to other functions
+
+There are [many ways](https://stackoverflow.com/questions/36390665/how-do-you-pass-a-rust-function-as-a-parameter) of handling closures in Rust. The most basic syntax of which looks like:
+
+```rust
+fn do_something_twice(something: fn (i32) -> i32), with: i32) {
+	something(with);
+	something(with);
+}
+
+fn double(x: i32) -> i32 {
+	x * 2
+}
+
+// ()
+do_something_twice(double, 2);
+```
+
+However, aside from `param: fn (...) -> ...`, there are three other ways of doing this:
+
+- `Fn(i32) -> i32`
+- `FnMut(i32) -> i32`
+- `FnOnce(i32) -> i32`
+
+These three are [traits](#Traits). A reference to a function always implements all of these traits, but shorthand closures and other values may not necessarily.
 ### Contiguous data
 
 **TLDR:**
