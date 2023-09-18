@@ -71,7 +71,20 @@ ls -l
 
 ## Tips & Tricks
 
-#### xargs
+### Defining functions
+
+```shell
+# This is the function definition, note that there are no arguments up here.
+greeting () {
+	# Because arguments are given like in a script.
+	name="$1"
+	echo "Hello ${name}!"
+}
+
+# This'll say "Hello Jeff!"
+greeting Jeff
+```
+### xargs
 
 `xargs` is a utility for passing a stdin stream into another set of commands.
 
@@ -83,7 +96,7 @@ find . -name "*.zip" | xargs rm
 ls | xargs
 ```
 
-#### For each file in folder
+### For each file in folder
 
 To perform a function for each file in a given folder you can use a `for` loop over either the output of a `find` or over just a regular [[Glob]].
 
@@ -97,7 +110,7 @@ for filename in ./*.zip; do
 done
 ```
 
-#### Count stuff
+### Count stuff
 
 Pipe them into [`wc`](https://ss64.com/bash/wc.html).
 

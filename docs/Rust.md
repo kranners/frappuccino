@@ -1,5 +1,9 @@
 ---
-tags: rust, programming, languages, low-level
+tags:
+  - rust
+  - programming
+  - languages
+  - low-level
 ---
 
 # Rust
