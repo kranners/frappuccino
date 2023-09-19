@@ -140,10 +140,12 @@ type Animal = {
 
 They can both be extended as expected:
 ```typescript
+// FlyingAnimal = { name: string, weight: number, wingspan: number };
 interface FlyingAnimal extends Animal {
 	wingspan: number;
 }
 
+// FlyingAnimal = { name: string, weight: number, wingspan: number };
 type FlyingAnimal = Animal & {
 	wingspan: number;
 }
@@ -151,10 +153,14 @@ type FlyingAnimal = Animal & {
 
 However, there is one piece of syntax that `interface` contains, which `type` does not:
 ```typescript
+// We define the interface once...
+// Fruit = { name: string };
 interface Fruit {
 	name: string;
 }
 
+// Then define it again!
+// Fruit = { name: string, price: number };
 interface Fruit {
 	price: number;
 }
