@@ -117,6 +117,70 @@ Then add them under `compilerOptions.types`:
 
 # Usage
 
+## `interface` vs `type`
+
+**TLDR:** `interface` has *one* extremely niche but confusing syntactic sugar, use `type` instead.
+
+For more info, see [the TypeScript documentation on the matter](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#differences-between-type-aliases-and-interfaces).
+
+The `interface` and `type` keywords are extremely similar.
+They are both used for defining the *shape* of an [[Object]].
+
+```typescript
+interface Animal {
+	name: string;
+	weight: number;
+}
+
+type Animal = {
+	name: string;
+	weight: number;
+}
+```
+
+They can both be extended as expected:
+```typescript
+interface FlyingAnimal extends Animal {
+	wingspan: number;
+}
+
+type FlyingAnimal = Animal & {
+	wingspan: number;
+}
+```
+
+However, there is one piece of syntax that `interface` contains, which `type` does not:
+```typescript
+interface Fruit {
+	name: string;
+}
+
+interface Fruit {
+	price: number;
+}
+```
+After this, TypeScript recognises the *Fruit* interface as
+```typescript
+{
+	name: string;
+	price: number;
+}
+```
+Which is a kind of *implicit extension*.
+
+However, using the `type` keyword:
+```typescript
+type Fruit = {
+	name: string;
+}
+
+// Error: Duplicate identifier 'Fruit'.
+type Fruit = {
+	price: number;
+}
+```
+
+**OPINION:** This is dumb, and confusing. Don't use this. Use `type`, and explicitly extend your types.
 ## Index signatures
 
 To define an object with a particular key/value signature, it looks like:
