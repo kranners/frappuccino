@@ -244,6 +244,12 @@ const MAPPING: FruitPriceMapping = {
 }
 ```
 
+Alternatively, TypeScript has the [`Record`](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type) utility type, which you could consider more terse:
+
+```typescript
+type FruitPriceMapping = Record<Fruit, Price>;
+```
+
 ## Generic functions
 
 [Generic functions](https://www.typescriptlang.org/docs/handbook/2/generics.html#hello-world-of-generics) are strongly-typed functions which take in a type parameter, which can be used in the signature of the function.
