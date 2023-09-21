@@ -84,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "macos",
+                "query": "reduce",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -101,7 +101,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -184,16 +185,17 @@
   },
   "active": "b0981ffc24cd8cb7",
   "lastOpenFiles": [
+    "Arrays.md",
+    "JavaScript.md",
+    "TypeScript.md",
     "Rust.md",
     "zsh.md",
     "iTerm2.md",
     "Android Studio.md",
     "Command Line.md",
     "Shell.md",
-    "TypeScript.md",
     "Spread Operator.md",
     "MacOS.md",
-    "JavaScript.md",
     "Iterable.md",
     "AWS.md",
     "Dates in JavaScript.md",
@@ -208,7 +210,6 @@
     "nvm.md",
     "fnm.md",
     "Java Runtime.md",
-    "Git.md",
-    "Xcode.md"
+    "Git.md"
   ]
 }
