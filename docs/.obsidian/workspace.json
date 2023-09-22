@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "72362e26985ed824",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Opinion/Test Doc.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "cb53901a25ca04d7",
             "type": "leaf",
             "state": {
@@ -55,7 +67,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -101,8 +114,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TypeScript.md",
+                "file": "Opinion/Test Doc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TypeScript.md",
+                "file": "Opinion/Test Doc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TypeScript.md"
+                "file": "Opinion/Test Doc.md"
               }
             }
           }
@@ -183,16 +195,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b0981ffc24cd8cb7",
+  "active": "1879734b76fa3070",
   "lastOpenFiles": [
+    "Command Line.md",
+    "Opinion/Test Doc.md",
+    "Opinion",
+    "TypeScript.md",
     "Arrays.md",
     "JavaScript.md",
-    "TypeScript.md",
     "Rust.md",
     "zsh.md",
     "iTerm2.md",
     "Android Studio.md",
-    "Command Line.md",
     "Shell.md",
     "Spread Operator.md",
     "MacOS.md",
@@ -209,7 +223,6 @@
     "rbenv.md",
     "nvm.md",
     "fnm.md",
-    "Java Runtime.md",
-    "Git.md"
+    "Java Runtime.md"
   ]
 }
