@@ -25,19 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Command Line.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "72362e26985ed824",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Opinion/Test Doc.md",
+                "file": "Opinion/Don't Use Lodash.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -134,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Opinion/Test Doc.md",
+                "file": "Opinion/Don't Use Lodash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Opinion/Test Doc.md",
+                "file": "Opinion/Don't Use Lodash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Opinion/Test Doc.md"
+                "file": "Opinion/Don't Use Lodash.md"
               }
             }
           }
@@ -195,10 +183,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1879734b76fa3070",
+  "active": "93c754b1b4b1f0b8",
   "lastOpenFiles": [
-    "Command Line.md",
     "Opinion/Test Doc.md",
+    "Opinion/Don't Use Lodash.md",
+    "Command Line.md",
     "Opinion",
     "TypeScript.md",
     "Arrays.md",
@@ -222,7 +211,6 @@
     "Obsidian.md",
     "rbenv.md",
     "nvm.md",
-    "fnm.md",
-    "Java Runtime.md"
+    "fnm.md"
   ]
 }
