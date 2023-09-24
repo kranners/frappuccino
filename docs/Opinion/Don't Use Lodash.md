@@ -5,7 +5,7 @@ tags:
 # Don't Use [Lodash](https://lodash.com/)
 
 **TLDR:**
-- Lodash functions are unnecessary. Just use [ES6 functions](Arrays#Array%20ES%20Functions).
+- Lodash functions are unnecessary. Just use [ES6 functions](../Arrays#Array%20ES%20Functions).
 - Lodash increases your bundle size massively, for little gain.
 - Lodash functions that you do need are trivial to reimplement.
 
@@ -33,7 +33,7 @@ Upgrade some-css-in-js-library to X.X
 
 Dependencies force you to play their game, and will generate work for you forever. That is, until they stop being maintained.
 
-In a language like [[Rust]], libraries eventually complete. 
+In a language like [[Rust]], libraries eventually complete.
 In [[JavaScript]], [libraries eventually die](https://github.com/cerebral/cerebral).
 
 When they die, you'll start seeing tickets like
