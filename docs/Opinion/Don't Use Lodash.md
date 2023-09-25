@@ -7,7 +7,7 @@ tags:
 **TLDR:**
 - Lodash functions are unnecessary. Just use [ES6 functions](../Arrays#Array%20ES%20Functions).
 - Lodash increases your bundle size massively, for little gain.
-- Lodash functions that you do need are trivial to reimplement.
+- Reaching for Lodash every time makes you *think in Lodash*.
 
 If you need backwards compatibility for your web app (really? why?) then use [a polyfill library](https://github.com/zloirock/core-js) and a [transpiler](https://babeljs.io/).
 
@@ -16,7 +16,7 @@ If you need backwards compatibility for your web app (really? why?) then use [a 
 > **"Why should I write a function if there's just a library for it?"**
 > _- Average [JavaScript](../JavaScript) [Clown](https://cute.engineer/) 🤡_
 
-The TLDR for this bit is that if you can reasonably do what a library does yourself, you should.
+The TLDR for this bit is that if you can easily and safely do what a library does with native language features, you should.
 #### Dependencies generate work
 
 Dependencies are debt, which constantly collects. Anyone who has spent any time in software development will be familiar with a ticket that reads something like this:
@@ -231,9 +231,9 @@ In vanilla JS, deeply cloning an Object can be a pain:
 // Some complicated, nested object
 const something = { 
 	a: [ "hello", "goodbye" ], // typeof object
-	b: () => null, // typeof function
-	c: { fruit: "banana" },// typeof object
-	d: 5,// typeof number
+	b: (...args) => null, // typeof function
+	c: { fruit: "banana" }, // typeof object
+	d: 5, // typeof number
 };
 
 const shallow = { ...something };
