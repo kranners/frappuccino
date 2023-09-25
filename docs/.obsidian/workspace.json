@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git.md",
+                "file": "Software Licensing.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git.md",
+                "file": "Software Licensing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git.md",
+                "file": "Software Licensing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git.md"
+                "file": "Software Licensing.md"
               }
             }
           }
@@ -197,6 +197,7 @@
   },
   "active": "93c754b1b4b1f0b8",
   "lastOpenFiles": [
+    "Git.md",
     "Opinion/Don't Use Lodash.md",
     "Arrays.md",
     "iTerm2.md",
@@ -222,7 +223,6 @@
     "Turborepo.md",
     "Obsidian.md",
     "rbenv.md",
-    "nvm.md",
-    "fnm.md"
+    "nvm.md"
   ]
 }
