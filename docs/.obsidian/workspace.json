@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "1584c442f4e2d6f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Arrays.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "cb53901a25ca04d7",
             "type": "leaf",
             "state": {
@@ -185,14 +197,14 @@
   },
   "active": "93c754b1b4b1f0b8",
   "lastOpenFiles": [
+    "Arrays.md",
+    "iTerm2.md",
+    "Opinion/Don't Use Lodash.md",
     "TypeScript.md",
     "zsh.md",
-    "Opinion/Don't Use Lodash.md",
-    "iTerm2.md",
     "Opinion/Test Doc.md",
     "Command Line.md",
     "Opinion",
-    "Arrays.md",
     "JavaScript.md",
     "Rust.md",
     "Android Studio.md",
