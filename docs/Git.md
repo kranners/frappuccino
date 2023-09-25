@@ -173,3 +173,7 @@ git checkout -b my/new-branch
 # This will do the exact same thing, but maybe it looks better to you?
 git switch --create my/new-branch # -c is shorthand for --create
 ```
+
+#### Split a branch into multiple branches by file
+
+If you have 

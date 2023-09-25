@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Opinion/Don't Use Lodash.md",
+                "file": "Git.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Opinion/Don't Use Lodash.md",
+                "file": "Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Opinion/Don't Use Lodash.md",
+                "file": "Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Opinion/Don't Use Lodash.md"
+                "file": "Git.md"
               }
             }
           }
@@ -197,9 +197,9 @@
   },
   "active": "93c754b1b4b1f0b8",
   "lastOpenFiles": [
+    "Opinion/Don't Use Lodash.md",
     "Arrays.md",
     "iTerm2.md",
-    "Opinion/Don't Use Lodash.md",
     "TypeScript.md",
     "zsh.md",
     "Opinion/Test Doc.md",
