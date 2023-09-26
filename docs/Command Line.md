@@ -121,6 +121,18 @@ for filename in ./*.zip; do
 done
 ```
 
+### Redirect stderr into stdout
+
+Use the redirection `2>&1` at the end of any command to pipe stderr into stdout.
+```shell
+command-throws-errors > full-log.log 2>&1
+```
+
+Use this in conjunction with `less` to interactively read long command outputs
+```shell
+yarn eslint . --verbose | less 2>&1
+```
+
 ### Count stuff
 
 Pipe them into [`wc`](https://ss64.com/bash/wc.html).
