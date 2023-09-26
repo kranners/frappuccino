@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Command Line.md",
+                "file": "TypeScript.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Command Line.md",
+                "file": "TypeScript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Command Line.md",
+                "file": "TypeScript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Command Line.md"
+                "file": "TypeScript.md"
               }
             }
           }
@@ -157,16 +157,16 @@
   },
   "active": "d9b2d31cdfbbfcfc",
   "lastOpenFiles": [
+    "Git.md",
+    "Command Line.md",
     "ESLint.md",
     "TypeScript.md",
     "Software Licensing.md",
     "Arrays.md",
     "iTerm2.md",
     "zsh.md",
-    "Git.md",
     "Opinion/Don't Use Lodash.md",
     "Opinion/Test Doc.md",
-    "Command Line.md",
     "Opinion",
     "JavaScript.md",
     "Rust.md",

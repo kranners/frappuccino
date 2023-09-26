@@ -115,6 +115,42 @@ Then add them under `compilerOptions.types`:
 }
 ```
 
+### No property access on index signatures (TS #4111)
+
+*[For more info, see the documentation page on this option](https://www.typescriptlang.org/tsconfig#noPropertyAccessFromIndexSignature)*.
+
+```text
+Property X comes from an index signature, so it must be accessed with ['X'].
+```
+
+This issue comes up when doing dot-notation for accessing a property on an Object which is not explicitly defined in its type.
+
+```typescript
+type FruitName = 'banana' | 'apple' | 'pear';
+type Fruit = Record<string, string> & { name: FruitName };
+
+const apple: Fruit = {
+	name: 'apple',
+	price: 200,
+	display: () => 'Apple - USD$2.0',
+};
+
+// This type is explicitly defined in the Fruit type, so this is fine
+apple.name;
+
+// Error (ts4111): Property 'price' comes from an index signature
+apple.price;
+```
+
+To disable, add to your *tsconfig.json*
+```json
+{
+	"compilerOptions": {
+		"noPropertyAccessFromIndexSignature": false
+	}
+}
+```
+
 # Usage
 
 ## Type guards

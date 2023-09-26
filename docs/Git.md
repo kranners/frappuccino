@@ -174,6 +174,12 @@ git checkout -b my/new-branch
 git switch --create my/new-branch # -c is shorthand for --create
 ```
 
-#### Split a branch into multiple branches by file
+#### Update previous commit
 
-If you have 
+```shell
+# Update the previous commit, without updating the commit message.
+git commit --amend --no-edit
+
+# Set 'git amend' to that previous command
+git config --global alias.amend 'commit --amend --no-edit'
+```
