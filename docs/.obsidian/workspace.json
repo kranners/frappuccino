@@ -8,14 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6751c328d3d3b908",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
             "id": "d9b2d31cdfbbfcfc",
             "type": "leaf",
             "state": {
@@ -27,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -157,10 +148,10 @@
   },
   "active": "d9b2d31cdfbbfcfc",
   "lastOpenFiles": [
+    "TypeScript.md",
     "Git.md",
     "Command Line.md",
     "ESLint.md",
-    "TypeScript.md",
     "Software Licensing.md",
     "Arrays.md",
     "iTerm2.md",
