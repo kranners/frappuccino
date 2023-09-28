@@ -87,6 +87,23 @@ bun add -D @vscode/vsce
 bun add -D typescript @types/node @types/vscode
 ```
 
+At this stage, unless you *really* know what you're doing - I'd also suggest [installing a recommended tsconfig.json](https://github.com/tsconfig/bases#available-tsconfigs).
+
+```shell
+bun add -D @tsconfig/recommended
+```
+
+Replace your TSConfig with:
+```json
+{
+	"extends": "@tsconfig/recommended/tsconfig.json",
+	"compilerOptions": {
+		"outDir": "dist",
+		"types": ["bun-types", "vscode", "node"]
+	}
+}
+```
+
 5. *(Optional if using [[TypeScript]])* Add the types to your TSConfig
 ```json
 {
@@ -112,7 +129,47 @@ export function deactivate() {}
 
 8. Set up your [[Git]] repository, filling out the `repository` field in your *package.json*.
 ```json
+{
+	"repository": {
+		"url": "https://really-cool.repository.com"
+	}
+}
+```
 
+#### Running a test build
+
+You now have all the source needed for a VSCode extension 🥳!
+
+To build:
+```shell
+# Build to the final JavaScript bundle
+bunx tsc
+
+# Package into a VSCode extension
+bunx vsce package
+```
+
+Ensure that the `main` key in your *package.json* is the same as the `outDir`/`outFile` as specified in your *tsconfig.json*.
+
+You can then install the extension to your local VSCode by running:
+```shell
+# Replacing <whatever> with your extension.
+code --install-extension whatever-0.0.0.vsix
+```
+
+#### Wrapping up the start
+
+From here, I'd recommend a couple of scripts added to *package.json*:
+```json
+{
+	...,
+	"scripts": {
+		"compile": "tsc",
+		"package": "vsce package",
+		// vscode:prepublish is a special script as used by vsce.
+		"vscode:prepublish": "bun compile"
+	}
+}
 ```
 ## Configuration
 
