@@ -18,6 +18,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8dac0898f043f81e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software Licensing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -148,13 +160,13 @@
   },
   "active": "d9b2d31cdfbbfcfc",
   "lastOpenFiles": [
-    "ECMAScript.md",
+    "Software Licensing.md",
     "VSCode.md",
+    "ECMAScript.md",
     "TypeScript.md",
     "Git.md",
     "Command Line.md",
     "ESLint.md",
-    "Software Licensing.md",
     "Arrays.md",
     "iTerm2.md",
     "zsh.md",

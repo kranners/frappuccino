@@ -84,7 +84,7 @@ npx tsc --init
 bun add -D @vscode/vsce
 
 # If you're using TypeScript, these ones are practically required.
-bun add -D @types/node @types/vscode
+bun add -D typescript @types/node @types/vscode
 ```
 
 5. *(Optional if using [[TypeScript]])* Add the types to your TSConfig
@@ -99,6 +99,20 @@ bun add -D @types/node @types/vscode
 		]
 	}
 }
+```
+
+6. Export two functions from your *index.ts*, `activate()` and `deactivate()`.
+```typescript
+export function activate() {}
+
+export function deactivate() {}
+```
+
+7. Create a *LICENSE.md*. See [[Software Licensing]] to see one to pick.
+
+8. Set up your [[Git]] repository, filling out the `repository` field in your *package.json*.
+```json
+
 ```
 ## Configuration
 
