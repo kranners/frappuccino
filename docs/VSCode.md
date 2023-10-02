@@ -58,7 +58,7 @@ npm install -D typescript
 npx tsc --init
 ```
 
-3. Specify the [`engines`](https://docs.npmjs.com/cli/v6/configuring-npm/package-json#engines), [`categories`](https://code.visualstudio.com/api/references/extension-manifest#:~:text=is%20and%20does.-,categories,-string%5B%5D), [`activationEvents`](#Activation), [`main`](https://docs.npmjs.com/cli/v6/configuring-npm/package-json#main), and [`contributes`](#Contributes) keys in your *package.json*:
+3. Specify the [`engines`](https://docs.npmjs.com/cli/v6/configuring-npm/package-json#engines), [`categories`](https://code.visualstudio.com/api/references/extension-manifest#:~:text=is%20and%20does.-,categories,-string%5B%5D), [`activationEvents`](#activation), [`main`](https://docs.npmjs.com/cli/v6/configuring-npm/package-json#main), and [`contributes`](#contributes) keys in your *package.json*:
 ```json
 {
 	...,
