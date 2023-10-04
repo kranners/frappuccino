@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bun.md",
+                "file": "TypeScript.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Bun.md",
+                "file": "TypeScript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Bun.md",
+                "file": "TypeScript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bun.md"
+                "file": "TypeScript.md"
               }
             }
           }
@@ -172,9 +172,9 @@
   },
   "active": "d9b2d31cdfbbfcfc",
   "lastOpenFiles": [
+    "Bun.md",
     "TypeScript.md",
     "Software Licensing.md",
-    "Bun.md",
     "Git.md",
     "VSCode.md",
     "ECMAScript.md",
