@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VSCode.md",
+                "file": "Git.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VSCode.md",
+                "file": "Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "VSCode.md",
+                "file": "Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "VSCode.md"
+                "file": "Git.md"
               }
             }
           }
@@ -172,8 +172,8 @@
   },
   "active": "d9b2d31cdfbbfcfc",
   "lastOpenFiles": [
-    "TypeScript.md",
     "VSCode.md",
+    "TypeScript.md",
     "Software Licensing.md",
     "ECMAScript.md",
     "Git.md",
