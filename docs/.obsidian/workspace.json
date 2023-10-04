@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git.md",
+                "file": "Bun.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git.md",
+                "file": "Bun.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git.md",
+                "file": "Bun.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git.md"
+                "file": "Bun.md"
               }
             }
           }
@@ -172,11 +172,12 @@
   },
   "active": "d9b2d31cdfbbfcfc",
   "lastOpenFiles": [
-    "VSCode.md",
     "TypeScript.md",
     "Software Licensing.md",
-    "ECMAScript.md",
+    "Bun.md",
     "Git.md",
+    "VSCode.md",
+    "ECMAScript.md",
     "Command Line.md",
     "ESLint.md",
     "Arrays.md",
@@ -197,7 +198,6 @@
     "Python.md",
     "Jupyter Notebook.md",
     "pyenv.md",
-    "GitHub Actions.md",
-    "yarn.md"
+    "GitHub Actions.md"
   ]
 }
