@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript.md",
+                "file": "Android Studio.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TypeScript.md",
+                "file": "Android Studio.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TypeScript.md",
+                "file": "Android Studio.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TypeScript.md"
+                "file": "Android Studio.md"
               }
             }
           }
@@ -172,8 +172,9 @@
   },
   "active": "d9b2d31cdfbbfcfc",
   "lastOpenFiles": [
-    "Bun.md",
+    "Xcode.md",
     "TypeScript.md",
+    "Bun.md",
     "Software Licensing.md",
     "Git.md",
     "VSCode.md",
@@ -197,7 +198,6 @@
     "Dates in JavaScript.md",
     "Python.md",
     "Jupyter Notebook.md",
-    "pyenv.md",
-    "GitHub Actions.md"
+    "pyenv.md"
   ]
 }
