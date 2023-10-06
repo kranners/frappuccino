@@ -175,22 +175,27 @@ class Extender extends Base {
 }
 ```
 
-Sometimes this rule can get confused when interacting with static methods, which typically do not need to be explicitly overridden.
-
+Sometimes this rule can get confused when interacting with static methods, which typically do not need to be explicitly overridden. This is especially true with static async methods:
 ```typescript
-class Base { };
-Base.method = () => 'hi :)';
+class Base {
+	static async method(): Promise<unknown> { /* ... */ };
+}
 
-class Extender extends Base { };
+class Extender extends Base {
+	// These keywords are invalid together!
+	// So TS4114 collides with JS syntax.
+	override static async method(): Promise<unknown> { ... };
+}
+```
 
-// 'hi :)'
-Extender.method();
-
-// You can override this whenever you want, without using the override.
-Extender.method = () => 'bye :(';
-
-// 'bye :('
-Extender.method();
+You can disable this behaviour by setting `noImplicitOverride` to `false`.
+```json
+{
+	"compilerOptions": {
+		// Behaviour disabled :)
+		"noImplicitOverride": false,
+	}
+}
 ```
 
 # Usage
