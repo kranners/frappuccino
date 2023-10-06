@@ -43,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Android Studio.md",
+                "file": "TypeScript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Android Studio.md",
+                "file": "TypeScript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Android Studio.md"
+                "file": "TypeScript.md"
               }
             }
           }
@@ -170,8 +171,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d9b2d31cdfbbfcfc",
+  "active": "5c16edd87d7091c4",
   "lastOpenFiles": [
+    "Android Studio.md",
     "Xcode.md",
     "TypeScript.md",
     "Bun.md",
@@ -189,7 +191,6 @@
     "Opinion",
     "JavaScript.md",
     "Rust.md",
-    "Android Studio.md",
     "Shell.md",
     "Spread Operator.md",
     "MacOS.md",

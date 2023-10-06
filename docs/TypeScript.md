@@ -151,6 +151,48 @@ To disable, add to your *tsconfig.json*
 }
 ```
 
+### Implicit method overrides
+
+*For more info, check out [the TS.tv page on error TS4114](https://typescript.tv/errors/#TS4114) or [the official docs on the `noImplicitOverride` config option.](https://www.typescriptlang.org/tsconfig#noImplicitOverride)*
+
+An implicit override is something like this:
+```typescript
+class Base {
+	method(): T { /* ... */ };
+}
+
+class Extender extends Base {
+	// This implicitly overrides Base.method()!
+	method(): T { /* ... */ };
+}
+```
+
+As opposed to the same class written with an explicit override:
+```typescript
+class Extender extends Base {
+	// Now it explicitly overrides, and all is well :)
+	override method(): T { /* ... */ };
+}
+```
+
+Sometimes this rule can get confused when interacting with static methods, which typically do not need to be explicitly overridden.
+
+```typescript
+class Base { };
+Base.method = () => 'hi :)';
+
+class Extender extends Base { };
+
+// 'hi :)'
+Extender.method();
+
+// You can override this whenever you want, without using the override.
+Extender.method = () => 'bye :(';
+
+// 'bye :('
+Extender.method();
+```
+
 # Usage
 
 ## Type guards
