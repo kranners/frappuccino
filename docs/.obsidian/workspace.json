@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "14c3b9cc21c3643c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TypeScript.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "8dac0898f043f81e",
             "type": "leaf",
             "state": {
@@ -77,8 +89,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -161,16 +172,16 @@
   },
   "active": "d9b2d31cdfbbfcfc",
   "lastOpenFiles": [
+    "TypeScript.md",
+    "Command Line.md",
     "Android Studio.md",
     "Shell.md",
-    "TypeScript.md",
     "Xcode.md",
     "Bun.md",
     "Software Licensing.md",
     "Git.md",
     "VSCode.md",
     "ECMAScript.md",
-    "Command Line.md",
     "ESLint.md",
     "Arrays.md",
     "iTerm2.md",
