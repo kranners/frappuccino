@@ -18,33 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "14c3b9cc21c3643c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Opinion/Don't Use Lodash.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8dac0898f043f81e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Software Licensing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Opinion/Don't Use Lodash.md",
+                "file": "Command Line.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Opinion/Don't Use Lodash.md",
+                "file": "Command Line.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Opinion/Don't Use Lodash.md"
+                "file": "Command Line.md"
               }
             }
           }
@@ -171,15 +146,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "14c3b9cc21c3643c",
+  "active": "d9b2d31cdfbbfcfc",
   "lastOpenFiles": [
-    "TypeScript.md",
+    "Software Licensing.md",
     "Command Line.md",
+    "Opinion/Don't Use Lodash.md",
+    "TypeScript.md",
     "Android Studio.md",
     "Shell.md",
     "Xcode.md",
     "Bun.md",
-    "Software Licensing.md",
     "Git.md",
     "VSCode.md",
     "ECMAScript.md",
@@ -187,7 +163,6 @@
     "Arrays.md",
     "iTerm2.md",
     "zsh.md",
-    "Opinion/Don't Use Lodash.md",
     "Opinion/Test Doc.md",
     "Opinion",
     "JavaScript.md",
