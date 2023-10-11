@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "process port",
+                "query": "kill proc",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -148,8 +149,9 @@
   },
   "active": "d9b2d31cdfbbfcfc",
   "lastOpenFiles": [
-    "Software Licensing.md",
+    "AWS.md",
     "Command Line.md",
+    "Software Licensing.md",
     "Opinion/Don't Use Lodash.md",
     "TypeScript.md",
     "Android Studio.md",
@@ -170,7 +172,6 @@
     "Spread Operator.md",
     "MacOS.md",
     "Iterable.md",
-    "AWS.md",
     "Dates in JavaScript.md",
     "Python.md",
     "Jupyter Notebook.md",

@@ -28,8 +28,13 @@ aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 ```
 *You'll want your profiles to be named something better.*
 
-After configuring this, use:
+**After configuring this, use:**
 ```shell
 aws --profile <your-profile>
 ```
 to authenticate with the given profile.
+
+**If there's a build tool which needs it, the variable is:**
+```shell
+export AWS_PROFILE=<your-profile>
+```
