@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Command Line.md",
+                "file": "TypeScript.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "kill proc",
+                "query": "tsconfig",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Command Line.md",
+                "file": "TypeScript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Command Line.md",
+                "file": "TypeScript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Command Line.md"
+                "file": "TypeScript.md"
               }
             }
           }
@@ -149,8 +149,8 @@
   },
   "active": "d9b2d31cdfbbfcfc",
   "lastOpenFiles": [
-    "AWS.md",
     "Command Line.md",
+    "AWS.md",
     "Software Licensing.md",
     "Opinion/Don't Use Lodash.md",
     "TypeScript.md",
