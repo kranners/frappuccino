@@ -133,6 +133,60 @@ Use this in conjunction with `less` to interactively read long command outputs
 yarn eslint . --verbose 2>&1 | less
 ```
 
+### Default / fallback values
+
+The generic here for defining a value with a fallback looks like:
+```shell
+# If $may_exist is there, that will be used as the value.
+# Otherwise, it's $fallback.
+some_value=${may_exist:-fallback}
+```
+
+You can use this in functions to define default parameters:
+```shell
+print_price() {
+	price=${1:-0}
+
+	echo "\$${price} to buy this!"
+}
+
+print_price 5
+print_price
+```
+
+### Check variable for value or setting
+
+Checking variables for whether they're set, it's the `-z` flag in `if`:
+```shell
+kill_port() {
+	pid="$(lsof -i :${1} | awk 'NR > 1 {print $2}')"
+
+	# If $pid is unset, this branch happens.
+	if [ -z "${pid}" ]; then
+		echo "No process using port ${port}"
+		return 0
+	fi
+
+	kill -${signal:-15} $pid
+}
+```
+
+To check for equality, or non-equality it's `-eq` or `-ne` respectively:
+```shell
+kill_pid() {
+	pid="${1}"
+	kill -15 ${pid}
+
+	# If this worked, $? will be 0 to indicate success
+	if [ $? -eq 0 ]; then
+		echo "Killed ${pid}"
+		return 0
+	fi
+
+	echo "Could not kill: ${pid}"
+	return 1
+}
+```
 ### Count stuff
 
 Pipe them into [`wc`](https://ss64.com/bash/wc.html).
