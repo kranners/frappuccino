@@ -116,11 +116,30 @@ This will review each selected file individually, then go through each hunk and 
 To do this, use `git reset` without either the `--soft` or `--hard` flags.
 
 ```shell
-# "Uncommit" once
+# "Uncommit" once, preserving the changes
 git reset HEAD~1
 
 > Unstaged changes after reset:
 > ...
+```
+
+Or, you could destroy all your changes:
+```shell
+# Reset absolutely everything back to the origin remote
+git reset --hard origin
+```
+
+#### Merge and accept all incoming / existing changes
+
+This is done using the [`-X` or `--strategy-option` flag](https://git-scm.com/docs/git-merge#Documentation/git-merge.txt--Xltoptiongt).
+[*For more info, see the page on merge strategies.*](https://git-scm.com/docs/merge-strategies)
+
+```shell
+# Accept all the incoming changes for conflicts
+git merge something-better -X theirs
+
+# Accept all your changes for conflicts
+git merge mine-is-cooler -X ours
 ```
 #### Move commits to another branch
 
