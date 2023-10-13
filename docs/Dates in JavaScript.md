@@ -46,9 +46,9 @@ Timezones are a bastard, and always have been in [[JavaScript]].
 For dealing with them, you could go down the native `Intl` route (if supported) or the library route.
 
 Some libraries include:
-- [Adobe's @internationalized/date](https://discord.com/channels/@me/1115862362860302347/1131427716491649086)
-- [marnusw's date-fns-tz](https://discord.com/channels/@me/1115862362860302347/1131427852294832178)
-- [dayjs](https://github.com/iamkun/dayjs)
+- [Adobe's @internationalized/date](https://react-spectrum.adobe.com/internationalized/date/)
+- [marnusw's date-fns-tz](https://github.com/marnusw/date-fns-tz)
+- [dayjs](https://day.js.org/docs/en/plugin/timezone)
 
 #### Print a Date in a given timezone
 
@@ -81,3 +81,14 @@ const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 ### `Temporal`
 
 [Temporal](https://tc39.es/proposal-temporal/docs/) is a proposed new namespace to be added into [[ECMAScript]], which hopes to fix the glaring issues with the Date prototype.
+
+### Moment.js
+
+[Moment.js](https://github.com/moment/moment/) was previously the go-to standard library for using dates in [[JavaScript]].
+
+It has since [been thoroughly deprecated](https://momentjs.com/docs/#/-project-status/), to the point where Moment.js themselves recommend abandoning the project.
+
+For modern date libraries:
+- If you're looking for a more drop-in replacement, [pick Day.js](https://github.com/iamkun/dayjs/#usage-trend)
+- If you get to pick a new one, pick [Adobe Internationalized](https://react-spectrum.adobe.com/internationalized/date/)
+- If the vanilla JS Date is good enough, [pick date-fns](https://date-fns.org/)

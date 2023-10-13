@@ -13,14 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript.md",
+                "file": "Opinion/Don't Use Lodash.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7dcf707f22b33526",
+            "id": "502d3d0c0aaa99f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "lsof",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -160,20 +160,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7dcf707f22b33526",
+  "active": "502d3d0c0aaa99f4",
   "lastOpenFiles": [
+    "Opinion/Don't Use Lodash.md",
+    "ECMAScript.md",
+    "TypeScript.md",
+    "Dates in JavaScript.md",
     "Command Line.md",
     "Git.md",
-    "TypeScript.md",
     "AWS.md",
     "Software Licensing.md",
-    "Opinion/Don't Use Lodash.md",
     "Android Studio.md",
     "Shell.md",
     "Xcode.md",
     "Bun.md",
     "VSCode.md",
-    "ECMAScript.md",
     "ESLint.md",
     "Arrays.md",
     "iTerm2.md",
@@ -185,7 +186,6 @@
     "Spread Operator.md",
     "MacOS.md",
     "Iterable.md",
-    "Dates in JavaScript.md",
     "Python.md",
     "Jupyter Notebook.md",
     "pyenv.md"
