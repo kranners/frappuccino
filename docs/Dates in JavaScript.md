@@ -48,6 +48,7 @@ For dealing with them, you could go down the native `Intl` route (if supported) 
 Some libraries include:
 - [Adobe's @internationalized/date](https://discord.com/channels/@me/1115862362860302347/1131427716491649086)
 - [marnusw's date-fns-tz](https://discord.com/channels/@me/1115862362860302347/1131427852294832178)
+- [dayjs](https://github.com/iamkun/dayjs)
 
 #### Print a Date in a given timezone
 
