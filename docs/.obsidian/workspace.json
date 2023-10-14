@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dates in JavaScript.md",
+                "file": "Custom Elements.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a0cfd2bef1478f34",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web Components.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,8 +90,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -99,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dates in JavaScript.md",
+                "file": "Custom Elements.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dates in JavaScript.md",
+                "file": "Custom Elements.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dates in JavaScript.md"
+                "file": "Custom Elements.md"
               }
             }
           }
@@ -162,14 +173,17 @@
   },
   "active": "502d3d0c0aaa99f4",
   "lastOpenFiles": [
+    "Web Components.md",
+    "Custom Elements.md",
     "Opinion/Don't Use Lodash.md",
-    "ECMAScript.md",
+    "Software Licensing.md",
+    "Strings.md",
     "TypeScript.md",
     "Dates in JavaScript.md",
+    "ECMAScript.md",
     "Command Line.md",
     "Git.md",
     "AWS.md",
-    "Software Licensing.md",
     "Android Studio.md",
     "Shell.md",
     "Xcode.md",
@@ -185,9 +199,6 @@
     "Rust.md",
     "Spread Operator.md",
     "MacOS.md",
-    "Iterable.md",
-    "Python.md",
-    "Jupyter Notebook.md",
-    "pyenv.md"
+    "Iterable.md"
   ]
 }

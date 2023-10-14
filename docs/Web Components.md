@@ -4,6 +4,8 @@ tags: web, components, javascript, typescript, react, astro
 
 This is just a general dumping ground for common web components and some technologies around them.
 
+For web components as in the [[JavaScript]] feature for custom HTML elements, see the page on [[Custom Elements]].
+
 ## Syntax Highlighting and Code Editing
 
 Displaying syntax highlighted code on a page is a surprisingly difficult task.
