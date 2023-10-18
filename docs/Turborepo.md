@@ -23,3 +23,15 @@ yarn workspace web add react
 # Get the workspace tree
 yarn workspaces info
 ```
+
+### The `.turbo` folder
+
+[Turborepo generates a cache folder](https://turbo.build/repo/docs/core-concepts/caching) both on a project-level and on a repository-level.
+
+Turborepo themselves recommend adding these folders to your `.gitignore`. Not doing so [they consider a pitfall](https://turbo.build/repo/docs/troubleshooting#the-turbo-directory).
+
+```gitignore
+# Ignore the Turborepo cache
+.turbo/
+**/.turbo/
+```
