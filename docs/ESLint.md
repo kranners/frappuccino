@@ -19,6 +19,13 @@ With that, you can install and configure ESLint with
 yarn init @eslint/config
 ```
 
+### Installation with [[TypeScript]]
+
+To install with [[TypeScript]], you'll need a few extra plugins, one for parsing and one for linting rules:
+```shell
+yarn add -D @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript
+```
+
 ## Configuration
 
 ### Imports and path resolution

@@ -125,7 +125,7 @@ git reset HEAD~1
 
 Or, you could destroy all your changes:
 ```shell
-# Reset absolutely everything back to the origin remote
+# Reset absolutely everything back to the 
 git reset --hard origin
 ```
 
