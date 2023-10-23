@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NextJS.md",
+                "file": "Placeholders.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NextJS.md",
+                "file": "Placeholders.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NextJS.md",
+                "file": "Placeholders.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NextJS.md"
+                "file": "Placeholders.md"
               }
             }
           }
@@ -161,8 +161,9 @@
   },
   "active": "1b2429e9018548d2",
   "lastOpenFiles": [
-    "Astro.md",
     "NextJS.md",
+    "Placeholders.md",
+    "Astro.md",
     "Web Terminology.md",
     "robots.txt.md",
     "Web Components.md",
@@ -186,7 +187,6 @@
     "Arrays.md",
     "iTerm2.md",
     "zsh.md",
-    "Opinion/Test Doc.md",
     "Opinion"
   ]
 }
