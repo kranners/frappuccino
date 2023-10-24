@@ -25,7 +25,42 @@ Next provides their own [`create-next-app`](https://nextjs.org/docs/pages/api-re
 yarn create next-app
 ```
 
+## Built-ins and API
+
+### `<Image />` component
+
+Resolving local images is done for you in Next by using their [Image component](https://nextjs.org/docs/pages/api-reference/components/image).
+
+```tsx
+import Image from 'next/image';
+
+export function Cat ({ catSource?: string }) {
+	return (
+		<Image 
+			src={catSource ?? 'http://placekitten.com/200/300'}
+			/* The 'fill' forces the image to stretch to fill the container */
+			fill={true}
+
+			/* Without a fill key, you need to specify the width/height */
+			/* in pixels. */
+			width={200}
+			height={300}
+		/>
+	);
+}
+```
+
 ## Usage
+
+### Default styles
+
+NextJS comes with several default styles for their demo app, which can all be found under `globals.css` as a sibling to the root page.
+
+```
+--> src/app (if using src/ folder)
+	--> page.tsx
+	--> globals.css - this file is required by the router
+```
 
 ### Client-side rendering
 

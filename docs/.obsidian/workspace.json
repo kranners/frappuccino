@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "f336f06dd0f08728",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Arrays.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "a0cfd2bef1478f34",
             "type": "leaf",
             "state": {
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -98,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Placeholders.md",
+                "file": "Arrays.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Placeholders.md",
+                "file": "Arrays.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Placeholders.md"
+                "file": "Arrays.md"
               }
             }
           }
@@ -159,7 +172,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1b2429e9018548d2",
+  "active": "f336f06dd0f08728",
   "lastOpenFiles": [
     "NextJS.md",
     "Placeholders.md",
