@@ -16,6 +16,9 @@ For placeholder images, you can use tools like [**Lorem Picsum**](https://picsum
 ```html
 <!-- This tag will get you a random 200x200 image -->
 <img src="https://picsum.photos/200/200" alt="Placeholder" />
+
+<!-- This tag will get you a random 200x300 cat -->
+<img src="http://placekitten.com/200/300" alt="Placeholder cat" />
 ```
 
 ### Lorem ipsum
