@@ -25,6 +25,34 @@ Next provides their own [`create-next-app`](https://nextjs.org/docs/pages/api-re
 yarn create next-app
 ```
 
+## Routing
+
+Routing in Next projects is done using one of two different built-in routers.
+Either the [App Router](https://nextjs.org/docs/app) (the new and recommended one) or the [Pages Router](https://nextjs.org/docs/pages/building-your-application).
+
+You can [use both routers simultaneously](https://nextjs.org/docs/app/building-your-application/routing#the-app-router), however the App Router will take priority.
+
+### Making a new route
+
+For the app router, [you can create a new route](https://nextjs.org/docs/app/building-your-application/routing/defining-routes#creating-routes) by adding any level of nesting folders - which contain a file named `page.js` (or `page.jsx` or `page.tsx`) - which has a single default export of a [React server component](https://nextjs.org/docs/app/building-your-application/rendering/server-components).
+
+To define a new route under `<site>/cool`, it would look like:
+```
+app/
+	page.tsx
+	cool/
+		page.tsx
+```
+
+*app/cool/page.tsx*
+```tsx
+export default function CoolPage() {
+	return (
+		<div>This is my really cool page :)</div>
+	);
+}
+```
+
 ## Built-ins and API
 
 ### `<Image />` component
