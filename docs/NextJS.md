@@ -132,7 +132,7 @@ export default function CSRPage() {
 export default function SomeState() {
 	const [name, setName] = useState<string>("Joffrey");
 
-	/* Imagine there's some state stuff in here */
+	// Imagine there's some state stuff in here 👻
 
 	return <>{name}</>;
 }
