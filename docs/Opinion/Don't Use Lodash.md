@@ -1,5 +1,7 @@
 ---
 tags:
+  - javascript
+  - opinion
 ---
 
 # Don't Use [Lodash](https://lodash.com/)
