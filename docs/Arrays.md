@@ -72,7 +72,7 @@ if (condition) {
 }
 ```
 
-# Array ES Functions
+# Array ES5 Functions
 
 ## Array.prototype.reduce()
 

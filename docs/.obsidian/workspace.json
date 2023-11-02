@@ -25,6 +25,18 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Spread Operator.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c551551cac4960a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Opinion/My Dumb Opinionated JavaScript Styleguide.md",
                 "mode": "source",
                 "source": false
@@ -42,21 +54,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "907602b1ceed6e06",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Opinion/My Dumb Opinionated JavaScript Styleguide.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "introduced ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +102,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -183,19 +184,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ae71786b8fda960e",
+  "active": "c551551cac4960a7",
   "lastOpenFiles": [
+    "Arrays.md",
+    "Opinion/My Dumb Opinionated JavaScript Styleguide.md",
+    "Spread Operator.md",
+    "ECMAScript.md",
+    "Placeholders.md",
+    "Astro.md",
     "Opinion/Don't Use Lodash.md",
     "Tailwind.md",
-    "Placeholders.md",
-    "Opinion/My Dumb Opinionated JavaScript Styleguide.md",
     "NextJS.md",
     "Untitled.md",
     "CSS.md",
-    "Astro.md",
     "CSS Selectors.md",
     "React.md",
-    "Arrays.md",
     "Web Terminology.md",
     "robots.txt.md",
     "Web Components.md",
@@ -207,10 +210,8 @@
     "Strings.md",
     "TypeScript.md",
     "Dates in JavaScript.md",
-    "ECMAScript.md",
     "Command Line.md",
     "AWS.md",
-    "Android Studio.md",
     "Opinion"
   ]
 }
