@@ -18,7 +18,7 @@ You can write things as wacky as you like for development purposes, but just cle
 - Prefer 'declarative' over 'imperative'.
 - Prefer verbose over unclear.
 - Prefer simple and single-use over complex and generic.
-- [Prefer native over dependencies.](#Don't%20Use%20Lodash)
+- [Prefer native over dependencies.](Don't%20Use%20Lodash)
 - Prefer copying over mutating.
 - Prefer stateless over stateful.
 - Prefer lowest scope where possible.
@@ -158,3 +158,22 @@ cards.map((cardProps, index) => (
 
 Like all truly difficult things, the answer is never clear.
 There is a point where verbosity hits [[Java]] levels and you approach the  [`InternalFrameInternalFrameTitlePaneInternalFrameTitlePaneMaximizeButtonWindowNotFocusedState`](https://github.com/zxlooong/jdk16045/blob/master/com/sun/java/swing/plaf/nimbus/InternalFrameInternalFrameTitlePaneInternalFrameTitlePaneMaximizeButtonWindowNotFocusedState.java).
+
+#### "Prefer simple and single-use over complex and generic"
+
+This one is [pretty much just this](http://c2.com/xp/YouArentGonnaNeedIt.html).
+
+TLDR: Don't optimize code for *what you think it could do*, optimize it for *what it does*.
+
+Instead of code examples, here's a little story.
+
+I had a ticket at one point to develop a new page for a fairly generic SaaS dashboard-y product.
+This required a new table to be made, there was no existing suitable `<Table />` component which matched this design, so I figured
+
+> "*Yay! Now I get to make my own super cool, reusable table component.*"
+> - Me (dumb)
+
+I made it ridiculously complicated, it used generics and all sorts of type gymnastics to make it type-safe AND also be able to take in anything as a column type. It would run it through bespoke renderers, validators, sorters, filters, the whole nine yards.
+
+**This new, crazy table component was used once. And never again.**
+
