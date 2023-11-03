@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Opinion/My Dumb Opinionated JavaScript Styleguide.md",
+                "file": "DOM.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Opinion/My Dumb Opinionated JavaScript Styleguide.md",
+                "file": "DOM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Opinion/My Dumb Opinionated JavaScript Styleguide.md",
+                "file": "DOM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Opinion/My Dumb Opinionated JavaScript Styleguide.md"
+                "file": "DOM.md"
               }
             }
           }
@@ -185,8 +185,8 @@
   },
   "active": "c551551cac4960a7",
   "lastOpenFiles": [
-    "Opinion/Don't Use Lodash.md",
     "Opinion/My Dumb Opinionated JavaScript Styleguide.md",
+    "Opinion/Don't Use Lodash.md",
     "Arrays.md",
     "Spread Operator.md",
     "ECMAScript.md",

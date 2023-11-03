@@ -185,3 +185,16 @@ Basically, if you have a choice between doing something natively or doing someth
 
 **Dependencies *are* tech debt. When picking a solution, you need to weigh the cost of adding a dependency to the cost of maintaining your own solution.**
 
+There are plenty of times when you should choose libraries:
+1. If you could not reasonably maintain it yourself, or if this will need constant upgrades. This is true for things like date/time/timezone libraries, as timezones change often.
+2. If you shouldn't trust yourself to write it, this is true for security, cryptography, low-level access driver kind of libraries.
+3. If what it does is sufficiently complex that you couldn't feasibly write it. This is true for frameworks like [React](../React) or [Astro](...Astro).
+
+Note (at least for web) ***you should not* consider performance when picking a library.** Libraries advertise performance to get you to use them, it is rarely necessary and rarely better than native.
+
+#### "Prefer copying over mutating"
+
+**Instead of:**
+```js
+
+```
