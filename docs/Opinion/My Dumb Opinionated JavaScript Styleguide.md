@@ -177,3 +177,11 @@ I made it ridiculously complicated, it used generics and all sorts of type gymna
 
 **This new, crazy table component was used once. And never again.**
 
+#### "Prefer native over dependencies"
+
+I have [already text-ranted about this at length](Don't%20Use%20Lodash), so won't repeat myself here.
+
+Basically, if you have a choice between doing something natively or doing something using a framework / library / dependency - lean towards the native solution.
+
+**Dependencies *are* tech debt. When picking a solution, you need to weigh the cost of adding a dependency to the cost of maintaining your own solution.**
+
