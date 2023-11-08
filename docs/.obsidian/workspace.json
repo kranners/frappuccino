@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DOM.md",
+                "file": "AWS.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DOM.md",
+                "file": "AWS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DOM.md",
+                "file": "AWS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DOM.md"
+                "file": "AWS.md"
               }
             }
           }
@@ -185,6 +185,8 @@
   },
   "active": "c551551cac4960a7",
   "lastOpenFiles": [
+    "NextJS.md",
+    "DOM.md",
     "Opinion/My Dumb Opinionated JavaScript Styleguide.md",
     "Opinion/Don't Use Lodash.md",
     "Arrays.md",
@@ -193,7 +195,6 @@
     "Placeholders.md",
     "Astro.md",
     "Tailwind.md",
-    "NextJS.md",
     "Untitled.md",
     "CSS.md",
     "CSS Selectors.md",
@@ -210,7 +211,6 @@
     "TypeScript.md",
     "Dates in JavaScript.md",
     "Command Line.md",
-    "AWS.md",
     "Opinion"
   ]
 }
