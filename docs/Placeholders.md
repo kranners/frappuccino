@@ -9,6 +9,10 @@ tags:
 
 Often you will need placeholder images or content in pages which are under development.
 
+### Texture
+
+For patterns / textures, check out [Hero Patterns](https://heropatterns.com/). You can get raw SVGs, or styled components to copy & paste.
+
 ### Placeholder images
 
 For placeholder images, you can use tools like [**Lorem Picsum**](https://picsum.photos/) (for more generic images), or **[placekitten](https://placekitten.com/)** (for cats).
