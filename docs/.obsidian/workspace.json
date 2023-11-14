@@ -44,6 +44,16 @@
             }
           },
           {
+            "id": "24978071324ac8cd",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.16"
+              }
+            }
+          },
+          {
             "id": "a0cfd2bef1478f34",
             "type": "leaf",
             "state": {
@@ -56,7 +66,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -183,7 +193,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c551551cac4960a7",
+  "active": "24978071324ac8cd",
   "lastOpenFiles": [
     "Custom Elements.md",
     "Untitled.md",
