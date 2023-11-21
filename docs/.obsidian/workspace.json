@@ -44,6 +44,18 @@
             }
           },
           {
+            "id": "3024aed1d62e3439",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NextJS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "a0cfd2bef1478f34",
             "type": "leaf",
             "state": {
@@ -56,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git.md",
+                "file": "NextJS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git.md",
+                "file": "NextJS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git.md"
+                "file": "NextJS.md"
               }
             }
           }
@@ -183,8 +195,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c551551cac4960a7",
+  "active": "3024aed1d62e3439",
   "lastOpenFiles": [
+    "Git.md",
     "Placeholders.md",
     "Custom Elements.md",
     "Untitled.md",
@@ -206,7 +219,6 @@
     "robots.txt.md",
     "Web Components.md",
     "ESLint.md",
-    "Git.md",
     "Turborepo.md",
     "Software Licensing.md",
     "Strings.md",
