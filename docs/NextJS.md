@@ -151,3 +151,47 @@ src/
 --> app/
     --> robots.txt
 ```
+
+### Import Aliases
+
+```js
+// Don't do this!
+import { Text } from '../../../../components/typography';
+
+// Do this 😎
+import { Text } from '@components/typography';
+
+// Or, here's an example absolute import, from the root directory
+// In this case 'components' resolves to 'src/components'.
+import { Text } from 'components/typography';
+```
+
+Configure these either in a [TSConfig](TypeScript#Configuration) or in an equivalent `jsconfig.json`.
+
+*Example configuration using only paths:*
+```json
+{
+	"compilerOptions": {
+		"paths": {
+			"@components/*": ["src/components/*"],
+			"@hooks/*": ["src/hooks/*"],
+		}
+	}
+}
+```
+
+*Example configuration using paths and `baseUrl`*:
+```json
+{
+	"compilerOptions": {
+		"baseUrl": "src/",
+		"paths": {
+			"@components/*": ["components/*"],
+			"@hooks/*": ["hooks/*"],
+		}
+	}
+}
+```
+
+#### Import Aliases and [[ESLint]]
+

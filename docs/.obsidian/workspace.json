@@ -8,48 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1b2429e9018548d2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Placeholders.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ae71786b8fda960e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Spread Operator.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c551551cac4960a7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Git.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3024aed1d62e3439",
+            "id": "e06b3f7e03238b94",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "NextJS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "48840a95a45b9d68",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TypeScript.md",
                 "mode": "source",
                 "source": false
               }
@@ -67,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -195,22 +170,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3024aed1d62e3439",
+  "active": "e06b3f7e03238b94",
   "lastOpenFiles": [
     "Git.md",
+    "Spread Operator.md",
     "Placeholders.md",
+    "NextJS.md",
+    "TypeScript.md",
+    "Astro.md",
     "Custom Elements.md",
     "Untitled.md",
     "Bun.md",
     "AWS.md",
-    "NextJS.md",
     "DOM.md",
     "Opinion/My Dumb Opinionated JavaScript Styleguide.md",
     "Opinion/Don't Use Lodash.md",
     "Arrays.md",
-    "Spread Operator.md",
     "ECMAScript.md",
-    "Astro.md",
     "Tailwind.md",
     "CSS.md",
     "CSS Selectors.md",
@@ -222,7 +198,6 @@
     "Turborepo.md",
     "Software Licensing.md",
     "Strings.md",
-    "TypeScript.md",
     "Opinion"
   ]
 }
