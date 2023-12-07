@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "yarn.md",
+                "file": "Arrays.md",
                 "mode": "source",
                 "source": false
               }
@@ -72,7 +72,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "introduced ",
+                "query": "sort",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +89,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -109,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "yarn.md",
+                "file": "Arrays.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "yarn.md",
+                "file": "Arrays.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "yarn.md"
+                "file": "Arrays.md"
               }
             }
           }
@@ -172,6 +173,7 @@
   },
   "active": "e06b3f7e03238b94",
   "lastOpenFiles": [
+    "yarn.md",
     "Git.md",
     "NextJS.md",
     "Spread Operator.md",
@@ -197,7 +199,6 @@
     "ESLint.md",
     "Turborepo.md",
     "Software Licensing.md",
-    "Strings.md",
     "Opinion"
   ]
 }
