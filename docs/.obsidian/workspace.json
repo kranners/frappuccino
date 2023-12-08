@@ -72,7 +72,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sort",
+                "query": "reduce",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -173,12 +173,13 @@
   },
   "active": "e06b3f7e03238b94",
   "lastOpenFiles": [
+    "TypeScript.md",
+    "Arrays.md",
     "yarn.md",
     "Git.md",
     "NextJS.md",
     "Spread Operator.md",
     "Placeholders.md",
-    "TypeScript.md",
     "Astro.md",
     "Custom Elements.md",
     "Untitled.md",
@@ -187,7 +188,6 @@
     "DOM.md",
     "Opinion/My Dumb Opinionated JavaScript Styleguide.md",
     "Opinion/Don't Use Lodash.md",
-    "Arrays.md",
     "ECMAScript.md",
     "Tailwind.md",
     "CSS.md",
