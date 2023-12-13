@@ -1,4 +1,5 @@
 {
   "accentColor": "#6bef93",
-  "theme": "moonstone"
+  "theme": "moonstone",
+  "baseFontSize": 15
 }
