@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Storybook.md",
+                "file": "Arrays.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "es2020",
+                "query": "toSorted",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Storybook.md",
+                "file": "Arrays.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Storybook.md",
+                "file": "Arrays.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Storybook.md"
+                "file": "Arrays.md"
               }
             }
           }
@@ -186,8 +186,8 @@
   },
   "active": "b2e3f027d17e1189",
   "lastOpenFiles": [
-    "TypeScript.md",
     "Storybook.md",
+    "TypeScript.md",
     "ECMAScript.md",
     "Xcode.md",
     "Arrays.md",

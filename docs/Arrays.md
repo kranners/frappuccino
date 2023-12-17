@@ -162,6 +162,25 @@ const salesByFruit = sales.reduce((acc, { fruit, price }) => {
 
 The rest of this section will be for `Array.prototype.toSorted()` instead, as that is the modern copying version.
 
+#### Compatibility
+
+There should be no issue using `toSorted()` in a browser, however your [[Node]] (and consequently [[Jest]] versions) may struggle.
+
+`toSorted()` is supported as of Node v20.0.0, which was released 18th April 2023.
+
+If your Node version is not supported, you can use this alternative syntax:
+```js
+// Node >= 20.0.0
+const unsorted = getRandomStuff();
+const sorted = unsorted.toSorted(mySortingFunction);
+
+// Node < 20.0.0
+const unsorted = getRandomStuff();
+const sorted = [...unsorted].sort(mySortingFunction);
+```
+
+[*See the MDN official docs for more info on this.*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted#browser_compatibility)
+
 **NOTE:** [As of Typescript 5.2, there are definitions for the copying array methods.](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2/#copying-array-methods)
 
 #### Syntax
