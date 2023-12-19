@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Arrays.md",
+                "file": "Jest.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "toSorted",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,8 +102,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -123,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Arrays.md",
+                "file": "Jest.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Arrays.md",
+                "file": "Jest.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Arrays.md"
+                "file": "Jest.md"
               }
             }
           }
@@ -186,11 +185,12 @@
   },
   "active": "b2e3f027d17e1189",
   "lastOpenFiles": [
+    "Arrays.md",
+    "Jest.md",
     "Storybook.md",
     "TypeScript.md",
     "ECMAScript.md",
     "Xcode.md",
-    "Arrays.md",
     "yarn.md",
     "Git.md",
     "NextJS.md",
@@ -211,7 +211,6 @@
     "Web Terminology.md",
     "robots.txt.md",
     "Web Components.md",
-    "ESLint.md",
     "Opinion"
   ]
 }
