@@ -110,3 +110,7 @@ describe('queue', () => {
 
 Mocking out third party libraries is often necessary when dealing with testing logic with consequences, like payment, authentication, etc.
 
+This is generally done in one of two ways:
+
+1. [`jest.mock()`](https://jestjs.io/docs/jest-object#jestmockmodulename-factory-options) - useful for if you don't need any original functionality, unit tests
+2. [`jest.spyOn()`](https://jestjs.io/docs/jest-object#jestspyonobject-methodname) - for when you do need the original functionality, integration tests
