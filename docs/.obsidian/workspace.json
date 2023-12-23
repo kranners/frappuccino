@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Placeholders.md",
+                "file": "Jest.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Placeholders.md",
+                "file": "Jest.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Placeholders.md"
+                "file": "Jest.md"
               }
             }
           }
@@ -195,8 +195,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d955ab5af020dc9f",
+  "active": "b2e3f027d17e1189",
   "lastOpenFiles": [
+    "Placeholders.md",
     "Jest.md",
     "Arrays.md",
     "Storybook.md",
@@ -207,7 +208,6 @@
     "Git.md",
     "NextJS.md",
     "Spread Operator.md",
-    "Placeholders.md",
     "Astro.md",
     "Custom Elements.md",
     "Untitled.md",
