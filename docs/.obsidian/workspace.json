@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git.md",
+                "file": "Jest.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git.md",
+                "file": "Jest.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git.md",
+                "file": "Jest.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git.md"
+                "file": "Jest.md"
               }
             }
           }
@@ -148,6 +149,7 @@
   },
   "active": "b2e3f027d17e1189",
   "lastOpenFiles": [
+    "Git.md",
     "yarn.md",
     "Jest.md",
     "Placeholders.md",
@@ -156,7 +158,6 @@
     "TypeScript.md",
     "ECMAScript.md",
     "Xcode.md",
-    "Git.md",
     "NextJS.md",
     "Spread Operator.md",
     "Astro.md",
