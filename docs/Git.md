@@ -163,6 +163,21 @@ git checkout main
 git reset --hard HEAD~3
 ```
 
+#### Stash EVERYTHING (including untracked files)
+
+```shell
+# Stash including untracked files
+git stash --include-untracked
+
+# This is an alias for the above
+git stash -u
+
+# Stash EVERYTHING, untracked files and ignored files
+# This one is potentially dangerous
+# https://web.archive.org/web/20140310215100/http://blog.icefusion.co.uk:80/git-stash-can-delete-ignored-files-git-stash-u/
+git stash --all
+```
+
 #### Remove all untracked files
 
 To just remove all untracked files, folders, or ignored files it's:
