@@ -208,6 +208,13 @@ git checkout -b my/new-branch
 git switch --create my/new-branch # -c is shorthand for --create
 ```
 
+#### Get a specific file from a branch
+
+```shell
+# Get a file from the master branch
+git checkout master -- file.txt
+```
+
 #### Update previous commit
 
 ```shell
