@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git.md",
+                "file": "HTML.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7798cc099e33c324",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DOM.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "08c83a66ff0ec684",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +89,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git.md",
+                "file": "HTML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git.md",
+                "file": "HTML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git.md"
+                "file": "HTML.md"
               }
             }
           }
@@ -149,9 +172,12 @@
   },
   "active": "b2e3f027d17e1189",
   "lastOpenFiles": [
+    "JavaScript.md",
+    "DOM.md",
+    "HTML.md",
+    "Git.md",
     "yarn.md",
     "Jest.md",
-    "Git.md",
     "Placeholders.md",
     "Arrays.md",
     "Storybook.md",
@@ -165,7 +191,6 @@
     "Untitled.md",
     "Bun.md",
     "AWS.md",
-    "DOM.md",
     "Opinion/My Dumb Opinionated JavaScript Styleguide.md",
     "Opinion/Don't Use Lodash.md",
     "Tailwind.md",
@@ -173,8 +198,6 @@
     "CSS Selectors.md",
     "React.md",
     "Web Terminology.md",
-    "robots.txt.md",
-    "Web Components.md",
     "Opinion"
   ]
 }
