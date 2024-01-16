@@ -20,16 +20,6 @@
             }
           },
           {
-            "id": "72e3c3098e1c06d0",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.5.3"
-              }
-            }
-          },
-          {
             "id": "7798cc099e33c324",
             "type": "leaf",
             "state": {
@@ -53,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -181,7 +170,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "72e3c3098e1c06d0",
+  "active": "b2e3f027d17e1189",
   "lastOpenFiles": [
     "JavaScript.md",
     "DOM.md",
