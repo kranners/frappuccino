@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTML.md",
+                "file": "Opinion/Don't Use Lodash.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HTML.md",
+                "file": "Opinion/Don't Use Lodash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HTML.md",
+                "file": "Opinion/Don't Use Lodash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HTML.md"
+                "file": "Opinion/Don't Use Lodash.md"
               }
             }
           }
@@ -172,9 +172,10 @@
   },
   "active": "b2e3f027d17e1189",
   "lastOpenFiles": [
+    "Opinion/My Dumb Opinionated JavaScript Styleguide.md",
+    "HTML.md",
     "JavaScript.md",
     "DOM.md",
-    "HTML.md",
     "Git.md",
     "yarn.md",
     "Jest.md",
@@ -191,7 +192,6 @@
     "Untitled.md",
     "Bun.md",
     "AWS.md",
-    "Opinion/My Dumb Opinionated JavaScript Styleguide.md",
     "Opinion/Don't Use Lodash.md",
     "Tailwind.md",
     "CSS.md",
