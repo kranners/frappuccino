@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b2e3f027d17e1189",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Opinion/Don't Use Lodash.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "7798cc099e33c324",
             "type": "leaf",
             "state": {
@@ -109,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Opinion/Don't Use Lodash.md",
+                "file": "DOM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Opinion/Don't Use Lodash.md",
+                "file": "DOM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Opinion/Don't Use Lodash.md"
+                "file": "DOM.md"
               }
             }
           }
@@ -170,8 +158,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b2e3f027d17e1189",
+  "active": "7798cc099e33c324",
   "lastOpenFiles": [
+    "Opinion/Don't Use Lodash.md",
     "Opinion/My Dumb Opinionated JavaScript Styleguide.md",
     "HTML.md",
     "JavaScript.md",
@@ -192,7 +181,6 @@
     "Untitled.md",
     "Bun.md",
     "AWS.md",
-    "Opinion/Don't Use Lodash.md",
     "Tailwind.md",
     "CSS.md",
     "CSS Selectors.md",
