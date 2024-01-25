@@ -49,5 +49,32 @@ export const RedCard = styled.div`
 <RedCard borderRadius="100%">Now it's a circle ⭕️</RedCard>
 ```
 
-### Use the `styled-system` API to make a ton of inlining
+### Using `styled-system` categories
 
+*Header with overridable typography props*
+```jsx
+import styled from 'styled-components';
+import { typography } from 'styled-system';
+
+export const Header = styled.h2`
+	${typography}
+`;
+
+// Now we have various props defined for us, instead of manually defining them
+<Header fontFamily="Curlz MT" fontSize="28px" textAlign="center">
+	Design is my passion
+</Header>
+```
+
+There are many of these, each with their own props and CSS properties they relate to, for example `typography` is:
+
+|Prop|CSS Property|Theme Field|
+|---|---|---|
+|`fontFamily`|`font-family`|`fonts`|
+|`fontSize`|`font-size`|`fontSizes`|
+|`fontWeight`|`font-weight`|`fontWeights`|
+|`lineHeight`|`line-height`|`lineHeights`|
+|`letterSpacing`|`letter-spacing`|`letterSpacings`|
+|`textAlign`|`text-align`|none|
+|`fontStyle`|`font-style`|none|
+[*For all of the styled system categories, see their Reference Table*](https://styled-system-docs.vercel.app/reference-table)
