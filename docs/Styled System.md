@@ -19,7 +19,7 @@ yarn add @techstack/styled-system styled-components
 
 ### Create a `styled` component
 
-*card.jsx*
+*Basic card component:*
 ```jsx
 import styled from 'styled-components';
 
@@ -32,4 +32,22 @@ export const Card = styled.div`
 // Ready for use later!
 <Card>Some content would go in here</Card>
 ```
+
+*Card with inlining*:
+```jsx
+import styled from 'styled-components';
+
+const THE_BEST_COLOR = 'red';
+
+export const RedCard = styled.div`
+	...
+	color: ${THE_BEST_COLOR};
+	border-radius: ${({ borderRadius }) => borderRadius};
+`;
+
+// Now we can pass in a borderRadius prop to specify
+<RedCard borderRadius="100%">Now it's a circle ⭕️</RedCard>
+```
+
+### Use the `styled-system` API to make a ton of inlining
 
