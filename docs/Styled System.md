@@ -66,7 +66,7 @@ export const Header = styled.h2`
 </Header>
 ```
 
-There are many of these, each with their own props and CSS properties they relate to, for example `typography` is:
+There are many of these, each with their own props and CSS properties they relate to, for example [`typography` is](https://styled-system-docs.vercel.app/reference-table):
 
 |Prop|CSS Property|Theme Field|
 |---|---|---|
