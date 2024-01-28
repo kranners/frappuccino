@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "41a41e3b9c08107a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software Licensing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "08c83a66ff0ec684",
             "type": "leaf",
             "state": {
@@ -160,12 +172,13 @@
   },
   "active": "7798cc099e33c324",
   "lastOpenFiles": [
-    "DOM.md",
+    "JavaScript.md",
+    "Software Licensing.md",
     "Styled System.md",
+    "DOM.md",
     "Opinion/Don't Use Lodash.md",
     "Opinion/My Dumb Opinionated JavaScript Styleguide.md",
     "HTML.md",
-    "JavaScript.md",
     "Git.md",
     "yarn.md",
     "Jest.md",
@@ -185,7 +198,6 @@
     "Tailwind.md",
     "CSS.md",
     "CSS Selectors.md",
-    "React.md",
     "Opinion"
   ]
 }
