@@ -78,6 +78,8 @@ npx tsc --init
 }
 ```
 
+For more info on [the `engines` property, see the official docs](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#visual-studio-code-compatibility).
+
 4. Install `@vscode/vsce` for packaging, and any other required library.
 ```shell
 # You will always need this one.
@@ -104,30 +106,16 @@ Replace your TSConfig with:
 }
 ```
 
-5. *(Optional if using [[TypeScript]])* Add the types to your TSConfig
-```json
-{
-	"compilerOptions": {
-		"types": [
-			// This one is only needed if you're using Bun. Like a cool guy.
-			"bun-types",
-			"node",
-			"vscode"
-		]
-	}
-}
-```
-
-6. Export two functions from your *index.ts*, `activate()` and `deactivate()`.
+5. Export two functions from your *index.ts*, `activate()` and `deactivate()`.
 ```typescript
 export function activate() {}
 
 export function deactivate() {}
 ```
 
-7. Create a *LICENSE.md*. See [[Software Licensing]] to see one to pick.
+6. Create a *LICENSE.md*. See [[Software Licensing]] to see one to pick.
 
-8. Set up your [[Git]] repository, filling out the `repository` field in your *package.json*.
+7. Set up your [[Git]] repository, filling out the `repository` field in your *package.json*.
 ```json
 {
 	"repository": {
@@ -171,6 +159,53 @@ From here, I'd recommend a couple of scripts added to *package.json*:
 	}
 }
 ```
+
+### Adding a new command
+
+[*For more info on extension commands, see their official documentation.*](https://code.visualstudio.com/api/extension-guides/command)
+
+1. Start by adding the command metadata to your *package.json* `contributes` field:
+```json
+{
+	"contributes": {
+		"commands": [
+			{
+				// The internal ID of your command
+				"command": "myExtension.internalName",
+
+				// The display name of your command to users
+				"title": "Go crazy aaaa",
+
+				// Optional, also used in the display name "Stuff: Go crazy aaaa"
+				"category": "Stuff",
+
+				// Optional, 16x16 svg with 2px padding icon for display
+				"icon": {
+					"light": "path/to/light/icon.svg",
+					"dark": "path/to/dark/icon.svg"
+				}
+			}
+		]
+	}
+}
+```
+
+2. In your extension entrypoint, register and push the command into your extension context:
+```typescript
+import { ExtensionContext, commands } from "vscode";
+
+export function activate(context: ExtensionContext): void {
+  context.subscriptions.push(
+    commands.registerCommand("myExtension.internalName", () => {
+      console.log("Hi 👋");
+    })
+  );    
+}
+
+export function deactivate() {}
+```
+**NOTE:** The name given in `registerCommand()` MUST match the name in your `contributes`.
+
 ## Configuration
 
 [*For more configuration options than are listed here, check out the extension manifest.*](https://code.visualstudio.com/api/references/extension-manifest)
@@ -209,7 +244,5 @@ To break out of this system entirely (and be a bit of a jerk) VSCode provides a 
 ### Contributes
 
 VSCode can keep track of things that your extension does *without* it being activated, these are registered in the extension using *[contribution points](https://code.visualstudio.com/api/references/contribution-points).*
-
-
 
 [*For more information, check out the VSCode documentation on contribution points.*](https://code.visualstudio.com/api/references/contribution-points)

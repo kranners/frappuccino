@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Styled System.md",
+                "file": "VSCode.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Styled System.md",
+                "file": "VSCode.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Styled System.md",
+                "file": "VSCode.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Styled System.md"
+                "file": "VSCode.md"
               }
             }
           }
@@ -172,9 +172,9 @@
   },
   "active": "7798cc099e33c324",
   "lastOpenFiles": [
+    "Styled System.md",
     "JavaScript.md",
     "Software Licensing.md",
-    "Styled System.md",
     "DOM.md",
     "Opinion/Don't Use Lodash.md",
     "Opinion/My Dumb Opinionated JavaScript Styleguide.md",
