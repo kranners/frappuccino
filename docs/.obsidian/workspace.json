@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VSCode.md",
+                "file": "ESLint.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VSCode.md",
+                "file": "ESLint.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "VSCode.md",
+                "file": "ESLint.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "VSCode.md"
+                "file": "ESLint.md"
               }
             }
           }
@@ -172,6 +172,7 @@
   },
   "active": "7798cc099e33c324",
   "lastOpenFiles": [
+    "VSCode.md",
     "Styled System.md",
     "JavaScript.md",
     "Software Licensing.md",
@@ -197,7 +198,6 @@
     "AWS.md",
     "Tailwind.md",
     "CSS.md",
-    "CSS Selectors.md",
     "Opinion"
   ]
 }
