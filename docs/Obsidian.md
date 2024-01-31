@@ -42,6 +42,17 @@ To find notes with particular paths, use the `path:` operator like `Obsidian.md`
 
 Tags can be added to anywhere with the hash (#) key, like `#cool-tag` but for whole pages, they should be added to the metadata, where the hash is unnecessary.
 
+### Daily Notes
+
+Daily notes are a great way to have a place to throw notes that don't belong anywhere in particular.
+Obsidian is fantastic as a way to store working memory (relevant links, resources).
+
+Daily notes are configurable to begin with a template in case there are things you always end up noting. They can also be configured to have a different naming convention or to automatically sort themselves into folders.
+
+This can be done in your vault settings under **Settings → Daily Notes → Date format**.
+
+*I personally recommend a format which sorts into folders. I use `YYYY/MM/Do MMMM, YYYY`, which ends up with daily notes sorted like `2024/01/1st January, 2024`*.
+
 ## Plugins
 
 ### Tasks

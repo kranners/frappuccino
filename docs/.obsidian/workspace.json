@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ESLint.md",
+                "file": "VSCode.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d387b28bbff727cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Obsidian.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ESLint.md",
+                "file": "Obsidian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ESLint.md",
+                "file": "Obsidian.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ESLint.md"
+                "file": "Obsidian.md"
               }
             }
           }
@@ -170,9 +183,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7798cc099e33c324",
+  "active": "d387b28bbff727cd",
   "lastOpenFiles": [
     "VSCode.md",
+    "Obsidian.md",
+    "Prettier.md",
+    "ESLint.md",
     "Styled System.md",
     "JavaScript.md",
     "Software Licensing.md",
@@ -195,9 +211,6 @@
     "Custom Elements.md",
     "Untitled.md",
     "Bun.md",
-    "AWS.md",
-    "Tailwind.md",
-    "CSS.md",
     "Opinion"
   ]
 }
