@@ -206,10 +206,6 @@ export function deactivate() {}
 ```
 **NOTE:** The name given in `registerCommand()` MUST match the name in your `contributes`.
 
-### Using the active document and position
-
-
-
 ## Configuration
 
 [*For more configuration options than are listed here, check out the extension manifest.*](https://code.visualstudio.com/api/references/extension-manifest)
