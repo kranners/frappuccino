@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VSCode.md",
+                "file": "Styled System.md",
                 "mode": "source",
                 "source": false
               }
@@ -55,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -121,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VSCode.md",
+                "file": "Obsidian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "VSCode.md",
+                "file": "Obsidian.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "VSCode.md"
+                "file": "Obsidian.md"
               }
             }
           }
@@ -182,13 +183,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7798cc099e33c324",
+  "active": "d387b28bbff727cd",
   "lastOpenFiles": [
-    "Obsidian.md",
+    "Styled System.md",
     "VSCode.md",
+    "Obsidian.md",
     "Prettier.md",
     "ESLint.md",
-    "Styled System.md",
     "JavaScript.md",
     "Software Licensing.md",
     "DOM.md",
