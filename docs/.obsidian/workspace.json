@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian.md",
+                "file": "Arrays.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "sort",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +102,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -122,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Obsidian.md",
+                "file": "Arrays.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Obsidian.md",
+                "file": "Arrays.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Obsidian.md"
+                "file": "Arrays.md"
               }
             }
           }
@@ -185,9 +186,9 @@
   },
   "active": "d387b28bbff727cd",
   "lastOpenFiles": [
+    "Obsidian.md",
     "Styled System.md",
     "VSCode.md",
-    "Obsidian.md",
     "Prettier.md",
     "ESLint.md",
     "JavaScript.md",
