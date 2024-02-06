@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Arrays.md",
+                "file": "TypeScript.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sort",
+                "query": "type guard",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Arrays.md",
+                "file": "TypeScript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Arrays.md",
+                "file": "TypeScript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Arrays.md"
+                "file": "TypeScript.md"
               }
             }
           }
@@ -186,6 +186,7 @@
   },
   "active": "d387b28bbff727cd",
   "lastOpenFiles": [
+    "Arrays.md",
     "Obsidian.md",
     "Styled System.md",
     "VSCode.md",
@@ -201,7 +202,6 @@
     "yarn.md",
     "Jest.md",
     "Placeholders.md",
-    "Arrays.md",
     "Storybook.md",
     "TypeScript.md",
     "ECMAScript.md",
