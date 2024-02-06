@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript.md",
+                "file": "VSCode.md",
                 "mode": "source",
                 "source": false
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TypeScript.md",
+                "file": "VSCode.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TypeScript.md",
+                "file": "VSCode.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TypeScript.md"
+                "file": "VSCode.md"
               }
             }
           }
@@ -186,6 +186,7 @@
   },
   "active": "d387b28bbff727cd",
   "lastOpenFiles": [
+    "TypeScript.md",
     "Arrays.md",
     "Obsidian.md",
     "Styled System.md",
@@ -203,7 +204,6 @@
     "Jest.md",
     "Placeholders.md",
     "Storybook.md",
-    "TypeScript.md",
     "ECMAScript.md",
     "Xcode.md",
     "NextJS.md",

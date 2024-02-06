@@ -206,6 +206,17 @@ export function deactivate() {}
 ```
 **NOTE:** The name given in `registerCommand()` MUST match the name in your `contributes`.
 
+## Debugging and Troubleshooting
+
+### "Help! My extension won't activate and I don't know why!"
+
+Failures at activation can be spotted in the Extension Host logs.
+
+You can get to the Extension Host logs either from the Output tab, or if there is no output tab:
+1. ⌘ + ⇧ + P to open the command palette (or the Windows equivalent)
+2. Run the command *Output: Show output channels*
+3. Type *Extension Host* and hit enter.
+
 ## Configuration
 
 [*For more configuration options than are listed here, check out the extension manifest.*](https://code.visualstudio.com/api/references/extension-manifest)
