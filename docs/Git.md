@@ -225,6 +225,54 @@ git commit --amend --no-edit
 git config --global alias.amend 'commit --amend --no-edit'
 ```
 
+#### Troubleshooting with a bisect
+
+If something broke in the past for unknown reasons, then a bisect is a great way of narrowing down causes.
+
+A bisect is a semi-manual binary tree search for the first broken commit.
+For example, given 5 commits:
+1. A <- You are here
+2. B
+3. C
+4. D <- This is the broken commit
+5. E <- This is the latest known working version
+
+The bisect would start by marking **A** as a "bad" commit, and marking **E** as a "good" commit.
+Bisect would then drop you in between them:
+1. A <- Marked as bad
+2. B
+3. C <- You are here (dropped here by bisect)
+4. D <- This is the broken commit
+5. E <- Marked as good
+
+At this point you would then mark **C** as "bad", and the bisect would continue to D.
+1. A <- Marked as bad
+2. B <- Skipped over by bisect
+3. C <- Marked as bad
+4. D <- You are here
+5. E <- Marked as good
+
+You would then mark D as "bad" and would be found as the final bisect.
+Performing this in the command line would look like:
+
+```shell
+# Start the bisecting process, on your HEAD commit
+git bisect start
+
+# Mark A (your commit) as bad
+git bisect bad
+
+# Mark E as good
+git bisect good <commit hash>
+
+# From here, the steps are to reproduce your failure and mark as good or bad as fit
+npm test
+git bisect good|bad
+
+# Once the bisect is done, reset back. Or run this whenever things break
+git bisect reset
+```
+
 #### Split an existing branch by files
 
 Doing this will remove your commit history from the original branch.
