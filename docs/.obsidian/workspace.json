@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript.md",
+                "file": "Jest.md",
                 "mode": "source",
                 "source": false
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TypeScript.md",
+                "file": "Jest.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TypeScript.md",
+                "file": "Jest.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TypeScript.md"
+                "file": "Jest.md"
               }
             }
           }
@@ -186,9 +186,9 @@
   },
   "active": "d387b28bbff727cd",
   "lastOpenFiles": [
+    "TypeScript.md",
     "Git.md",
     "VSCode.md",
-    "TypeScript.md",
     "Arrays.md",
     "Obsidian.md",
     "Styled System.md",
