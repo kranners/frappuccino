@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "cb3a2a865ee61b7a",
+        "id": "1e16a4fd03cef630",
         "type": "tabs",
         "children": [
           {
-            "id": "ce53b9aa93a22f13",
+            "id": "69ecc26638ee6da7",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -139,8 +139,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ce53b9aa93a22f13",
+  "active": "69ecc26638ee6da7",
   "lastOpenFiles": [
+    "2024-02-27.md",
     "JavaScript.md",
     "Software Licensing.md",
     "fnm.md",
@@ -166,7 +167,6 @@
     "Spread Operator.md",
     "Astro.md",
     "Custom Elements.md",
-    "Untitled.md",
     "Opinion"
   ]
 }
