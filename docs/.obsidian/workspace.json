@@ -13,13 +13,62 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Styled System.md",
+                "file": "Component Libraries.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d386f5f7cc78960f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pv.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6932aa8a6ea2b2ad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dd.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "08a1be152e7bbf65",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Arch Linux.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6cd73d10ce1f8a37",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Command Line.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -85,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Styled System.md",
+                "file": "Arch Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Styled System.md",
+                "file": "Arch Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Styled System.md"
+                "file": "Arch Linux.md"
               }
             }
           }
@@ -146,13 +195,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "69ecc26638ee6da7",
+  "active": "08a1be152e7bbf65",
   "lastOpenFiles": [
+    "dd.md",
+    "pv.md",
+    "Component Libraries.md",
+    "Command Line.md",
+    "Arch Linux.md",
+    "Styled System.md",
+    "shadcn/ui.md",
+    "shadcn",
+    "Web Terminology.md",
+    "Web Components.md",
+    "Placeholders.md",
     "2024-02-27.md",
     "JavaScript.md",
     "Software Licensing.md",
     "fnm.md",
-    "Styled System.md",
     "Jest.md",
     "TypeScript.md",
     "Git.md",
@@ -165,15 +224,6 @@
     "Opinion/Don't Use Lodash.md",
     "Opinion/My Dumb Opinionated JavaScript Styleguide.md",
     "HTML.md",
-    "yarn.md",
-    "Placeholders.md",
-    "Storybook.md",
-    "ECMAScript.md",
-    "Xcode.md",
-    "NextJS.md",
-    "Spread Operator.md",
-    "Astro.md",
-    "Custom Elements.md",
     "Opinion"
   ]
 }
