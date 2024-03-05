@@ -218,7 +218,7 @@ Compare functions take in two arguments of the list's type, and return a number.
 
 #### Example
 
-Sort a list of numbers.
+Sort a list of numbers:
 
 ```javascript
 const costs = [1, 2, 11, 5, 55, 6, 12];
@@ -231,6 +231,18 @@ const ascendingCosts = costs.toSorted((a, b) => a - b);
 // [ 1, 11, 12, 2, 5, 55, 6 ]
 const costs.toSorted();
 ```
+
+Sort a list of words in alphabetical order, locale agnostic:
+
+```javascript
+const dictionary = ["Werewolf", "Canteloupe", "Aardvark"];
+
+const alphabetical = (a, b) => a.localeCompare(b);
+
+// ["Aardvark", "Canteloupe", "Werewolf"]
+const sortedDictionary = dictionary.toSorted(alphabetical);
+```
+*Also see [String.prototype.localeCompare()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare)*
 
 ## Array.prototype.filter()
 
