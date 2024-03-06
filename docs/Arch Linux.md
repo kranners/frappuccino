@@ -8,11 +8,11 @@ tags:
 
 [Arch](https://wiki.archlinux.org/title/Arch_Linux) is a lightweight and simple distribution which aims to provide the bleeding edge of most software by following a [rolling release model](https://en.wikipedia.org/wiki/Rolling_release).
 
-## Notes from installation
+This page is mainly following research and steps involved in setting up a new Arch installation.
 
-### Entry and verification
+## Entry and verification
 
-*What is UEFI?*
+**What is UEFI?**
 [UEFI (Unified Extensible Firmware Interface)](https://en.wikipedia.org/wiki/UEFI) is the second coming of BIOS, and is the platform that generally all modern computers use for booting. It allows for secure boot, 64-bit pre-OS environments and the ability to boot from large partitions (greater than 2TB).
 Even if your computer claims to have a 'BIOS', it is probably actually just using UEFI.
 
@@ -35,9 +35,9 @@ timedatectl list-timezones
 timedatectl set-timezone Australia/Melbourne
 ```
 
-### Partitioning
+## Partitioning
 
-##### Checkup and setup
+### Checkup and setup
 > If the disk from which you want to boot [already has an EFI system partition](https://wiki.archlinux.org/title/EFI_system_partition#Check_for_an_existing_partition "EFI system partition"), do not create another one, but use the existing partition instead.
 
 *[Arch Wiki](https://wiki.archlinux.org/title/Installation_guide)*
@@ -52,12 +52,12 @@ sfdisk -d /dev/sdb > sdb.dump
 sfdisk /dev/sdb < sdb.dump
 ```
 
-##### Choosing a partition table format
+### Choosing a partition table format
 You will generally want to use [GUID partition table (GPT)](https://en.wikipedia.org/wiki/GUID_Partition_Table) over [master boot record (MBR)](https://en.wikipedia.org/wiki/Master_boot_record) as it is the more recent standard and has supports for larger partition sizes, more partitions, data integrity, etc. The only downside is compatibility with older systems.
 
 The GUID partition table is part of the UEFI specification, so you probably want to use it if using UEFI. Which you likely are.
 
-##### Ensuring optimal sector size
+### Ensuring optimal sector size
 *"Sector" and "block" can be pretty much used interchangeably. For SSDs, they're called "pages".*
 
 A [disk sector](https://en.wikipedia.org/wiki/Disk_sector) is the minimum storage unit available on a hard drive.
@@ -82,7 +82,7 @@ Physical Sector size:                  4096 bytes
 
 Since mine did not, `512 bytes` is the only available option. Nothing to do here.
 
-##### Creating the new partition table
+### Creating the new partition table
 
 Looked into [completely resetting the SSD](https://wiki.archlinux.org/title/Solid_state_drive/Memory_cell_clearing), determined it wasn't necessary as I'm not selling this drive to someone else and there's nothing fishy going on 🐟.
 
@@ -105,7 +105,7 @@ fdisk /dev/sdb
 5. Used `p` to print out the partition table to make sure everything looked OK
 6. Used `w` to write it onto the disk.
 
-##### Creating the file system
+## Creating the file system
 
 Had another choice to make with which filesystem to go with.
 
@@ -130,7 +130,7 @@ mkswap -L SWAP /dev/sdb2
 mkfs.fat -F 32 -n EFI /dev/sdb1
 ```
 
-##### Mounting the file system
+## Mounting the file system
 
 Using `--mkdir` to create the mount point if it does not exist.
 
@@ -145,7 +145,7 @@ mount --mkdir /dev/sdb1 /mnt/boot
 swapon /dev/sdb2
 ```
 
-##### Preparing to bootstrap the new system
+## Preparing to bootstrap the new system
 
 Update the mirror list with:
 ```shell
@@ -154,7 +154,7 @@ reflector --delay 1 -f 10 > /etc/pacman.d/mirrorlist
 
 Enable `ParallelDownloads` in `/etc/pacman.conf` by uncommenting a line in the config that should be there.
 
-##### Bootstrapping the new system
+## Bootstrapping the new system
 
 Command for bootstrapping packages onto a new drive is `pacstrap`.
 
@@ -180,7 +180,7 @@ You could also install `plasma` here, which is a group instead of a meta-package
 
 In a similar vein, you could install `kde-applications-meta` instead, but I'd like to be able to manage the KDE applications separately.
 
-##### Configuring the system
+## Configuring the system
 
 **Filesystem table**
 Since we labelled the partitions before, the fstab will use labels instead of UUIDs for simplicity.
@@ -228,7 +228,7 @@ pacman -S amd-ucode
 
 Set up a loader entry for `arch.conf`, using `root=LABEL=ROOT`
 
-##### Setting up users, sudoers, desktop environment on launch
+## Setting up users, sudoers, desktop environment on launch
 
 After this was just a reboot.
 ```shell

@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript.md",
+                "file": "Arch Linux.md",
                 "mode": "source",
                 "source": false
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TypeScript.md",
+                "file": "Arch Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TypeScript.md",
+                "file": "Arch Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TypeScript.md"
+                "file": "Arch Linux.md"
               }
             }
           }
@@ -198,6 +198,7 @@
   },
   "active": "08a1be152e7bbf65",
   "lastOpenFiles": [
+    "TypeScript.md",
     "Arrays.md",
     "Arch Linux.md",
     "dd.md",
@@ -215,7 +216,6 @@
     "Software Licensing.md",
     "fnm.md",
     "Jest.md",
-    "TypeScript.md",
     "Git.md",
     "VSCode.md",
     "Obsidian.md",
