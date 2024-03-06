@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Arrays.md",
+                "file": "TypeScript.md",
                 "mode": "source",
                 "source": false
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Arrays.md",
+                "file": "TypeScript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Arrays.md",
+                "file": "TypeScript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Arrays.md"
+                "file": "TypeScript.md"
               }
             }
           }
@@ -198,6 +198,7 @@
   },
   "active": "08a1be152e7bbf65",
   "lastOpenFiles": [
+    "Arrays.md",
     "Arch Linux.md",
     "dd.md",
     "pv.md",
@@ -217,7 +218,6 @@
     "TypeScript.md",
     "Git.md",
     "VSCode.md",
-    "Arrays.md",
     "Obsidian.md",
     "Prettier.md",
     "ESLint.md",
