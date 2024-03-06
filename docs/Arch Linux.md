@@ -12,7 +12,8 @@ This page is mainly following research and steps involved in setting up a new Ar
 
 ## Entry and verification
 
-**What is UEFI?**
+##### What is UEFI?
+
 [UEFI (Unified Extensible Firmware Interface)](https://en.wikipedia.org/wiki/UEFI) is the second coming of BIOS, and is the platform that generally all modern computers use for booting. It allows for secure boot, 64-bit pre-OS environments and the ability to boot from large partitions (greater than 2TB).
 Even if your computer claims to have a 'BIOS', it is probably actually just using UEFI.
 
@@ -38,6 +39,7 @@ timedatectl set-timezone Australia/Melbourne
 ## Partitioning
 
 ### Checkup and setup
+
 > If the disk from which you want to boot [already has an EFI system partition](https://wiki.archlinux.org/title/EFI_system_partition#Check_for_an_existing_partition "EFI system partition"), do not create another one, but use the existing partition instead.
 
 *[Arch Wiki](https://wiki.archlinux.org/title/Installation_guide)*
@@ -53,11 +55,13 @@ sfdisk /dev/sdb < sdb.dump
 ```
 
 ### Choosing a partition table format
+
 You will generally want to use [GUID partition table (GPT)](https://en.wikipedia.org/wiki/GUID_Partition_Table) over [master boot record (MBR)](https://en.wikipedia.org/wiki/Master_boot_record) as it is the more recent standard and has supports for larger partition sizes, more partitions, data integrity, etc. The only downside is compatibility with older systems.
 
 The GUID partition table is part of the UEFI specification, so you probably want to use it if using UEFI. Which you likely are.
 
 ### Ensuring optimal sector size
+
 *"Sector" and "block" can be pretty much used interchangeably. For SSDs, they're called "pages".*
 
 A [disk sector](https://en.wikipedia.org/wiki/Disk_sector) is the minimum storage unit available on a hard drive.
@@ -219,14 +223,94 @@ echo pinky > /etc/hostname
 passwd
 ```
 
-##### Setting up bootloader
+## Setting up a boot loader
+
+##### What is a boot loader?
+
+A boot loader is some executable file generally present in your EFI system partition under the path `/EFI/BOOT/BOOTx64.EFI`. EFI is its' own kind of executable that [must match the UEFI specification](https://uefi.org/specifications) to be run.
+
+**NOTE:** BIOS works differently to UEFI with regard to this, however you generally don't need to care about BIOS. And I certainly don't.
+
+The executable *could* be the kernel itself, but is generally going to be a boot loader.
+
+The boot loader's sole purpose (other than providing a cool menu to pick loader options) is to pass off control to a kernel image. Usually this will be [vmlinux or vmlinuz](https://en.wikipedia.org/wiki/Vmlinux) (compressed or *zipped* virtual memory Linux kernel).
+
+Kernel images start a temporary root file system in RAM. The root file system `/` starts out completely empty, but the kernel will unpack its builtin system dependencies into it.
+
+The kernel will then unpack any other external files, overriding the builtins, from paths provided by the boot loader.
+
+The boot process continues from here without input from the boot loader, setting up the system to where it can access the regular root file system.
+
+##### What is microcode?
+
+Microcode is an intermediary layer between the instruction set (ie. x86 Assembly) and the CPU architecture. It is essentially the code which controls how your CPU runs. 
+
+Your CPU stores this microcode [out of the factory in its own ROM](https://en.wikipedia.org/wiki/Microcode#Design). Being able to update this microcode is critical as occasionally manufacturers will need to provide important security updates or performance enhancements.
+
+So to update it, the Linux kernel ships with updated microcode. However, this is often also not on a sufficiently fast enough cycle. So, the boot loader will also override and update the microcode if shipped with any.
 
 ```shell
 # Install AMD microcode
 pacman -S amd-ucode
 ```
 
-Set up a loader entry for `arch.conf`, using `root=LABEL=ROOT`
+##### Which boot loader should I choose?
+
+To be honest, I have no idea. [There are many to choose from](https://en.wikipedia.org/wiki/Comparison_of_bootloaders). Here's some takeaways from some vague community reading:
+
+- [Systemd-boot](https://wiki.archlinux.org/title/Systemd-boot) is the stable option which is easiest to set up for in Arch, but does not support dual boot well.
+- [GRUB](https://wiki.archlinux.org/title/GRUB) is unwieldy and gigantic, but supports everything ever.
+- [REFInd](https://wiki.archlinux.org/title/REFInd) is the new kid on the block with the simplest setup. In my experience this could only realistically be configured post first-boot.
+
+##### Sample setup for systemd-boot
+
+Start by [installing systemd-boot](https://wiki.archlinux.org/title/Systemd-boot#Installation)
+```shell
+bootctl install
+```
+
+Then you need to [configure a loader](https://wiki.archlinux.org/title/Systemd-boot#Loader_configuration). systemd-boot will search for valid items under `ESP/loader/entries/*.conf`. Something like:
+```conf
+title Arch Linux                       -- The thing that gets displayed
+linux   /vmlinuz-linux                 -- The path to vmlinux
+initrd  /intel-ucode.img               -- The path to microcode
+initrd  /initramfs-linux.img           -- The path to the initramfs image
+options root=LABEL=ROOT                -- Where to find the root filesystem
+```
+
+Which is enough to boot.
+
+##### Sample setup for rEFInd
+
+Start by [installing rEFInd](https://wiki.archlinux.org/title/REFInd#Installation)
+```shell
+pacman -S refind
+```
+
+If you are already booted into Linux, then the entire configuration script is
+```shell
+refind-install
+```
+
+For a bit of fun, to install [the popular rEFInd-minimal theme](https://github.com/evanpurkhiser/rEFInd-minimal), first create a `themes` folder.
+This will usually be
+```shell
+# You also need to cd into it
+mkdir /boot/EFI/refind/themes
+cd /boot/EFI/refind/themes
+```
+
+Then clone the repository into it
+```shell
+git clone https://github.com/evanpurkhiser/rEFInd-minimal.git
+```
+
+Then append a command to the end of the rEFInd config
+```shell
+echo "include themes/rEFInd-minimal/theme.conf" >> /boot/EFI/refind/refind.conf
+```
+
+**NOTE:** After you install **any new bootloader**, you will probably need to update the boot load order in your motherboard firmware.
 
 ## Setting up users, sudoers, desktop environment on launch
 
