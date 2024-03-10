@@ -8,7 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4411d40f8b0c6f87",
+            "id": "83b4f8749b0fb7a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Nix Flakes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2a6d74152e74b2dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NixOS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3cb612fa5ffa3949",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,8 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "1df92f4593666399",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Home Manager.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Nix.md",
+                "file": "NixOS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Nix.md",
+                "file": "NixOS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Nix.md"
+                "file": "NixOS.md"
               }
             }
           }
@@ -146,10 +183,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4411d40f8b0c6f87",
+  "active": "2a6d74152e74b2dc",
   "lastOpenFiles": [
-    "Arch Linux.md",
+    "Nix Flakes.md",
+    "NixOS.md",
     "Nix.md",
+    "Home Manager.md",
+    "iTerm2.md",
+    "DisplayLink.md",
+    "Untitled.md",
+    "Arch Linux.md",
     "Command Line.md",
     "Component Libraries.md",
     "pv.md",
@@ -169,12 +212,6 @@
     "Jest.md",
     "Git.md",
     "VSCode.md",
-    "Obsidian.md",
-    "Prettier.md",
-    "ESLint.md",
-    "DOM.md",
-    "Opinion/Don't Use Lodash.md",
-    "Opinion/My Dumb Opinionated JavaScript Styleguide.md",
     "Opinion"
   ]
 }
