@@ -6,6 +6,44 @@ tags: git, software, programming, version control
 
 [Git](https://git-scm.com/) is a commonly used [[Command Line]] tool for version management of code.
 
+## Configuration
+
+### Standalone
+
+Git configuration uses a [[TOML]] format, and is loaded from either `~/.gitconfig` or `~/.config/git/config`.
+
+*Sample config*
+```toml
+[commit]
+	gpgsign = true
+
+[push]
+	autoSetupRemote = true
+
+[user]
+	email = "patchy@the.pirate"
+	name = "Patchy Pirate"
+	signingkey = "3321A02038BCAC34"
+```
+
+### Under [[Home Manager]]
+
+If using [[Home Manager]], your config can be managed through *home.nix*
+```nix
+programs.git = {
+	enable = true;
+	
+	userName = "Patchy Pirate";
+	userEmail = "patchy@the.pirate";
+	
+	extraConfig = {
+		push = {autoSetupRemote = true;};
+		user = {signingkey = "3321A02038BCAC34";};
+		commit = {gpgsign = true;};
+	};
+};
+```
+
 ## Setup
 
 #### Name and email
@@ -25,6 +63,8 @@ You can set this option in one command:
 ```shell
 git config --global --add --bool push.autoSetupRemote true
 ```
+
+See [Configuration](#Configuration) for how to configure this and others in a standalone or [[Home Manager]] setup.
 ## Usage
 #### Changing a given commit from the past (time travel)
 
