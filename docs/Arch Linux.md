@@ -293,6 +293,7 @@ refind-install
 ```
 
 For a bit of fun, to install [the popular rEFInd-minimal theme](https://github.com/evanpurkhiser/rEFInd-minimal), first create a `themes` folder.
+
 This will usually be
 ```shell
 # You also need to cd into it
