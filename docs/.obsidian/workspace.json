@@ -4,71 +4,71 @@
     "type": "split",
     "children": [
       {
-        "id": "ad7c15e311d8cb1d",
+        "id": "1e16a4fd03cef630",
         "type": "tabs",
         "children": [
           {
-            "id": "83b4f8749b0fb7a2",
+            "id": "69ecc26638ee6da7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Nix Flakes.md",
+                "file": "Component Libraries.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2a6d74152e74b2dc",
+            "id": "d386f5f7cc78960f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NixOS.md",
+                "file": "pv.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3cb612fa5ffa3949",
+            "id": "6932aa8a6ea2b2ad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Nix.md",
+                "file": "dd.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1df92f4593666399",
+            "id": "08a1be152e7bbf65",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home Manager.md",
+                "file": "Arch Linux.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "873b1fcda63ab40a",
+            "id": "6cd73d10ce1f8a37",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git.md",
+                "file": "Command Line.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -97,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:typescript",
+                "query": "sort",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -114,7 +114,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -134,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git.md",
+                "file": "Arch Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git.md",
+                "file": "Arch Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git.md"
+                "file": "Arch Linux.md"
               }
             }
           }
@@ -195,23 +196,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "873b1fcda63ab40a",
+  "active": "08a1be152e7bbf65",
   "lastOpenFiles": [
-    "Home Manager.md",
-    "Nix.md",
     "NixOS.md",
+    "Nix.md",
     "Nix Flakes.md",
-    "iTerm2.md",
-    "DisplayLink.md",
-    "Untitled.md",
-    "Arch Linux.md",
-    "Command Line.md",
-    "Component Libraries.md",
-    "pv.md",
-    "dd.md",
-    "fnm.md",
+    "Home Manager.md",
     "TypeScript.md",
     "Arrays.md",
+    "Arch Linux.md",
+    "dd.md",
+    "pv.md",
+    "Component Libraries.md",
+    "Command Line.md",
     "Styled System.md",
     "shadcn/ui.md",
     "shadcn",
@@ -221,9 +218,13 @@
     "2024-02-27.md",
     "JavaScript.md",
     "Software Licensing.md",
+    "fnm.md",
     "Jest.md",
     "Git.md",
     "VSCode.md",
+    "Obsidian.md",
+    "Prettier.md",
+    "ESLint.md",
     "Opinion"
   ]
 }
