@@ -4,71 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "1e16a4fd03cef630",
+        "id": "2a1c590cba5785bd",
         "type": "tabs",
         "children": [
           {
-            "id": "69ecc26638ee6da7",
+            "id": "e4363ad1ea065ab8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Component Libraries.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d386f5f7cc78960f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "pv.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6932aa8a6ea2b2ad",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "dd.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "08a1be152e7bbf65",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Arch Linux.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6cd73d10ce1f8a37",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Command Line.md",
+                "file": "Git.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -135,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Arch Linux.md",
+                "file": "Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Arch Linux.md",
+                "file": "Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Arch Linux.md"
+                "file": "Git.md"
               }
             }
           }
@@ -196,19 +147,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "08a1be152e7bbf65",
+  "active": "e4363ad1ea065ab8",
   "lastOpenFiles": [
+    "Command Line.md",
+    "Component Libraries.md",
+    "pv.md",
+    "dd.md",
+    "Nix Flakes.md",
     "NixOS.md",
     "Nix.md",
-    "Nix Flakes.md",
+    "Arch Linux.md",
     "Home Manager.md",
     "TypeScript.md",
     "Arrays.md",
-    "Arch Linux.md",
-    "dd.md",
-    "pv.md",
-    "Component Libraries.md",
-    "Command Line.md",
     "Styled System.md",
     "shadcn/ui.md",
     "shadcn",

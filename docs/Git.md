@@ -265,6 +265,20 @@ git commit --amend --no-edit
 git config --global alias.amend 'commit --amend --no-edit'
 ```
 
+#### Finding the first commit with a file
+
+```shell
+# Using the diff filter to find only the log which added stuff
+git log --diff-filter=A -- path/to/file
+```
+
+#### Get all commit hashes relating to a file
+
+```shell
+# The awk at the end will ensure you only get the short commit hash
+git log --oneline -- path/to/file | awk '{print $1}'
+```
+
 #### Troubleshooting with a bisect
 
 If something broke in the past for unknown reasons, then a bisect is a great way of narrowing down causes.
