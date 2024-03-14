@@ -24,6 +24,17 @@ If you are on Apple Chip, you'll need to install [Rosetta](https://en.wikipedia.
 softwareupdate --install-rosetta --agree-to-license
 ```
 
+## Platforms
+
+Platforms in XCode refers to [[Apple]] operating systems that you can develop software for.
+
+To install a new platform (*like a new iOS version*):
+
+1. Open Xcode.
+2. Navigate to Xcode **→** Settings **→** Platforms
+3. Recent platforms are available in the list automatically and are installable with the *Get* button.
+Older platforms are available by clicking the **+** button.
+
 ## Simulators
 
 Simulators are available for all [[Apple]] devices, and simulate hardware as best they can. They are not perfect, and are not performant or have feature parity against real devices.
