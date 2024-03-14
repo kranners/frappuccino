@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Xcode.md",
+                "file": "Git.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sort",
+                "query": "bisect",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Xcode.md",
+                "file": "Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Xcode.md",
+                "file": "Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Xcode.md"
+                "file": "Git.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "e4363ad1ea065ab8",
   "lastOpenFiles": [
+    "Xcode.md",
     "Git.md",
     "Command Line.md",
     "Component Libraries.md",
@@ -175,7 +176,6 @@
     "VSCode.md",
     "Obsidian.md",
     "Prettier.md",
-    "ESLint.md",
     "Opinion"
   ]
 }
