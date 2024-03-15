@@ -327,6 +327,35 @@ git bisect good|bad
 git bisect reset
 ```
 
+##### Different names for 'good' and 'bad'
+
+Bisect semantically looks for the *first commit with a problem*, if instead you want the *first commit with a fix*, then bisect won't look quite right out of the box.
+
+```shell
+# Start the bisect as usual
+git bisect start
+
+# Set the most recent version to be good
+git bisect good HEAD
+
+# Set the bad commit to whenever
+git bisect bad PAST
+
+> Some good revs are not ancestors of the bad rev.
+> git bisect cannot work properly in this case.
+> Maybe you mistook good and bad revs?
+```
+
+To help this out, you can use the `--term-new` and `--term-old` flags. Normally 'new' = 'bad' and 'old' = 'good'.
+
+```shell
+# Now we have messaging here that makes more sense
+git bisect start --term-new=fixed --term-old=unfixed
+
+git bisect fixed HEAD
+git bisect unfixed PAST
+```
+
 #### Split an existing branch by files
 
 Doing this will remove your commit history from the original branch.
