@@ -1,6 +1,7 @@
 ---
 tags: javascript, typescript, js, ts, strings
 ---
+# Strings (in [[JavaScript]])
 
 ## Removing suffix or prefix from string
 

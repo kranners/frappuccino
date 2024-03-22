@@ -1,6 +1,7 @@
 ---
 tags: astro, javascript, typescript, framework, web
 ---
+# Astro
 
 [Astro](https://astro.build/) is a web framework built for speed and ease of use when building content-focused websites.
 

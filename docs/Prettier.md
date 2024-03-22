@@ -1,6 +1,7 @@
 ---
 tags: prettier, linting, styling, formatting, typescript, javascript
 ---
+# Prettier
 
 [Prettier](https://prettier.io/) is a code formatter for [[JavaScript]] and [[TypeScript]].
 

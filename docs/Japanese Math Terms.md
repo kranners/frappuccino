@@ -1,11 +1,13 @@
 ---
 tags: japanese, math, terminology
 ---
+# Japanese Math Terms
+
+I used these exactly once for a karate class I taught, trying to get students to do 2-digit equations in Japanese. It had mixed success :)
 
 ### General terms
 keesan no kotoba (words of math)  
 itte kudasai (please try to say these)  
-
 
 ### Operators
 - `+` tasu

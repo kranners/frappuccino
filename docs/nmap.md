@@ -1,6 +1,7 @@
 ---
 tags: nmap, command line, terminal, zsh
 ---
+# nmap
 
 [nmap](https://nmap.org/) is a free-to-use [[Command Line]] [[Networking]] utility for scanning and discovery.
 

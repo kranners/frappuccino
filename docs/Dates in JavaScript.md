@@ -2,7 +2,7 @@
 tags: dates, times, timezone, javascript, typescript
 ---
 
-## Date
+# Date
 
 Times are represented in native [[JavaScript]] with the [`Date` object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date).
 

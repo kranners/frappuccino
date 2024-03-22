@@ -1,6 +1,7 @@
 ---
 tags: iterable, javascript, typescript, arrays
 ---
+# Iterable
 
 [Iteration protocols](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#built-in_iterables) are a set of protocols (like [[Interfaces]]) to be implemented by a [[Prototype]].
 

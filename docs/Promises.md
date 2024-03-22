@@ -2,7 +2,7 @@
 tags: promises, javascript, typescript, async, asynchronous
 ---
 
-## Promise
+# Promises
 
 A Promise is a [[JavaScript]] object which runs asynchronously to the main thread and resolves to a given value.
 

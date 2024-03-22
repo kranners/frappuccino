@@ -1,6 +1,7 @@
 ---
 tags: command line, cli, development
 ---
+# Command Line
 
 The command line or terminal is the interface between a user and the operating systems [[Shell]].
 

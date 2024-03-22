@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git.md",
+                "file": "About.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git.md",
+                "file": "About.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git.md",
+                "file": "About.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git.md"
+                "file": "About.md"
               }
             }
           }
@@ -149,33 +148,33 @@
   },
   "active": "e4363ad1ea065ab8",
   "lastOpenFiles": [
-    "Xcode.md",
-    "Git.md",
+    "Android Studio.md",
+    "Arch Linux.md",
+    "Apollo Client.md",
+    "Arrays.md",
+    "Astro.md",
+    "AWS.md",
+    "Bun.md",
     "Command Line.md",
     "Component Libraries.md",
-    "pv.md",
+    "CSS.md",
+    "Custom Elements.md",
+    "CSS Selectors.md",
+    "Dates in JavaScript.md",
     "dd.md",
-    "Nix Flakes.md",
-    "NixOS.md",
-    "Nix.md",
-    "Arch Linux.md",
-    "Home Manager.md",
-    "TypeScript.md",
-    "Arrays.md",
-    "Styled System.md",
-    "shadcn/ui.md",
-    "shadcn",
-    "Web Terminology.md",
-    "Web Components.md",
-    "Placeholders.md",
-    "2024-02-27.md",
-    "JavaScript.md",
-    "Software Licensing.md",
+    "DisplayLink.md",
+    "Docker.md",
+    "DOM.md",
+    "ECMAScript.md",
+    "ESLint.md",
     "fnm.md",
-    "Jest.md",
-    "VSCode.md",
-    "Obsidian.md",
-    "Prettier.md",
+    "Fedora Linux.md",
+    "Git.md",
+    "GitHub Actions.md",
+    "Home Manager.md",
+    "GraphQL.md",
+    "GraphQL Fragments.md",
+    "shadcn",
     "Opinion"
   ]
 }

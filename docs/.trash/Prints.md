@@ -1,6 +1,7 @@
 ---
 tags: prints, interior, design, art, personal
 ---
+# Prints
 
 Prints are like individual artworks, but printed using a variety of techniques for more mass-production.
 

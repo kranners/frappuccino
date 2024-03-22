@@ -1,6 +1,7 @@
 ---
 tags: sets, javascript, typescript, programming
 ---
+# Sets (in [[JavaScript]])
 
 [Sets](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) are an alternative to [[Arrays]] for storing multiple items at once.
 

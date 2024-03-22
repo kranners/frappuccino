@@ -1,6 +1,7 @@
 ---
 tags: licenses, programming, software
 ---
+# Software Licensing
 
 [An open-source license](https://choosealicense.com/) is a pseudo-requirement when writing any publicly facing code or software package.
 
