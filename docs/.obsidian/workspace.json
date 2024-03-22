@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About.md",
+                "file": "Widget Toolkits.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "About.md",
+                "file": "Widget Toolkits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "About.md",
+                "file": "Widget Toolkits.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "About.md"
+                "file": "Widget Toolkits.md"
               }
             }
           }
@@ -148,8 +148,11 @@
   },
   "active": "e4363ad1ea065ab8",
   "lastOpenFiles": [
-    "Android Studio.md",
     "Arch Linux.md",
+    "Widget Toolkits.md",
+    "Linux.md",
+    "About.md",
+    "Android Studio.md",
     "Apollo Client.md",
     "Arrays.md",
     "Astro.md",
@@ -171,9 +174,6 @@
     "Fedora Linux.md",
     "Git.md",
     "GitHub Actions.md",
-    "Home Manager.md",
-    "GraphQL.md",
-    "GraphQL Fragments.md",
     "shadcn",
     "Opinion"
   ]

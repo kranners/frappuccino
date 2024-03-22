@@ -6,7 +6,7 @@ tags:
 
 # Arch Linux
 
-[Arch](https://wiki.archlinux.org/title/Arch_Linux) is a lightweight and simple distribution which aims to provide the bleeding edge of most software by following a [rolling release model](https://en.wikipedia.org/wiki/Rolling_release).
+[Arch](https://wiki.archlinux.org/title/Arch_Linux) is a lightweight and simple distribution of [[Linux]] which aims to provide the bleeding edge of most software by following a [rolling release model](https://en.wikipedia.org/wiki/Rolling_release).
 
 This page is mainly following research and steps involved in setting up a new Arch installation.
 
