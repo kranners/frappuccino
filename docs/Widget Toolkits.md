@@ -56,7 +56,8 @@ If not operating under a KDE Plasma or GNOME desktop environment, you'll want to
 
 You'll then want to configure Qt to use these with:
 ```shell
-# Configure the plat
+# Force the platform theme
+
 ```
 
 #### Under [[NixOS]]
