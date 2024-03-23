@@ -20,11 +20,72 @@ GTK (the GIMP Toolkit) was initially released by The GNU Project in April 1998, 
 
 All [GNOME](https://www.gnome.org/) programs use GTK. Other software using GTK include: [WebKit](https://webkitgtk.org/), [HandBrake](https://handbrake.fr/), and [Transmission](https://transmissionbt.com/).
 
+### GDK
+
+[The GDK (GIMP Drawing Kit)](https://en.wikipedia.org/wiki/GDK) is the lower-level abstraction to allow GTK to support multiple platforms. Much like the [Qt Platform Abstraction](https://doc.qt.io/qt-5/qpa.html) for [[#Qt]].
+
 For use of GTK with [Wayland](Windowing%20Systems#Wayland), it should work out of the box. To override to XWayland instead, set:
 ```shell
 # Force the Xwayland backend
 GDK_BACKEND=x11
 ```
+
+### Configuration
+
+#### Under [[Arch Linux]]
+
+If you are under a major desktop environment (GNOME, KDE Plasma etc) then there will be a tool already configured in your system to configure GTK. Use that.
+
+**Updating the manual files if there is no available tool**
+
+Configuration files are located under a few different spots depending on which version of GTK you're configuring:
+
+- For GTK 2: `~/.gtk-2.0`
+- For GTK 3: `~/.config/gtk-3.0/settings.ini`
+- For GTK 4: `~/.config/gtk-4.0/settings.ini`
+
+You may need all three of these depending on your setup.
+
+[*For a full list of configuration options, see the GTK documentation on Settings.*](https://docs.gtk.org/gtk4/class.Settings.html#properties)
+
+**Installing a new theme**
+
+System-wide themes are typically located under `/usr/share/themes/<Theme-Name>/`. 
+User themes are typically located under `~/.themes/<Theme-Name>/`.
+
+They'll be unpacked automatically by `pacman` if you choose to install that way, otherwise you'll need to manually unpack into `~/.themes/`.
+
+So start by installing a theme of your choice. Like perhaps, the [Catppuccin GTK theme 🌺](https://github.com/catppuccin/gtk).
+
+After this, either using your systems GTK configuration tool, or manually, update the configuration like:
+
+*For GTK 2 configuration:*
+```ini
+gtk-cursor-theme-name = "Catppuccin-Latte-Sky-Cursors"
+gtk-cursor-theme-size = 32
+gtk-icon-theme-name = "Papirus-Dark"
+gtk-theme-name = "Catppuccin-Latte-Standard-Sky-Light"
+```
+**NOTE:** You may need to set `GTK2_RC_FILES=/your/config/location/`.
+
+*For GTK 3 and GTK 4 configuration:*
+```ini
+[Settings]
+gtk-cursor-theme-name=Catppuccin-Latte-Sky-Cursors
+gtk-cursor-theme-size=32
+gtk-icon-theme-name=Papirus-Dark
+gtk-theme-name=Catppuccin-Latte-Standard-Sky-Light
+```
+
+#### Configuration under [[NixOS]]
+
+For Nix configuration, I thoroughly recommend the [[Home Manager]] package for GTK.
+
+**NOTE:** *gtk.nix* will set the config for GTK 2, 3, and 4 on its own. *Do not configure them seperately.*
+
+[*See here for the gtk.nix home manager options*](https://github.com/nix-community/home-manager/blob/master/modules/misc/gtk.nix).
+
+A basic example to enable 
 
 ## Qt
 
@@ -52,12 +113,84 @@ export QT_QPA_PLATFORM=wayland
 
 #### Under [[Arch Linux]]
 
+**To use an in-built theme OR to mimic GTK:**
+
+To mimic GTK, Qt can use the QGtkStyle platform theme. QGtkStyle will use GTK 2 to render the underlying components. This comes pre-installed on all versions of Qt beyond version 4.5.
+
+For Qt 4, enable it by writing into your Qt configuration (either `/etc/xdg/Trolltech.conf` or `~/.config/Trolltech.conf`):
+```Trolltech.conf
+[Qt]
+style=GTK+
+```
+
+For Qt 5 and Qt 6, use:
+```shell
+export QT_QPA_PLATFORMTHEME=gtk2
+```
+
+**To not use an in-built theme AND not in Plasma or GNOME:**
+
 If not operating under a KDE Plasma or GNOME desktop environment, you'll want to install the [`qt5ct`](https://sourceforge.net/projects/qt5ct/) or [`qt6ct`](https://github.com/trialuser02/qt6ct) packages depending on your Qt version.
 
 You'll then want to configure Qt to use these with:
 ```shell
-# Force the platform theme
-
+# Change this to qt5ct if you are using that
+export QT_QPA_PLATFORMTHEME=qt6ct
 ```
 
+Then use the provided configuration tool to configure to your hearts content - like installing a separate [Catppuccin theme 🌺](https://github.com/catppuccin/qt5ct)!
+
 #### Under [[NixOS]]
+
+Under Nix, there's no need to install a configuration tool like `qt5ct`.
+
+Like all things NixOS, you can choose to install and configure Qt in either your [[NixOS]] setup or your [[Home Manager]] setup. I recommend Home Manager.
+
+[*See here for the qt.nix home manager options*](https://github.com/nix-community/home-manager/blob/master/modules/misc/qt.nix).
+
+**To mimic GTK**:
+
+Using the `qt.platformTheme` option you can directly set the platform package:
+```nix
+{ pkgs, ... }: {
+	qt = {
+		enable = true;
+		# This could be gnome, gtk, kde, lxqt, qtct
+		platformTheme = "gtk";
+	};
+}
+```
+
+**NOTE:** `qt.platformTheme = "gtk";` will install the relevant QGtkStyle packages for Qt 5 and Qt 6, and will also set your `QT_QPA_PLATFORMTHEME`.
+
+**NOTE:** `qt.platformTheme = "qtct";` will install qt5ct and qt6ct, and set your `QT_QPA_PLATFORMTHEME`.
+
+**To use a different theme:**
+
+To use a pre-installed theme, just setting `qt.style.name` will suffice:
+```nix
+{ pkgs, ... }: {
+	qt = {
+		enable = true;
+
+		style = {
+			name = "breeze";
+		};
+	};
+}
+```
+
+For an external theme, you'll need to set the `qt.style.package` as well:
+```nix
+{ pkgs, ... }: {
+	qt = {
+		enable = true;
+
+		style = {
+			# This could also be a custom package, whatever you want!
+			package = pkgs.adwaita-qt;
+			name = "breeze";
+		};
+	};
+}
+```

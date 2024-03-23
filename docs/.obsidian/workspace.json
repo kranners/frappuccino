@@ -4,11 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "2a1c590cba5785bd",
+        "id": "0dc982ad099fc725",
         "type": "tabs",
         "children": [
           {
-            "id": "e4363ad1ea065ab8",
+            "id": "2dc61539140c95fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "About.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d507c2d58890811b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,20 +30,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "f0d80d5d0e536946",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Windowing Systems.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -158,13 +159,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e4363ad1ea065ab8",
+  "active": "d507c2d58890811b",
   "lastOpenFiles": [
-    "Windowing Systems.md",
+    "About.md",
     "Widget Toolkits.md",
+    "Windowing Systems.md",
     "Arch Linux.md",
     "Linux.md",
-    "About.md",
     "Android Studio.md",
     "Apollo Client.md",
     "Arrays.md",
