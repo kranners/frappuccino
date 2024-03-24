@@ -81,17 +81,86 @@ gtk-theme-name=Catppuccin-Latte-Standard-Sky-Light
 
 For Nix configuration, I thoroughly recommend the [[Home Manager]] package for GTK.
 
-**NOTE:** *gtk.nix* will set the config for GTK 2, 3, and 4 on its own. *Do not configure them seperately.*
+**NOTE:** *gtk.nix* will set the config for GTK 2, 3, and 4 on its own. *Do not configure them separately.*
 
 [*See here for the gtk.nix home manager options*](https://github.com/nix-community/home-manager/blob/master/modules/misc/gtk.nix).
 
-A basic example to enable 
+For your GTK theme, you'll want to set three different options:
+- `gtk.theme` for the base theme
+- `gtk.iconTheme` for the icon theme
+- `home.pointerCursor` with `home.pointerCursor.gtk.enable = true` for the cursor theme
+
+**NOTE:** Use `home.pointerCursor` over `gtk.cursorTheme` since it will automatically set links that are unrelated to GTK.
+
+**What to set the options**
+
+Each of these three take in a `package` and a `name`.
+
+- `package` refers to any Nix Package, this could be loaded in from nixpkgs, or derived yourself.
+- `name` refers to the name of the theme to use within that package.
+
+To find out all available themes for a given package, we can list out the files it contains and pick a suitable sub-directory:
+```shell
+# Install eza if you don't have it, or nix-shell -p eza
+eza $(nix build "nixpkgs#<PACKAGE>" --print-out-paths --no-link) --tree --level 5
+```
+
+Which should give an output like:
+```
+/nix/store/3ihjnc9fxak2mf0vy4lxsncgp2502378-catppuccin-gtk-0.7.1
+├── nix-support
+│  └── propagated-user-env-packages
+└── share
+   └── themes
+      ├── Catppuccin-Frappe-Standard-Blue-Dark
+      │  ├── cinnamon
+      │  ├── gnome-shell
+      │  ├── gtk-2.0
+      │  ├── gtk-3.0
+      │  ├── gtk-4.0
+      │  ├── index.theme
+      │  ├── metacity-1
+      │  ├── plank
+      │  └── xfwm4
+      ├── Catppuccin-Frappe-Standard-Blue-Dark-hdpi
+      │  └── xfwm4
+      └── Catppuccin-Frappe-Standard-Blue-Dark-xhdpi
+         └── xfwm4
+```
+The name of the theme in this instance would be *Catppuccin-Frappe-Standard-Blue-Dark*.
+
+**A full example**
+
+```nix
+{ pkgs, ... }: {
+  gtk = {
+    enable = true;
+
+    iconTheme = {
+      package = pkgs.catppuccin-papirus-folders;
+      name = "Papirus-Dark";
+    };
+
+    theme = {
+      package = pkgs.catppuccin-gtk;
+      name = "Catppuccin-Frappe-Standard-Blue-Dark";
+    };
+  };
+
+  home.pointerCursor = {
+    package = pkgs.catppuccin-cursors.frappeBlue;
+    name = "Catppuccin-Frappe-Dark-Cursors";
+	
+    gtk.enable = true;
+  };
+}
+```
 
 ## Qt
 
 Qt (say it like Q-T, or else) was initially released by then Trolltech, now The Qt Company in 1995.
 
-**SIDENOTE:** I was interested to know why it's called Qt. Turns out the company has a fair bit of history.
+**SIDE NOTE:** I was interested to know why it's called Qt. Turns out the company has a fair bit of history.
 
 It's called *"Qt"* because one of the founders liked the letter Q. The *"t"* more-or-less stands for *toolkit*. It's not because to their duo was called "*Quasar Technologies*" for a while.
 
@@ -115,7 +184,7 @@ export QT_QPA_PLATFORM=wayland
 
 **To use an in-built theme OR to mimic GTK:**
 
-To mimic GTK, Qt can use the QGtkStyle platform theme. QGtkStyle will use GTK 2 to render the underlying components. This comes pre-installed on all versions of Qt beyond version 4.5.
+To mimic GTK, Qt can use the QGtkStyle platform theme. QGtkStyle will use GTK 2 to render the underlying components. This comes preinstalled on all versions of Qt beyond version 4.5.
 
 For Qt 4, enable it by writing into your Qt configuration (either `/etc/xdg/Trolltech.conf` or `~/.config/Trolltech.conf`):
 ```Trolltech.conf
