@@ -24,7 +24,7 @@ All [GNOME](https://www.gnome.org/) programs use GTK. Other software using GTK i
 
 [The GDK (GIMP Drawing Kit)](https://en.wikipedia.org/wiki/GDK) is the lower-level abstraction to allow GTK to support multiple platforms. Much like the [Qt Platform Abstraction](https://doc.qt.io/qt-5/qpa.html) for [[#Qt]].
 
-For use of GTK with [Wayland](Windowing%20Systems#Wayland), it should work out of the box. To override to XWayland instead, set:
+For use of GTK with [[Wayland]], it should work out of the box. To override to XWayland instead, set:
 ```shell
 # Force the Xwayland backend
 GDK_BACKEND=x11
@@ -170,11 +170,11 @@ All [KDE](https://en.wikipedia.org/wiki/KDE_Projects) projects use Qt. Other sof
 
 Since Qt is a multi-platform toolkit that needs to be able to run across platforms like [[Windows]], [[MacOS]] and [[Linux]] - it uses an underlying abstraction called the [Qt Platform Abstraction](https://doc.qt.io/qt-5/qpa.html) to handle specific bindings per platform.
 
-An example of a platform plugin is [QtWayland](https://wiki.qt.io/QtWayland#How_do_I_use_QtWayland.3F), the platform plugin for running Qt as a Wayland client.
+An example of a platform plugin is [QtWayland](https://wiki.qt.io/QtWayland#How_do_I_use_QtWayland.3F), the platform plugin for running Qt as a [[Wayland]] client.
 
 ### Configuration
 
-**NOTE:** If you're using [Wayland](Windowing%20Systems#Wayland) then you'll want to set the relevant Qt environment variable to force Qt to render using the QtWayland [platform plugin](#Platform%20plugin):
+**NOTE:** If you're using [[Wayland]] then you'll want to set the relevant Qt environment variable to force Qt to render using the QtWayland [platform plugin](#Platform%20plugin):
 ```shell
 # Force use the Wayland platform plugin
 export QT_QPA_PLATFORM=wayland
