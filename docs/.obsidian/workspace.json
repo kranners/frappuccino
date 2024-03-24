@@ -56,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "X11.md",
+                "file": "sway.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "X11.md",
+                "file": "sway.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "X11.md"
+                "file": "sway.md"
               }
             }
           }
@@ -183,10 +183,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b27aba4ccddf906a",
+  "active": "bc7dbee94b738c04",
   "lastOpenFiles": [
-    "sway.md",
     "X11.md",
+    "sway.md",
+    "Software Licensing.md",
     "Wayland.md",
     "Widget Toolkits.md",
     "About.md",
@@ -210,7 +211,6 @@
     "DisplayLink.md",
     "Docker.md",
     "DOM.md",
-    "ECMAScript.md",
     "shadcn",
     "Opinion"
   ]

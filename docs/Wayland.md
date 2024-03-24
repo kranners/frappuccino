@@ -11,6 +11,8 @@ tags:
 
 Wayland is not itself a program which you can run. It is like [[ECMAScript]] to [[JavaScript]].
 
+[*For more **why** info, check out the Wayland architecture documentation.*](https://wayland.freedesktop.org/architecture.html)
+
 ### Compositors
 
 A display server which implements the Wayland protocol is called a *compositor*.
