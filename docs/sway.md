@@ -111,3 +111,9 @@ cp /etc/sway/config ~/.config/sway/config
 # Start editing :)
 nvim ~/.config/sway/config
 ```
+
+### Under [[NixOS]]
+
+This section will only cover sway installed under [[Home Manager]].
+
+
