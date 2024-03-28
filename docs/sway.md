@@ -72,13 +72,11 @@ services.xserver.displayManager = {
 		wayland.enable = true;
 	};
 	
-	sessionPackages = [
-		# Or whatever else
-		pkgs.hyprland
-		pkgs.sway
-	];
+	sessionPackages = [pkgs.sway];
 };
 ```
+
+**NOTE:** [Display managers are not officially supported by sway.](https://github.com/swaywm/sway/pull/3634#issuecomment-462779163)
 
 If you're on a system that changes output regularly, like a laptop, then it's recommended to install some kind of external output configuration, like [`kanshi`](https://sr.ht/~emersion/kanshi/):
 ```nix
@@ -116,4 +114,76 @@ nvim ~/.config/sway/config
 
 This section will only cover sway installed under [[Home Manager]].
 
+Config is done under the `wayland.windowManager.sway.config` option:
+```nix
+{ pkgs, ... }: {
+	wayland.windowManager.sway = {
+		enable = true;
+		xwayland = true;
 
+		config = {
+			# SUPER key
+			modifier = "Mod4";
+		};
+	}
+}
+```
+
+Like elsewhere in Nix, `pkgs` can be used directly in your sway config without polluting your system, and without knowing specific paths:
+```nix
+# pkgs are here, I swear
+wayland.windowManager.sway.config = {
+	menu = "${pkgs.rofi}/bin/rofi -show drun";
+	terminal = "${pkgs.foot}/bin/foot";
+	
+	# Auto start
+	startup = [
+		{
+			command = "${pkgs.stylish}/bin/styli.sh -y";
+			always = true;
+		}
+	];
+};
+```
+
+#### Bars and services
+
+To configure a status bar like [[waybar]], you can configure it as a startup [[User Service]]:
+```nix
+wayland.windowManager.sway.config = {
+	startup = [
+		{
+			command = "systemctl --user restart waybar";
+			always = true;
+		}
+	];
+
+	bars = [];
+};
+
+programs.waybar = {
+	enable = true;
+	systemd.enable = true;
+}
+```
+
+**NOTE:** `wayland.windowManager.sway.config.bars = [];` is not optional! Not including this will make sway also show its default bar.
+
+**NOTE:** You *can* configure this differently, but in the case of [[waybar]] it will not pick up new configs without configuring it like this.
+
+#### Keybindings
+
+Keybindings are configured under `wayland.windowManager.sway.config.keybindings`.
+
+`let..in` syntax is probably preferable to have access to special values like your modifier:
+```nix
+wayland.windowManager.sway.config.keybindings = let
+	cfg = config.wayland.windowManager.sway.config;
+
+	# Get the modifier key from the remaining config
+	modifier = cfg.modifier;
+in {
+	# SUPER+Space = open the configured menu
+	"${modifier}+Space" = "exec ${cfg.menu}";
+}
+```
