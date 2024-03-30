@@ -188,6 +188,16 @@ kill_pid() {
 	return 1
 }
 ```
+
+To check for matches against a regular expression (regex pattern), use [the `=~` matching operator](tldp.org/LDP/abs/html/bashver3.html#REGEXMATCHREF):
+```shell
+NUMBER_IN_QUOTES='"3"'
+
+# Note the double braces! The operator only works in double braces.
+if [[ "$NUMBER_IN_QUOTES" =~ ^\"[0-9]+\"$ ]]; then
+	echo "It is what it is"
+fi
+```
 ### Count stuff
 
 Pipe them into [`wc`](https://ss64.com/bash/wc.html).
