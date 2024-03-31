@@ -155,6 +155,17 @@ print_price 5
 print_price
 ```
 
+**NOTE:** The syntax `${maybe:-fallback}` will evaluate to `fallback` and do nothing else, BUT `${maybe:=fallback}` will evaluate to `fallback` AND assign the value of `maybe` to `fallback`.
+
+As in:
+```shell
+# The value MAYBE is intentionally left unset
+DEFINITELY=${MAYBE:="yeah"}
+
+# Now it's set!
+echo "$MAYBE" # "yeah"
+```
+
 ### Check variable for value or setting
 
 Checking variables for whether they're set, it's the `-z` flag in `if`:
