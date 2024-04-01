@@ -124,4 +124,8 @@ Other services would need to define a `Requires=your.service` or `Wants=your.ser
 To start your service automatically, it requires a `WantedBy`. This is usually one of either `multi-user.target` or `graphical.target`.
 
 `multi-user.target` will instruct systemd to start the service whenever the system is ready to accept logins (like a tty).
-`graphical.target` will instruct systemd to start the service after a local GUI login, like through a 
+`graphical.target` will instruct systemd to start the service after a local GUI login, like through a display manager (something [like sddm](https://github.com/sddm/sddm)).
+
+`default.target` is a symlink to one of the above targets. It lives in `/etc/systemd/system/default.target`, check it out there to find what it symlinks to.
+
+In my case, `default.target` linked to `graphical.target`.
