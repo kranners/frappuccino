@@ -92,3 +92,36 @@ outputs = {
 
 ### Defining custom user services
 
+Custom user services are defined under `systemd.user.services.<service>`, like:
+```nix
+systemd.user.services.workstyle = {
+	Unit = {
+		Description = "Auto rename workspaces based on what's in them";
+	};
+	
+	Install = {
+		WantedBy = ["default.target"];
+	};
+	
+	Service = {
+		ExecStart = "${pkgs.workstyle}/bin/workstyle";
+	};
+};
+```
+
+Most of this setup should be self-explanatory, the `<service>` name is what you will use to imperatively manage the service.
+```shell
+# Restart the service we defined
+systemctl --user restart workstyle
+```
+
+##### What is `WantedBy = ["default.target"]`?
+
+Without `WantedBy`, systemd will not start the service by default, even if enabled.
+
+Other services would need to define a `Requires=your.service` or `Wants=your.service` for it to be started.
+
+To start your service automatically, it requires a `WantedBy`. This is usually one of either `multi-user.target` or `graphical.target`.
+
+`multi-user.target` will instruct systemd to start the service whenever the system is ready to accept logins (like a tty).
+`graphical.target` will instruct systemd to start the service after a local GUI login, like through a 
