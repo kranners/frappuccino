@@ -49,14 +49,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Command Line.md",
+                "file": "Home Manager.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c5d2f1431654f814",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Nix.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -123,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Command Line.md",
+                "file": "Nix.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Command Line.md",
+                "file": "Nix.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Command Line.md"
+                "file": "Nix.md"
               }
             }
           }
@@ -184,16 +196,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bc7dbee94b738c04",
+  "active": "c5d2f1431654f814",
   "lastOpenFiles": [
-    "sway.md",
+    "Home Manager.md",
+    "Nix.md",
     "X11.md",
     "Wayland.md",
+    "Command Line.md",
+    "sway.md",
     "Widget Toolkits.md",
     "Software Licensing.md",
     "About.md",
     "Windowing Systems.md",
-    "Home Manager.md",
     "Arch Linux.md",
     "Linux.md",
     "Android Studio.md",
@@ -202,7 +216,6 @@
     "Astro.md",
     "AWS.md",
     "Bun.md",
-    "Command Line.md",
     "Component Libraries.md",
     "CSS.md",
     "Custom Elements.md",
@@ -211,7 +224,6 @@
     "dd.md",
     "DisplayLink.md",
     "Docker.md",
-    "DOM.md",
     "shadcn",
     "Opinion"
   ]

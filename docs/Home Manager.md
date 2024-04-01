@@ -87,3 +87,8 @@ outputs = {
 	};
 }
 ```
+
+## Usage
+
+### Defining custom user services
+
