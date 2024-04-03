@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "0dc982ad099fc725",
+        "id": "2a1c590cba5785bd",
         "type": "tabs",
         "children": [
           {
-            "id": "d507c2d58890811b",
+            "id": "e4363ad1ea065ab8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Widget Toolkits.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c5d2f1431654f814",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Nix.md",
+                "file": "Git.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "bisect",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -98,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Nix.md",
+                "file": "Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Nix.md",
+                "file": "Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Nix.md"
+                "file": "Git.md"
               }
             }
           }
@@ -159,34 +147,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c5d2f1431654f814",
+  "active": "e4363ad1ea065ab8",
   "lastOpenFiles": [
+    "sway.md",
+    "X11.md",
     "Widget Toolkits.md",
     "Wayland.md",
-    "Nix.md",
-    "Home Manager.md",
-    "X11.md",
-    "Command Line.md",
-    "sway.md",
-    "Software Licensing.md",
-    "About.md",
-    "Windowing Systems.md",
-    "Arch Linux.md",
     "Linux.md",
-    "Android Studio.md",
-    "Apollo Client.md",
-    "Arrays.md",
-    "Astro.md",
-    "AWS.md",
-    "Bun.md",
-    "Component Libraries.md",
-    "CSS.md",
-    "Custom Elements.md",
+    "conflict-files-obsidian-git.md",
+    "Shell.md",
+    "React Hook Form.md",
+    "Prints.md",
+    "NEM12 and NEM13.md",
+    "GraphQL.md",
+    "GraphQL Query.md",
+    "GraphQL Fragments.md",
+    "Fedora Linux.md",
     "CSS Selectors.md",
-    "Dates in JavaScript.md",
+    "Apollo Client.md",
+    "Git.md",
+    "Xcode.md",
+    "Command Line.md",
+    "Component Libraries.md",
+    "pv.md",
     "dd.md",
-    "DisplayLink.md",
-    "Docker.md",
+    "Nix Flakes.md",
+    "NixOS.md",
+    "Nix.md",
+    "Arch Linux.md",
     "shadcn",
     "Opinion"
   ]
