@@ -152,3 +152,15 @@ in {
 	'';
 }
 ```
+
+##### `pkgs.writeTextDir`
+
+`pkgs.writeTextDir` is a shorthand for `pkgs.writeTextFile` with `executable = false;` and taking in an argument for `destination = ...`:
+
+```nix
+let
+	zsh-config = pkgs.writeTextDir ".zshrc" ''
+		source "${pkgs.zsh-powerlevel-10k}"
+	'';
+in
+```
