@@ -89,3 +89,23 @@ if __name__ == '__main__':
 	pages = process_pages()
 	print(pages)
 ```
+
+### Parsing command line arguments
+
+This is handled using [the in-built `argparse` library](https://docs.python.org/3/library/argparse.html).
+
+```python
+from argparse import ArgumentParser
+
+# Set up the parser
+parser = ArgumentParser(description="My cool program")
+
+# Add arguments
+parser.add_argument('-f','--foo', help='Description for foo argument', required=True)
+parser.add_argument('-b','--bar', help='Description for bar argument', required=True)
+
+# Grab arguments as a dictionary
+args = vars(parser.parse_args())
+
+do_stuff(args.foo, args.bar)
+```

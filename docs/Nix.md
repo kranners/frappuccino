@@ -62,7 +62,7 @@ Here's a function for installing a script managed using `writeShellApplication`:
 ```nix
 { pkgs, ...}: let 
 	# Here we define a script called screenshot-region
-	screenshot-region = pkgs.writeShellApplication {
+-	screenshot-region = pkgs.writeShellApplication {
 		name = "screenshot-region";
 		
 		# Define all the dependencies for the PATH
