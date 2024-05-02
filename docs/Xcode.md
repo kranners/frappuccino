@@ -49,3 +49,21 @@ To add a new simulator, say for *iPhone 13*, the steps are:
 1. Open XCode.
 2. Navigate to Window **→** Devices and Simulators **→** Simulators **→** **+**.
 3. Select the device type, in this case *iPhone 13*.
+
+
+## Runtimes
+
+```shell
+# Update the local iOS SDK version
+xcodebuild -downloadPlatform iOS
+
+# Get runtimes
+xcrun simctl runtime list
+
+# Get runtime IDs
+xcrun simctl runtime list --json | jq ".[] | .identifier" --raw-output
+
+# Get iPhone devicetypes
+xcrun simctl list devicetypes --json |\
+	jq -c '.[].[] | select(.productFamily | contains("iPhone")) | .name'
+```
