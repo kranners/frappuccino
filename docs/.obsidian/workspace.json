@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dates in JavaScript.md",
+                "file": "Command Line.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dates in JavaScript.md",
+                "file": "Command Line.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dates in JavaScript.md",
+                "file": "Command Line.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dates in JavaScript.md"
+                "file": "Command Line.md"
               }
             }
           }
@@ -149,6 +148,10 @@
   },
   "active": "e4363ad1ea065ab8",
   "lastOpenFiles": [
+    "Shell.md",
+    "pv.md",
+    "Redis.md",
+    "Dates in JavaScript.md",
     "Xcode.md",
     "HTML.md",
     "Git.md",
@@ -161,7 +164,6 @@
     "Wayland.md",
     "Linux.md",
     "conflict-files-obsidian-git.md",
-    "Shell.md",
     "React Hook Form.md",
     "Prints.md",
     "NEM12 and NEM13.md",
@@ -172,9 +174,6 @@
     "CSS Selectors.md",
     "Apollo Client.md",
     "Command Line.md",
-    "Component Libraries.md",
-    "pv.md",
-    "dd.md",
     "shadcn",
     "Opinion"
   ]

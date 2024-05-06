@@ -209,6 +209,26 @@ if [[ "$NUMBER_IN_QUOTES" =~ ^\"[0-9]+\"$ ]]; then
 	echo "It is what it is"
 fi
 ```
+
+### Check if program exists in script
+
+Use `program` to do this:
+```shell
+# Output on whether the command exists
+command -v echo
+
+# Do something if the command is installed
+if [ -x "$(command -v git)" ]; then
+  git clone "https://github.com/kranners/frappuccino.git"
+fi
+
+# Do something if the command is not installed
+if ! [ -x "$(command -v git)" ]; then
+  echo 'Error: git is not installed.' >&2
+  exit 1
+fi
+```
+
 ### Count stuff
 
 Pipe them into [`wc`](https://ss64.com/bash/wc.html).
