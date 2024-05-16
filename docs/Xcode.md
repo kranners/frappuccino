@@ -24,6 +24,11 @@ If you are on Apple Chip, you'll need to install [Rosetta](https://en.wikipedia.
 softwareupdate --install-rosetta --agree-to-license
 ```
 
+After this, if you are missing `xcrun` or `simctl`, run the *first launch experience* with:
+```shell
+xcodebuild -runFirstLaunch
+```
+
 ## Platforms
 
 Platforms in XCode refers to [[Apple]] operating systems that you can develop software for.
@@ -34,6 +39,10 @@ To install a new platform (*like a new iOS version*):
 2. Navigate to Xcode **→** Settings **→** Platforms
 3. Recent platforms are available in the list automatically and are installable with the *Get* button.
 Older platforms are available by clicking the **+** button.
+
+#### Managing platforms from the command line
+
+
 
 ## Simulators
 
