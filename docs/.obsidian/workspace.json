@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Xcode.md",
+                "file": "Git.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Xcode.md",
+                "file": "Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Xcode.md",
+                "file": "Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Xcode.md"
+                "file": "Git.md"
               }
             }
           }
@@ -148,14 +148,14 @@
   },
   "active": "e4363ad1ea065ab8",
   "lastOpenFiles": [
+    "Xcode.md",
+    "Git.md",
     "Command Line.md",
     "Shell.md",
     "pv.md",
     "Redis.md",
     "Dates in JavaScript.md",
-    "Xcode.md",
     "HTML.md",
-    "Git.md",
     "Nix.md",
     "Python.md",
     "Software Licensing.md",

@@ -42,8 +42,15 @@ Older platforms are available by clicking the **+** button.
 
 #### Managing platforms from the command line
 
+To download all platforms:
+```shell
+xcodebuild -downloadAllPlatforms
+```
 
-
+To download a single platform (like if your iOS version is outdated)
+```shell
+xcodebuild -downloadPlatform iOS
+```
 ## Simulators
 
 Simulators are available for all [[Apple]] devices, and simulate hardware as best they can. They are not perfect, and are not performant or have feature parity against real devices.
