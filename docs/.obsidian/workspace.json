@@ -13,13 +13,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git.md",
+                "file": "Command Line.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "d4ed75847bccc57a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Git.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,11 +151,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e4363ad1ea065ab8",
+  "active": "d4ed75847bccc57a",
   "lastOpenFiles": [
-    "Xcode.md",
-    "Git.md",
     "Command Line.md",
+    "Git.md",
+    "Xcode.md",
     "Shell.md",
     "pv.md",
     "Redis.md",

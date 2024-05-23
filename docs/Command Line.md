@@ -210,6 +210,30 @@ if [[ "$NUMBER_IN_QUOTES" =~ ^\"[0-9]+\"$ ]]; then
 fi
 ```
 
+### Check that a file does or doesn't exist
+
+Checking for a file:
+```shell
+if [ -f "../some-path" ]; then
+  echo "it exists! yay"
+fi
+
+if [ ! -f "../some-other-path" ]; then
+  echo "it does not exist! oh no!"
+fi
+```
+
+Checking for a directory:
+```shell
+if [ -d "../some-path" ]; then
+  echo "it exists! yay"
+fi
+
+if [ ! -d "../some-other-path" ]; then
+  echo "it does not exist! oh no!"
+fi
+```
+
 ### Check if program exists in script
 
 Use `program` to do this:
