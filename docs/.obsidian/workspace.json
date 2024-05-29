@@ -23,8 +23,12 @@
             "id": "d4ed75847bccc57a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Android Studio.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
@@ -94,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Android Studio.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Android Studio.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Android Studio.md"
+              }
             }
           }
         ]
@@ -151,7 +159,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d4ed75847bccc57a",
+  "active": "1879734b76fa3070",
   "lastOpenFiles": [
     "Command Line.md",
     "Git.md",
