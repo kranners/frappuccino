@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Android Studio.md",
+                "file": "nvm.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "xcode",
+                "query": "nvm",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Android Studio.md",
+                "file": "nvm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Android Studio.md",
+                "file": "nvm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Android Studio.md"
+                "file": "nvm.md"
               }
             }
           }
@@ -161,6 +162,8 @@
   },
   "active": "d4ed75847bccc57a",
   "lastOpenFiles": [
+    "fnm.md",
+    "Android Studio.md",
     "Command Line.md",
     "Git.md",
     "Xcode.md",
@@ -185,8 +188,6 @@
     "GraphQL Query.md",
     "GraphQL Fragments.md",
     "Fedora Linux.md",
-    "CSS Selectors.md",
-    "Apollo Client.md",
     "shadcn",
     "Opinion"
   ]
