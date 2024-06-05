@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e4363ad1ea065ab8",
+            "id": "d4ed75847bccc57a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "d4ed75847bccc57a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "nvm.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nvm.md",
+                "file": "Command Line.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "nvm.md",
+                "file": "Command Line.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "nvm.md"
+                "file": "Command Line.md"
               }
             }
           }
@@ -162,6 +149,7 @@
   },
   "active": "d4ed75847bccc57a",
   "lastOpenFiles": [
+    "nvm.md",
     "fnm.md",
     "Android Studio.md",
     "Command Line.md",
@@ -187,7 +175,6 @@
     "GraphQL.md",
     "GraphQL Query.md",
     "GraphQL Fragments.md",
-    "Fedora Linux.md",
     "shadcn",
     "Opinion"
   ]
