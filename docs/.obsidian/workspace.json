@@ -28,9 +28,19 @@
                 "currentVersion": "1.6.3"
               }
             }
+          },
+          {
+            "id": "0fb8e12e4a5e86e5",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.5"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -158,7 +168,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d31b3c540ce58aa9",
+  "active": "0fb8e12e4a5e86e5",
   "lastOpenFiles": [
     "Command Line.md",
     "nvm.md",
