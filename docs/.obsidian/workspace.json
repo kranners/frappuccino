@@ -26,9 +26,21 @@
               "type": "graph",
               "state": {}
             }
+          },
+          {
+            "id": "ab2b85f68ae36bf1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Nomai.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -95,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git.md",
+                "file": "Nomai.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git.md",
+                "file": "Nomai.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git.md"
+                "file": "Nomai.md"
               }
             }
           }
@@ -156,8 +168,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0fb8e12e4a5e86e5",
+  "active": "ab2b85f68ae36bf1",
   "lastOpenFiles": [
+    "Nomai.md",
     "Command Line.md",
     "nvm.md",
     "fnm.md",
@@ -183,7 +196,6 @@
     "NEM12 and NEM13.md",
     "GraphQL.md",
     "GraphQL Query.md",
-    "GraphQL Fragments.md",
     "shadcn",
     "Opinion"
   ]
