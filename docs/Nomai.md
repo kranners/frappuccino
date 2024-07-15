@@ -1,1 +1,0 @@
-A Nomai named Coleus mysteriously vanished from a cave at the bottom of the dry lakebed at Ember Twin's north pole
