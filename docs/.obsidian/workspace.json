@@ -23,8 +23,12 @@
             "id": "0fb8e12e4a5e86e5",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "TypeScript.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
@@ -57,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "bisect",
+                "query": "generic function",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -94,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "TypeScript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,6 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "TypeScript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Nomai.md"
+                "file": "TypeScript.md"
               }
             }
           }
@@ -153,10 +160,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1879734b76fa3070",
+  "active": "0fb8e12e4a5e86e5",
   "lastOpenFiles": [
-    "Nomai.md",
     "Command Line.md",
+    "Nomai.md",
     "nvm.md",
     "fnm.md",
     "Android Studio.md",
