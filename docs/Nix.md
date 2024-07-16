@@ -44,11 +44,95 @@ nix.settings.experimental-features = ["nix-command" "flakes"];
 
 *Check out [[Nix Flakes]] for more information.*
 
+## Nix language
+
+### Interpolation
+
+[Nix supports interpolation in strings, paths, and attribute *names*.](https://nix.dev/manual/nix/2.23/language/string-interpolation#interpolated-expression)
+
+#### Interpolated expressions
+
+When an expression is used in interpolation, it's called an [interpolated expression](https://nix.dev/manual/nix/2.23/language/string-interpolation#interpolated-expression).
+Expressions interpolate like:
+
+- `string`s interpolate to themselves.
+- `path`s interpolate to their absolute path in the Nix store.
+- `attribute set`s interpolate with a `__toString` attribute which you must provide.
+
+#### Escaping special characters
+
+[Indented strings can be annoying to avoid interpolation with for certain things](https://nix.dev/manual/nix/2.23/language/values.html#primitives:~:text=Since%20%24%7B%20and,%22.%20Example%3A).
+
+- `$` can be escaped by prefixing it with `''`. i.e. `''${...}`
+- `''` can be escaped by prefixing it with `'`. i.e. `'''stuff'''`
+
+*For example: [[zsh]] value substitution in [[Nix#`pkgs.writeShellApplication`]]:*
+```nix
+let
+	greeting = "Howdy 🤠";
+
+	multiline = ''
+		well hello there
+		${greeting}
+		''${greeting}
+
+		'''goodbye 👋'''
+	'';
+in
+# ''
+# well hello there
+# Howdy 🤠
+# \${greeting}
+# ''goodbye 👋''
+# ''
+multiline
+```
+
+#### Examples of interpolation
+
+*Interpolating two strings*
+```nix
+let
+	apple = "apple";
+	banana = "banana";
+
+	fruits = "${apple}s and ${banana}s";
+in
+# "apples and bananas"
+fruits
+```
+
+*Interpolating a path*
+```nix
+let
+	doggo = ./adorable-dog-photo.jpg;
+in
+{
+	# "open /nix/store/.../adorable-dog-photo.jpg"
+	script = "open ${doggo}";
+}
+```
+
+*Interpolating an attribute set*
+```nix
+let
+	full-name = {
+		first = "Arn";
+		last = "Peerz";
+
+		# __toString takes in the attribute set itself
+		__toString = name: "${name.first} ${name.last}";
+	}
+in
+{
+	# "Hello, Arn Peerz!"
+	greeting = "Hello, ${full-name}!";
+}
+```
+
 ## Derivations
 
 A derivation is a set of instructions which inform Nix how to build a package from scratch.
-
-
 
 ### `pkgs.writeShellApplication`
 

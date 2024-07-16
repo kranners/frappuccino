@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript.md",
+                "file": "Nix.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TypeScript.md",
+                "file": "Nix.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TypeScript.md",
+                "file": "Nix.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TypeScript.md"
+                "file": "Nix.md"
               }
             }
           }
@@ -162,6 +162,7 @@
   },
   "active": "0fb8e12e4a5e86e5",
   "lastOpenFiles": [
+    "TypeScript.md",
     "Command Line.md",
     "Nomai.md",
     "nvm.md",
@@ -187,7 +188,6 @@
     "Prints.md",
     "NEM12 and NEM13.md",
     "GraphQL.md",
-    "GraphQL Query.md",
     "shadcn",
     "Opinion"
   ]
