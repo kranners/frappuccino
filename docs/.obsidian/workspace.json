@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d4ed75847bccc57a",
+            "id": "e4363ad1ea065ab8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0fb8e12e4a5e86e5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Nix.md",
+                "file": "Astro.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "generic function",
+                "query": "shellappl",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -99,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Nix.md",
+                "file": "Astro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Nix.md",
+                "file": "Astro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Nix.md"
+                "file": "Astro.md"
               }
             }
           }
@@ -160,22 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0fb8e12e4a5e86e5",
+  "active": "e4363ad1ea065ab8",
   "lastOpenFiles": [
-    "TypeScript.md",
-    "Command Line.md",
-    "Nomai.md",
-    "nvm.md",
-    "fnm.md",
-    "Android Studio.md",
-    "Git.md",
-    "Xcode.md",
-    "Shell.md",
-    "pv.md",
-    "Redis.md",
-    "Dates in JavaScript.md",
-    "HTML.md",
     "Nix.md",
+    "Shell.md",
+    "conflict-files-obsidian-git.md",
+    "Git.md",
     "Python.md",
     "Software Licensing.md",
     "sway.md",
@@ -183,11 +159,21 @@
     "Widget Toolkits.md",
     "Wayland.md",
     "Linux.md",
-    "conflict-files-obsidian-git.md",
     "React Hook Form.md",
     "Prints.md",
     "NEM12 and NEM13.md",
     "GraphQL.md",
+    "GraphQL Query.md",
+    "GraphQL Fragments.md",
+    "Fedora Linux.md",
+    "CSS Selectors.md",
+    "Apollo Client.md",
+    "Xcode.md",
+    "Command Line.md",
+    "Component Libraries.md",
+    "pv.md",
+    "dd.md",
+    "Nix Flakes.md",
     "shadcn",
     "Opinion"
   ]

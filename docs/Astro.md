@@ -9,9 +9,9 @@ For building something more interactive, like a SPA or similar, use [[React]] (o
 
 # Getting started
 
+The [preferred method for starting an Astro project is to use the provided setup wizard](https://docs.astro.build/en/tutorial/1-setup/2/#launch-the-astro-setup-wizard):
 ```shell
-# Use Yarn!
-yarn create astro
+npm create astro@latest
 ```
 
 # Islands
