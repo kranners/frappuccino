@@ -23,3 +23,7 @@ pnpm-debug.log*
 # Vitepress
 **/.vitepress/dist
 **/.vitepress/cache
+
+# Avoiding merge conflicts from different machines
+docs/.obsidian/workspace.json
+
