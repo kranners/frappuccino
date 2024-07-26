@@ -57,3 +57,56 @@ module.exports = {
 }
 ```
 *For a full list of configuration options, [see their configuration section](https://github.com/import-js/eslint-import-resolver-typescript#configuration).*
+
+### Reporting unused disables
+
+By default, `eslint-disable` comments which aren't required will be a [`"warn"` severity](#Rule%20severity).
+
+To set to `"error"` in your config:
+```js
+// eslint.config.js
+export default [
+    {
+        linterOptions: {
+            reportUnusedDisableDirectives: "error"
+        }
+    }
+];
+```
+
+## Usage
+
+### Ignoring or elevating rules ad-hoc
+
+**A quick word:** You *should not ever* disable rules unless you *know exactly what you are doing*.
+
+Disabling a rule is **not a fix** to a problem.
+
+It is an **admission that you will not fix** a problem.
+
+_**ALL**_ rule disables ought to be commented on, explaining why you will not fix the problem that the rule picks up.
+
+##### Rule severity
+
+A rule's severity controls how ESLint behaves when encountering it.
+
+- `2` or `"error"` will make ESLint exit with code `1` if tripped
+- `1` or `"warn"` will enable the rule, only in output logs
+- `0` or `"off"` will disable the rule entirely
+
+##### Ignoring rules for a line
+
+```js
+/* eslint-disable-next-line no-console, quotes */
+console.log('gottem');
+```
+
+##### Ignoring rules in a whole file
+
+```js
+/* eslint-disable no-console */
+
+console.log("i'm illegal :)");
+
+/* eslint-enable no-console */
+```

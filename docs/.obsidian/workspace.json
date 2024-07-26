@@ -8,12 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e4363ad1ea065ab8",
+            "id": "d4ed75847bccc57a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Astro.md",
+                "file": "ESLint.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0fb8e12e4a5e86e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Nix.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "shellappl",
+                "query": "generic function",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +77,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Astro.md",
+                "file": "ESLint.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Astro.md",
+                "file": "ESLint.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Astro.md"
+                "file": "ESLint.md"
               }
             }
           }
@@ -146,12 +159,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e4363ad1ea065ab8",
+  "active": "d4ed75847bccc57a",
   "lastOpenFiles": [
-    "Nix.md",
-    "Shell.md",
-    "conflict-files-obsidian-git.md",
     "Git.md",
+    "Nix.md",
+    "conflict-files-obsidian-git.md",
+    "TypeScript.md",
+    "Command Line.md",
+    "Nomai.md",
+    "nvm.md",
+    "fnm.md",
+    "Android Studio.md",
+    "Xcode.md",
+    "Shell.md",
+    "pv.md",
+    "Redis.md",
+    "Dates in JavaScript.md",
+    "HTML.md",
     "Python.md",
     "Software Licensing.md",
     "sway.md",
@@ -163,17 +187,6 @@
     "Prints.md",
     "NEM12 and NEM13.md",
     "GraphQL.md",
-    "GraphQL Query.md",
-    "GraphQL Fragments.md",
-    "Fedora Linux.md",
-    "CSS Selectors.md",
-    "Apollo Client.md",
-    "Xcode.md",
-    "Command Line.md",
-    "Component Libraries.md",
-    "pv.md",
-    "dd.md",
-    "Nix Flakes.md",
     "shadcn",
     "Opinion"
   ]
