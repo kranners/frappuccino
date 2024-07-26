@@ -46,6 +46,66 @@ nix.settings.experimental-features = ["nix-command" "flakes"];
 
 ## Nix language
 
+### Working with lists and attribute sets
+
+Functions to work with [lists](https://ryantm.github.io/nixpkgs/functions/library/lists/#sec-functions-library-lists) and [attribute sets](https://ryantm.github.io/nixpkgs/functions/library/attrsets/#sec-functions-library-attrsets) generally come from their respective module in the nixpkgs standard library, or using [the `builtins` functions](https://nix.dev/manual/nix/2.18/language/builtins.html).
+
+##### Common iteration patterns
+
+[**List to attribute set**](https://nix.dev/manual/nix/2.18/language/builtins.html#builtins-listToAttrs)
+```nix
+FRUITS = [
+	{ value = 1; name = "Apple"; }
+	{ value = 2; name = "Banana"; }
+	{ value = 8; name = "Pomegranate"; }
+];
+
+// { Apple: 1; Banana: 2; Pomegranate: 8; }
+prices = builtins.listToAttrs FRUITS;
+```
+
+[**Map items in a list**](https://ryantm.github.io/nixpkgs/functions/library/lists/#function-library-lib.lists.forEach)
+```nix
+FRUITS = [
+	{ value = 1; name = "Apple"; }
+	{ value = 2; name = "Banana"; }
+	{ value = 8; name = "Pomegranate"; }
+];
+
+// [ { tag = "Apple - $1"; } { tag = "Banana - $2"; } { tag = "Pomegranate - $8"; } ]
+tags = lib.lists.forEach FRUITS (fruit: {
+	tag = "${fruit.name} - $${fruit.value}";
+});
+```
+
+[**Map an attribute set into another attribute set**](https://ryantm.github.io/nixpkgs/functions/library/attrsets/#function-library-lib.attrsets.mapAttrs-prime)
+
+**NOTE:** Pronounced "map attrs *prime*" 🙄
+
+```nix
+PRICES = {
+	Apple: 1;
+	Banana: 2;
+	Pomegranate: 8;
+};
+
+fruitToTag = (fruit: value: );
+
+// { "Apple - $1": "$1.00; "Banana - $2": "$2.00"; "Pomegranate - $8": "$8.00"; }
+shelf = lib.attrsets.mapAttrs' (fruit: price: {
+	name = "${fruit} - $${price}";
+	value = "$${price}.00";
+});
+```
+
+[**Concatenate a list of strings**](https://ryantm.github.io/nixpkgs/functions/library/strings/#function-library-lib.strings.concatStrings)
+```nix
+WORDS = [ "howdy" "partner" "🤠" ];
+
+// "howdypartner🤠";
+greeting = lib.strings.concatStrings WORDS;
+```
+
 ### Interpolation
 
 [Nix supports interpolation in strings, paths, and attribute *names*.](https://nix.dev/manual/nix/2.23/language/string-interpolation#interpolated-expression)
@@ -146,7 +206,7 @@ Here's a function for installing a script managed using `writeShellApplication`:
 ```nix
 { pkgs, ...}: let 
 	# Here we define a script called screenshot-region
--	screenshot-region = pkgs.writeShellApplication {
+ 	screenshot-region = pkgs.writeShellApplication {
 		name = "screenshot-region";
 		
 		# Define all the dependencies for the PATH

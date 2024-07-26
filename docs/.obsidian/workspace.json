@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -60,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "generic function",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,8 +78,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ESLint.md",
+                "file": "Nix.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ESLint.md",
+                "file": "Nix.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ESLint.md"
+                "file": "Nix.md"
               }
             }
           }
@@ -159,8 +159,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d4ed75847bccc57a",
+  "active": "0fb8e12e4a5e86e5",
   "lastOpenFiles": [
+    "ESLint.md",
     "Git.md",
     "Nix.md",
     "conflict-files-obsidian-git.md",
@@ -186,7 +187,6 @@
     "React Hook Form.md",
     "Prints.md",
     "NEM12 and NEM13.md",
-    "GraphQL.md",
     "shadcn",
     "Opinion"
   ]
