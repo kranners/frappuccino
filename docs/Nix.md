@@ -89,8 +89,6 @@ PRICES = {
 	Pomegranate: 8;
 };
 
-fruitToTag = (fruit: value: );
-
 // { "Apple - $1": "$1.00; "Banana - $2": "$2.00"; "Pomegranate - $8": "$8.00"; }
 shelf = lib.attrsets.mapAttrs' (fruit: price: {
 	name = "${fruit} - $${price}";
