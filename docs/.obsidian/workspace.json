@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Xcode.md",
+                "file": "Node.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "xcrun",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Xcode.md",
+                "file": "Node.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Xcode.md",
+                "file": "Node.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Xcode.md"
+                "file": "Node.md"
               }
             }
           }
@@ -160,8 +160,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0fb8e12e4a5e86e5",
+  "active": "ef212bfdb1978208",
   "lastOpenFiles": [
+    "npm.md",
+    "Xcode.md",
     "Git.md",
     "Nix.md",
     "ESLint.md",
@@ -172,7 +174,6 @@
     "nvm.md",
     "fnm.md",
     "Android Studio.md",
-    "Xcode.md",
     "Shell.md",
     "pv.md",
     "Redis.md",
@@ -187,7 +188,6 @@
     "Linux.md",
     "React Hook Form.md",
     "Prints.md",
-    "NEM12 and NEM13.md",
     "shadcn",
     "Opinion"
   ]
