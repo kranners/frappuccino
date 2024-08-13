@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Node.md",
+                "file": "Nix.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Node.md",
+                "file": "Nix.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Node.md",
+                "file": "Nix.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Node.md"
+                "file": "Nix.md"
               }
             }
           }
@@ -160,8 +160,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ef212bfdb1978208",
+  "active": "0fb8e12e4a5e86e5",
   "lastOpenFiles": [
+    "Node.md",
     "npm.md",
     "Xcode.md",
     "Git.md",
@@ -187,7 +188,6 @@
     "Wayland.md",
     "Linux.md",
     "React Hook Form.md",
-    "Prints.md",
     "shadcn",
     "Opinion"
   ]
