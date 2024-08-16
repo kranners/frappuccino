@@ -20,12 +20,12 @@
             }
           },
           {
-            "id": "0fb8e12e4a5e86e5",
+            "id": "16449ddf156cebaa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Nix.md",
+                "file": "Command Line.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "command",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Nix.md",
+                "file": "Command Line.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Nix.md",
+                "file": "Command Line.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Nix.md"
+                "file": "Command Line.md"
               }
             }
           }
@@ -160,13 +160,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0fb8e12e4a5e86e5",
+  "active": "16449ddf156cebaa",
   "lastOpenFiles": [
+    "Android Studio.md",
+    "Nix.md",
     "Node.md",
     "npm.md",
     "Xcode.md",
     "Git.md",
-    "Nix.md",
     "ESLint.md",
     "conflict-files-obsidian-git.md",
     "TypeScript.md",
@@ -174,7 +175,6 @@
     "Nomai.md",
     "nvm.md",
     "fnm.md",
-    "Android Studio.md",
     "Shell.md",
     "pv.md",
     "Redis.md",
