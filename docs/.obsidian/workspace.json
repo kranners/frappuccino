@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "2a1c590cba5785bd",
+        "id": "1b4043ab65cc421c",
         "type": "tabs",
         "children": [
           {
-            "id": "d4ed75847bccc57a",
+            "id": "f4ed5490e17394d2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ESLint.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "16449ddf156cebaa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Command Line.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Command Line.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Command Line.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Command Line.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -160,18 +139,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "16449ddf156cebaa",
+  "active": "f4ed5490e17394d2",
   "lastOpenFiles": [
+    "ESLint.md",
+    "Command Line.md",
     "Android Studio.md",
     "Nix.md",
     "Node.md",
     "npm.md",
     "Xcode.md",
     "Git.md",
-    "ESLint.md",
     "conflict-files-obsidian-git.md",
     "TypeScript.md",
-    "Command Line.md",
     "Nomai.md",
     "nvm.md",
     "fnm.md",
