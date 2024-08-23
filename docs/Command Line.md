@@ -108,6 +108,14 @@ ls | xargs
 printf "%s\n" "${links[@]}" | xargs -P 20 -I {} curl {}
 ```
 
+### If Not
+
+```shell
+if [ ! -z "$MYVAL" ] ; then
+	echo "MYVAL is set! :)"
+fi
+```
+
 ### For each file in folder
 
 To perform a function for each file in a given folder you can use a `for` loop over either the output of a `find` or over just a regular [[Glob]].
@@ -132,6 +140,11 @@ command-throws-errors 2>&1 > full-log.log
 Use this in conjunction with `less` to interactively read long command outputs
 ```shell
 yarn eslint . --verbose 2>&1 | less
+```
+
+Redirect both stderr and stdout to `/dev/null` to bury all output from a command
+```shell
+useless-output-command 2>/dev/null 1>&2
 ```
 
 ### Default / fallback values
@@ -168,7 +181,16 @@ echo "$MAYBE" # "yeah"
 
 ### Check variable for value or setting
 
-Checking variables for whether they're set, it's the `-z` flag in `if`:
+To check if a value IS set, use `-n`:
+```shell
+SOME_ARG="$2"
+
+if [ -n "$SOME_ARG" ]; then
+	echo "Now I can do some thing! Wow!"
+fi
+```
+
+To check if a value IS NOT set, use `-z`:
 ```shell
 kill_port() {
 	pid="$(lsof -i :${1} | awk 'NR > 1 {print $2}')"
@@ -287,4 +309,83 @@ Combine this all together with:
 ```shell
 # Where <port> is the port you want to kill.
 kill -15 $(lsof -i :<port> | awk 'NR > 1 {print $2}')
+```
+
+### Parse arguments, `case` syntax
+
+Basic case switch:
+```shell
+PET="dog"
+
+case "$PET" in
+	dog)
+		echo "Woof!"
+		;;
+	cat)
+		echo "Meow!"
+		;;
+	snake)
+		echo "Hissssssss 🐍"
+		;;
+	*)
+		echo "idk about that one"
+		;;
+esac
+```
+
+Parsing boolean arguments:
+```shell
+while [[ "$#" > 0 ]]; do
+	case "$1" in
+		-v|--verbose) VERBOSE=1; shift;;
+		-s|--silent) SILENT=1; shift;;
+		*) echo "Unknown parameter $1"; exit 1;;
+	esac
+done
+
+[[ -z "$VERBOSE" ]] || echo "I am extra verbose!!"
+[[ -z "$SILENT" ]] || echo "Ssshhhhhh..."
+```
+
+```
+$ ./test.sh --verbose         
+I am extra verbose!!
+
+$ ./test.sh --silent 
+Ssshhhhhh...
+
+$ ./test.sh howdy   
+Unknown parameter howdy
+```
+
+Parsing arguments with values: 
+```shell
+while [[ "$#" > 0 ]]; do
+	case "$1" in
+	    -n|--name) NAME="$2"; shift 2;;
+		*) echo "Unknown parameter $1"; exit 1;;
+	esac
+done
+
+[[ -z "$NAME" ]] || echo "Hi there, $NAME!"
+```
+
+```
+$ ./test.sh -n "Big Guy"
+Hi there, Big Guy!
+
+$ ./test.sh --name "lil dude"
+Hi there, lil dude!
+```
+
+### Print over multiple lines
+
+```shell
+cat << EOF
+usage: whatever
+
+hello
+
+I'm down here!! WOAH
+EOF
 ```
