@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Command Line.md",
+                "file": "Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Command Line.md",
+                "file": "Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Command Line.md",
+                "file": "Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Command Line.md"
+                "file": "Python.md"
               }
             }
           }
@@ -149,10 +148,11 @@
   },
   "active": "f4ed5490e17394d2",
   "lastOpenFiles": [
+    "Command Line.md",
+    "Py.md",
     "Arch Linux.md",
     "Android Studio.md",
     "ESLint.md",
-    "Command Line.md",
     "Nix.md",
     "Node.md",
     "npm.md",
@@ -174,7 +174,6 @@
     "X11.md",
     "Widget Toolkits.md",
     "Wayland.md",
-    "Linux.md",
     "shadcn",
     "Opinion"
   ]
