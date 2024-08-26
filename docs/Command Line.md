@@ -190,7 +190,7 @@ if [ -n "$SOME_ARG" ]; then
 fi
 ```
 
-To check if a value IS NOT set, use `-z`:
+To check if a value IS NOT set, use `-z`
 ```shell
 kill_port() {
 	pid="$(lsof -i :${1} | awk 'NR > 1 {print $2}')"
@@ -285,6 +285,18 @@ To count files in a folder:
 ls folder | wc -l
 
 > 1330
+```
+
+### Count unique lines in a file
+
+To get counts of sorted repeated lines in a file:
+```shell
+sort FILE.txt | uniq -c
+```
+
+To get the most frequent ones at the top of the command:
+```shell
+sort FILE.txt | uniq -c | sort -bgr
 ```
 
 ### Kill process at port

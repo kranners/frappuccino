@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python.md",
+                "file": "Command Line.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python.md",
+                "file": "Command Line.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python.md",
+                "file": "Command Line.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python.md"
+                "file": "Command Line.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "f4ed5490e17394d2",
   "lastOpenFiles": [
+    "Python.md",
     "Command Line.md",
     "Py.md",
     "Arch Linux.md",
@@ -168,7 +169,6 @@
     "Redis.md",
     "Dates in JavaScript.md",
     "HTML.md",
-    "Python.md",
     "Software Licensing.md",
     "sway.md",
     "X11.md",
