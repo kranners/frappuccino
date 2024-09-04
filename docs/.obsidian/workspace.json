@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git.md",
+                "file": "Command Line.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git.md",
+                "file": "Command Line.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git.md",
+                "file": "Command Line.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git.md"
+                "file": "Command Line.md"
               }
             }
           }
@@ -149,6 +148,8 @@
   },
   "active": "f4ed5490e17394d2",
   "lastOpenFiles": [
+    "Git.md",
+    "comm.md",
     "Command Line.md",
     "Python.md",
     "Py.md",
@@ -159,7 +160,6 @@
     "Node.md",
     "npm.md",
     "Xcode.md",
-    "Git.md",
     "conflict-files-obsidian-git.md",
     "TypeScript.md",
     "Nomai.md",
@@ -174,7 +174,6 @@
     "sway.md",
     "X11.md",
     "Widget Toolkits.md",
-    "Wayland.md",
     "shadcn",
     "Opinion"
   ]
