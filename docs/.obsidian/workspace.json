@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Command Line.md",
+                "file": "Nix.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "check command",
+                "query": "resess",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Command Line.md",
+                "file": "Nix.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Command Line.md",
+                "file": "Nix.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Command Line.md"
+                "file": "Nix.md"
               }
             }
           }
@@ -147,8 +147,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8198e6ccdc523a55",
+  "active": "ef212bfdb1978208",
   "lastOpenFiles": [
+    "Colored echo output.md",
+    "Toggleterm Lua usage.md",
+    "Command Line.md",
     "TypeScript.md",
     "Format strings in Lua.md",
     "Lua multiple returns.md",
@@ -172,9 +175,6 @@
     "1725585130-UJOJ.md",
     "Split strings in Neovim Lua.md",
     "Splitting and joining strings in Lua.md",
-    "Zettelkasten.md",
-    "Command Line.md",
-    "Running commands in Neovim Lua.md",
     "shadcn",
     "Opinion"
   ]
