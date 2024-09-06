@@ -146,8 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f4ed5490e17394d2",
+  "active": "1879734b76fa3070",
   "lastOpenFiles": [
+    "Replacing actions in Telescope.md",
+    "Close a buffer in Neovim.md",
+    "Running commands in Neovim Lua.md",
+    "Command to disable sleep.md",
     "Git.md",
     "comm.md",
     "Command Line.md",
@@ -170,10 +174,6 @@
     "Redis.md",
     "Dates in JavaScript.md",
     "HTML.md",
-    "Software Licensing.md",
-    "sway.md",
-    "X11.md",
-    "Widget Toolkits.md",
     "shadcn",
     "Opinion"
   ]
