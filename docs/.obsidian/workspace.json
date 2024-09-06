@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Command Line.md",
+                "file": "Zettelkasten.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Command Line.md",
+                "file": "Zettelkasten.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Command Line.md",
+                "file": "Zettelkasten.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Command Line.md"
+                "file": "Zettelkasten.md"
               }
             }
           }
@@ -146,15 +146,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1879734b76fa3070",
+  "active": "f4ed5490e17394d2",
   "lastOpenFiles": [
     "Replacing actions in Telescope.md",
     "Close a buffer in Neovim.md",
+    "Command Line.md",
+    "Resolving paths in Neovim.md",
+    "Get vault root with Obsidian.nvim.md",
+    "Zettelkasten.md",
+    "Open a floating window in Neovim.md",
+    "Execute lua in Neovim.md",
+    "Splitting and joining strings in Lua.md",
+    "Split strings in Neovim Lua.md",
     "Running commands in Neovim Lua.md",
     "Command to disable sleep.md",
     "Git.md",
     "comm.md",
-    "Command Line.md",
     "Python.md",
     "Py.md",
     "Arch Linux.md",
@@ -167,13 +174,6 @@
     "conflict-files-obsidian-git.md",
     "TypeScript.md",
     "Nomai.md",
-    "nvm.md",
-    "fnm.md",
-    "Shell.md",
-    "pv.md",
-    "Redis.md",
-    "Dates in JavaScript.md",
-    "HTML.md",
     "shadcn",
     "Opinion"
   ]
