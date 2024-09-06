@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resolving paths in Neovim.md",
+                "file": "TypeScript.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "signing fail",
+                "query": "Index signature",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Resolving paths in Neovim.md",
+                "file": "TypeScript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Resolving paths in Neovim.md",
+                "file": "TypeScript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Resolving paths in Neovim.md"
+                "file": "TypeScript.md"
               }
             }
           }
@@ -148,6 +149,7 @@
   },
   "active": "8198e6ccdc523a55",
   "lastOpenFiles": [
+    "Resolving paths in Neovim.md",
     "Replacing actions in Telescope.md",
     "Open a floating window in Neovim.md",
     "iCloud Drive.md",
@@ -166,7 +168,6 @@
     "Splitting and joining strings in Lua.md",
     "Zettelkasten.md",
     "Command Line.md",
-    "Resolving paths in Neovim.md",
     "Running commands in Neovim Lua.md",
     "comm.md",
     "Python.md",
