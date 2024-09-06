@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -147,7 +146,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8198e6ccdc523a55",
+  "active": "1879734b76fa3070",
   "lastOpenFiles": [
     "Resolving paths in Neovim.md",
     "Replacing actions in Telescope.md",
