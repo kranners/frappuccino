@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1b4043ab65cc421c",
+        "id": "24301d5c61e2cd01",
         "type": "tabs",
         "children": [
           {
-            "id": "f4ed5490e17394d2",
+            "id": "8198e6ccdc523a55",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zettelkasten.md",
+                "file": "Resolving paths in Neovim.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zettelkasten.md",
+                "file": "Resolving paths in Neovim.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zettelkasten.md",
+                "file": "Resolving paths in Neovim.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zettelkasten.md"
+                "file": "Resolving paths in Neovim.md"
               }
             }
           }
@@ -146,34 +146,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f4ed5490e17394d2",
+  "active": "8198e6ccdc523a55",
   "lastOpenFiles": [
     "Replacing actions in Telescope.md",
+    "Open a floating window in Neovim.md",
+    "iCloud Drive.md",
+    "HTML.md",
+    "Hostinger.md",
+    "Homebrew.md",
+    "Home Manager.md",
+    "GitHub Actions.md",
+    "Git.md",
+    "Get vault root with Obsidian.nvim.md",
+    "Execute lua in Neovim.md",
     "Close a buffer in Neovim.md",
+    "Command to disable sleep.md",
+    "1725585130-UJOJ.md",
+    "Split strings in Neovim Lua.md",
+    "Splitting and joining strings in Lua.md",
+    "Zettelkasten.md",
     "Command Line.md",
     "Resolving paths in Neovim.md",
-    "Get vault root with Obsidian.nvim.md",
-    "Zettelkasten.md",
-    "Open a floating window in Neovim.md",
-    "Execute lua in Neovim.md",
-    "Splitting and joining strings in Lua.md",
-    "Split strings in Neovim Lua.md",
     "Running commands in Neovim Lua.md",
-    "Command to disable sleep.md",
-    "Git.md",
     "comm.md",
     "Python.md",
     "Py.md",
     "Arch Linux.md",
     "Android Studio.md",
     "ESLint.md",
-    "Nix.md",
-    "Node.md",
-    "npm.md",
-    "Xcode.md",
-    "conflict-files-obsidian-git.md",
-    "TypeScript.md",
-    "Nomai.md",
     "shadcn",
     "Opinion"
   ]
