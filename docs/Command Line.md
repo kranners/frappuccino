@@ -142,7 +142,7 @@ Use this in conjunction with `less` to interactively read long command outputs
 yarn eslint . --verbose 2>&1 | less
 ```
 
-Redirect both stderr and stdout to `/dev/null` to bury all output from a command
+Redirect both stderr and stdout to `/dev/null` to bury all output / suppress errors / silence errorsfrom a command.
 ```shell
 useless-output-command 2>/dev/null 1>&2
 ```
