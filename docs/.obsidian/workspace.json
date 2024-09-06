@@ -148,6 +148,11 @@
   },
   "active": "1879734b76fa3070",
   "lastOpenFiles": [
+    "Format strings in Lua.md",
+    "Lua multiple returns.md",
+    "Lua date and time.md",
+    "View all recent messages in Neovim.md",
+    "Lua destructuring a table.md",
     "Resolving paths in Neovim.md",
     "Replacing actions in Telescope.md",
     "Open a floating window in Neovim.md",
@@ -169,11 +174,6 @@
     "Command Line.md",
     "Running commands in Neovim Lua.md",
     "comm.md",
-    "Python.md",
-    "Py.md",
-    "Arch Linux.md",
-    "Android Studio.md",
-    "ESLint.md",
     "shadcn",
     "Opinion"
   ]
