@@ -149,6 +149,8 @@
   },
   "active": "ef212bfdb1978208",
   "lastOpenFiles": [
+    "Lodash padStart.md",
+    "Jest mock types.md",
     "Stack/1725636610-IKKW.md",
     "Stack",
     "Colored echo output.md",
@@ -174,8 +176,6 @@
     "Execute lua in Neovim.md",
     "Close a buffer in Neovim.md",
     "Command to disable sleep.md",
-    "1725585130-UJOJ.md",
-    "Split strings in Neovim Lua.md",
     "shadcn",
     "Opinion"
   ]
