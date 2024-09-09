@@ -149,6 +149,8 @@
   },
   "active": "ef212bfdb1978208",
   "lastOpenFiles": [
+    "Stack/1725636610-IKKW.md",
+    "Stack",
     "Colored echo output.md",
     "Toggleterm Lua usage.md",
     "Command Line.md",
@@ -174,7 +176,6 @@
     "Command to disable sleep.md",
     "1725585130-UJOJ.md",
     "Split strings in Neovim Lua.md",
-    "Splitting and joining strings in Lua.md",
     "shadcn",
     "Opinion"
   ]
