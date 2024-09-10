@@ -149,6 +149,9 @@
   },
   "active": "ef212bfdb1978208",
   "lastOpenFiles": [
+    "Add external plugin to Nixvim.md",
+    "exactOptionalPropertyTypes.md",
+    "Slack emote sources.md",
     "Lodash padStart.md",
     "Jest mock types.md",
     "Stack/1725636610-IKKW.md",
@@ -173,9 +176,6 @@
     "GitHub Actions.md",
     "Git.md",
     "Get vault root with Obsidian.nvim.md",
-    "Execute lua in Neovim.md",
-    "Close a buffer in Neovim.md",
-    "Command to disable sleep.md",
     "shadcn",
     "Opinion"
   ]
