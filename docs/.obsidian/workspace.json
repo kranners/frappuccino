@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Nix.md",
+                "file": "Diff tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "resess",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Nix.md",
+                "file": "Diff tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Nix.md",
+                "file": "Diff tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Nix.md"
+                "file": "Diff tools.md"
               }
             }
           }
@@ -147,14 +146,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ef212bfdb1978208",
+  "active": "8198e6ccdc523a55",
   "lastOpenFiles": [
+    "Nix.md",
+    "Stack/1725636610-IKKW.md",
+    "Diff tools.md",
     "Add external plugin to Nixvim.md",
     "exactOptionalPropertyTypes.md",
     "Slack emote sources.md",
     "Lodash padStart.md",
     "Jest mock types.md",
-    "Stack/1725636610-IKKW.md",
     "Stack",
     "Colored echo output.md",
     "Toggleterm Lua usage.md",
@@ -174,8 +175,6 @@
     "Homebrew.md",
     "Home Manager.md",
     "GitHub Actions.md",
-    "Git.md",
-    "Get vault root with Obsidian.nvim.md",
     "shadcn",
     "Opinion"
   ]
