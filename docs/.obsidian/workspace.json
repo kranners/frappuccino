@@ -148,6 +148,11 @@
   },
   "active": "8198e6ccdc523a55",
   "lastOpenFiles": [
+    "Redux dispatches.md",
+    "react-require-default-props.md",
+    "mapStateToProps Redux.md",
+    "mapDispatchToProps.md",
+    "bindActionCreators.md",
     "Nix.md",
     "Stack/1725636610-IKKW.md",
     "Diff tools.md",
@@ -170,11 +175,6 @@
     "Replacing actions in Telescope.md",
     "Open a floating window in Neovim.md",
     "iCloud Drive.md",
-    "HTML.md",
-    "Hostinger.md",
-    "Homebrew.md",
-    "Home Manager.md",
-    "GitHub Actions.md",
     "shadcn",
     "Opinion"
   ]
