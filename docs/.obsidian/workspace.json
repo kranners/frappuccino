@@ -11,8 +11,12 @@
             "id": "8198e6ccdc523a55",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "nvim-lspconfig.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "nvim-lspconfig.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "nvim-lspconfig.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "nvim-lspconfig.md"
+              }
             }
           }
         ]
@@ -138,10 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8198e6ccdc523a55",
+  "active": "1879734b76fa3070",
   "lastOpenFiles": [
     "don't.md",
-    "Stack/1726142047-PTON.md",
+    "nvim-lspconfig.md",
     "Stack",
     "Stack/1726141360-IFXR.md",
     "Stack/1726139581-ECXH.md",
