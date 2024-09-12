@@ -11,12 +11,8 @@
             "id": "8198e6ccdc523a55",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Diff tools.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Diff tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Diff tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Diff tools.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,8 +138,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8198e6ccdc523a55",
+  "active": "1879734b76fa3070",
   "lastOpenFiles": [
+    "Stack/1726142047-PTON.md",
+    "Stack",
+    "Stack/1726141360-IFXR.md",
+    "Stack/1726139581-ECXH.md",
+    "Stack/1726139472-UVJH.md",
+    "Stack/1726139408-ACSL.md",
+    "Stack/1726139293-XMFY.md",
+    "Stack/1726139282-KRCR.md",
+    "Diff tools.md",
+    "Stack/1726139408-ACSL.md~",
     "Shortcat.md",
     "React Testing Library TextMatch.md",
     "Redux dispatches.md",
@@ -157,24 +159,15 @@
     "bindActionCreators.md",
     "Nix.md",
     "Stack/1725636610-IKKW.md",
-    "Diff tools.md",
     "Add external plugin to Nixvim.md",
     "exactOptionalPropertyTypes.md",
     "Slack emote sources.md",
     "Lodash padStart.md",
     "Jest mock types.md",
-    "Stack",
     "Colored echo output.md",
     "Toggleterm Lua usage.md",
     "Command Line.md",
     "TypeScript.md",
-    "Format strings in Lua.md",
-    "Lua multiple returns.md",
-    "Lua date and time.md",
-    "View all recent messages in Neovim.md",
-    "Lua destructuring a table.md",
-    "Resolving paths in Neovim.md",
-    "Replacing actions in Telescope.md",
     "shadcn",
     "Opinion"
   ]
