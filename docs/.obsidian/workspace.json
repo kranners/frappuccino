@@ -138,8 +138,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1879734b76fa3070",
+  "active": "8198e6ccdc523a55",
   "lastOpenFiles": [
+    "don't.md",
     "Stack/1726142047-PTON.md",
     "Stack",
     "Stack/1726141360-IFXR.md",
@@ -167,7 +168,6 @@
     "Colored echo output.md",
     "Toggleterm Lua usage.md",
     "Command Line.md",
-    "TypeScript.md",
     "shadcn",
     "Opinion"
   ]
