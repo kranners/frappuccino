@@ -148,6 +148,8 @@
   },
   "active": "8198e6ccdc523a55",
   "lastOpenFiles": [
+    "Shortcat.md",
+    "React Testing Library TextMatch.md",
     "Redux dispatches.md",
     "react-require-default-props.md",
     "mapStateToProps Redux.md",
@@ -173,8 +175,6 @@
     "Lua destructuring a table.md",
     "Resolving paths in Neovim.md",
     "Replacing actions in Telescope.md",
-    "Open a floating window in Neovim.md",
-    "iCloud Drive.md",
     "shadcn",
     "Opinion"
   ]
