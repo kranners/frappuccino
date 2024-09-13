@@ -148,6 +148,8 @@
   },
   "active": "8198e6ccdc523a55",
   "lastOpenFiles": [
+    "Stack/1726202996-EXMF.md",
+    "Stack",
     "Define a keymap in Nixvim.md",
     "Get environment variable Lua.md",
     "Neovim local leader.md",
@@ -156,7 +158,6 @@
     "Set keymaps in Neovim Lua.md",
     "don't.md",
     "nvim-lspconfig.md",
-    "Stack",
     "Stack/1726141360-IFXR.md",
     "Stack/1726139581-ECXH.md",
     "Stack/1726139472-UVJH.md",
@@ -175,7 +176,6 @@
     "Nix.md",
     "Stack/1725636610-IKKW.md",
     "Add external plugin to Nixvim.md",
-    "exactOptionalPropertyTypes.md",
     "shadcn",
     "Opinion"
   ]
