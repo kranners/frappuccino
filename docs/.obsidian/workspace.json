@@ -148,6 +148,7 @@
   },
   "active": "8198e6ccdc523a55",
   "lastOpenFiles": [
+    "undefined vs null.md",
     "Stack/1726202996-EXMF.md",
     "Stack",
     "Define a keymap in Nixvim.md",
@@ -175,7 +176,6 @@
     "bindActionCreators.md",
     "Nix.md",
     "Stack/1725636610-IKKW.md",
-    "Add external plugin to Nixvim.md",
     "shadcn",
     "Opinion"
   ]
