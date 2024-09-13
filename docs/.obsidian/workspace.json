@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nvim-lspconfig.md",
+                "file": "npm.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "npm",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nvim-lspconfig.md",
+                "file": "npm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "nvim-lspconfig.md",
+                "file": "npm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "nvim-lspconfig.md"
+                "file": "npm.md"
               }
             }
           }
@@ -146,11 +147,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1879734b76fa3070",
+  "active": "8198e6ccdc523a55",
   "lastOpenFiles": [
+    "nvim-lspconfig.md",
+    "Set Git settings in Home Manager.md",
     "Zellij.md",
     "Stack/1726213501-RTWO.md",
-    "nvim-lspconfig.md",
     "Stack/1726202996-EXMF.md",
     "undefined vs null.md",
     "Stack",
@@ -175,7 +177,6 @@
     "react-require-default-props.md",
     "mapStateToProps Redux.md",
     "mapDispatchToProps.md",
-    "bindActionCreators.md",
     "shadcn",
     "Opinion"
   ]

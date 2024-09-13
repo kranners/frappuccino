@@ -1,5 +1,13 @@
 ---
-tags: npm, node, package, programming, javascript, typescript
+id: npm
+aliases: []
+tags:
+  - npm,
+  - node,
+  - package,
+  - programming,
+  - javascript,
+  - typescript
 ---
 
 # npm
@@ -26,3 +34,27 @@ npm.pkg.github.com/:_authToken=${GITHUB_OAUTH_TOKEN}
 ```
 
 **It's best practice** to not include raw tokens in a project file, and to either move them into a user-scoped `.npmrc`, or to put them into environment variables.
+
+### `npm init` or `npm create`
+
+Commands to temporarily install, and then execute a given package.
+
+As in,
+```shell
+npm create svelte@latest
+```
+
+Is the same as
+```shell
+npm init svelte@latest
+```
+
+Is shorthand for
+```shell
+npm install -g create-svelte@latest ; npx create-svelte
+```
+
+Important to note that `npm init` will prepend the package it executes with `create-`.
+
+[For more info on this, see the npm docs.](https://docs.npmjs.com/cli/v9/commands/npm-init)
+

@@ -1,5 +1,12 @@
 ---
-tags: astro, javascript, typescript, framework, web
+id: Astro
+aliases: []
+tags:
+  - astro,
+  - javascript,
+  - typescript,
+  - framework,
+  - web
 ---
 # Astro
 
@@ -25,6 +32,8 @@ The point of this is to make things fast 🏎.
 # Routing
 
 [Routing](https://docs.astro.build/en/core-concepts/routing/#static-ssg-mode) is typically done with files under `src/pages`.
+
+The files can be `.astro` or `.md files`.
 
 # Components
 

@@ -33,7 +33,34 @@ To enable:
 }
 ```
 
+To change the default layout (to hide the bottom bar / hints):
+```nix
+{
+    programs.zellij.settings = {
+        # Hide the bar
+        default_layout = "compact";
+
+        default_shell = "zsh";
+        default_mode = "locked"; # if you want, i guess 🔒
+
+        # Hide the session name (if you don't like it 😞)
+        ui.pane_frames.hide_session_name = true;
+    };
+}
+```
+
 [See the home-manager source](https://github.com/nix-community/home-manager/blob/master/modules/programs/zellij.nix)
+
+### Welcome page
+
+[Zellij has a welcome page that you can use to launch a Zellij session picker at launch for a new shell.](https://zellij.dev/tutorials/session-management/)
+
+In Alacritty:
+```toml
+[shell]
+program = "zellij"
+args = ["-l", "welcome"]
+```
 
 ### Theming
 

@@ -1,5 +1,11 @@
 ---
-tags: node, javascript, typescript, programming
+id: Node
+aliases: []
+tags:
+  - node,
+  - javascript,
+  - typescript,
+  - programming
 ---
 
 NodeJS is a backend runtime for [[JavaScript]].
@@ -73,3 +79,8 @@ function listRecursive(dir: string, files: string[] = []) {
 	return files;
 }
 ```
+
+### Environment variables
+
+[See the docs page on the command-line options.](https://nodejs.org/api/cli.html#node_optionsoptions)
+
