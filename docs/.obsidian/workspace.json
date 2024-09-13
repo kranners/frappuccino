@@ -146,10 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8198e6ccdc523a55",
+  "active": "1879734b76fa3070",
   "lastOpenFiles": [
-    "Stack/1726202996-EXMF.md",
+    "Zellij.md",
+    "Stack/1726213501-RTWO.md",
     "nvim-lspconfig.md",
+    "Stack/1726202996-EXMF.md",
     "undefined vs null.md",
     "Stack",
     "Define a keymap in Nixvim.md",
@@ -174,8 +176,6 @@
     "mapStateToProps Redux.md",
     "mapDispatchToProps.md",
     "bindActionCreators.md",
-    "Nix.md",
-    "Stack/1725636610-IKKW.md",
     "shadcn",
     "Opinion"
   ]
