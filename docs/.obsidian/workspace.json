@@ -146,8 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1879734b76fa3070",
+  "active": "8198e6ccdc523a55",
   "lastOpenFiles": [
+    "Get Nixvim Lua config.md",
+    "Set keymaps in Neovim Lua.md",
     "don't.md",
     "nvim-lspconfig.md",
     "Stack",
@@ -174,8 +176,6 @@
     "Lodash padStart.md",
     "Jest mock types.md",
     "Colored echo output.md",
-    "Toggleterm Lua usage.md",
-    "Command Line.md",
     "shadcn",
     "Opinion"
   ]
