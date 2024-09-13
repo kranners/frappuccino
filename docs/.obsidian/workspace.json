@@ -148,6 +148,10 @@
   },
   "active": "8198e6ccdc523a55",
   "lastOpenFiles": [
+    "Define a keymap in Nixvim.md",
+    "Get environment variable Lua.md",
+    "Neovim local leader.md",
+    "Get buffers Neovim.md",
     "Get Nixvim Lua config.md",
     "Set keymaps in Neovim Lua.md",
     "don't.md",
@@ -172,10 +176,6 @@
     "Stack/1725636610-IKKW.md",
     "Add external plugin to Nixvim.md",
     "exactOptionalPropertyTypes.md",
-    "Slack emote sources.md",
-    "Lodash padStart.md",
-    "Jest mock types.md",
-    "Colored echo output.md",
     "shadcn",
     "Opinion"
   ]

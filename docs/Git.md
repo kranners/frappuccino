@@ -1,5 +1,12 @@
 ---
-tags: git, software, programming, version control
+id: Git
+aliases: []
+tags:
+  - git,
+  - software,
+  - programming,
+  - version
+  - control
 ---
 
 # Git
@@ -400,6 +407,26 @@ git cherry-pick X Y Z
 git switch <old-branch>
 git rebase -i <before-X>
 ```
+
+#### Rename an existing branch
+
+Use `git branch -m`:
+
+```shell
+# Rename my current branch to new-and-cool
+git branch -m new-and-cool
+
+# Rename a different branch
+git branch -m bleh-bad-name new-and-cool
+```
+
+After this you may want to delete the remote branch:
+```shell
+# Delete it!
+git push origin --delete bleh-bad-name
+```
+
+[The Stack Overflow response has SO many upvotes.](https://stackoverflow.com/questions/6591213/how-can-i-rename-a-local-git-branch)
 
 #### Split an existing branch by files
 
