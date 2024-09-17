@@ -1,5 +1,11 @@
 ---
-tags: command line, cli, development
+id: Command Line
+aliases: []
+tags:
+  - command
+  - line,
+  - cli,
+  - development
 ---
 # Command Line
 
@@ -409,3 +415,25 @@ EOF
 ```bash
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 ```
+
+### Convert string to lowercase
+
+Can use either `tr` or `awk`.
+
+```shell
+echo "I AM UPPER GRAAAHHH" | tr '[:upper:]' '[:lower:]'
+```
+
+Or `awk`:
+```shell
+echo "I AM UPPER GRAAAHHH" | awk '{print tolower($0)}'
+```
+
+### Filter to lines
+
+Use `awk`:
+```shell
+# just get me the first line, thankx
+cat really-long-file.txt | awk 'NR == 1'
+```
+

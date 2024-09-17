@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -147,8 +146,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8198e6ccdc523a55",
+  "active": "1879734b76fa3070",
   "lastOpenFiles": [
+    "Obsidian.nvim follow_url_func.md",
     "just.md",
     "Obsidian.nvim checkboxes.md",
     "Sway inputs.md",
@@ -176,7 +176,6 @@
     "Stack/1726139408-ACSL.md~",
     "Shortcat.md",
     "React Testing Library TextMatch.md",
-    "Redux dispatches.md",
     "shadcn",
     "Opinion"
   ]
