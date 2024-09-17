@@ -149,6 +149,9 @@
   },
   "active": "8198e6ccdc523a55",
   "lastOpenFiles": [
+    "just.md",
+    "Obsidian.nvim checkboxes.md",
+    "Sway inputs.md",
     "nvim-lspconfig.md",
     "Set Git settings in Home Manager.md",
     "Zellij.md",
@@ -174,9 +177,6 @@
     "Shortcat.md",
     "React Testing Library TextMatch.md",
     "Redux dispatches.md",
-    "react-require-default-props.md",
-    "mapStateToProps Redux.md",
-    "mapDispatchToProps.md",
     "shadcn",
     "Opinion"
   ]
