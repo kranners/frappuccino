@@ -148,6 +148,10 @@
   },
   "active": "1879734b76fa3070",
   "lastOpenFiles": [
+    "Jest test concurrency.md",
+    "min_ios_version_supported.md",
+    "Rules of Hooks.md",
+    "Lodash isEmpty.md",
     "Obsidian.nvim follow_url_func.md",
     "just.md",
     "Obsidian.nvim checkboxes.md",
@@ -171,11 +175,7 @@
     "Stack/1726139472-UVJH.md",
     "Stack/1726139408-ACSL.md",
     "Stack/1726139293-XMFY.md",
-    "Stack/1726139282-KRCR.md",
-    "Diff tools.md",
     "Stack/1726139408-ACSL.md~",
-    "Shortcat.md",
-    "React Testing Library TextMatch.md",
     "shadcn",
     "Opinion"
   ]
