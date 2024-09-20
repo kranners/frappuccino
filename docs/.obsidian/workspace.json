@@ -148,6 +148,8 @@
   },
   "active": "1879734b76fa3070",
   "lastOpenFiles": [
+    "codecov-action.md",
+    "GitHub Actions Expressions.md",
     "Jest test concurrency.md",
     "min_ios_version_supported.md",
     "Rules of Hooks.md",
@@ -173,8 +175,6 @@
     "Stack/1726141360-IFXR.md",
     "Stack/1726139581-ECXH.md",
     "Stack/1726139472-UVJH.md",
-    "Stack/1726139408-ACSL.md",
-    "Stack/1726139293-XMFY.md",
     "Stack/1726139408-ACSL.md~",
     "shadcn",
     "Opinion"
