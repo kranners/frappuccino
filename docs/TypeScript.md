@@ -1,5 +1,10 @@
 ---
-tags: typescript, javascript, programming
+id: TypeScript
+aliases: []
+tags:
+  - typescript,
+  - javascript,
+  - programming
 ---
 
 # Typescript
