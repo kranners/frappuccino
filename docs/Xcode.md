@@ -1,5 +1,11 @@
 ---
-tags: xcode, developer tools, macos
+id: Xcode
+aliases: []
+tags:
+  - xcode,
+  - developer
+  - tools,
+  - macos
 ---
 
 # Xcode
@@ -66,7 +72,6 @@ To add a new simulator, say for *iPhone 13*, the steps are:
 2. Navigate to Window **→** Devices and Simulators **→** Simulators **→** **+**.
 3. Select the device type, in this case *iPhone 13*.
 
-
 ## Runtimes
 
 ```shell
@@ -83,3 +88,13 @@ xcrun simctl runtime list --json | jq ".[] | .identifier" --raw-output
 xcrun simctl list devicetypes --json |\
 	jq -c '.[].[] | select(.productFamily | contains("iPhone")) | .name'
 ```
+
+## Push notifications
+
+Send a push notification to a running simulator:
+```shell
+xcrun simctl push booted com.example.MyApp payload.json
+```
+
+[See Become a Simulator expert](https://developer.apple.com/videos/play/wwdc2020/10647/?time=795)
+
