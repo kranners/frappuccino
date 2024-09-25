@@ -1,11 +1,18 @@
 ---
-tags: licenses, programming, software
+id: Software Licensing
+aliases: []
+tags:
+  - licenses,
+  - programming,
+  - software
 ---
 # Software Licensing
 
 [An open-source license](https://choosealicense.com/) is a pseudo-requirement when writing any publicly facing code or software package.
 
 The software license is typically stored at the root of the repository, under `LICENSE.md` or simply `LICENSE`.
+
+[See opensource.org for a more comprehensive list of licenses.](https://opensource.org/license?categories=popular-strong-community)
 
 ### Failure to write a license
 
