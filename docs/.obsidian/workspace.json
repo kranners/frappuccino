@@ -148,6 +148,7 @@
   },
   "active": "1879734b76fa3070",
   "lastOpenFiles": [
+    "Neovim feedkeys.md",
     "React Native.md",
     "Flow.md",
     "codecov-action.md",
@@ -174,7 +175,6 @@
     "Get Nixvim Lua config.md",
     "Set keymaps in Neovim Lua.md",
     "don't.md",
-    "Stack/1726141360-IFXR.md",
     "Stack/1726139408-ACSL.md~",
     "shadcn",
     "Opinion"
