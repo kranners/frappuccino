@@ -45,6 +45,8 @@ const server: Server = {
 };
 ```
 
+**NOTE**: This is subject to [[1725931603-TKXZ|exactOptionalPropertyTypes]].
+
 #### Object destructuring
 
 Any key set to `undefined` will be overridden by default values when destructuring. `null` will not be.
