@@ -1,4 +1,6 @@
 ---
+id: Nix Flakes
+aliases: []
 tags:
   - nix
   - nixos
@@ -77,3 +79,35 @@ git commit -m "feat: init flake"
 ```shell
 sudo nixos-rebuild switch --flake .
 ```
+
+## Inputs
+
+To add another flake:
+```nix
+inputs = {
+    # Both flakes
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    nur.url = "github:nix-community/NUR";
+};
+```
+
+To add non-flakes:
+```nix
+inputs = {
+    toggleterm-manager = {
+        url = "github:ryanmsnyder/toggleterm-manager.nvim";
+        flake = false;
+    };
+}
+```
+
+To add private repositories:
+```nix
+inputs = {
+    my-private-repo = {
+        url = "git+ssh://git@github.com/username/my-private-repo";
+        flake = false;
+    };
+}
+```
+
