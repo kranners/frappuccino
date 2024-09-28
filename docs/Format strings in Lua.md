@@ -10,7 +10,7 @@ tags: []
 `string.format()` to format variables into strings.
 
 Format strings are normal strings that include `%` then a character denoting the type of value.
-- `d%` for a decimal number
+- `%d` for a decimal number
 - `%x` for hexadecimal
 - `%o` for octal
 - `%f` for a floating-point number
