@@ -148,6 +148,9 @@
   },
   "active": "1879734b76fa3070",
   "lastOpenFiles": [
+    "2024/10/01 October, 2024.md",
+    "2024/10",
+    "2024",
     "Neovim autocommands.md",
     "`<lt",
     "Inserting and removing elements from tables in Lua.md",
@@ -175,7 +178,6 @@
     "Get environment variable Lua.md",
     "Neovim local leader.md",
     "Get buffers Neovim.md",
-    "Get Nixvim Lua config.md",
     "Stack/1726139408-ACSL.md~",
     "shadcn",
     "Opinion"
