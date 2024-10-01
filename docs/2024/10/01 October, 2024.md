@@ -23,8 +23,8 @@ Today is going to be...
 
 - [ ] 🗂️ Super efficient
 - [x] 🧘 Chill asf
-- [x] 🥳 One big party
-- [ ] ✨ Aesthetic, vibey
+- [ ] 🥳 One big party
+- [x] ✨ Aesthetic, vibey
 - [x] 🎪 Real clown hours
 
 ### 🏃 Todo
@@ -32,4 +32,7 @@ Today is going to be...
 - [x] Wake up, sleepyhead 🧊
 - [x] Standup, coffee, such 💫
 - [~] Plan the day 🪴
+- [ ] Sprint planning (10.00 - 10.45)
+- [ ] Business showcase (16.00 - 17.00)
+
 - [ ] Start first Pomodoro 🍅, delayed by meetings
