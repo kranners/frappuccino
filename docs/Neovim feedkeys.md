@@ -28,7 +28,7 @@ Takes in four arguments:
 - do_lt: Also translate `<lt>`.
 - special: Also replace special keycodes. See `:h keycodes`
 
-NOTE: [`lt` means lesser than aka. <](https://neovim.io/doc/user/intro.html#%3Clt%3E)
+NOTE: [`lt` means lesser than aka. \<](https://neovim.io/doc/user/intro.html#%3Clt%3E)
 
 Example:
 ```lua
