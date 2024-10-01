@@ -31,5 +31,21 @@ Takes in four arguments:
 }
 ```
 
+To execute a Lua function in your keybind, use `action.__raw`:
+```nix
+  {
+    key = "<Leader>S";
+    action.__raw = ''
+      function()
+        require('resession').save(vim.fn.getcwd(), { dir = "dirsession" })
+      end
+    '';
+    options = { desc = "Save session"; };
+    mode = "n";
+  }
+```
+
+**NOTE**: The raw action _must_ be wrapped in a `function()`.
+
 [See the Nixvim options on keymaps for more info](https://nix-community.github.io/nixvim/keymaps/index.html)
 

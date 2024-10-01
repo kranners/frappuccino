@@ -148,6 +148,7 @@
   },
   "active": "1879734b76fa3070",
   "lastOpenFiles": [
+    "Extend table in Neovim Lua.md",
     "Lua generic for (iterating in Lua).md",
     "bat.md",
     "2024/10/01 October, 2024.md",
@@ -177,7 +178,6 @@
     "undefined vs null.md",
     "Stack",
     "Define a keymap in Nixvim.md",
-    "Get environment variable Lua.md",
     "Stack/1726139408-ACSL.md~",
     "shadcn",
     "Opinion"
