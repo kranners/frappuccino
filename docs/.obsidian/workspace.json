@@ -148,6 +148,7 @@
   },
   "active": "1879734b76fa3070",
   "lastOpenFiles": [
+    "React forceUpdate.md",
     "Extend table in Neovim Lua.md",
     "Lua generic for (iterating in Lua).md",
     "bat.md",
@@ -177,7 +178,6 @@
     "Stack/1726202996-EXMF.md",
     "undefined vs null.md",
     "Stack",
-    "Define a keymap in Nixvim.md",
     "Stack/1726139408-ACSL.md~",
     "shadcn",
     "Opinion"
