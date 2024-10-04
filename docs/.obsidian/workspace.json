@@ -148,6 +148,8 @@
   },
   "active": "1879734b76fa3070",
   "lastOpenFiles": [
+    "Get current cursor position Neovim Lua.md",
+    "Using registers in Neovim Lua.md",
     "React forceUpdate.md",
     "Extend table in Neovim Lua.md",
     "Lua generic for (iterating in Lua).md",
@@ -175,8 +177,6 @@
     "Set Git settings in Home Manager.md",
     "Zellij.md",
     "Stack/1726213501-RTWO.md",
-    "Stack/1726202996-EXMF.md",
-    "undefined vs null.md",
     "Stack",
     "Stack/1726139408-ACSL.md~",
     "shadcn",
