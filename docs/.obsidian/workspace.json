@@ -146,8 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1879734b76fa3070",
+  "active": "8198e6ccdc523a55",
   "lastOpenFiles": [
+    "Install npm packages with frozen lockfile.md",
+    "TypeScript Pick utility type.md",
     "Jest fake timers.md",
     "React Testing Library wrapper option.md",
     "Users/aaronpierce/Documents/Latte",
@@ -179,8 +181,6 @@
     "Obsidian.nvim follow_url_func.md",
     "just.md",
     "Obsidian.nvim checkboxes.md",
-    "Sway inputs.md",
-    "nvim-lspconfig.md",
     "Stack",
     "Stack/1726139408-ACSL.md~",
     "shadcn"

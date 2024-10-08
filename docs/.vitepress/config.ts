@@ -6,6 +6,7 @@ import { generateSidebar } from "vitepress-sidebar";
 export default defineConfig({
   title: "Frappuccino",
   description: "For everything I end up Googling",
+  srcExclude: ['**/2024/**', '**/2025/**', '**/2026/**'],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -16,6 +17,15 @@ export default defineConfig({
         link: "https://github.com/kranners/frappuccino/commits/main",
       },
     ],
+
+    outline: {
+      level: [2, 6],
+    },
+
+    lastUpdated: {
+      text: 'Last updated',
+      formatOptions: { dateStyle: 'short', timeStyle: 'short' },
+    },
 
     sidebar: generateSidebar({
       documentRootPath: "docs/",
