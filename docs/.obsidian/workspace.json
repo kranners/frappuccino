@@ -148,6 +148,8 @@
   },
   "active": "1879734b76fa3070",
   "lastOpenFiles": [
+    "Jest fake timers.md",
+    "React Testing Library wrapper option.md",
     "Users/aaronpierce/Documents/Latte",
     "Users/aaronpierce/Documents",
     "Users/aaronpierce",
@@ -179,10 +181,8 @@
     "Obsidian.nvim checkboxes.md",
     "Sway inputs.md",
     "nvim-lspconfig.md",
-    "Set Git settings in Home Manager.md",
     "Stack",
     "Stack/1726139408-ACSL.md~",
-    "shadcn",
-    "Opinion"
+    "shadcn"
   ]
 }
