@@ -1,4 +1,6 @@
 ---
+id: Arch Linux
+aliases: []
 tags:
   - linux
   - arch
@@ -270,7 +272,7 @@ bootctl install
 ```
 
 Then you need to [configure a loader](https://wiki.archlinux.org/title/Systemd-boot#Loader_configuration). systemd-boot will search for valid items under `ESP/loader/entries/*.conf`. Something like:
-```conf
+```
 title Arch Linux                       -- The thing that gets displayed
 linux   /vmlinuz-linux                 -- The path to vmlinux
 initrd  /intel-ucode.img               -- The path to microcode

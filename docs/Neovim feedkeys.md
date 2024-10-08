@@ -23,12 +23,12 @@ Takes three arguments
 Use `vim.api.nvim_replace_termcodes()`.
 
 Takes in four arguments:
-- str: The keycode to replace ("<CR>", "<Esc>", "<C-o>", ...)
+- str: The keycode to replace ("`<CR>`", "`<Esc>`", "`<C-o>`", ...)
 - from_part: Legacy vim param, should be `true`
 - do_lt: Also translate `<lt>`.
 - special: Also replace special keycodes. See `:h keycodes`
 
-NOTE: [`lt` means lesser than aka. \<](https://neovim.io/doc/user/intro.html#%3Clt%3E)
+NOTE: [`lt` means lesser than](https://neovim.io/doc/user/intro.html#%3Clt%3E)
 
 Example:
 ```lua
