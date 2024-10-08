@@ -9,10 +9,10 @@ tags: []
 
 The ultimate bikeshed - `undefined` vs `null`.
 
-TLDR for my take:
-
+:::info TLDR for my take:
 - For anyone who _does not_ subject themselves to writing JavaScript, the distinction is pretty clear and obvious.
 - In JavaScript, `null` is an undesirable relic, generally acting as a less useful `undefined`.
+:::
 
 ### Colloquially / semantically
 

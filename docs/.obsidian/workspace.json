@@ -148,6 +148,7 @@
   },
   "active": "8198e6ccdc523a55",
   "lastOpenFiles": [
+    "Software Union.md~",
     "Install npm packages with frozen lockfile.md",
     "TypeScript Pick utility type.md",
     "Jest fake timers.md",
@@ -180,7 +181,6 @@
     "Lodash isEmpty.md",
     "Obsidian.nvim follow_url_func.md",
     "just.md",
-    "Obsidian.nvim checkboxes.md",
     "Stack",
     "Stack/1726139408-ACSL.md~",
     "shadcn"

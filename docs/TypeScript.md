@@ -295,7 +295,9 @@ function attemptGetDuck(): Duck | undefined {
 
 ## `interface` vs `type`
 
-**TLDR:** `interface` has _one_ extremely niche but confusing syntactic sugar, use `type` instead.
+:::info TLDR
+`interface` has _one_ extremely niche but confusing syntactic sugar, use `type` instead.
+:::
 
 For more info, see [the TypeScript documentation on the matter](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#differences-between-type-aliases-and-interfaces).
 

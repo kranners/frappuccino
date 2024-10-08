@@ -1,13 +1,20 @@
 ---
-tags: union, it, membership, career, development
+id: Software Union
+aliases: []
+tags:
+  - union,
+  - it,
+  - membership,
+  - career,
+  - development
 ---
 
 # Software Unions (in Australia)
 
-### TLDR, is it worth it?
-
+:::info TLDR, is it worth it?
 - If you are within 2 years of graduating, or changing jobs regularly, yes it is probably worth it.
 - If you are in stable employment and have no plans of changing, no it probably is not.
+:::
 
 #### Just a _bit_ more detail
 

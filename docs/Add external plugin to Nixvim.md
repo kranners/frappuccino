@@ -12,7 +12,9 @@ If there's no option for a plugin you want in Nixvim, you can add extra custom p
 and
 - `programs.nixvim.extraConfigLua`
 
-NOTE: [There is a Nixvim PR which may change this soon](https://github.com/nix-community/nixvim/pull/1876)
+:::tip
+[There is a Nixvim PR which may change this soon](https://github.com/nix-community/nixvim/pull/1876)
+:::
 
 ### Example
 

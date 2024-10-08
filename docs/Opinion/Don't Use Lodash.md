@@ -1,4 +1,6 @@
 ---
+id: Don't Use Lodash
+aliases: []
 tags:
   - javascript
   - opinion
@@ -6,10 +8,11 @@ tags:
 
 # Don't Use [Lodash](https://lodash.com/)
 
-**TLDR:**
+:::info TLDR
 - Lodash functions are unnecessary. Just use [ES6 functions](../Arrays#Array%20ES%20Functions).
 - Lodash increases your bundle size massively, for little gain.
 - Reaching for Lodash every time makes you *think in Lodash*.
+:::
 
 If you need backwards compatibility for your web app (really? why?) then use [a polyfill library](https://github.com/zloirock/core-js) and a [transpiler](https://babeljs.io/).
 

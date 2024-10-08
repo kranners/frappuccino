@@ -1,5 +1,10 @@
 ---
-tags: javascript, typescript, programming
+id: JavaScript
+aliases: []
+tags:
+  - javascript,
+  - typescript,
+  - programming
 ---
 
 # Javascript
@@ -89,7 +94,9 @@ const error = logger(process.stderr);
 
 # `var` vs `let` vs `const`
 
-**TLDR: Use `const`. Don't use anything else. 🙏**
+:::info
+Use `const`. Don't use anything else. 🙏
+:::
 
 **`const`** defines a variable which may not be reassigned.
 ```javascript

@@ -1,4 +1,6 @@
 ---
+id: Rust
+aliases: []
 tags:
   - rust
   - programming
@@ -182,11 +184,11 @@ These three are [traits](#Traits). A reference to a function always implements a
 
 ### Contiguous data
 
-**TLDR:**
-
+:::info TLDR
 - Use [arrays](#Array) if you never need to change the length.
 - Use [vectors](#Vector) if you do.
 - Use [slices](#Slice) pass references to sections of data.
+:::
 
 #### Array
 

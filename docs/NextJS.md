@@ -1,4 +1,6 @@
 ---
+id: NextJS
+aliases: []
 tags:
   - web
   - development
@@ -11,15 +13,15 @@ tags:
 
 [Next](https://nextjs.org/) is a [[React]] framework for building and deploying [SSR](Web%20Terminology#SSR) applications.
 
-:::tip
+:::warning
 By default Next uses SSR. This means some packages which rely on React hooks will fail, with something that looks like this:
-:::
 
 ```
  ⨯ TypeError: (0 , react__WEBPACK_IMPORTED_MODULE_0__.createContext) is not a function
 ```
 
 To fix these up, you can configure Next to run as a client-side SPA, or you can
+:::
 
 ## Setup
 
@@ -97,7 +99,9 @@ NextJS comes with several default styles for their demo app, which can all be fo
 
 ### Client-side rendering
 
-**TLDR:** If you just need to make something render on the client, use the [React 'use client' directive](https://react.dev/reference/react/use-client).
+:::info TLDR
+If you just need to make something render on the client, use the [React 'use client' directive](https://react.dev/reference/react/use-client).
+:::
 
 [Client-side rendering](https://nextjs.org/docs/pages/building-your-application/rendering/client-side-rendering) in Next is (seemingly) enabled on a page-by-page basis. Imagine this like [Astros islands](Astro#Islands) only less explicit.
 
@@ -198,4 +202,3 @@ _Example configuration using paths and `baseUrl`_:
 }
 ```
 
-#### Import Aliases and [[ESLint]]

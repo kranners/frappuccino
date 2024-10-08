@@ -6,16 +6,22 @@ tags:
   - opinion
 ---
 
+:::warning
 ⚠️ **THIS IS UNFINISHED, BE WARY**⚠️
+:::
 
 # [[JavaScript]] Styleguide
 
-**Warning: Non-cited opinions coming up, I have no sources and am a bit of a goose.**
+:::warning
+Non-cited opinions coming up, I have no sources and am a bit of a goose.
+:::
 
 ## TLDR
 
-TLDR of the TLDR: Write everything as `const`, aspire to be fully functional.
+:::info TLDR of the TLDR
+Write everything as `const`, aspire to be fully functional.
 You can write things as wacky as you like for development purposes, but just clean it up later.
+:::
 
 - Prefer functional over object-oriented.
 - Prefer 'declarative' over 'imperative'.
@@ -135,7 +141,9 @@ Don't use `forEach()` either. For the same reason.
 
 #### "Prefer verbose over unclear"
 
-**TLDR: If choosing between a name which is long and clear, and one which is short, choose the long one.**
+:::info TLDR
+If choosing between a name which is long and clear, and one which is short, choose the long one.
+:::
 
 This generally relates to naming of things which is fundamentally hard. We all know this.
 Often you'll find yourself naming something which is very specific. Naming specific things is a tug-of-war between terseness and clarity.
@@ -172,7 +180,9 @@ There is a point where verbosity hits [[Java]] levels and you approach the [`Int
 
 This one is [pretty much just this](http://c2.com/xp/YouArentGonnaNeedIt.html).
 
-TLDR: Don't optimize code for _what you think it could do_, optimize it for _what it does_.
+:::info TLDR
+Don't optimize code for _what you think it could do_, optimize it for _what it does_.
+:::
 
 Instead of code examples, here's a little story.
 
