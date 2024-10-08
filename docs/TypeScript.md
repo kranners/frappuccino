@@ -120,6 +120,36 @@ Then add them under `compilerOptions.types`:
 }
 ```
 
+### Index signatures
+
+Index signatures are used to express the shape of key/value pairs.
+
+Like a Python `dict`:
+```typescript
+type Fruit = "apple" | "banana" | "orange";
+
+type Prices = {
+    [index: Fruit]: number;
+} 
+
+// This is equivalent to
+type Prices = Record<Fruit, number>;
+```
+
+[See index signatures in the TypeScript documentation](https://www.typescriptlang.org/docs/handbook/2/objects.html#index-signatures)
+
+### The `Array` type
+
+The shorthand for `T[]` is _identical_ to `Array<T>`:
+```typescript
+type Basket = Fruit[];
+
+// Is the same as
+type Basket = Array<Fruit>;
+```
+
+[See the array type in the TypeScript documentation](https://www.typescriptlang.org/docs/handbook/2/objects.html#the-array-type)
+
 ### No property access on index signatures (TS #4111)
 
 *[For more info, see the documentation page on this option](https://www.typescriptlang.org/tsconfig#noPropertyAccessFromIndexSignature)*.
