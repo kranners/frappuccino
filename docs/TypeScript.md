@@ -31,19 +31,23 @@ yarn tsc --init
 
 # Configuration
 
-**NOTE:** If you just want 'a good config', there are [many official recommended versions for you](https://github.com/tsconfig/bases).
+:::tip
+If you just want 'a good config', there are [many official recommended versions for you](https://github.com/tsconfig/bases).
+:::
 
 ### Module
 
 Sets the module (or import) system for the project.
 
 For a TypeScript source file of:
+
 ```ts
-import { pi } from './constants';
+import { pi } from "./constants";
 export const tau = pi * 2;
 ```
 
 The value `CommonJS` would emit:
+
 ```js
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -55,10 +59,12 @@ exports.tau = constants_1.pi * 2;
 `UMD`, `AMD` and `System` would use their respective module types.
 
 `ES2015`, `ES6`, `ES2020`, `ES2022`, `ESNext` would output:
+
 ```js
-import { pi } from './constants';
+import { pi } from "./constants";
 export const tau = pi * 2;
 ```
+
 The exact same thing.
 
 ### Emission
@@ -69,6 +75,7 @@ So if you have `./src/math.ts`, TypeScript will emit `./src/math.js`.
 To change this behaviour, use the `outDir` option to define a directory to put all emitted files into, or an `outFile` option to bundle all outputs into one.
 
 Some examples:
+
 ```json
 {
 	"compilerOptions": {
@@ -85,18 +92,20 @@ By default, TypeScript will not allow [[JavaScript]] files to exist in source al
 
 To allow for all JS files, the option is [`allowJs`](https://www.typescriptlang.org/tsconfig#allowJs).
 To do analysis on JS files for incorrect usage, the option is [`checkJs`](https://www.typescriptlang.org/tsconfig#checkJs).
+
 ```json
 {
-	"compilerOptions": {
-		"allowJs": true,
-		"checkJs": true
-	}
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true
+  }
 }
 ```
 
 ### Type Definitions ([[Jest]], [[Node]], [[React]])
 
 On initial TypeScript installation, any existing Jest tests may start failing like:
+
 ```
 Cannot find name 'describe'. Do you need to install type definitions for a test runner?
 Cannot find name 'it'. Do you need to install type definitions for a test runner?
@@ -112,11 +121,12 @@ yarn add -D @types/jest @types/node @types/react
 ```
 
 Then add them under `compilerOptions.types`:
+
 ```json
 {
-	"compilerOptions": {
-		"types": ["jest", "node", "react"]
-	}
+  "compilerOptions": {
+    "types": ["jest", "node", "react"]
+  }
 }
 ```
 
@@ -125,12 +135,13 @@ Then add them under `compilerOptions.types`:
 Index signatures are used to express the shape of key/value pairs.
 
 Like a Python `dict`:
+
 ```typescript
 type Fruit = "apple" | "banana" | "orange";
 
 type Prices = {
-    [index: Fruit]: number;
-} 
+  [index: Fruit]: number;
+};
 
 // This is equivalent to
 type Prices = Record<Fruit, number>;
@@ -141,6 +152,7 @@ type Prices = Record<Fruit, number>;
 ### The `Array` type
 
 The shorthand for `T[]` is _identical_ to `Array<T>`:
+
 ```typescript
 type Basket = Fruit[];
 
@@ -152,7 +164,7 @@ type Basket = Array<Fruit>;
 
 ### No property access on index signatures (TS #4111)
 
-*[For more info, see the documentation page on this option](https://www.typescriptlang.org/tsconfig#noPropertyAccessFromIndexSignature)*.
+_[For more info, see the documentation page on this option](https://www.typescriptlang.org/tsconfig#noPropertyAccessFromIndexSignature)_.
 
 ```text
 Property X comes from an index signature, so it must be accessed with ['X'].
@@ -161,13 +173,13 @@ Property X comes from an index signature, so it must be accessed with ['X'].
 This issue comes up when doing dot-notation for accessing a property on an Object which is not explicitly defined in its type.
 
 ```typescript
-type FruitName = 'banana' | 'apple' | 'pear';
+type FruitName = "banana" | "apple" | "pear";
 type Fruit = Record<string, string> & { name: FruitName };
 
 const apple: Fruit = {
-	name: 'apple',
-	price: 200,
-	display: () => 'Apple - USD$2.0',
+  name: "apple",
+  price: 200,
+  display: () => "Apple - USD$2.0",
 };
 
 // This type is explicitly defined in the Fruit type, so this is fine
@@ -177,40 +189,50 @@ apple.name;
 apple.price;
 ```
 
-To disable, add to your *tsconfig.json*
+To disable, add to your _tsconfig.json_
+
 ```json
 {
-	"compilerOptions": {
-		"noPropertyAccessFromIndexSignature": false
-	}
+  "compilerOptions": {
+    "noPropertyAccessFromIndexSignature": false
+  }
 }
 ```
 
 ### Implicit method overrides
 
-*For more info, check out [the TS.tv page on error TS4114](https://typescript.tv/errors/#TS4114) or [the official docs on the `noImplicitOverride` config option.](https://www.typescriptlang.org/tsconfig#noImplicitOverride)*
+_For more info, check out [the TS.tv page on error TS4114](https://typescript.tv/errors/#TS4114) or [the official docs on the `noImplicitOverride` config option.](https://www.typescriptlang.org/tsconfig#noImplicitOverride)_
 
 An implicit override is something like this:
+
 ```typescript
 class Base {
-	method(): T { /* ... */ };
+  method(): T {
+    /* ... */
+  }
 }
 
 class Extender extends Base {
-	// This implicitly overrides Base.method()!
-	method(): T { /* ... */ };
+  // This implicitly overrides Base.method()!
+  method(): T {
+    /* ... */
+  }
 }
 ```
 
 As opposed to the same class written with an explicit override:
+
 ```typescript
 class Extender extends Base {
-	// Now it explicitly overrides, and all is well :)
-	override method(): T { /* ... */ };
+  // Now it explicitly overrides, and all is well :)
+  override method(): T {
+    /* ... */
+  }
 }
 ```
 
 Sometimes this rule can get confused when interacting with static methods, which typically do not need to be explicitly overridden. This is especially true with static async methods:
+
 ```typescript
 class Base {
 	static async method(): Promise<unknown> { /* ... */ };
@@ -224,12 +246,13 @@ class Extender extends Base {
 ```
 
 You can disable this behaviour by setting `noImplicitOverride` to `false`.
+
 ```json
 {
-	"compilerOptions": {
-		// Behaviour disabled :)
-		"noImplicitOverride": false,
-	}
+  "compilerOptions": {
+    // Behaviour disabled :)
+    "noImplicitOverride": false
+  }
 }
 ```
 
@@ -258,108 +281,115 @@ These can later be used to narrow the type of a variable at runtime.
 
 ```typescript
 function attemptGetDuck(): Duck | undefined {
-	// handful is unknown
-	const handful: unknown = scoopFromPond();
+  // handful is unknown
+  const handful: unknown = scoopFromPond();
 
-	// The isDuck type guard is used here to early return.
-	if (!isDuck(handful)) return undefined;
+  // The isDuck type guard is used here to early return.
+  if (!isDuck(handful)) return undefined;
 
-	// The compiler is smart enough to know that at this point,
-	// handful is Duck
-	return handful;
+  // The compiler is smart enough to know that at this point,
+  // handful is Duck
+  return handful;
 }
 ```
 
 ## `interface` vs `type`
 
-**TLDR:** `interface` has *one* extremely niche but confusing syntactic sugar, use `type` instead.
+**TLDR:** `interface` has _one_ extremely niche but confusing syntactic sugar, use `type` instead.
 
 For more info, see [the TypeScript documentation on the matter](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#differences-between-type-aliases-and-interfaces).
 
 The `interface` and `type` keywords are extremely similar.
-They are both used for defining the *shape* of an [[Object]].
+They are both used for defining the _shape_ of an [[Object]].
 
 ```typescript
 interface Animal {
-	name: string;
-	weight: number;
+  name: string;
+  weight: number;
 }
 
 type Animal = {
-	name: string;
-	weight: number;
-}
+  name: string;
+  weight: number;
+};
 ```
 
 They can both be extended as expected:
+
 ```typescript
 // FlyingAnimal = { name: string, weight: number, wingspan: number };
 interface FlyingAnimal extends Animal {
-	wingspan: number;
+  wingspan: number;
 }
 
 // FlyingAnimal = { name: string, weight: number, wingspan: number };
 type FlyingAnimal = Animal & {
-	wingspan: number;
-}
+  wingspan: number;
+};
 ```
 
 However, there is one piece of syntax that `interface` contains, which `type` does not:
+
 ```typescript
 // We define the interface once...
 // Fruit = { name: string };
 interface Fruit {
-	name: string;
+  name: string;
 }
 
 // Then define it again!
 // Fruit = { name: string, price: number };
 interface Fruit {
-	price: number;
+  price: number;
 }
 ```
-After this, TypeScript recognises the *Fruit* interface as
+
+After this, TypeScript recognises the _Fruit_ interface as
+
 ```typescript
 {
-	name: string;
-	price: number;
+  name: string;
+  price: number;
 }
 ```
-Which is a kind of *implicit extension*.
+
+Which is a kind of _implicit extension_.
 
 However, using the `type` keyword:
+
 ```typescript
 type Fruit = {
-	name: string;
-}
+  name: string;
+};
 
 // Error: Duplicate identifier 'Fruit'.
 type Fruit = {
-	price: number;
-}
+  price: number;
+};
 ```
 
 **OPINION:** This is dumb, and confusing. Don't use this. Use `type`, and explicitly extend your types.
+
 ## Index signatures
 
 To define an object with a particular key/value signature, it looks like:
 
 ```ts
 type Sales = {
-	[key: string]: number;
-}
+  [key: string]: number;
+};
 ```
 
 So to make a mapping between `Fruit`s and `Price`s, it looks like:
 
 ```typescript
 type FruitPriceMapping = {
-	[key: Fruit]: Price;
-}
+  [key: Fruit]: Price;
+};
 
 const MAPPING: FruitPriceMapping = {
-	'apple': { value: 25, currency: 'aud' },
-}
+  apple: { value: 25, currency: "aud" },
+};
 ```
 
 Alternatively, TypeScript has the [`Record`](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type) utility type, which you could consider more terse:
@@ -376,15 +406,16 @@ type FruitPriceMapping = Record<Fruit, Price>;
 type Maybe = unknown | undefined;
 
 function unwrap<T extends Maybe>(maybe: T = null): unknown | null {
-	return maybe;
+  return maybe;
 }
 
 function asList<T>(item: T): Array<T> {
-	return [ item ];
+  return [item];
 }
 ```
 
 `const` arrow function generics have a bit of a wonky syntax when dealing in `.tsx` files:
+
 ```tsx
 // This is the most commonly accepted answer.
 // The comma indicates that this is a generic type with only one argument.
@@ -398,11 +429,13 @@ const asList<T extends {}>(item: T) => [ item ];
 ```
 
 This is because the parser can't distinguish between `<T>` (as in a generic) and `<T/>` (as in a HTML tag).
+
 ## Conditional types
 
 [A conditional type](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html) is a kind of [generic type](https://www.typescriptlang.org/docs/handbook/2/generics.html) which passes the generic through a condition before resolving to one of two types.
 
 **Syntax**
+
 ```typescript
 type Conditional<T> = T extends Condition ? TrueType : FalseType;
 ```
@@ -412,8 +445,8 @@ This happens at compile-time.
 Say, we have a `Success` type which contains some data, and we want to get the type of that data at compile time.
 
 ```typescript
-type Success = { success: true, data: unknown };
-type Failure = { success: false, error: Error };
+type Success = { success: true; data: unknown };
+type Failure = { success: false; error: Error };
 
 // Error! Type "data" cannot be used to index type T.
 type SuccessData<T> = T["data"];

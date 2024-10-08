@@ -10,8 +10,8 @@ tags: zod, typescript, javascript, static, types, typing, schema
 import { z } from "zod";
 
 const User = z.object({
-	name: z.string(),
-	age: z.number(),
+  name: z.string(),
+  age: z.number(),
 });
 
 type User = z.infer<typeof User>;
@@ -40,7 +40,9 @@ Age.parse("abcd"); // { success: false, error: ZodError }
 ```
 
 For explicit type transformation, use the `.transform()` method.
-**NOTE: This will transform the data _after_ it has been validated.**
+:::tip
+This will transform the data _after_ it has been validated.\*\*
+:::
 
 ```typescript
 const Age = z.string().min(1).max(3).transform(Number);
@@ -49,16 +51,18 @@ Age.parse("1"); // 1
 Age.parse("1111"); // { ..., code: "too_big", max: 3 }
 ```
 
-For type transformation *before* validation, use the `.preprocess()` method.
-**NOTE: For any primitive type, coercion is the preferred method.**
+For type transformation _before_ validation, use the `.preprocess()` method.
+:::tip
+For any primitive type, coercion is the preferred method.\*\*
+:::
 
 ```typescript
 const NumberList = z.preprocess(
-	(val: string) => input.split(',').map(Number),
-	z.number().array(),
+  (val: string) => input.split(",").map(Number),
+  z.number().array()
 );
 
-NumberList.parse('1,2,3,4'); // [ 1, 2, 3, 4 ]
+NumberList.parse("1,2,3,4"); // [ 1, 2, 3, 4 ]
 ```
 
 # Error Handling
@@ -75,16 +79,18 @@ const FirstName = z.string().max(50);
 type FirstName = z.infer<typeof FirstName>;
 
 const parseFirstName = (input: unknown): FirstName => {
-	if (input === "Aaron") {
-		throw new ZodError([{
-			code: "custom",
-			message: "My name is TAKEN!",
-			path: [],
-		}])
-	}
+  if (input === "Aaron") {
+    throw new ZodError([
+      {
+        code: "custom",
+        message: "My name is TAKEN!",
+        path: [],
+      },
+    ]);
+  }
 
-	return FirstName.parse(input);
-}
+  return FirstName.parse(input);
+};
 ```
 
 # Types
@@ -114,7 +120,7 @@ type Fruit = z.infer<typeof FruitEnum>;
 Alternatively, you can define an `as const` array of possible values.
 
 ```ts
-// Without the 'as const' this would not be allowed, 
+// Without the 'as const' this would not be allowed,
 // since zod cannot infer the type at compile time.
 const FRUITS = ["Banana", "Apple", "Mango"] as const;
 
@@ -140,9 +146,9 @@ A tuple in Zod is defined as an array of fixed-length with elements of specific 
 
 ```ts
 const SaleRecord = z.tuple([
-	z.string(), // Item sold
-	z.number(), // Price sold for
-	z.string().datetime(), // Time sale was made
+  z.string(), // Item sold
+  z.number(), // Price sold for
+  z.string().datetime(), // Time sale was made
 ]);
 
 type Sale = z.infer<typeof SaleRecord>;

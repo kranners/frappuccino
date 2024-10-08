@@ -32,7 +32,9 @@ connect(mapStateToProps, /* no second argument */)(IncrementButton);
 
 ### Function form
 
-**NOTE:** This is no longer the recommended way to pass this argument. [See object form below.](#Object%20form).
+:::tip
+This is no longer the recommended way to pass this argument. [See object form below.](#Object%20form).
+:::
 
 The most flexible way to map your dispatches is with the function form of this argument.
 
@@ -41,10 +43,11 @@ The function should return an object which will be injected into the component b
 The keys of the object are the names of props being passed in, and the values are functions which wrap actions or action creators in `dispatch()` to be called directly.
 
 [_From the Redux documentation_](https://react-redux.js.org/using-react-redux/connect-mapdispatch#return)
+
 ```js
-const increment = () => ({ type: 'INCREMENT' })
-const decrement = () => ({ type: 'DECREMENT' })
-const reset = () => ({ type: 'RESET' })
+const increment = () => ({ type: "INCREMENT" });
+const decrement = () => ({ type: "DECREMENT" });
+const reset = () => ({ type: "RESET" });
 
 const mapDispatchToProps = (dispatch) => {
   return {
@@ -52,15 +55,16 @@ const mapDispatchToProps = (dispatch) => {
     increment: () => dispatch(increment()),
     decrement: () => dispatch(decrement()),
     reset: () => dispatch(reset()),
-  }
-}
+  };
+};
 ```
 
 This could be shortened using [[1726020995-DSEV|bindActionCreators]]:
+
 ```js
 const mapDispatchToProps = (dispatch) => {
-    return bindActionCreators({ increment, decrement, reset }, dispatch);
-}
+  return bindActionCreators({ increment, decrement, reset }, dispatch);
+};
 ```
 
 These two code blocks do the same thing.
@@ -70,12 +74,14 @@ These two code blocks do the same thing.
 Since this behaviour is so common, there's a shorthand for it.
 
 From the same code block example above ☝️
+
 ```js
 // This also does the same thing! Under the hood 8)
 const mapDispatchToProps = {
-    increment, decrement, reset
+  increment,
+  decrement,
+  reset,
 };
 ```
 
 See [[1725599028-DEWZ|mapStateToProps Redux]].
-

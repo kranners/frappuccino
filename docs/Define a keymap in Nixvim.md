@@ -10,7 +10,8 @@ tags: []
 Keymaps are defined under the `programs.nixvim.keymaps` option.
 
 This option is a list of attrsets with:
-- `key`: the 
+
+- `key`: the
 
 Takes in four arguments:
 `mode`: The mode shorthand, or an array of mode shorthands (`[ "n" "i" "v" ]`)
@@ -32,6 +33,7 @@ Takes in four arguments:
 ```
 
 To execute a Lua function in your keybind, use `action.__raw`:
+
 ```nix
   {
     key = "<Leader>S";
@@ -45,7 +47,8 @@ To execute a Lua function in your keybind, use `action.__raw`:
   }
 ```
 
-**NOTE**: The raw action _must_ be wrapped in a `function()`.
+:::tip
+The raw action _must_ be wrapped in a `function()`.
+:::
 
 [See the Nixvim options on keymaps for more info](https://nix-community.github.io/nixvim/keymaps/index.html)
-

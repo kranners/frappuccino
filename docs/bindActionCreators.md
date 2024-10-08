@@ -7,7 +7,9 @@ tags: []
 
 # bindActionCreators
 
-**NOTE**: _You almost certainly do not need this function anymore._
+:::tip
+_You almost certainly do not need this function anymore._
+:::
 
 [Instead, check out the object shorthand of `mapDispatchToProps`.](https://react-redux.js.org/using-react-redux/connect-mapdispatch#defining-mapdispatchtoprops-as-an-object)
 
@@ -16,15 +18,15 @@ tags: []
 See [[1726021092-SORA|Redux dispatches]] for what an action creator or a dispatch are.
 
 ```js
-import * as IncrementActionCreators from './IncrementActionCreators';
+import * as IncrementActionCreators from "./IncrementActionCreators";
 
 console.log(IncrementActionCreators);
 // { increment: Function, decrement: Function }
 
 const boundIncrementActionCreators = bindActionCreators(
-    IncrementActionCreators,
-    // One must assume we got dispatch from somewhere ¯\_(ツ)_/¯
-    dispatch,
+  IncrementActionCreators,
+  // One must assume we got dispatch from somewhere ¯\_(ツ)_/¯
+  dispatch
 );
 
 // This will just make an action, and not do anything
@@ -35,4 +37,3 @@ boundIncrementActionCreators.increment();
 ```
 
 [See the Redux documentation for more info](https://redux.js.org/api/bindactioncreators)
-

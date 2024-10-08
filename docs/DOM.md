@@ -15,13 +15,13 @@ Given a document that looks like:
 
 ```html
 <body>
-	<div id="container">
-		<h1>My cool website</h1>
+  <div id="container">
+    <h1>My cool website</h1>
 
-		<!-- Usually you want to avoid <div> for text elements. -->
-		<!-- This is for demo purposes :) -->
-		<div>This is epic 🚀</div> 
-	</div>
+    <!-- Usually you want to avoid <div> for text elements. -->
+    <!-- This is for demo purposes :) -->
+    <div>This is epic 🚀</div>
+  </div>
 </body>
 ```
 
@@ -59,15 +59,17 @@ const fragment = document.createDocumentFragment();
 
 const people = ["Steven", "John", "Abigail", "Mary"];
 const updatedFragment = people.reduce((person) => {
-	const li = document.createELement("li");
-	li.textContent = person;
-	fragment.append(li);
+  const li = document.createELement("li");
+  li.textContent = person;
+  fragment.append(li);
 
-	return fragment;
+  return fragment;
 }, fragment);
 ```
 
-**NOTE** the DOM will not let you modify it into an invalid state, [and will throw errors when you attempt to do so](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild#exceptions).
+:::tip
+the DOM will not let you modify it into an invalid state, [and will throw errors when you attempt to do so](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild#exceptions).
+:::
 
 ```javascript
 const body = document.querySelector("body");

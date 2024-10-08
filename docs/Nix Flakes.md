@@ -7,26 +7,30 @@ tags:
   - system
   - linux
 ---
+
 # Nix Flakes
 
-*From: [[Nix]], [[NixOS]], [[Home Manager]].*
+_From: [[Nix]], [[NixOS]], [[Home Manager]]._
 
 Flakes are an experimental feature of Nix which allow users to manage their [[NixOS]] configuration outside of `/etc/nixos/configuration.nix`, and add it to something like a [[Git]] repository.
 
-A "flake" is a set of files which contains a valid *flake.nix* entrypoint.
-Much like how a [[Node]] package is a set of files which contains a valid *package.json* and *index.js*.
+A "flake" is a set of files which contains a valid _flake.nix_ entrypoint.
+Much like how a [[Node]] package is a set of files which contains a valid _package.json_ and _index.js_.
 
 ## Getting started
 
 ### Migrating to Flakes on [[NixOS]]
 
 1. Enable the experimental feature in your `/etc/nixos/configuration.nix`
+
 ```nix
 nix.settings.experimental-features = [ "nix-command" "flakes" ];
 ```
+
 Rebuild and switch.
 
 2. Start a new flake (preferably in a [[Git]] repository)
+
 ```shell
 nix flake init
 
@@ -35,12 +39,14 @@ git init
 ```
 
 3. Copy your system and hardware configurations into your new repository
+
 ```shell
 # Assuming you're in the repository
 sudo cp /etc/nixos/*.nix .
 ```
 
-4. Edit the initial *flake.nix* to include your previous system configuration as a module
+4. Edit the initial _flake.nix_ to include your previous system configuration as a module
+
 ```nix
 {
   description = "flake for my computer";
@@ -66,9 +72,13 @@ sudo cp /etc/nixos/*.nix .
   };
 }
 ```
-**NOTE:** Ensure you replace `<your computer>` with your computer's host name.
+
+:::tip
+Ensure you replace `<your computer>` with your computer's host name.
+:::
 
 5. Check in all the files into your [[Git]] repository
+
 ```shell
 # Make sure EVERYTHING gets checked in!
 git add .
@@ -76,6 +86,7 @@ git commit -m "feat: init flake"
 ```
 
 6. Rebuild using the flake instead of your system configuration
+
 ```shell
 sudo nixos-rebuild switch --flake .
 ```
@@ -83,6 +94,7 @@ sudo nixos-rebuild switch --flake .
 ## Inputs
 
 To add another flake:
+
 ```nix
 inputs = {
     # Both flakes
@@ -92,6 +104,7 @@ inputs = {
 ```
 
 To add non-flakes:
+
 ```nix
 inputs = {
     toggleterm-manager = {
@@ -102,6 +115,7 @@ inputs = {
 ```
 
 To add private repositories:
+
 ```nix
 inputs = {
     my-private-repo = {
@@ -110,4 +124,3 @@ inputs = {
     };
 }
 ```
-

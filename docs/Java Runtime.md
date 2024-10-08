@@ -12,7 +12,9 @@ For more complete information, check out [Java Is Still Free](https://medium.com
 
 #### [OpenJDK](https://openjdk.org/)
 
-**NOTE:** [AdoptOpenJDK](https://adoptopenjdk.net/releases.html) and OpenJDK are the same thing. AdoptOpenJDK are just prebuilt binaries.
+:::tip
+[AdoptOpenJDK](https://adoptopenjdk.net/releases.html) and OpenJDK are the same thing. AdoptOpenJDK are just prebuilt binaries.
+:::
 
 ```shell
 # Install the JDK itself
@@ -30,6 +32,7 @@ sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVir
 Temurin is another open-source JDK built on [OpenJDK](#OpenJDK) by [Adoptium](https://adoptium.net/) (owned by the [Eclipse Foundation](https://www.eclipse.org/org/)).
 
 It can be installed from its [[Homebrew]] cask or downloaded from its [releases page](https://adoptium.net/temurin/releases/).
+
 ```shell
 # Install Temurin.
 brew install --cask temurin

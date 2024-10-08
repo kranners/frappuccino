@@ -7,6 +7,7 @@ tags:
   - cli,
   - development
 ---
+
 # Command Line
 
 The command line or terminal is the interface between a user and the operating systems [[Shell]].
@@ -22,18 +23,22 @@ brew install inetutils
 
 ### Usage
 
-*Log into your server*
+_Log into your server_
+
 ```shell
 ftp username@server
 ```
 
-*Copy folder of files across, this will copy across all files in the local CWD.*
+_Copy folder of files across, this will copy across all files in the local CWD._
+
 ```
 ftp> mput
 (local-file) *
 ```
 
-**NOTE: `ftp` defaults to interactive mode, meaning all files will require a confirmation before sending.**
+:::tip
+`ftp` defaults to interactive mode, meaning all files will require a confirmation before sending.\*\*
+:::
 To disable interactive mode, either run the command with the `-i` flag or use the command `prompt` to switch.
 
 ### LFTP
@@ -42,16 +47,19 @@ FTP is old and sucky in a variety of ways. [LFTP (command-**line** file transfer
 
 **Disable SSL certificate verification**
 Some hosts, like [[Hostinger]] have invalid SSL certificates over FTP.
+
 ```
 lftp [...]:/> set ssl:verify-certificate false
 ```
 
 **Recursively and concurrently mirror a folder**
+
 ```
 lftp [...]:/> mirror -R --parallel [local] [remote]
 ```
 
 **Run a command un-interactively**
+
 ```shell
 lftp -u user,pass -e "... ; quit"
 ```
@@ -61,7 +69,9 @@ lftp -u user,pass -e "... ; quit"
 A symlink (symbolic link) is a pointer in a given location, pointing back to a file or folder.
 References to the link will effectively be the same as references to the original file.
 
-**NOTE: If your math includes spaces, multiple symlinks separated by spaces will be made.**
+:::tip
+If your math includes spaces, multiple symlinks separated by spaces will be made.\*\*
+:::
 
 ```shell
 # Note that the symlink path can be omitted.
@@ -91,6 +101,7 @@ greeting () {
 # This'll say "Hello Jeff!"
 greeting Jeff
 ```
+
 ### xargs
 
 `xargs` is a utility for passing a stdin stream into another set of commands.
@@ -139,16 +150,19 @@ done
 ### Redirect stderr into stdout
 
 Use the redirection `2>&1` at the end of any command to pipe stderr into stdout.
+
 ```shell
 command-throws-errors 2>&1 > full-log.log
 ```
 
 Use this in conjunction with `less` to interactively read long command outputs
+
 ```shell
 yarn eslint . --verbose 2>&1 | less
 ```
 
 Redirect both stderr and stdout to `/dev/null` to bury all output / suppress errors / silence errorsfrom a command.
+
 ```shell
 useless-output-command 2>/dev/null 1>&2
 ```
@@ -156,6 +170,7 @@ useless-output-command 2>/dev/null 1>&2
 ### Default / fallback values
 
 The generic here for defining a value with a fallback looks like:
+
 ```shell
 # If $may_exist is there, that will be used as the value.
 # Otherwise, it's $fallback.
@@ -163,6 +178,7 @@ some_value=${may_exist:-fallback}
 ```
 
 You can use this in functions to define default parameters:
+
 ```shell
 print_price() {
 	price=${1:-0}
@@ -174,9 +190,12 @@ print_price 5
 print_price
 ```
 
-**NOTE:** The syntax `${maybe:-fallback}` will evaluate to `fallback` and do nothing else, BUT `${maybe:=fallback}` will evaluate to `fallback` AND assign the value of `maybe` to `fallback`.
+:::tip
+The syntax `${maybe:-fallback}` will evaluate to `fallback` and do nothing else, BUT `${maybe:=fallback}` will evaluate to `fallback` AND assign the value of `maybe` to `fallback`.
+:::
 
 As in:
+
 ```shell
 # The value MAYBE is intentionally left unset
 DEFINITELY=${MAYBE:="yeah"}
@@ -188,6 +207,7 @@ echo "$MAYBE" # "yeah"
 ### Check variable for value or setting
 
 To check if a value IS set, use `-n`:
+
 ```shell
 SOME_ARG="$2"
 
@@ -197,6 +217,7 @@ fi
 ```
 
 To check if a value IS NOT set, use `-z`
+
 ```shell
 kill_port() {
 	pid="$(lsof -i :${1} | awk 'NR > 1 {print $2}')"
@@ -212,6 +233,7 @@ kill_port() {
 ```
 
 To check for equality, or non-equality it's `-eq` or `-ne` respectively:
+
 ```shell
 kill_pid() {
 	pid="${1}"
@@ -229,6 +251,7 @@ kill_pid() {
 ```
 
 To check for matches against a regular expression (regex pattern), use [the `=~` matching operator](tldp.org/LDP/abs/html/bashver3.html#REGEXMATCHREF):
+
 ```shell
 NUMBER_IN_QUOTES='"3"'
 
@@ -241,6 +264,7 @@ fi
 ### Check that a file does or doesn't exist
 
 Checking for a file:
+
 ```shell
 if [ -f "../some-path" ]; then
   echo "it exists! yay"
@@ -252,6 +276,7 @@ fi
 ```
 
 Checking for a directory:
+
 ```shell
 if [ -d "../some-path" ]; then
   echo "it exists! yay"
@@ -265,6 +290,7 @@ fi
 ### Check if program exists in script
 
 Use `program` to do this:
+
 ```shell
 # Output on whether the command exists
 command -v echo
@@ -286,6 +312,7 @@ fi
 Pipe them into [`wc`](https://ss64.com/bash/wc.html).
 
 To count files in a folder:
+
 ```shell
 # The -l flag counts lines specifically.
 ls folder | wc -l
@@ -296,26 +323,30 @@ ls folder | wc -l
 ### Count unique lines in a file
 
 To get counts of sorted repeated lines in a file:
+
 ```shell
 sort FILE.txt | uniq -c
 ```
 
 To get the most frequent ones at the top of the command:
+
 ```shell
 sort FILE.txt | uniq -c | sort -bgr
 ```
 
 ### Kill process at port
 
-*For more info, check out [the Stack Overflow thread this was shamelessly stolen from](https://stackoverflow.com/questions/3855127/find-and-kill-process-locking-port-3000-on-mac).*
+_For more info, check out [the Stack Overflow thread this was shamelessly stolen from](https://stackoverflow.com/questions/3855127/find-and-kill-process-locking-port-3000-on-mac)._
 
 Find a process PID using a port using:
+
 ```shell
 # Find processes using port 3000.
 sudo lsof -i :3000
 ```
 
 Kill the process using PID with:
+
 ```shell
 # Kill a process.
 kill -15 <pid>
@@ -324,6 +355,7 @@ kill -15 <pid>
 ```
 
 Combine this all together with:
+
 ```shell
 # Where <port> is the port you want to kill.
 kill -15 $(lsof -i :<port> | awk 'NR > 1 {print $2}')
@@ -332,6 +364,7 @@ kill -15 $(lsof -i :<port> | awk 'NR > 1 {print $2}')
 ### Parse arguments, `case` syntax
 
 Basic case switch:
+
 ```shell
 PET="dog"
 
@@ -352,6 +385,7 @@ esac
 ```
 
 Parsing boolean arguments:
+
 ```shell
 while [[ "$#" > 0 ]]; do
 	case "$1" in
@@ -366,17 +400,18 @@ done
 ```
 
 ```
-$ ./test.sh --verbose         
+$ ./test.sh --verbose
 I am extra verbose!!
 
-$ ./test.sh --silent 
+$ ./test.sh --silent
 Ssshhhhhh...
 
-$ ./test.sh howdy   
+$ ./test.sh howdy
 Unknown parameter howdy
 ```
 
-Parsing arguments with values: 
+Parsing arguments with values:
+
 ```shell
 while [[ "$#" > 0 ]]; do
 	case "$1" in
@@ -425,6 +460,7 @@ echo "I AM UPPER GRAAAHHH" | tr '[:upper:]' '[:lower:]'
 ```
 
 Or `awk`:
+
 ```shell
 echo "I AM UPPER GRAAAHHH" | awk '{print tolower($0)}'
 ```
@@ -432,8 +468,8 @@ echo "I AM UPPER GRAAAHHH" | awk '{print tolower($0)}'
 ### Filter to lines
 
 Use `awk`:
+
 ```shell
 # just get me the first line, thankx
 cat really-long-file.txt | awk 'NR == 1'
 ```
-

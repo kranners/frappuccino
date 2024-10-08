@@ -19,7 +19,8 @@ tags:
 
 Git configuration uses a [[TOML]] format, and is loaded from either `~/.gitconfig` or `~/.config/git/config`.
 
-*Sample config*
+_Sample config_
+
 ```toml
 [commit]
 	gpgsign = true
@@ -35,14 +36,15 @@ Git configuration uses a [[TOML]] format, and is loaded from either `~/.gitconfi
 
 ### Under [[Home Manager]]
 
-If using [[Home Manager]], your config can be managed through *home.nix*
+If using [[Home Manager]], your config can be managed through _home.nix_
+
 ```nix
 programs.git = {
 	enable = true;
-	
+
 	userName = "Patchy Pirate";
 	userEmail = "patchy@the.pirate";
-	
+
 	extraConfig = {
 		push = {autoSetupRemote = true;};
 		user = {signingkey = "3321A02038BCAC34";};
@@ -56,6 +58,7 @@ programs.git = {
 This can happen if your machine crashes, or sometimes as part of a flake update.
 
 The symptom is:
+
 ```shell
 error: gpg failed to sign the data:
 gpg: Note: database_open 1234567890 waiting for lock (held by 1234) ...
@@ -68,6 +71,7 @@ gpg: signing failed: Operation timed out
 ```
 
 The cure is:
+
 ```shell
 rm -rf ~/.gnupg/*.lock
 rm -rf ~/.gnupg/public-keys.d/*.lock
@@ -89,12 +93,15 @@ This option is for automatically setting the remote branch when pushing to a new
 This is useful for if you're going to be pushing to new feature branches often.
 
 You can set this option in one command:
+
 ```shell
 git config --global --add --bool push.autoSetupRemote true
 ```
 
 See [Configuration](#Configuration) for how to configure this and others in a standalone or [[Home Manager]] setup.
+
 ## Usage
+
 #### Changing a given commit from the past (time travel)
 
 1. Find the commit on the file that you want to change, so like
@@ -159,9 +166,10 @@ git config --global credential.helper osxkeychain
 
 > "Help! I've done a bunch of work without committing, but I want my commit history to stay clean!"
 
-An *interactive add* is the CLI equivalent of a GUI git client like [GitKraken](https://www.gitkraken.com/).
+An _interactive add_ is the CLI equivalent of a GUI git client like [GitKraken](https://www.gitkraken.com/).
 
 To begin an interactive add:
+
 ```shell
 git add -i
 ```
@@ -169,6 +177,7 @@ git add -i
 From there the steps look something like the following:
 
 Given the changed files
+
 ```
 1 package.json
 2 index.html
@@ -193,15 +202,16 @@ git reset HEAD~1
 ```
 
 Or, you could destroy all your changes:
+
 ```shell
-# Reset absolutely everything back to the 
+# Reset absolutely everything back to the
 git reset --hard origin
 ```
 
 #### Merge and accept all incoming / existing changes
 
 This is done using the [`-X` or `--strategy-option` flag](https://git-scm.com/docs/git-merge#Documentation/git-merge.txt--Xltoptiongt).
-[*For more info, see the page on merge strategies.*](https://git-scm.com/docs/merge-strategies)
+[_For more info, see the page on merge strategies._](https://git-scm.com/docs/merge-strategies)
 
 ```shell
 # Accept all the incoming changes for conflicts
@@ -210,21 +220,25 @@ git merge something-better -X theirs
 # Accept all your changes for conflicts
 git merge mine-is-cooler -X ours
 ```
+
 #### Move commits to another branch
 
 Usually this will mean moving commits away from `main` or `master` to a new branch, say `feature`.
 
 1. Make and checkout the new branch
+
 ```shell
 git checkout -b feature
 ```
 
 2. Merge the commits into the new branch
+
 ```shell
 git merge main
 ```
 
 3. Move back to the old branch and remove the unwanted commits.
+
 ```shell
 git checkout main
 
@@ -314,6 +328,7 @@ If something broke in the past for unknown reasons, then a bisect is a great way
 
 A bisect is a semi-manual binary tree search for the first broken commit.
 For example, given 5 commits:
+
 1. A <- You are here
 2. B
 3. C
@@ -322,6 +337,7 @@ For example, given 5 commits:
 
 The bisect would start by marking **A** as a "bad" commit, and marking **E** as a "good" commit.
 Bisect would then drop you in between them:
+
 1. A <- Marked as bad
 2. B
 3. C <- You are here (dropped here by bisect)
@@ -329,6 +345,7 @@ Bisect would then drop you in between them:
 5. E <- Marked as good
 
 At this point you would then mark **C** as "bad", and the bisect would continue to D.
+
 1. A <- Marked as bad
 2. B <- Skipped over by bisect
 3. C <- Marked as bad
@@ -358,7 +375,7 @@ git bisect reset
 
 ##### Different names for 'good' and 'bad'
 
-Bisect semantically looks for the *first commit with a problem*, if instead you want the *first commit with a fix*, then bisect won't look quite right out of the box.
+Bisect semantically looks for the _first commit with a problem_, if instead you want the _first commit with a fix_, then bisect won't look quite right out of the box.
 
 ```shell
 # Start the bisect as usual
@@ -387,7 +404,9 @@ git bisect unfixed PAST
 
 #### Move commits to another branch
 
-**NOTE:** Commits are not related to the branch they are on. They are agnostic.
+:::tip
+Commits are not related to the branch they are on. They are agnostic.
+:::
 
 Start by getting all the commits you want to move over. You can rewrite history however here to make it happen.
 
@@ -421,6 +440,7 @@ git branch -m bleh-bad-name new-and-cool
 ```
 
 After this you may want to delete the remote branch:
+
 ```shell
 # Delete it!
 git push origin --delete bleh-bad-name

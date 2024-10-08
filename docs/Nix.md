@@ -5,11 +5,12 @@ tags:
   - system
   - linux
 ---
+
 # Nix
 
 [Nix](https://nix.dev/tutorials/nix-language.html) is a language, package manager and ecosystem for creating declarative system configurations.
 
-Nix can be used standalone to manage a user with [[Home Manager]], or to configure your entire  system using [[NixOS]].
+Nix can be used standalone to manage a user with [[Home Manager]], or to configure your entire system using [[NixOS]].
 
 ## Nixpkgs
 
@@ -33,16 +34,19 @@ To see a list of channels and their health, [see the official Nix Channel Status
 
 A flake is a kind of NixOS derivation (an entire working configuration) that uses a lockfile to manage package versions, rather than channels.
 
-**NOTE:** You do not need a flake in order to manage your configuration with NixOS, and you do not need a flake to import other files.
+:::tip
+You do not need a flake in order to manage your configuration with NixOS, and you do not need a flake to import other files.
+:::
 
 To enable flakes, set the `nix.package` and `nix.settings.experimental-features` options to the following:
+
 ```nix
 # Enable Flakes
 nix.package = pkgs.nixFlakes;
 nix.settings.experimental-features = ["nix-command" "flakes"];
 ```
 
-*Check out [[Nix Flakes]] for more information.*
+_Check out [[Nix Flakes]] for more information._
 
 ## Nix language
 
@@ -53,6 +57,7 @@ Functions to work with [lists](https://ryantm.github.io/nixpkgs/functions/librar
 ##### Common iteration patterns
 
 [**List to attribute set**](https://nix.dev/manual/nix/2.18/language/builtins.html#builtins-listToAttrs)
+
 ```nix
 FRUITS = [
 	{ value = 1; name = "Apple"; }
@@ -65,6 +70,7 @@ prices = builtins.listToAttrs FRUITS;
 ```
 
 [**Map items in a list**](https://ryantm.github.io/nixpkgs/functions/library/lists/#function-library-lib.lists.forEach)
+
 ```nix
 FRUITS = [
 	{ value = 1; name = "Apple"; }
@@ -80,7 +86,9 @@ tags = lib.lists.forEach FRUITS (fruit: {
 
 [**Map an attribute set into another attribute set**](https://ryantm.github.io/nixpkgs/functions/library/attrsets/#function-library-lib.attrsets.mapAttrs-prime)
 
-**NOTE:** Pronounced "map attrs *prime*" 🙄
+:::tip
+Pronounced "map attrs _prime_" 🙄
+:::
 
 ```nix
 PRICES = {
@@ -97,6 +105,7 @@ shelf = lib.attrsets.mapAttrs' (fruit: price: {
 ```
 
 [**Concatenate a list of strings**](https://ryantm.github.io/nixpkgs/functions/library/strings/#function-library-lib.strings.concatStrings)
+
 ```nix
 WORDS = [ "howdy" "partner" "🤠" ];
 
@@ -106,7 +115,7 @@ greeting = lib.strings.concatStrings WORDS;
 
 ### Interpolation
 
-[Nix supports interpolation in strings, paths, and attribute *names*.](https://nix.dev/manual/nix/2.23/language/string-interpolation#interpolated-expression)
+[Nix supports interpolation in strings, paths, and attribute _names_.](https://nix.dev/manual/nix/2.23/language/string-interpolation#interpolated-expression)
 
 #### Interpolated expressions
 
@@ -124,7 +133,8 @@ Expressions interpolate like:
 - `$` can be escaped by prefixing it with `''`. i.e. `''${...}`
 - `''` can be escaped by prefixing it with `'`. i.e. `'''stuff'''`
 
-*For example: [[zsh]] value substitution in [[Nix#`pkgs.writeShellApplication`]]:*
+_For example: [[zsh]] value substitution in [[Nix#`pkgs.writeShellApplication`]]:_
+
 ```nix
 let
 	greeting = "Howdy 🤠";
@@ -148,7 +158,8 @@ multiline
 
 #### Examples of interpolation
 
-*Interpolating two strings*
+_Interpolating two strings_
+
 ```nix
 let
 	apple = "apple";
@@ -160,7 +171,8 @@ in
 fruits
 ```
 
-*Interpolating a path*
+_Interpolating a path_
+
 ```nix
 let
 	doggo = ./adorable-dog-photo.jpg;
@@ -171,7 +183,8 @@ in
 }
 ```
 
-*Interpolating an attribute set*
+_Interpolating an attribute set_
+
 ```nix
 let
 	full-name = {
@@ -195,21 +208,23 @@ A derivation is a set of instructions which inform Nix how to build a package fr
 ### `pkgs.writeShellApplication`
 
 [`pkgs.writeShellApplication`](https://ryantm.github.io/nixpkgs/builders/trivial-builders/#trivial-builder-writeShellApplication) does three things:
+
 1. Creates a package which only contains your `.text` as an executable script
 2. Automatically sets the `PATH` of the script to contain any `runtimeInputs`
 3. Sets some sanity options `errexit`, `nounset`, `pipefail`
 4. Checks the script with [shellcheck](https://github.com/koalaman/shellcheck), and throws compile errors for any issues
 
 Here's a function for installing a script managed using `writeShellApplication`:
+
 ```nix
-{ pkgs, ...}: let 
+{ pkgs, ...}: let
 	# Here we define a script called screenshot-region
  	screenshot-region = pkgs.writeShellApplication {
 		name = "screenshot-region";
-		
+
 		# Define all the dependencies for the PATH
 		runtimeInputs = [pkgs.grim pkgs.slurp pkgs.wl-clipboard];
-		
+
 		text = ''
 		grim -g "$(slurp -d)" - | wl-copy && notify-send "Copied region to clipboard"
 		'';
@@ -235,6 +250,7 @@ This can be used with [[Home Manager]] to add it to your XDG config, or just any
 Or it can be used with [[NixOS]] to write out a config file into `/etc/`.
 
 Here's a sample for adding a [workstyle](https://github.com/pierrechevalier83/workstyle) config:
+
 ```nix
 { pkgs, ... }: let
 	workstyle-config = pkgs.writeTextFile {
@@ -245,7 +261,7 @@ Here's a sample for adding a [workstyle](https://github.com/pierrechevalier83/wo
 		  "foot" = "🦶"
 	      "discord" = "🗣️"
 	      "code" = "💻"
-	      "obsidian" = "💎"	
+	      "obsidian" = "💎"
 		'';
 	};
 in {
@@ -263,7 +279,10 @@ in {
 }
 ```
 
-**NOTE:** For any of these options, you can also define the `text` key inline:
+:::tip
+For any of these options, you can also define the `text` key inline:
+:::
+
 ```nix
 { pkgs, ... }:  {
 	# Write to $XDG_CONFIG/workstyle/config.toml
@@ -273,7 +292,7 @@ in {
 		  "foot" = "🦶"
 		  "discord" = "🗣️"
 		  "code" = "💻"
-		  "obsidian" = "💎"	
+		  "obsidian" = "💎"
 		'';
 	};
 
@@ -282,7 +301,7 @@ in {
 	  "foot" = "🦶"
 	  "discord" = "🗣️"
 	  "code" = "💻"
-	  "obsidian" = "💎"	
+	  "obsidian" = "💎"
 	'';
 
 	# Write to /etc/workstyle
@@ -290,7 +309,7 @@ in {
 	  "foot" = "🦶"
 	  "discord" = "🗣️"
 	  "code" = "💻"
-	  "obsidian" = "💎"	
+	  "obsidian" = "💎"
 	'';
 }
 ```

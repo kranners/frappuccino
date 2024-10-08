@@ -4,7 +4,9 @@ tags: japanese, terminology, lecture, seido
 
 # Taikyoku たいきょく
 
-**NOTE: If you somehow made it here, this is relevant for karate. 🥋**
+:::tip
+If you somehow made it here, this is relevant for karate. 🥋\*\*
+:::
 
 ### Taiji origins
 
@@ -34,7 +36,7 @@ I've seen the Taiji to the Yin Yang described as the metal a coin is printed on.
 
 ## Seido Interpretation of Taikyoku
 
-In Seido we say Taikyoku means *"Take the overview"*.
+In Seido we say Taikyoku means _"Take the overview"_.
 
 If I was talking to the Youth folk, I'd be talking about an exam to study for. But it could really apply to anything. If you fail the exam, there's a bit of Yin, you learn from your mistake. If you pass the exam, there's a bit of Yang, you lose the opportunity cost, you miss out on some potential learnings.
 
@@ -45,6 +47,6 @@ It's also about keeping an open mind, to be like primordial energy - shapable, m
 
 ### Character on Karate
 
-Gichin Funakoshi, the founder of Shotokan and the father of Modern Karate said the following about the kata that he made: 
+Gichin Funakoshi, the founder of Shotokan and the father of Modern Karate said the following about the kata that he made:
 
 > Because of its simplicity, the kata is easily learned by beginners. Nevertheless, as its name implies, this form is of the most profound character and one to which, upon mastery of the art of karate, an expert will return to select it as the ultimate training kata.

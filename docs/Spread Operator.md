@@ -1,5 +1,12 @@
 ---
-tags: spread operator, javascript, typescript, development
+id: Spread Operator
+aliases: []
+tags:
+  - spread
+  - operator,
+  - javascript,
+  - typescript,
+  - development
 ---
 
 # Spread Operator
@@ -48,7 +55,9 @@ console.log(scoreTwo);
 
 ## Rest parameters
 
-**NOTE:** Rest parameters can *only ever* be the last element.
+:::tip
+Rest parameters can *only ever* be the last element.
+:::
 
 **With the `...` operator**
 Using the `...` operator here is called [a rest parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters) or a rest element.

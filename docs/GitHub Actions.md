@@ -19,7 +19,9 @@ GHA is about defining [Workflows](https://docs.github.com/en/actions/using-workf
 
 Workflows are defined in [[YAML]] files underneath `.github/workflows` in a [[Git]] repository.
 
-**NOTE: You won't be able to copy/paste code from here, as actions files do not allow for tab-based indentation.**
+:::tip
+You won't be able to copy/paste code from here, as actions files do not allow for tab-based indentation.\*\*
+:::
 
 ### Examples and usage
 
@@ -33,7 +35,7 @@ jobs: ...
 
 ### Jobs
 
-A *job* is a set of instructions that gets run on a runner (like a container), and is contained within a Workflow.
+A _job_ is a set of instructions that gets run on a runner (like a container), and is contained within a Workflow.
 
 ```yaml
 jobs:
@@ -62,11 +64,13 @@ jobs:
 `runs-on` defines the type of runner to use.
 
 GitHub-hosted runners are:
+
 - `ubuntu-latest`
 - `windows-latest`
 - `macOS-latest`
 
 To run a specific [[Docker]] image, use the `container` tag instead, like:
+
 ```yaml
 custom_job:
 	container:
@@ -89,6 +93,7 @@ Artifacts are saved with the `actions/upload-artifact` step, and are pulled with
 [Variables](https://docs.github.com/en/actions/learn-github-actions/variables#about-variables) are values for reuse between or within workflows, and are usually either publicly defined strings or secrets.
 
 They're used within a [job](#Jobs) like the following:
+
 ```yaml
 steps:
 	- shell: bash
@@ -99,6 +104,7 @@ steps:
 ```
 
 Or, to insert them directly into the command:
+
 ```yaml
 steps:
 	- run: |
@@ -125,21 +131,25 @@ stuff:
 
 Events define when a Workflow will run.
 
-*A workflow with one event*, this will trigger on any push.
+_A workflow with one event_, this will trigger on any push.
+
 ```yaml
 name: Any Push
 on: push
 ```
 
-*A workflow with two events*, this will trigger on any push or any fork.
+_A workflow with two events_, this will trigger on any push or any fork.
+
 ```yaml
 name: Push or Fork
-on: [ push, fork ]
+on: [push, fork]
 ```
 
-*A workflow with two partially configured events*, this will trigger on:
+_A workflow with two partially configured events_, this will trigger on:
+
 - Any update or creation of a pull request
-- Any push *to the branch 'main'*
+- Any push _to the branch 'main'_
+
 ```yaml
 name: Updates
 on:

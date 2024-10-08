@@ -11,10 +11,7 @@ tags: []
 
 Use `vim.api.nvim_feedkeys()`.
 
-Takes three arguments
-      - keys: keys to be typed in.
-      - mode: `"m"` for _as though from a mapping_, `"t"` for _as though typed_.
-      - escape_ks: whether to escape `K_SPECIAL (0x80)`
+Takes three arguments - keys: keys to be typed in. - mode: `"m"` for _as though from a mapping_, `"t"` for _as though typed_. - escape_ks: whether to escape `K_SPECIAL (0x80)`
 
 [To clarify `escape_ks`, see this Neovim issue.](https://github.com/neovim/neovim/issues/12297)
 
@@ -23,14 +20,18 @@ Takes three arguments
 Use `vim.api.nvim_replace_termcodes()`.
 
 Takes in four arguments:
+
 - str: The keycode to replace ("`<CR>`", "`<Esc>`", "`<C-o>`", ...)
 - from_part: Legacy vim param, should be `true`
 - do_lt: Also translate `<lt>`.
 - special: Also replace special keycodes. See `:h keycodes`
 
-NOTE: [`lt` means lesser than](https://neovim.io/doc/user/intro.html#%3Clt%3E)
+:::tip
+[`lt` means lesser than](https://neovim.io/doc/user/intro.html#%3Clt%3E)
+:::
 
 Example:
+
 ```lua
 local cr = vim.api.nvim_replace_termcodes("<CR>", true, true, true)
 
@@ -38,8 +39,8 @@ local cr = vim.api.nvim_replace_termcodes("<CR>", true, true, true)
 vim.api.nvim_feedkeys(cr, "t", false)
 ```
 
-See: 
+See:
+
 - `:h nvim_feedkeys()`
 - `:h feedkeys()`
 - `:h nvim_replace_termcodes()`
-

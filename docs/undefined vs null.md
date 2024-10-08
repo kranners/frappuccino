@@ -10,12 +10,14 @@ tags: []
 The ultimate bikeshed - `undefined` vs `null`.
 
 TLDR for my take:
+
 - For anyone who _does not_ subject themselves to writing JavaScript, the distinction is pretty clear and obvious.
 - In JavaScript, `null` is an undesirable relic, generally acting as a less useful `undefined`.
 
 ### Colloquially / semantically
 
 The way this is _supposed_ to work is pretty simple:
+
 - `undefined` means _this value has not been set yet_
 - `null` means _this value has been explicitly set to nothing_
 
@@ -24,6 +26,7 @@ That's it.
 In JavaScript, generally the two are interchangable for most use-cases.
 
 They are both:
+
 - Considered falsy.
 - Not strictly equal to eachother. That is, `null !== undefined`.
 - Not strictly equal to any other primitive. That is, `typeof null !== typeof string`, etc.
@@ -34,18 +37,20 @@ Optional properties are considered `T | undefined`.
 
 ```ts
 type Server = {
-    port?: number; // number | undefined
-    name: string;
+  port?: number; // number | undefined
+  name: string;
 };
 
 const server: Server = {
-    // Error! null is not assignable to type number | undefined
-    port: null,
-    name: "haha hehe",
+  // Error! null is not assignable to type number | undefined
+  port: null,
+  name: "haha hehe",
 };
 ```
 
-**NOTE**: This is subject to [[1725931603-TKXZ|exactOptionalPropertyTypes]].
+:::tip
+This is subject to [[1725931603-TKXZ|exactOptionalPropertyTypes]].
+:::
 
 #### Object destructuring
 
@@ -53,9 +58,9 @@ Any key set to `undefined` will be overridden by default values when destructuri
 
 ```js
 const open = ({ port = 8080 } = {}) => {
-    console.log(`Opening on ${port}`);
-    server.listen(port);
-}
+  console.log(`Opening on ${port}`);
+  server.listen(port);
+};
 
 open(); // Opening on 8080
 open({ port: undefined }); // Opening on 8080
@@ -66,6 +71,7 @@ open({ port: null }); // Opening on null
 #### Variable declarations
 
 Any unassigned variable is considered `undefined`.
+
 ```js
 // undefined
 let fruit;
@@ -81,11 +87,12 @@ const fruit = null;
 #### `typeof`
 
 The `typeof` any primitive is generally that primitive itself.
+
 ```js
-typeof "string" // 'string'
-typeof 0 // 'number'
-typeof undefined // 'undefined'
-typeof Symbol() // 'symbol'
+typeof "string"; // 'string'
+typeof 0; // 'number'
+typeof undefined; // 'undefined'
+typeof Symbol(); // 'symbol'
 ```
 
 [However, `typeof null === "object"`.](https://2ality.com/2013/10/typeof-null.html)
@@ -111,7 +118,7 @@ It doesn't matter if the left-hand side of the operator is `null` or `undefined`
 
 ```js
 const store = {
-    shelves: null,
+  shelves: null,
 };
 
 // undefined
@@ -128,4 +135,3 @@ null + 1; // 1
 
 undefined + 1; // NaN
 ```
-

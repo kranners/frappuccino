@@ -1,6 +1,7 @@
 ---
 tags: javascript, typescript, js, ts, strings
 ---
+
 # Strings (in [[JavaScript]])
 
 ## Removing suffix or prefix from string
@@ -32,6 +33,7 @@ fruit.trim();
 Checks if a given string contains a given substring.
 
 **Usage:**
+
 ```javascript
 const name = "Joseph Maguire";
 
@@ -68,7 +70,9 @@ fruit.replace(/na/g, "ne");
 ## Convert a string into an array of specified lengths
 
 The easiest way to do this is to use the `.match()` regex function.
-**NOTE: This will only work if all the groups are the same length.**
+:::tip
+This will only work if all the groups are the same length.\*\*
+:::
 
 ```javascript
 const fruit = "apple";

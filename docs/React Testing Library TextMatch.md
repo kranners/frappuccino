@@ -10,6 +10,7 @@ tags: []
 React Testing Library functions take in a type called `TextMatch` as their sole argument.
 
 The argument can be:
+
 - A string, in which it will match only for exact strings, or substrings.
 - A regex pattern, which will match for substrings by default, but has access to regex logic
 - A function, which returns a `boolean` for whether or not to match the given `element`
@@ -17,20 +18,18 @@ The argument can be:
 [For more info, see the React Testing Library docs on TextMatch.](https://testing-library.com/docs/queries/about/#textmatch)
 
 For a given DOM like:
+
 ```html
 <div id="a">
   <div id="b">
-    <div id="c">
-      <span>this</span> text <a>is</a> <strong>broken</strong>
-    </div>
-    <div id="d">
-      I Am Complete Text :)
-    </div> 
+    <div id="c"><span>this</span> text <a>is</a> <strong>broken</strong></div>
+    <div id="d">I Am Complete Text :)</div>
   </div>
 </div>
 ```
 
 ##### To select the `div` D with a full string search:
+
 ```tsx
 screen.getByText("I Am Complete Text :)");
 ```
@@ -48,17 +47,18 @@ screen.getByText("am complete", { exact: false });
 
 ```tsx
 const doesElementHaveContent = (element?: Element | null) => {
-    return element?.textContent === "this text is broken";
-}
+  return element?.textContent === "this text is broken";
+};
 
 screen.getByText((content?: string, element?: Element | null) => {
-    const elementHasContent = doesElementHaveContent(element);
-    const childHasContent = element?.children?.some(doesElementHaveContent);
-    return elementHasContent && !childHasContent;
+  const elementHasContent = doesElementHaveContent(element);
+  const childHasContent = element?.children?.some(doesElementHaveContent);
+  return elementHasContent && !childHasContent;
 });
 ```
 
-**NOTE**: If that `childHasContent` check was _not_ there, the function would return `div`s A, B and C.
+:::tip
+If that `childHasContent` check was _not_ there, the function would return `div`s A, B and C.
+:::
 
 [For what you can do with `Element`, check out the MDN documentation.](https://developer.mozilla.org/en-US/docs/Web/API/Element)
-

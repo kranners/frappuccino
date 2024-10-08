@@ -31,16 +31,16 @@ const nothing = null;
 const unknowable = undefined;
 const nothings = [];
 
-const things = ['a', 'b', 'c'];
+const things = ["a", "b", "c"];
 
 // ['a', 'b', 'c', null, undefined]
 Array.prototype.concat(things, nothings, nothing, unknowable);
 
 // Uncaught TypeError: null is not iterable
-[ ...things, ...nothing ];
+[...things, ...nothing];
 
 // ['a', 'b', 'c']
-[ ...things, ...( nothing ?? [] )];
+[...things, ...(nothing ?? [])];
 ```
 
 ## Conditionally add an item
@@ -48,27 +48,24 @@ Array.prototype.concat(things, nothings, nothing, unknowable);
 You could do this in a couple ways, considering that `const` arrays are technically not really constants.
 
 ```javascript
-const another = 'z';
+const another = "z";
 const condition = true;
 
 // ['a', 'b', 'c', 'z']
-const things = [
-	'a', 'b', 'c',
-	... condition ? [another] : [],
-];
+const things = ["a", "b", "c", ...(condition ? [another] : [])];
 ```
 
 The [[Spread Operator]] into a ternary operator is one of the more accepted ways of doing this.
 If that's too cryptic, you can also just use [Array.prototype.push()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push).
 
 ```javascript
-const another = 'z';
+const another = "z";
 const condition = true;
 
-const things = ['a', 'b', 'c'];
+const things = ["a", "b", "c"];
 
 if (condition) {
-	things.push(another);
+  things.push(another);
 }
 ```
 
@@ -91,9 +88,10 @@ If using a reducer function in [[TypeScript]], it's important to explicitly type
 const numbers: number[] = [0, 1, 2, 3, 4];
 
 const joined: string = numbers.reduce<string>(
-	(acc: string, current: number) => {
-		return `${acc}${String(current)}`;
-	}, ''
+  (acc: string, current: number) => {
+    return `${acc}${String(current)}`;
+  },
+  ""
 );
 ```
 
@@ -149,7 +147,7 @@ const salesByFruit = sales.reduce((acc, { fruit, price }) => {
 	};
 }, {});
 
-// Equivalent to: 
+// Equivalent to:
 {
 	banana: [ 0.5, 1.5 ],
 	apple: [ 1 ],
@@ -158,7 +156,9 @@ const salesByFruit = sales.reduce((acc, { fruit, price }) => {
 
 ## Array.prototype.sort()
 
-**NOTE:** Sorting is a bit of a strange one, as `array.sort()` edits the array *in place*.
+:::tip
+Sorting is a bit of a strange one, as `array.sort()` edits the array _in place_.
+:::
 
 The rest of this section will be for `Array.prototype.toSorted()` instead, as that is the modern copying version.
 
@@ -169,6 +169,7 @@ There should be no issue using `toSorted()` in a browser, however your [[Node]] 
 `toSorted()` is supported as of Node v20.0.0, which was released 18th April 2023.
 
 If your Node version is not supported, you can use this alternative syntax:
+
 ```js
 // Node >= 20.0.0
 const unsorted = getRandomStuff();
@@ -179,9 +180,11 @@ const unsorted = getRandomStuff();
 const sorted = [...unsorted].sort(mySortingFunction);
 ```
 
-[*See the MDN official docs for more info on this.*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted#browser_compatibility)
+[_See the MDN official docs for more info on this._](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted#browser_compatibility)
 
-**NOTE:** [As of Typescript 5.2, there are definitions for the copying array methods.](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2/#copying-array-methods)
+:::tip
+[As of Typescript 5.2, there are definitions for the copying array methods.](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2/#copying-array-methods)
+:::
 
 #### Syntax
 
@@ -199,8 +202,7 @@ If a sort function is not specified, it will default to converting all values in
 All `undefined`s are sorted to the back, always.
 
 ```js
-const fruits = ['banana', 'mango', undefined, 'apple'];
-
+const fruits = ["banana", "mango", undefined, "apple"];
 
 // ['apple', 'banana', 'mango', undefined];
 const sortedFruits = fruits.toSorted();
@@ -242,7 +244,8 @@ const alphabetical = (a, b) => a.localeCompare(b);
 // ["Aardvark", "Canteloupe", "Werewolf"]
 const sortedDictionary = dictionary.toSorted(alphabetical);
 ```
-*Also see [String.prototype.localeCompare()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare)*
+
+_Also see [String.prototype.localeCompare()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare)_
 
 ## Array.prototype.filter()
 
@@ -258,17 +261,17 @@ To filter by an array of objects by a given key condition:
 
 ```javascript
 const users = [
-	{ name: 'Dave', admin: false },
-	{ name: 'Blake', admin: true },
-	{ name: 'Trae', admin: false },
-	{ name: 'Dayna', admin: true },
+  { name: "Dave", admin: false },
+  { name: "Blake", admin: true },
+  { name: "Trae", admin: false },
+  { name: "Dayna", admin: true },
 ];
 
 const admins = users.filter((user) => user.admin);
 
 // Note that this won't work with lowercase users.
 // For that you'd need user.name.toLowerCase().startsWith('d');
-const usersWithD = users.filter((user) => user.name.startsWith('D'));
+const usersWithD = users.filter((user) => user.name.startsWith("D"));
 ```
 
 ## Array of numbers, `range` equivalent
@@ -297,13 +300,13 @@ In JavaScript, it'd look like
 
 ### `toStuff()` methods
 
-Modern [[JavaScript]] provides methods for creating *new* arrays with changes, instead of updating old arrays in place.
+Modern [[JavaScript]] provides methods for creating _new_ arrays with changes, instead of updating old arrays in place.
 
 In many environments, like in [[Leetcode]], these may just not be present.
 To get around this, generally you'll want to make a copy first, then perform the older version of the function.
 
 ```javascript
-const letters = [ 'a', 'b', 'c' ];
+const letters = ["a", "b", "c"];
 
 // .toReversed() is not a function.
 const reversed = letters.toReversed();
@@ -317,11 +320,11 @@ const reversed = [...letters].reverse();
 To use a `Math` function like `Math.max()` or `Math.min()` on an array, you need to destructure it using the [[Spread Operator]] first.
 
 ```javascript
-const numbers = [ 1, 2, 3 ];
+const numbers = [1, 2, 3];
 
 // NaN
 Math.min(numbers);
 
 // 1
-Math.min(...numbers)
+Math.min(...numbers);
 ```

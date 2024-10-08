@@ -13,6 +13,7 @@ tags:
 ## Getting started
 
 To install Rust on [[MacOS]], it is:
+
 ```shell
 # Run this, then follow the on-screen instructions to install.
 # Then restart your shell.
@@ -22,11 +23,13 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 After running this command, you'll also get [Cargo](#Cargo).
 
 To create a new project:
+
 ```shell
 cargo new my-project
 ```
 
 If you're a [[VSCode]] fan, you can also download the [Rust language extension](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
+
 ## Cargo
 
 [Cargo](https://doc.rust-lang.org/cargo/index.html) is the rust package manager.
@@ -45,6 +48,7 @@ struct Greeting {
 ```
 
 To define methods on structs, we use the `impl` syntax:
+
 ```rust
 impl Greeting {
 	pub fn new(language: String, content: String) -> Greeting {
@@ -59,6 +63,7 @@ impl Greeting {
 ```
 
 These can then be used later like:
+
 ```rust
 let bonjour = Greeting::new("French", "Bonjour");
 
@@ -69,6 +74,7 @@ bonjour.say();
 ### Random values
 
 Random numbers are generated using the [`rand`](https://docs.rs/rand/latest/rand/) standard crate.
+
 ```shell
 cargo add rand
 ```
@@ -85,7 +91,8 @@ fn main() {
 
 ### "Imports", using internal code from another file
 
-*Given a file structure of:*
+_Given a file structure of:_
+
 ```
 -> src/
 	-> main.rs
@@ -93,8 +100,9 @@ fn main() {
 	-> residency.rs
 ```
 
-To *"import"* the contents of *user.rs* into *main.rs*, the syntax is simply:
-*main.rs*
+To _"import"_ the contents of _user.rs_ into _main.rs_, the syntax is simply:
+_main.rs_
+
 ```rust
 mod user;
 
@@ -102,8 +110,9 @@ mod user;
 let user = user::User::new();
 ```
 
-However, to "import" the contents of a sibling module, like *user.rs* into *residency.rs*:
-*residency.rs*
+However, to "import" the contents of a sibling module, like _user.rs_ into _residency.rs_:
+_residency.rs_
+
 ```rust
 use crate::user;
 
@@ -112,7 +121,8 @@ let user = crate::user::User::new();
 ```
 
 This can be very verbose, luckily there are various ways to lower the boilerplate:
-*residency.rs*
+_residency.rs_
+
 ```rust
 use crate::user as user;
 
@@ -120,7 +130,8 @@ let user = user::User::new();
 ```
 
 Or, use specific bits, or everything:
-*residency.rs*
+_residency.rs_
+
 ```rust
 // Grab just the struct.
 use crate::user::User;
@@ -134,11 +145,13 @@ let user = User::new();
 ### Iterating
 
 To do a 'C-style' for loop, and iterate over a range of values:
+
 ```rust
 for n in 0..10 {
 	println!("{}", n);
 }
 ```
+
 ### Function types
 
 #### Passing functions in as arguments to other functions
@@ -166,9 +179,11 @@ However, aside from `param: fn (...) -> ...`, there are three other ways of doin
 - `FnOnce(i32) -> i32`
 
 These three are [traits](#Traits). A reference to a function always implements all of these traits, but shorthand closures and other values may not necessarily.
+
 ### Contiguous data
 
 **TLDR:**
+
 - Use [arrays](#Array) if you never need to change the length.
 - Use [vectors](#Vector) if you do.
 - Use [slices](#Slice) pass references to sections of data.
@@ -191,18 +206,23 @@ for n in a.iter() {
 }
 ```
 
-*Alternative syntax for creating an array is `[expr; N]`*
+_Alternative syntax for creating an array is `[expr; N]`_
+
 ```rust
 // This means 'repeat the expression 1, 3 times'.
 let mut a: [i32; 3] = [1; 3];
 ```
-**NOTE:** Any type using this syntax *must* include the `Clone` trait.
+
+:::tip
+Any type using this syntax _must_ include the `Clone` trait.
+:::
 
 #### Vector
 
 [Vectors](https://doc.rust-lang.org/std/vec/struct.Vec.html) are dynamically allocated contains, of which the type is known at compile time, but not necessarily the length.
 
-*Defining a vector can be done in a number of ways*
+_Defining a vector can be done in a number of ways_
+
 ```rust
 // You can define an empty vector just with the new() trait.
 let a = Vec::new();
@@ -221,9 +241,10 @@ let a = vec![1, 2, 3];
 
 [Slices](https://doc.rust-lang.org/std/primitive.slice.html) are dynamically-sized views into existing portions of memory.
 
-Think of a slice as a *slice of some existing memory*, and not really a data structure that should exist on its own.
+Think of a slice as a _slice of some existing memory_, and not really a data structure that should exist on its own.
 
 Let's say you wanted to take in a vector of numbers, and return all the numbers after the first `0`.
+
 ```rust
 // Given this input:
 let input = vec![1, 2, 3, 0, 4, 5, 6];
@@ -234,7 +255,8 @@ let output: &[i32] = [4, 5, 6];
 assert_eq!(do_something(input), output);
 ```
 
-*You could solve this by returning an index of where that is:*
+_You could solve this by returning an index of where that is:_
+
 ```rust
 // Note that we don't need to make any modifications to the vector.
 // So we can use a slice to just peek into the vector.
@@ -252,7 +274,8 @@ fn index_of_zero(numbers: &[i32]) -> usize {
 
 However this would cause issues if we attempt to use this index reference later, after changing the vector which manages `numbers`. It would no longer be valid but we would have no way of knowing that.
 
-*Instead, you should return a slice of that value.*
+_Instead, you should return a slice of that value._
+
 ```rust
 fn everything_after_zero(numbers: &[i32]) -> &[i32] {
 	for (i, n) in numbers {
@@ -266,4 +289,4 @@ fn everything_after_zero(numbers: &[i32]) -> &[i32] {
 }
 ```
 
-*For more info, check out [the Rust documentation page on the slice type](https://doc.rust-lang.org/book/ch04-03-slices.html).*
+_For more info, check out [the Rust documentation page on the slice type](https://doc.rust-lang.org/book/ch04-03-slices.html)._

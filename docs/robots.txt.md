@@ -11,11 +11,14 @@ tags:
 
 It is used to inform web scrapers and spiders what parts of the website they are allowed to access, if any at all. It can also be used as a form of [[SEO]].
 
-*A sample robots.txt which would block access for all web scrapers:*
+_A sample robots.txt which would block access for all web scrapers:_
+
 ```txt
 User-agent: *
 
 Disallow: /
 ```
 
-**NOTE** That the *robots.txt* file itself has no power, and relies on spiders to voluntarily acknowledge and respect them. You may still get scraped.
+:::tip
+That the _robots.txt_ file itself has no power, and relies on spiders to voluntarily acknowledge and respect them. You may still get scraped.
+:::

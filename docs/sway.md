@@ -5,6 +5,7 @@ tags:
   - arch
   - nix
 ---
+
 # sway
 
 [sway](https://swaywm.org/) is the de facto standard [[Wayland]] compositor, and a direct replacement for the [i3 window manager](https://i3wm.org/).
@@ -14,14 +15,17 @@ tags:
 ### Under [[Arch Linux]]
 
 sway can be installed using the `sway` package:
+
 ```shell
 sudo pacman -S sway
 ```
 
 For sway to work, it needs privileged access to your "seat".
 
-**NOTE:** A *seat* just refers to all the physical devices required to run a desktop environment. Things like your mouse, keyboard, display, etc.
-[*See the Wikipedia page on Multiseat configuration for more info.*](https://en.wikipedia.org/wiki/Multiseat_configuration)
+:::tip
+A _seat_ just refers to all the physical devices required to run a desktop environment. Things like your mouse, keyboard, display, etc.
+:::
+[_See the Wikipedia page on Multiseat configuration for more info._](https://en.wikipedia.org/wiki/Multiseat_configuration)
 
 If you have [`polkit`](https://archlinux.org/packages/?name=polkit) installed, then sway will be able to pick up on that and launch automatically.
 
@@ -37,6 +41,7 @@ sudo systemctl enable seatd.service
 ```
 
 To run sway from TTY, it's just:
+
 ```shell
 # Start sway.
 sway
@@ -47,12 +52,14 @@ sway
 It's generally recommended that you run sway under [[Home Manager]].
 
 To set it up, first enable `polkit`:
+
 ```nix
 # configuration.nix
 security.polkit.enable = true;
 ```
 
 Then you can set `wayland.windowManager.sway` in your home config:
+
 ```nix
 # home.nix
 wayland.windowManager.sway = {
@@ -65,25 +72,29 @@ wayland.windowManager.sway = {
 
 If you are using a login manager, you'll need to add the sway nixpkg into its session packages.
 Here's sddm as an example:
+
 ```nix
 services.xserver.displayManager = {
 	sddm = {
 		enable = true;
 		wayland.enable = true;
 	};
-	
+
 	sessionPackages = [pkgs.sway];
 };
 ```
 
-**NOTE:** [Display managers are not officially supported by sway.](https://github.com/swaywm/sway/pull/3634#issuecomment-462779163)
+:::tip
+[Display managers are not officially supported by sway.](https://github.com/swaywm/sway/pull/3634#issuecomment-462779163)
+:::
 
 If you're on a system that changes output regularly, like a laptop, then it's recommended to install some kind of external output configuration, like [`kanshi`](https://sr.ht/~emersion/kanshi/):
+
 ```nix
 # Copied from https://nixos.wiki/wiki/Sway#Systemd_services
 systemd.user.services.kanshi = {
 	description = "kanshi daemon";
-	
+
 	serviceConfig = {
 		Type = "simple";
 		ExecStart = ''${pkgs.kanshi}/bin/kanshi -c kanshi_config_file'';
@@ -99,6 +110,7 @@ Configuration is located under `~/.config/sway/config`, and is a superset of i3 
 If you've got an existing i3 config, copy-pasting it should work.
 
 To begin configuring, start by copying over the default config:
+
 ```shell
 # Make sure the folder exists first
 mkdir -p ~/.config/sway
@@ -115,6 +127,7 @@ nvim ~/.config/sway/config
 This section will only cover sway installed under [[Home Manager]].
 
 Config is done under the `wayland.windowManager.sway.config` option:
+
 ```nix
 { pkgs, ... }: {
 	wayland.windowManager.sway = {
@@ -130,12 +143,13 @@ Config is done under the `wayland.windowManager.sway.config` option:
 ```
 
 Like elsewhere in Nix, `pkgs` can be used directly in your sway config without polluting your system, and without knowing specific paths:
+
 ```nix
 # pkgs are here, I swear
 wayland.windowManager.sway.config = {
 	menu = "${pkgs.rofi}/bin/rofi -show drun";
 	terminal = "${pkgs.foot}/bin/foot";
-	
+
 	# Auto start
 	startup = [
 		{
@@ -149,6 +163,7 @@ wayland.windowManager.sway.config = {
 #### Bars and services
 
 To configure a status bar like [[waybar]], you can configure it as a startup [[User Service]]:
+
 ```nix
 wayland.windowManager.sway.config = {
 	startup = [
@@ -167,15 +182,20 @@ programs.waybar = {
 }
 ```
 
-**NOTE:** `wayland.windowManager.sway.config.bars = [];` is not optional! Not including this will make sway also show its default bar.
+:::tip
+`wayland.windowManager.sway.config.bars = [];` is not optional! Not including this will make sway also show its default bar.
+:::
 
-**NOTE:** You *can* configure this differently, but in the case of [[waybar]] it will not pick up new configs without configuring it like this.
+:::tip
+You _can_ configure this differently, but in the case of [[waybar]] it will not pick up new configs without configuring it like this.
+:::
 
 #### Keybindings
 
 Keybindings are configured under `wayland.windowManager.sway.config.keybindings`.
 
 `let..in` syntax is probably preferable to have access to special values like your modifier:
+
 ```nix
 wayland.windowManager.sway.config.keybindings = let
 	cfg = config.wayland.windowManager.sway.config;
