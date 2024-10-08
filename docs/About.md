@@ -1,8 +1,15 @@
 ---
-tags: about, meta, obsidian
+id: About
+aliases: []
+tags:
+  - about,
+  - meta,
+  - obsidian
 ---
 
 # About
+
+![Coffee cup notebook](/cup.png)
 
 [This wiki](index) is a collection of my personal notes for various things, mostly development.
 

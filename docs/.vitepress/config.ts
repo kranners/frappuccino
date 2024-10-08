@@ -11,6 +11,8 @@ export default defineConfig({
   srcExclude: ['**/2024/**', '**/2025/**', '**/2026/**'],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: "/cup.png",
+
     nav: [
       { text: "Home", link: "/" },
       { text: "About", link: "/About" },
