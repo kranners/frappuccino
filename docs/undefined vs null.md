@@ -49,7 +49,7 @@ const server: Server = {
 ```
 
 :::tip
-This is subject to [[1725931603-TKXZ|exactOptionalPropertyTypes]].
+This is subject to [[exactOptionalPropertyTypes]].
 :::
 
 #### Object destructuring

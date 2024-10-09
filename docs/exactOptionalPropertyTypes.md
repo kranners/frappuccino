@@ -1,5 +1,5 @@
 ---
-id: 1725931603-TKXZ
+id: exactOptionalPropertyTypes
 aliases:
   - exactOptionalPropertyTypes
 tags: []
