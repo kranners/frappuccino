@@ -100,6 +100,35 @@ RCT_EXPORT_BLOCKING_SYNCHRONOUS_METHOD(getName) {
 
 [See the iOS Native Module documentation](https://reactnative.dev/docs/native-modules-ios)
 
+##### In iOS (with Swift)
+
+Swift doesn't have macros, so there's more boilerplate compared to Objective-C.
+
+Modules in Swift are swift classes with the `@objc` modifier to export to the Objective-C runtime.
+
+```swift
+@objc(GreetingModule)
+class GreetingModule: NSObject {
+    @objc(greet:name)
+    func greet(_ name: String) -> Void {
+        print("Hi there, \(name)!")
+    }
+}
+```
+
+Whenever mixing Objective-C and Swift in the same codebase (like in React Native), you need to make bridging files.
+
+This will be similar to the Objective-C `.m` code, but will use `RCT_EXTERN_MODULE` and `RCT_EXTERN_METHOD` instead:
+```m
+#import <React/RCTBridgeModule.h>
+
+@interface RCT_EXTERN_MODULE(GreetingModule, NSObject)
+    RCT_EXTERN_METHOD(greet:(NSString *)name)
+@end
+```
+
+[See the Swift Native Module documentation](https://reactnative.dev/docs/native-modules-ios#exporting-swift)
+
 #### In Android
 
 Java or Kotlin native modules are defined by either:
@@ -136,8 +165,34 @@ import android.util.Log;
 
 @ReactMethod
 public void greet(String name) {
-   Log.d("Hi there, " + name + "!");
+   Log.d(String.format("Hi there, %s!", name));
 }
 ```
 
 [See the Android Native Modules documentation](https://reactnative.dev/docs/native-modules-android)
+
+#### Using Promises
+
+By default native module asynchronous code uses callbacks instead of resolving or rejecting Promises.
+
+A native function can only reject or resolve, and can only do so once.
+
+##### In iOS
+
+Methods with the last two parameters being of type `RCTPromiseResolveBlock` and
+`RCTPromiseRejectBlock`, the corresponding JS call will return a Promise.
+
+In Objective-C:
+```c
+RCT_EXPORT_METHOD(greet: (NSString *)name
+    resolver:(RCTPromiseRejectBlock)resolve
+    rejecter:(RCTPromiseRejectBlock)reject
+) {
+    RCTLogInfo(@"Hi there, %@!", name)
+}
+```
+
+In Swift:
+```swift
+
+```
