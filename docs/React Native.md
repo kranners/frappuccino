@@ -11,6 +11,10 @@ tags: []
 
 [See the React Native glossary](https://reactnative.dev/architecture/glossary)
 
+:::warn
+The code examples are for example purposes only! They are untested 😬
+:::
+
 ### Native Modules
 
 The purpose of native modules is to allow for native (Objective-C, C++, Swift,
@@ -182,6 +186,11 @@ A native function can only reject or resolve, and can only do so once.
 Methods with the last two parameters being of type `RCTPromiseResolveBlock` and
 `RCTPromiseRejectBlock`, the corresponding JS call will return a Promise.
 
+`resolve()` takes in a single argument, for the value to resolve the Promise to.
+
+`reject(code, message, error)` takes in three arguments:
+- `code`: the `error.code` on the JS side
+
 In Objective-C:
 ```c
 RCT_EXPORT_METHOD(greet: (NSString *)name
@@ -189,10 +198,61 @@ RCT_EXPORT_METHOD(greet: (NSString *)name
     rejecter:(RCTPromiseRejectBlock)reject
 ) {
     RCTLogInfo(@"Hi there, %@!", name)
+
+    if (name == "aaron") {
+        reject("BadNameError", "You picked the wrong name, whoops", nil);
+    } else {
+        resolve(name);
+    }
 }
 ```
 
 In Swift:
 ```swift
+@objc func greet(
+    _ resolve: @escaping RCTPromiseResolveBlock,
+    reject: @escaping RCTPromiseRejectBlock
+) {
+    print("Hi there, \(name)!")
 
+    if name == "aaron" {
+        reject("BadNameError", "Whoopsies!");
+    } else {
+        resolve(name);
+    }
+}
 ```
+
+[See Promises in iOS documentation for more info](https://reactnative.dev/docs/native-modules-ios#promises)
+
+##### In Android
+
+Methods with the last parameter of type `Promise`, the corresponding JS method will return a Promise.
+
+`promise.resolve()` takes in a single argument, to resolve the Promise to.
+
+`promise.reject()` takes in four arguments:
+- `String code` the error code, will be `error.code` in JS
+- `String message` the error message, will be `error.message` in JS
+- `Throwable throwable` a throwable
+- `WritaleMap userInfo` arbitrary data, will be `error.userInfo` in JS
+
+[Thanks Triangular Cube](https://triangularcube.com/blog/react-native-module-promise-user-data/)
+
+```java
+import com.facebook.react.bridge.Promise;
+
+@ReactMethod
+public void greet(String name, Promise promise) {
+    Log.d(String.format("Hi there, %s!", name));
+
+    if (name == "aaron") {
+        promise.reject("Bad Name Error");
+    } else {
+        promise.resolve(name);
+    }
+}
+```
+
+[See Promises in Android Native Modules for more info](https://reactnative.dev/docs/native-modules-android?android-language=java#promises)
+
