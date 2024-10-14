@@ -173,6 +173,16 @@ public void greet(String name) {
 }
 ```
 
+This is also true for Kotlin modules:
+```kotlin
+import android.util.Log;
+
+@ReactMethod
+fun greet(name: String) {
+    Log.d(String.format("Hi there, %s!", name));
+}
+```
+
 [See the Android Native Modules documentation](https://reactnative.dev/docs/native-modules-android)
 
 #### Using Promises
@@ -240,7 +250,7 @@ Methods with the last parameter of type `Promise`, the corresponding JS method w
 [Thanks Triangular Cube](https://triangularcube.com/blog/react-native-module-promise-user-data/)
 
 ```java
-import com.facebook.react.bridge.Promise;
+import com.facebook.react.bridge.Promise
 
 @ReactMethod
 public void greet(String name, Promise promise) {
