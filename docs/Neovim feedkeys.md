@@ -11,7 +11,10 @@ tags: []
 
 Use `vim.api.nvim_feedkeys()`.
 
-Takes three arguments - keys: keys to be typed in. - mode: `"m"` for _as though from a mapping_, `"t"` for _as though typed_. - escape_ks: whether to escape `K_SPECIAL (0x80)`
+Takes three arguments:
+- keys: keys to be typed in.
+- mode: `"m"` for _as though from a mapping_, `"t"` for _as though typed_.
+- escape_ks: whether to escape `K_SPECIAL (0x80)`
 
 [To clarify `escape_ks`, see this Neovim issue.](https://github.com/neovim/neovim/issues/12297)
 
