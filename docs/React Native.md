@@ -11,7 +11,7 @@ tags: []
 
 [See the React Native glossary](https://reactnative.dev/architecture/glossary)
 
-:::warn
+:::warning
 The code examples are for example purposes only! They are untested 😬
 :::
 
@@ -29,7 +29,7 @@ Native Modules are eventually to be supplanted by [Turbo Native Modules](https:/
 
 #### In iOS
 
-:::note
+:::tip
 [RCT stands for ReaCT](https://github.com/facebook/react-native/issues/55)
 
 RK stands for ReactKit, but that isn't used anymore.
@@ -58,7 +58,7 @@ To implement this module:
 
 This will expose the module to React Native under the name "GreetingModule".
 
-:::note
+:::tip
 Names by default are just the class name with with any `RK` or `RCT` prefixes removed.
 
 `RCT_EXPORT_MODULE` can take in a name, but it takes it as a raw class name?
@@ -98,7 +98,7 @@ RCT_EXPORT_BLOCKING_SYNCHRONOUS_METHOD(getName) {
 }
 ```
 
-:::warn
+:::warning
 [React Native warns against these methods](https://reactnative.dev/docs/native-modules-ios#synchronous-methods), as they can cause tricky, hard to spot bugs and also prevent use of the debugger.
 :::
 
