@@ -11,11 +11,9 @@
             "id": "8198e6ccdc523a55",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "React Native.md",
-                "mode": "source",
-                "source": false
+                "file": "public/cup.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React Native.md",
+                "file": "public/cup.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React Native.md",
+                "file": "public/cup.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React Native.md"
+                "file": "public/cup.png"
               }
             }
           }
@@ -146,8 +144,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8198e6ccdc523a55",
+  "active": "1879734b76fa3070",
   "lastOpenFiles": [
+    "React Native.md",
     "npm.md",
     "public/favicon.ico",
     "public/cup.png",
@@ -176,7 +175,6 @@
     "Neovim autocommands.md",
     "Inserting and removing elements from tables in Lua.md",
     "Neovim feedkeys.md",
-    "React Native.md",
     "Flow.md",
     "codecov-action.md",
     "GitHub Actions Expressions.md",
