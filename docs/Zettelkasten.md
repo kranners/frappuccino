@@ -1,5 +1,5 @@
 ---
-id: 1725509626-NJQP
+id: Zettelkasten
 aliases:
   - Zettelkasten
 tags: []

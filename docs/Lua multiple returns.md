@@ -1,5 +1,5 @@
 ---
-id: 1725599721-KUUD
+id: Lua multiple returns
 aliases:
   - Lua multiple returns
 tags: []
@@ -21,4 +21,3 @@ local a, b = get_stuff()
 ```
 
 [See the Lua documentation for more](https://www.lua.org/pil/5.1.html)
-

@@ -1,5 +1,5 @@
 ---
-id: 1726203812-NPLC
+id: undefined vs null
 aliases:
   - undefined vs null
 tags: []
@@ -10,9 +10,10 @@ tags: []
 The ultimate bikeshed - `undefined` vs `null`.
 
 :::info TLDR for my take:
+
 - For anyone who _does not_ subject themselves to writing JavaScript, the distinction is pretty clear and obvious.
 - In JavaScript, `null` is an undesirable relic, generally acting as a less useful `undefined`.
-:::
+  :::
 
 ### Colloquially / semantically
 

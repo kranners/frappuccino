@@ -1,5 +1,5 @@
 ---
-id: 1725599815-YKYR
+id: Lua destructuring a table
 aliases:
   - Lua destructuring a table
 tags: []
@@ -7,7 +7,7 @@ tags: []
 
 # Lua destructuring a table
 
-Can be achieved using [[1725599721-KUUD|Lua multiple returns]].
+Can be achieved using [[Lua multiple returns]].
 
 Use the special function `unpack()`
 
@@ -19,4 +19,3 @@ local a, b = unpack(fruits)
 ```
 
 [See the Lua documentation for more info](https://www.lua.org/pil/5.1.html)
-

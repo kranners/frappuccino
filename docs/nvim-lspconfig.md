@@ -1,5 +1,5 @@
 ---
-id: 1726142047-PTON
+id: nvim-lspconfig
 aliases:
   - nvim-lspconfig
 tags: []
@@ -10,4 +10,3 @@ tags: []
 [Premade LSP configs for Nvim.](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
 
 Is installed by default in Nixvim.
-

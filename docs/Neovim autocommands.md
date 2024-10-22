@@ -1,5 +1,5 @@
 ---
-id: 1727347728-BXIE
+id: Neovim autocommands
 aliases:
   - Neovim autocommands
 tags: []
@@ -16,10 +16,12 @@ An autocommand (autocmd) is a function which is executed in response to an event
 ### Creating an autocommand
 
 You can create an autocommand using `vim.api.nvim_create_autocmd()`, which takes in two arguments:
+
 - `event`: a string or table of strings containing the events which will trigger the command.
 - `opts`: a table of options which define the command itself.
 
 Important options are:
+
 - `callback`: the Lua function to run
 - `pattern`: a string pattern or table of patterns. Defaults to `*`.
 
@@ -35,10 +37,10 @@ See `:h autocmd-pattern`
 ### Events
 
 See the full list below for all the events - but here's the highlights:
+
 - [VimLeave](https://neovim.io/doc/user/autocmd.html#VimLeave), called just before Neovim exits.
 - [VimLeavePre](https://neovim.io/doc/user/autocmd.html#VimLeavePre), called before that.
 - [UserGettingBored](https://vimdoc.sourceforge.net/htmldoc/autocmd.html#UserGettingBored) ([also here](https://neovim.io/doc/user/autocmd.html#UserGettingBored)) called whenever the user idles for 5 minutes. Just kidding! :-)
 - [WinEnter](https://neovim.io/doc/user/autocmd.html#WinEnter), called just before entering a window.
 
 [See events reference](https://neovim.io/doc/user/autocmd.html#_5.-events)
-

@@ -1,5 +1,5 @@
 ---
-id: 1726634170-PVKU
+id: min_ios_version_supported
 aliases:
   - min_ios_version_supported
 tags: []
@@ -22,4 +22,3 @@ Probably means you're missing the helpers.
 Probably means you need to reinstall the Node packages.
 
 Probably means `npm install`
-

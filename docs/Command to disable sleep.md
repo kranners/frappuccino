@@ -1,5 +1,5 @@
 ---
-id: 1725539796-WGXH
+id: Command to disable sleep
 aliases:
   - Command to disable sleep
 tags: []
@@ -10,4 +10,3 @@ tags: []
 The command to disable sleep (on MacOS) is `sudo pmset -a disablesleep 1`
 
 [From Apple StackExchange](https://apple.stackexchange.com/questions/366128/listening-to-music-with-macbooks-lid-closed/366131#366131)
-

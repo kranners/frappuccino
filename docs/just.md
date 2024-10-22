@@ -1,5 +1,5 @@
 ---
-id: 1726225067-JIRL
+id: just
 aliases:
   - just
 tags: []
@@ -14,6 +14,7 @@ There are no Nix options for `just`, [but there is a nixpkg](https://github.com/
 ### Usage
 
 Create a Justfile like:
+
 ```justfile
 # run the thing
 run:
@@ -25,6 +26,7 @@ test:
 ```
 
 List out your commands like:
+
 ```shell
 > just -l
 Available recipes:
@@ -33,18 +35,21 @@ Available recipes:
 ```
 
 Define arguments in your recipes like:
+
 ```justfile
 # run the thing
 run port:
-   npx astro dev --port {{port}} --open 
+   npx astro dev --port {{port}} --open
 ```
 
 And call them like:
+
 ```shell
 just run 8080
 ```
 
 Define variables like:
+
 ```justfile
 platform := `uname`
 nproc := `nproc`
@@ -55,12 +60,14 @@ version := "0.1.7"
 Use them the same.
 
 Get environment variables like:
+
 ```justfile
 say_hello:
     echo "Well hi there, ${USER}!"
 ```
 
 Export environment variables into the recipes like:
+
 ```justfile
 export TZ = "Australia/Melbourne"
 
@@ -75,6 +82,7 @@ Fri Sep 13 2024 21:19:11 GMT+1000 (Australian Eastern Standard Time)
 ```
 
 Use your favourite language like:
+
 ```justfile
 bam:
     #!/usr/bin/env node
@@ -84,11 +92,13 @@ bam:
 ### Chooser
 
 just also has a chooser:
+
 ```shell
 just --choose
 ```
 
 You can make the chooser your default recipe:
+
 ```shell
 default:
     @just --choose
@@ -107,6 +117,6 @@ There's [a syntax highlighter for just in Neovim.](https://github.com/NoahTheDuk
 _(It's also just... their README...)_
 
 In particular:
+
 - [Check out the Quick Start guide](https://just.systems/man/en/chapter_20.html)
 - [Check out the cheatsheet](https://cheatography.com/linux-china/cheat-sheets/justfile/)
-

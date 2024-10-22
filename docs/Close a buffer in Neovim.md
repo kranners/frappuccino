@@ -1,5 +1,5 @@
 ---
-id: 1725509358-LHYK
+id: Close a buffer in Neovim
 aliases:
   - Close a buffer in Neovim
 tags: []
@@ -12,10 +12,11 @@ Use `nvim_buf_delete`, by deleting a buffer the window should automatically clos
 To just close the window, use `nvim_win_close`
 
 Takes in two arguments:
+
 - The buffer handle
 - A table of named options
-    - `force` - Force delete, ignore unsaved changes
-    - `unload` - Unload instead of deleting
+  - `force` - Force delete, ignore unsaved changes
+  - `unload` - Unload instead of deleting
 
 ```lua
 -- If we are currently in a floating window, just close that instead

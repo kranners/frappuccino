@@ -1,5 +1,5 @@
 ---
-id: 1725607426-RNCO
+id: Lua date and time
 aliases:
   - Lua date and time
 tags: []
@@ -8,6 +8,7 @@ tags: []
 # Lua date and time
 
 Format a date (potentially the current date) into a string using the `os.date()` function:
+
 ```lua
 -- "today is Tuesday, in May"
 print(os.date("today is %A, in %B"))
@@ -17,12 +18,14 @@ print(os.date("today is %A, in %B"))
 The second argument will default to the local OS time.
 
 To produce a table of date values, use the format string `"*t"`
+
 ```lua
 --  {year = 1998, month = 9, day = 16, yday = 259, wday = 4, hour = 23, min = 48, sec = 10, isdst = false}
 os.date("*t", 906000490)
 ```
 
 Format strings:
+
 ```
 %a	abbreviated weekday name (e.g., Wed)
 %A	full weekday name (e.g., Wednesday)

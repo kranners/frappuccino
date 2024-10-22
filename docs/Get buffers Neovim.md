@@ -1,5 +1,5 @@
 ---
-id: 1726137856-JBID
+id: Get buffers Neovim
 aliases:
   - Get buffers Neovim
 tags: []
@@ -31,6 +31,7 @@ local line_count = vim.api.nvim_buf_line_count(0)
 Use `nvim_buf_get_lines()`.
 
 This takes in four arguments:
+
 - The buffer handle
 - The starting line index (this is zero-indexed)
 - The last line index (this is exclusive)
@@ -42,4 +43,3 @@ Negative indices are `length of array + 1 + index`.
 -- Get current buffers lines
 local lines = vim.api.nvim_buf_get_lines(0, 0, -1, false)
 ```
-

@@ -1,5 +1,5 @@
 ---
-id: 1725612680-BTTJ
+id: Format strings in Lua
 aliases:
   - Format strings in Lua
 tags: []
@@ -10,6 +10,7 @@ tags: []
 `string.format()` to format variables into strings.
 
 Format strings are normal strings that include `%` then a character denoting the type of value.
+
 - `%d` for a decimal number
 - `%x` for hexadecimal
 - `%o` for octal
@@ -17,4 +18,3 @@ Format strings are normal strings that include `%` then a character denoting the
 - `%s` for strings
 
 [For more, see the Lua documentation on the subject.](https://www.lua.org/pil/20.html)
-

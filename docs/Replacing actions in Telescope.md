@@ -1,5 +1,5 @@
 ---
-id: 1725542226-PBEW
+id: Replacing actions in Telescope
 aliases:
   - Replacing actions in Telescope
 tags: []

@@ -1,5 +1,5 @@
 ---
-id: 1726700936-RFMG
+id: GitHub Actions Expressions
 aliases:
   - GitHub Actions Expressions
 tags: []
@@ -8,21 +8,22 @@ tags: []
 # GitHub Actions Expressions
 
 Written like:
+
 ```yaml
 env:
-    SOME_INT: ${{ 123 }}
-    SOME_FLOAT: ${{ 123.123 }}
-    SOME_HEX: ${{ 0xff }}
+  SOME_INT: ${{ 123 }}
+  SOME_FLOAT: ${{ 123.123 }}
+  SOME_HEX: ${{ 0xff }}
 
-    # Strings contained in expressions are single-quoted
-    SOME_STRING: ${{ 'It''s-a me!' }}
+  # Strings contained in expressions are single-quoted
+  SOME_STRING: ${{ 'It''s-a me!' }}
 ```
 
 Truthiness matches exactly with JavaScript.
 
 [See the docs on expressions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/evaluate-expressions-in-workflows-and-actions)
 
-### Conditional expressions 
+### Conditional expressions
 
 `jobs.<job-id>.if` takes in an expression which evaluates to a boolean.
 
@@ -40,11 +41,10 @@ with information about the jobs being run.
 
 For example, [the `github` context](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#github-context)
 contains information about:
+
 - the actor (user) who started the action (`github.actor`)
 - the repository being acted on (`github.repository`)
 - the fully formed git ref name (`github.ref`)
 - the short ref name (`github.ref_name`)
 
 [See the documentation on contexts](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#github-context)
-
-

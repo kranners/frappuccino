@@ -1,5 +1,5 @@
 ---
-id: 1725509268-RQNS
+id: Open a floating window in Neovim
 aliases:
   - Open a floating window in Neovim
 tags: []

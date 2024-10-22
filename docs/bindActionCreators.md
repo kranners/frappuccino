@@ -1,5 +1,5 @@
 ---
-id: 1726020995-DSEV
+id: bindActionCreators
 aliases:
   - bindActionCreators
 tags: []
@@ -15,7 +15,7 @@ _You almost certainly do not need this function anymore._
 
 `bindActionCreators()` is a utility function which wraps actions in `dispatch()` so they may be called directly.
 
-See [[1726021092-SORA|Redux dispatches]] for what an action creator or a dispatch are.
+See [[Redux dispatches]] for what an action creator or a dispatch are.
 
 ```js
 import * as IncrementActionCreators from "./IncrementActionCreators";

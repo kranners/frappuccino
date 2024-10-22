@@ -1,5 +1,5 @@
 ---
-id: 1725543662-SIVV
+id: Running commands in Neovim Lua
 aliases:
   - Running commands in Neovim Lua
 tags: []
@@ -8,14 +8,16 @@ tags: []
 # Running commands in Neovim Lua
 
 You can just run a command, no output and it's blocking:
+
 ```lua
 os.execute('echo hello')
 ```
 
 Or there's the Neovim job system:
+
 ```lua
 local job = vim.fn.jobstart(
-    'echo hello', 
+    'echo hello',
     {
         cwd = '/path/to/working/dir',
         on_exit = some_function,

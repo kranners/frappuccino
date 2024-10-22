@@ -1,5 +1,5 @@
 ---
-id: 1726122576-VRKV
+id: Shortcat
 aliases:
   - Shortcat
 tags: []
@@ -11,4 +11,3 @@ MacOS program for manipulating MacOS native windows with a keyboard instead of a
 Adds in little multi-character jump tags for buttons, adds in command palettes for menus.
 
 https://shortcat.app/
-

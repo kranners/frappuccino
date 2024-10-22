@@ -1,5 +1,5 @@
 ---
-id: 1725599028-DEWZ
+id: mapStateToProps Redux
 aliases:
   - mapStateToProps Redux
 tags: []
@@ -14,6 +14,7 @@ First argument passed in to the `connect()` function for a component.
 - Receives an argument of the entire store, returns an object of the data needed for the component.
 
 For this example:
+
 ```js
 const TodoProps = {
     todos: Todo[];
@@ -33,4 +34,3 @@ const mapStateToProps = (state) => {
 The `TodoList` component now receives `todos` as a prop.
 
 [See more details in the React Redux documentation](https://react-redux.js.org/using-react-redux/connect-mapstate)
-

@@ -1,5 +1,5 @@
 ---
-id: 1726535290-GLYX
+id: Obsidian.nvim checkboxes
 aliases:
   - Obsidian.nvim checkboxes
 tags: []
@@ -8,6 +8,7 @@ tags: []
 # Obsidian.nvim checkboxes
 
 Checkboxes are defined like:
+
 ```lua
 {
     ui = {
@@ -32,4 +33,3 @@ See: [The `toggle_checkbox()` documentation](https://github.com/epwalsh/obsidian
 [Option documentation here in Nixvim](https://nix-community.github.io/nixvim/plugins/obsidian/settings/ui/checkboxes.html)
 
 [Defined here under the Obsidian options](https://github.com/nix-community/nixvim/blob/main/plugins/by-name/obsidian/options.nix#L368)
-

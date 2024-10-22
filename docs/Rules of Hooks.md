@@ -1,5 +1,5 @@
 ---
-id: 1726638259-QQNM
+id: Rules of Hooks
 aliases:
   - Rules of Hooks
 tags: []
@@ -8,6 +8,7 @@ tags: []
 # Rules of Hooks
 
 Hooks are not supported...:
+
 - after a conditional return statement.
 - inside conditions or loops.
 - in event handlers.
@@ -16,4 +17,3 @@ Hooks are not supported...:
 - inside try/catch/finally blocks.
 
 [See the React documentation](https://react.dev/reference/rules/rules-of-hooks)
-

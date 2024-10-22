@@ -1,5 +1,5 @@
 ---
-id: 1725585595-PWQY
+id: Split strings in Neovim Lua
 aliases:
   - Split strings in Neovim Lua
 tags: []
@@ -7,7 +7,7 @@ tags: []
 
 # Split strings in Neovim Lua
 
-Unlike the gmatch command (See [[1725585130-UJOJ|Splitting and joining strings in Lua]]), this takes in a string and a delimiter.
+Unlike the gmatch command (See [[Splitting and joining strings in Lua]]), this takes in a string and a delimiter.
 
 ```lua
 local words = "these are words, woah"

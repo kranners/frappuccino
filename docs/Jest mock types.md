@@ -1,5 +1,5 @@
 ---
-id: 1725854798-ZNAU
+id: Jest mock types
 aliases:
   - Jest mock types
 tags: []
@@ -17,4 +17,3 @@ For working with Jest in TS environments.
 // typeof jest.Mock<any, any>
 const mockSomeFunction = jest.fn();
 ```
-

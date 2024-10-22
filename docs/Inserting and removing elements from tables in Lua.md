@@ -1,5 +1,5 @@
 ---
-id: 1727316862-ZTRV
+id: Inserting and removing elements from tables in Lua
 aliases:
   - Inserting and removing elements from tables in Lua
 tags: []
@@ -10,11 +10,13 @@ tags: []
 Use `table.insert()` and `table.remove()`.
 
 Each take in 3 arguments:
+
 - The table to operate on
 - The index (optional, will default to the end of the table)
 - The value to insert or remove
 
 Adding a value to the start of a table:
+
 ```lua
 local cart = { "apple" }
 
@@ -23,6 +25,7 @@ table.insert(cart, 1, "banana")
 ```
 
 "Popping" a value from a table:
+
 ```lua
 local cart = { "banana", "apple" }
 
@@ -31,4 +34,3 @@ local fruit = table.remove(cart)
 ```
 
 [See the Lua documentation for more](https://www.lua.org/pil/19.2.html)
-

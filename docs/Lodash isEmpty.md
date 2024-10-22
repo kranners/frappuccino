@@ -1,5 +1,5 @@
 ---
-id: 1726638318-ILZV
+id: Lodash isEmpty
 aliases:
   - Lodash isEmpty
 tags: []
@@ -8,11 +8,13 @@ tags: []
 # Lodash isEmpty
 
 Returns `true` for:
+
 - All primitives BUT `string`.
 - Objects with no "_enumerable string-keyed properties_"
 - Arrays with a `length` of `0`
 
 Returns `false` for:
+
 - Arrays or strings with a `length` of `>0`
 - Objects with any string-keyed properties
 
@@ -30,8 +32,7 @@ _.isEmpty(50);
 _.isEmpty(NaN);
 
 // true
-_.isEmpty(BigInt(50000000))
+_.isEmpty(BigInt(50000000));
 ```
 
 [See Lodash documentation for this](https://lodash.com/docs/4.17.15#isEmpty)
-

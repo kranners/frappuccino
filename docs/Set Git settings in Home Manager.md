@@ -1,5 +1,5 @@
 ---
-id: 1726220403-OKQR
+id: Set Git settings in Home Manager
 aliases:
   - Set Git settings in Home Manager
 tags: []
@@ -8,6 +8,7 @@ tags: []
 # Set Git settings in Home Manager
 
 To enable git:
+
 ```nix
 {
     programs.git.enable = true;
@@ -15,6 +16,7 @@ To enable git:
 ```
 
 To set config options:
+
 ```nix
 {
     programs.git = {
@@ -28,6 +30,7 @@ To set config options:
 ```
 
 There are also options for diff viewers:
+
 ```nix
 {
     programs.git = {
@@ -39,4 +42,3 @@ There are also options for diff viewers:
 ```
 
 [See the home-manager git source](https://github.com/nix-community/home-manager/blob/master/modules/programs/git.nix)
-

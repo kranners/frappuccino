@@ -1,5 +1,5 @@
 ---
-id: 1726021092-SORA
+id: Redux dispatches
 aliases:
   - Redux dispatches
 tags: []
@@ -19,25 +19,22 @@ That `type` is a unique identifier for that action.
 ### Example
 
 ```tsx
-import * as IncrementActionCreators from './IncrementActionCreators';
+import * as IncrementActionCreators from "./IncrementActionCreators";
 
 console.log(IncrementActionCreators);
 // { increment: Function, decrement: Function }
 
 function Counter({ dispatch }) {
-    const handleIncrement = () => {
-        // On its own, this action won't do anything. 😔
-        const action = IncrementActionCreators.increment();
+  const handleIncrement = () => {
+    // On its own, this action won't do anything. 😔
+    const action = IncrementActionCreators.increment();
 
-        // But, we can dispatch it. Now it does stuff! 🎉
-        dispatch(action);
-    }
+    // But, we can dispatch it. Now it does stuff! 🎉
+    dispatch(action);
+  };
 
-    return (
-        <button onClick={handleIncrement}>+</button>
-    )
+  return <button onClick={handleIncrement}>+</button>;
 }
 ```
 
 [See Redux dispatch documentation for more info.](https://redux.js.org/tutorials/essentials/part-1-overview-concepts#dispatch)
-

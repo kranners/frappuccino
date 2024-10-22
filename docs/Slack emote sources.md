@@ -1,5 +1,5 @@
 ---
-id: 1725932621-NVTI
+id: Slack emote sources
 aliases:
   - Slack emote sources
 tags: []
@@ -18,4 +18,3 @@ https://makeemoji.com/
 For finding existing emotes made by other folks.
 
 https://slackmojis.com/
-

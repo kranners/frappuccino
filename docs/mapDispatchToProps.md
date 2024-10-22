@@ -1,5 +1,5 @@
 ---
-id: 1725602180-QDOK
+id: mapDispatchToProps
 aliases:
   - mapDispatchToProps
 tags: []
@@ -11,7 +11,7 @@ This function determines what dispatches your component has access to, and how i
 
 The second argument passed into the `connect()` function for a given component.
 
-See [[1726021092-SORA|Redux dispatches]]
+See [[Redux dispatches]]
 
 ### Doing nothing
 
@@ -59,7 +59,7 @@ const mapDispatchToProps = (dispatch) => {
 };
 ```
 
-This could be shortened using [[1726020995-DSEV|bindActionCreators]]:
+This could be shortened using [[bindActionCreators]]:
 
 ```js
 const mapDispatchToProps = (dispatch) => {
@@ -84,4 +84,4 @@ const mapDispatchToProps = {
 };
 ```
 
-See [[1725599028-DEWZ|mapStateToProps Redux]].
+See [[mapStateToProps Redux]].

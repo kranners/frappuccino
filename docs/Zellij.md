@@ -1,5 +1,5 @@
 ---
-id: 1726213501-RTWO
+id: Zellij
 aliases:
   - Zellij
 tags: []
@@ -16,6 +16,7 @@ For configuration, [see the Zellij User Guide](https://zellij.dev/documentation/
 [Home Manager options are available for this](https://home-manager-options.extranix.com/?query=zellij&release=master)
 
 To enable:
+
 ```nix
 { pkgs, ...}: {
     home-manager.users.myname.programs.zellij = {
@@ -34,6 +35,7 @@ To enable:
 ```
 
 To change the default layout (to hide the bottom bar / hints):
+
 ```nix
 {
     programs.zellij.settings = {
@@ -56,6 +58,7 @@ To change the default layout (to hide the bottom bar / hints):
 [Zellij has a welcome page that you can use to launch a Zellij session picker at launch for a new shell.](https://zellij.dev/tutorials/session-management/)
 
 In Alacritty:
+
 ```toml
 [shell]
 program = "zellij"
@@ -73,6 +76,7 @@ The themes directory is under the config directory, typically will be `~/.config
 For example, `~/.config/zellij/themes/catppuccin.kdl`.
 
 To set, in the Zellij config specif:
+
 ```kdl
 theme "catppuccin"
 ```
@@ -90,8 +94,8 @@ bind "Ctrl a"
 ```
 
 Some keys aren't able to be bound with certain modifiers.
+
 - Only characters (no special characters) can be bound with `Ctrl`
 - Only characters and arrow keys can be found with `Alt`
 
 [See the Zellij docs on keys](https://zellij.dev/documentation/keybindings-keys.html)
-

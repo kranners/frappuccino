@@ -1,5 +1,5 @@
 ---
-id: 1725516848-HDDT
+id: Resolving paths in Neovim
 aliases:
   - Resolving paths in Neovim
 tags: []

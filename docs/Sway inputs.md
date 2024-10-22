@@ -1,5 +1,5 @@
 ---
-id: 1726368648-SQVA
+id: Sway inputs
 aliases:
   - Sway inputs
 tags: []
@@ -15,6 +15,7 @@ swaymsg -t get_inputs | less
 ##### Disable mouse acceleration in Nix
 
 Use `wayland.windowManager.sway.config.input."type:pointer".accel_profile`.
+
 ```nix
 {
   input = {
@@ -25,4 +26,3 @@ Use `wayland.windowManager.sway.config.input."type:pointer".accel_profile`.
   };
 }
 ```
-

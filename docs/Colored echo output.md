@@ -1,5 +1,5 @@
 ---
-id: 1725627583-MTLT
+id: Colored echo output
 aliases:
   - Colored echo output
 tags: []
@@ -21,6 +21,7 @@ Light Gray   0;37     White         1;37
 ```
 
 ### Example
+
 ```
 RED='\033[0;31m'
 NC='\033[0m' # No Color
@@ -30,4 +31,3 @@ echo -e "${RED}tomato${NC} <-- damn"
 ```
 
 [Ripped direct from the top search result.](https://stackoverflow.com/questions/5947742/how-to-change-the-output-color-of-echo-in-linux)
-

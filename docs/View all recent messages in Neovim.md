@@ -1,5 +1,5 @@
 ---
-id: 1725599338-DUPT
+id: View all recent messages in Neovim
 aliases:
   - View all recent messages in Neovim
 tags: []
@@ -11,4 +11,3 @@ Use the `:messages` command!
 Messages are the things that appear as notifications in Neovim.
 
 They are also logged to when using `vim.print()`.
-

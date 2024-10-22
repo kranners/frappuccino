@@ -1,5 +1,5 @@
 ---
-id: 1726193154-TOXT
+id: Define a keymap in Nixvim
 aliases:
   - Define a keymap in Nixvim
 tags: []
@@ -12,6 +12,7 @@ Keymaps are defined under the `programs.nixvim.keymaps` option.
 This option is a list of attrsets with:
 
 Takes in four arguments:
+
 - `mode`: The mode shorthand, or an array of mode shorthands (`[ "n" "i" "v" ]`)
 - `key`: The user binding (called left-hand side)
 - `action`: What the binding does (called the right-hand side)

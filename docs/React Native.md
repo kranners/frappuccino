@@ -1,5 +1,5 @@
 ---
-id: 1726808559-WIVX
+id: React Native
 aliases:
   - React Native
 tags: []
@@ -40,6 +40,7 @@ An iOS native module is an Objective-C class which implements a `RCTBridgeModule
 They are made up of a header `.h` file and the module implementation `.m`.
 
 A basic header file which just defines a module, and does nothing else:
+
 ```h
 #import <React/RCTBridgeModule.h>
 
@@ -48,6 +49,7 @@ A basic header file which just defines a module, and does nothing else:
 ```
 
 To implement this module:
+
 ```c
 #import "RCTGreetingModule.h"
 
@@ -62,6 +64,7 @@ This will expose the module to React Native under the name "GreetingModule".
 Names by default are just the class name with with any `RK` or `RCT` prefixes removed.
 
 `RCT_EXPORT_MODULE` can take in a name, but it takes it as a raw class name?
+
 ```c
 // To export this as HelloModule
 RCT_EXPORT_MODULE(HelloModule)
@@ -74,6 +77,7 @@ RCT_EXPORT_MODULE("HelloModule")
 :::
 
 Methods against your module class aren't exported by default, you'll need to do so using `RCT_EXPORT_METHOD`:
+
 ```c
 // Import the React log API
 #import <React/RCTLog.h>
@@ -92,6 +96,7 @@ Methods against your module class aren't exported by default, you'll need to do 
 ```
 
 You can also define synchronous, blocking methods with `RCT_EXPORT_BLOCKING_SYNCHRONOUS_METHOD`:
+
 ```c
 RCT_EXPORT_BLOCKING_SYNCHRONOUS_METHOD(getName) {
     return "ME";
@@ -123,6 +128,7 @@ class GreetingModule: NSObject {
 Whenever mixing Objective-C and Swift in the same codebase (like in React Native), you need to make bridging files.
 
 This will be similar to the Objective-C `.m` code, but will use `RCT_EXTERN_MODULE` and `RCT_EXTERN_METHOD` instead:
+
 ```m
 #import <React/RCTBridgeModule.h>
 
@@ -136,11 +142,13 @@ This will be similar to the Objective-C `.m` code, but will use `RCT_EXTERN_MODU
 #### In Android
 
 Java or Kotlin native modules are defined by either:
+
 - Extending `ReactContextBaseJavaModule` - [as recommended by React Native](https://reactnative.dev/docs/native-modules-android?android-language=java#create-a-custom-native-module-file)
 - Extending `BaseJavaModule`
 - Implementing the `NativeModule` interface
 
 All of these need to implement the `getName()` function:
+
 ```java
 public class GreetingModule extends ReactContextBaseJavaModule {
     GreetingModule(ReactApplicationContext context) {
@@ -155,8 +163,9 @@ public class GreetingModule extends ReactContextBaseJavaModule {
 ```
 
 This `getName()` would mean your JS imports look like:
+
 ```javascript
-import { NativeModules } from 'react-native';
+import { NativeModules } from "react-native";
 
 const { GreetingModule } = NativeModules;
 ```
@@ -174,6 +183,7 @@ public void greet(String name) {
 ```
 
 This is also true for Kotlin modules:
+
 ```kotlin
 import android.util.Log;
 
@@ -199,9 +209,11 @@ Methods with the last two parameters being of type `RCTPromiseResolveBlock` and
 `resolve()` takes in a single argument, for the value to resolve the Promise to.
 
 `reject(code, message, error)` takes in three arguments:
+
 - `code`: the `error.code` on the JS side
 
 In Objective-C:
+
 ```c
 RCT_EXPORT_METHOD(greet: (NSString *)name
     resolver:(RCTPromiseRejectBlock)resolve
@@ -218,6 +230,7 @@ RCT_EXPORT_METHOD(greet: (NSString *)name
 ```
 
 In Swift:
+
 ```swift
 @objc func greet(
     _ resolve: @escaping RCTPromiseResolveBlock,
@@ -242,6 +255,7 @@ Methods with the last parameter of type `Promise`, the corresponding JS method w
 `promise.resolve()` takes in a single argument, to resolve the Promise to.
 
 `promise.reject()` takes in four arguments:
+
 - `String code` the error code, will be `error.code` in JS
 - `String message` the error message, will be `error.message` in JS
 - `Throwable throwable` a throwable
@@ -265,4 +279,3 @@ public void greet(String name, Promise promise) {
 ```
 
 [See Promises in Android Native Modules for more info](https://reactnative.dev/docs/native-modules-android?android-language=java#promises)
-
