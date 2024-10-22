@@ -144,8 +144,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1879734b76fa3070",
+  "active": "8198e6ccdc523a55",
   "lastOpenFiles": [
+    "2024/10/23 October, 2024.md",
+    "2024/10",
+    "2024",
     "React Native.md",
     "npm.md",
     "public/favicon.ico",
@@ -163,8 +166,6 @@
     "Users/aaronpierce",
     "Users",
     "2024/10/07 October, 2024.md",
-    "2024/10",
-    "2024",
     "Get current cursor position Neovim Lua.md",
     "Using registers in Neovim Lua.md",
     "React forceUpdate.md",
@@ -182,7 +183,6 @@
     "min_ios_version_supported.md",
     "Rules of Hooks.md",
     "Lodash isEmpty.md",
-    "Obsidian.nvim follow_url_func.md",
-    "just.md"
+    "Obsidian.nvim follow_url_func.md"
   ]
 }
