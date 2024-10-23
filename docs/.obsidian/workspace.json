@@ -146,6 +146,14 @@
   },
   "active": "8198e6ccdc523a55",
   "lastOpenFiles": [
+    "Link to notification settings on iOS.md",
+    "React Native Linking API.md",
+    "React Navigation.md",
+    "Reselect createSelector.md",
+    "Lodash setWith.md",
+    "Follow symlink.md",
+    "Cloudbees Jet.md",
+    "const assertions.md",
     "2024/10/23 October, 2024.md",
     "2024/10",
     "2024",
@@ -175,14 +183,6 @@
     "2024/10/01 October, 2024.md",
     "Neovim autocommands.md",
     "Inserting and removing elements from tables in Lua.md",
-    "Neovim feedkeys.md",
-    "Flow.md",
-    "codecov-action.md",
-    "GitHub Actions Expressions.md",
-    "Jest test concurrency.md",
-    "min_ios_version_supported.md",
-    "Rules of Hooks.md",
-    "Lodash isEmpty.md",
-    "Obsidian.nvim follow_url_func.md"
+    "Neovim feedkeys.md"
   ]
 }

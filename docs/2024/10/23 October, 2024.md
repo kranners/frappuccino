@@ -33,14 +33,19 @@ Today is going to be...
 - [x] Standup
 - [x] Plan the day 🪴
 - [x] Respond to comments, figure out which to be implemented and which not to be
-- [ ] Shower & shave 🛁
-- [ ] Coffee, such 💫
+- [x] Shower & shave 🛁
+- [x] Coffee, such 💫
 - [ ] Start first Pomodoro 🍅 (short timer today!)
 - [ ] Implement code review feedback
-- [ ] Put on rice
+- [x] Put on rice
 - [ ] Probably make another test build?
-- [ ] Message Michael re. branching strats for those two tickets
+- [x] Message Michael re. branching strats for those two tickets
 - [ ] Get started on either the Android notif handler or the other one
 - [ ] Lunch
 - [ ] Start on one of the two tickets until EOD
 - [ ] Gym @ Parkhouse 6pm
+
+### 📚 PR Feedback
+
+- [ ] Update the permission type and prompt variant to be constants
+
