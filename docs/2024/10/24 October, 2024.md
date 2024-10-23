@@ -1,5 +1,5 @@
 ---
-id: 23 October, 2024
+id: 24 October, 2024
 aliases: []
 tags:
   - daily-notes
@@ -21,7 +21,7 @@ At the moment I'm feeling...
 
 Today is going to be...
 
-- [ ] 🗂️ Efficient
+- [x] 🗂️ Efficient
 - [ ] 🧘 Chill
 - [x] 🪨 Jam-packed
 - [x] 🦋 Social
@@ -30,19 +30,14 @@ Today is going to be...
 ### 🏃 Todo
 
 - [x] Wake up, sleepyhead 🧊
-- [x] Standup
-- [x] Plan the day 🪴
-- [x] Respond to comments, figure out which to be implemented and which not to be
-- [x] Shower & shave 🛁
-- [x] Coffee, such 💫
-- [x] Start first Pomodoro 🍅 (short timer today!)
-- [x] Put on rice
-- [x] Message Michael re. branching strats for those two tickets
-- [x] Lunch
-- [ ] Start on one of the two tickets until EOD
-- [ ] Gym @ Parkhouse 6pm
-
-### 📚 PR Feedback
-
+- [x] Standup, coffee, such 💫
+- [x] Start first Pomodoro 🍅
+- [~] Plan the day 🪴
+- [ ] Implement code review feedback
+- [ ] The changed prompt is missing a Not Now button
 - [ ] Update the permission type and prompt variant to be constants
+- [ ] Make another test build
+- [ ] Lunch
+- [ ] Get started on the Android notif handler
+- [ ] Dev meeting 3.10pm
 

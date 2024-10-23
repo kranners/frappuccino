@@ -146,6 +146,7 @@
   },
   "active": "8198e6ccdc523a55",
   "lastOpenFiles": [
+    "2024/10/24 October, 2024.md",
     "Link to notification settings on iOS.md",
     "React Native Linking API.md",
     "React Navigation.md",
@@ -182,7 +183,6 @@
     "bat.md",
     "2024/10/01 October, 2024.md",
     "Neovim autocommands.md",
-    "Inserting and removing elements from tables in Lua.md",
-    "Neovim feedkeys.md"
+    "Inserting and removing elements from tables in Lua.md"
   ]
 }
