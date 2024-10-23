@@ -35,13 +35,13 @@ Today is going to be...
 - [x] Respond to comments, figure out which to be implemented and which not to be
 - [x] Shower & shave 🛁
 - [x] Coffee, such 💫
-- [ ] Start first Pomodoro 🍅 (short timer today!)
+- [x] Start first Pomodoro 🍅 (short timer today!)
 - [ ] Implement code review feedback
 - [x] Put on rice
 - [ ] Probably make another test build?
 - [x] Message Michael re. branching strats for those two tickets
 - [ ] Get started on either the Android notif handler or the other one
-- [ ] Lunch
+- [x] Lunch
 - [ ] Start on one of the two tickets until EOD
 - [ ] Gym @ Parkhouse 6pm
 
