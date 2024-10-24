@@ -21,7 +21,7 @@ brew install cask codeship/taps/jet
 
 [See installing Jet](https://docs.cloudbees.com/docs/cloudbees-codeship/latest/pro-jet-cli/installation#_installing_jet)
 
-:::warn
+:::warning
 After installation, this needed to be marked as OK to open in MacOS.
 
 Open the proper install directory with

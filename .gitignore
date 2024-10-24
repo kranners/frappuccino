@@ -27,3 +27,8 @@ pnpm-debug.log*
 # Avoiding merge conflicts from different machines
 docs/.obsidian/workspace.json
 
+# Avoid publishing daily notes
+docs/2023/**
+docs/2024/**
+docs/2025/**
+
