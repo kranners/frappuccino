@@ -40,8 +40,9 @@ Today is going to be...
 nah. that's overcomplicated. RESIST.
 
 - [x] Update pushPermissionStatus to read ?: instead of `| undefined` (L14)
-- [ ] Lunch
-- [ ] Update the permission type and prompt variant to be constants
+- [x] Lunch
+- [x] Get sunglasses sorted!! And also the license!! Outta nowhere
+- [~] Update the permission type and prompt variant to be constants
 - [ ] Get started on the Android notif handler
 - [ ] Dev meeting 3.10pm
 
