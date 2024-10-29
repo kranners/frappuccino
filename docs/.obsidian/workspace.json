@@ -140,6 +140,12 @@
   },
   "active": "8198e6ccdc523a55",
   "lastOpenFiles": [
+    "Android emulator CLI.md",
+    "adb.md",
+    "FirebaseMessagingService.md",
+    "Direct boot mode.md",
+    "Firebase Cloud Messaging.md",
+    "jest test each.md",
     "2024/10/24 October, 2024.md",
     "2024/10/23 October, 2024.md",
     "public/cup.png",
@@ -171,11 +177,6 @@
     "2024/10/07 October, 2024.md",
     "Get current cursor position Neovim Lua.md",
     "Using registers in Neovim Lua.md",
-    "React forceUpdate.md",
-    "Extend table in Neovim Lua.md",
-    "Lua generic for (iterating in Lua).md",
-    "bat.md",
-    "2024/10/01 October, 2024.md",
-    "Neovim autocommands.md"
+    "React forceUpdate.md"
   ]
 }
