@@ -42,7 +42,7 @@ Platforms in XCode refers to [[Apple]] operating systems that you can develop so
 To install a new platform (*like a new iOS version*):
 
 1. Open Xcode.
-2. Navigate to Xcode **→** Settings **→** Platforms
+2. Navigate to Xcode **→** Settings **→** Components (used to be under _Platforms_)
 3. Recent platforms are available in the list automatically and are installable with the *Get* button.
 Older platforms are available by clicking the **+** button.
 
@@ -57,6 +57,19 @@ To download a single platform (like if your iOS version is outdated)
 ```shell
 xcodebuild -downloadPlatform iOS
 ```
+
+#### Manually installing a platform
+
+If all else fails, you can install platforms direct from DMG files downloadable
+from a browser.
+
+Navigate to the [Apple Developer downloads page](https://developer.apple.com/download/all/).
+
+From there you can download whichever runtime you need, then to add it after download:
+```shell
+xcrun simctl runtime add "/path/to/platform.dmg"
+```
+
 ## Simulators
 
 Simulators are available for all [[Apple]] devices, and simulate hardware as best they can. They are not perfect, and are not performant or have feature parity against real devices.
