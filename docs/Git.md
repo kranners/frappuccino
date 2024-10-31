@@ -473,3 +473,16 @@ git switch --create feat/new-branch-two
 
 # Rinse and repeat!
 ```
+
+#### View patch / log history for a single file
+
+`git log` allows for `-- /path/to/file` arguments like `git checkout`.
+
+So for a single file:
+```shell
+# Show me the patches, not just the commits
+git log --patch -- /path/to/file
+```
+
+See [git-log documentation](https://git-scm.com/docs/git-log)
+
