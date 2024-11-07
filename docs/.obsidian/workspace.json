@@ -18,8 +18,21 @@
               "icon": "lucide-file",
               "title": "Release Notes 1.7.4"
             }
+          },
+          {
+            "id": "38ed7630f6ccd6a7",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.5"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.5"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -156,7 +169,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8198e6ccdc523a55",
+  "active": "38ed7630f6ccd6a7",
   "lastOpenFiles": [
     "vim-fugitive.md",
     "React Native Testing Library.md",
