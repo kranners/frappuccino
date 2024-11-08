@@ -448,6 +448,35 @@ git push origin --delete bleh-bad-name
 
 [The Stack Overflow response has SO many upvotes.](https://stackoverflow.com/questions/6591213/how-can-i-rename-a-local-git-branch)
 
+#### Rename an existing branch with an upstream
+
+Start by updating the name on your local:
+```shell
+git branch -m new-and-cool
+```
+
+Then delete the old branch on the remote:
+```shell
+git push origin --delete bleh-bad-name
+```
+
+Then update your local branch's upstream:
+```shell
+git branch --set-upstream-to origin/new-and-cool
+```
+
+#### Delete / remove a branch
+
+To delete locally:
+```shell
+git branch --delete --force bleh-bad-name
+```
+
+To remove remote:
+```shell
+git push origin --delete bleh-bad-name
+```
+
 #### Split an existing branch by files
 
 Doing this will remove your commit history from the original branch.
