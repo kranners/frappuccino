@@ -192,8 +192,6 @@ print_price
 
 :::tip
 The syntax `${maybe:-fallback}` will evaluate to `fallback` and do nothing else, BUT `${maybe:=fallback}` will evaluate to `fallback` AND assign the value of `maybe` to `fallback`.
-:::
-
 As in:
 
 ```shell
@@ -203,6 +201,7 @@ DEFINITELY=${MAYBE:="yeah"}
 # Now it's set!
 echo "$MAYBE" # "yeah"
 ```
+:::
 
 ### Check variable for value or setting
 

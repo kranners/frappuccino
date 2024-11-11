@@ -171,6 +171,7 @@
   },
   "active": "38ed7630f6ccd6a7",
   "lastOpenFiles": [
+    "bash unbound variable.md",
     "strace.md",
     "Android resources.md",
     "Disable Astro dev toolbar.md",
@@ -199,7 +200,6 @@
     "React Navigation.md",
     "Reselect createSelector.md",
     "Lodash setWith.md",
-    "Follow symlink.md",
     "public/favicon.ico",
     "public/IMG_0125-min.ico",
     "public/IMG_0125-min.PNG",
