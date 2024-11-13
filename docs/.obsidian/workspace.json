@@ -172,6 +172,7 @@
   },
   "active": "ef212bfdb1978208",
   "lastOpenFiles": [
+    "Lua math functions.md",
     "Disable wine debugging.md",
     "bash unbound variable.md",
     "strace.md",
@@ -200,7 +201,6 @@
     "Link to notification settings on iOS.md",
     "React Native Linking API.md",
     "React Navigation.md",
-    "Reselect createSelector.md",
     "public/favicon.ico",
     "public/IMG_0125-min.ico",
     "public/IMG_0125-min.PNG",
