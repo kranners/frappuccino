@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "npm",
+                "query": "date:",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,7 +84,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -169,7 +170,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "38ed7630f6ccd6a7",
+  "active": "ef212bfdb1978208",
   "lastOpenFiles": [
     "Disable wine debugging.md",
     "bash unbound variable.md",

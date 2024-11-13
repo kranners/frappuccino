@@ -1,4 +1,3 @@
-
 ---
 id: Android resources
 date: "08 November, 2024"
