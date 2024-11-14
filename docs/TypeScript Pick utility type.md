@@ -22,6 +22,10 @@ type Flag = Pick<Fruit, "region"> & {
     material: "cloth" | "silk" | "papyrus";
 };
 
+// To extract multiple keys at the same time, use a union as the second type argument:
+// { name: string; price: number; }
+type Product = Pick<Fruit, "name" | "price">;
+
 // To get the type, without setting the key, use an accessor on the type
 // Here the type for region is "AU" | "NZ"
 const getFullRegionName = (region: Fruit["region"]) => {
