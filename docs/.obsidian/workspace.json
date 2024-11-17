@@ -84,8 +84,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -170,7 +169,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ef212bfdb1978208",
+  "active": "1879734b76fa3070",
   "lastOpenFiles": [
     "Lua math functions.md",
     "Disable wine debugging.md",
