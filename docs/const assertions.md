@@ -48,9 +48,9 @@ const millisInMinute = 60000 as const;
 
 They also don't convert an expression to be fully immutable, so this is possible:
 ```ts
-const shelf = {
-    fruits: ["banana", "apple"],
-} as const;
+const fruits = ["banana", "apple"];
+
+const shelf = { fruits } as const;
 
 // woah!
 shelf.fruits.push("pomegranate");

@@ -169,8 +169,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1879734b76fa3070",
+  "active": "38ed7630f6ccd6a7",
   "lastOpenFiles": [
+    "NPM package overrides.md",
+    "Testing Library DOM debug limit.md",
+    "At symbol bash.md",
     "Lua math functions.md",
     "Disable wine debugging.md",
     "bash unbound variable.md",
@@ -197,9 +200,6 @@
     "2024/10/24 October, 2024.md",
     "2024/10/23 October, 2024.md",
     "public/cup.png",
-    "Link to notification settings on iOS.md",
-    "React Native Linking API.md",
-    "React Navigation.md",
     "public/favicon.ico",
     "public/IMG_0125-min.ico",
     "public/IMG_0125-min.PNG",
