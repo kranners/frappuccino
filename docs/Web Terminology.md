@@ -87,3 +87,12 @@ import React from 'react';
 // The <></> bit is the fragment.
 const Minimal = () => <></>;
 ```
+
+## PWA
+
+A **progressive web app** is like a website that can be installed to your device as though it was a native app.
+
+A bit out-of-fashion now, PWAs can provide offline native-like functionality while still just being a web app.
+
+See [Progressive web apps | MDN](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
+
