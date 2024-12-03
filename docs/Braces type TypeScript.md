@@ -8,7 +8,7 @@ date: "29 November, 2024"
 The `{}` type in TypeScript doesn't do what you'd think it does.
 
 `{}` actually means "anything that isn't `null` or `undefined`".
-An optional `{}` will generally mean "anything that isn't `null`".
+An optional `{}` means "anything that isn't `null`".
 
 This is generally a mistake.
 
