@@ -5,7 +5,7 @@ date: "24 November, 2024"
 
 # Iteration Lua
 
-:::note
+:::info
 **TLDR** To just iterate over a table of elements:
 
 ```lua

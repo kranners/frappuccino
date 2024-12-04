@@ -11,7 +11,7 @@ See [the DefinitelyTyped repository](https://github.com/DefinitelyTyped/Definite
 
 ### Versioning with their respective packages
 
-:::note
+:::info
 **TLDR**: The patch version doesn't matter. Keep the major and minor versions
 synced.
 :::
