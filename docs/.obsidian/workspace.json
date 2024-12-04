@@ -183,6 +183,7 @@
   },
   "active": "e92c507b5a822168",
   "lastOpenFiles": [
+    "Assert element is not rendered RTL.md",
     "Ruby array operations.md",
     "each vs for Ruby.md",
     "Conditional returns Ruby.md",
@@ -208,7 +209,6 @@
     "Lua math functions.md",
     "Disable wine debugging.md",
     "bash unbound variable.md",
-    "strace.md",
     "2024/10",
     "2024",
     "public/cup.png",
