@@ -52,7 +52,7 @@ animation: 3s linear 1s float-up-down;
 animation-name: float-up-down;
 animation-duration: 3s;
 animation-timing-function: linear;
-animatino-delay: 1s;
+animation-delay: 1s;
 ```
 
 
