@@ -183,6 +183,7 @@
   },
   "active": "e92c507b5a822168",
   "lastOpenFiles": [
+    "Event.md",
     "Read in file Go.md",
     "Regex matching JS.md",
     "Assert element is not rendered RTL.md",
@@ -208,7 +209,6 @@
     "NPM package overrides.md",
     "Testing Library DOM debug limit.md",
     "At symbol bash.md",
-    "Lua math functions.md",
     "2024/10",
     "2024",
     "public/cup.png",
