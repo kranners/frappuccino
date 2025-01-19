@@ -11,6 +11,39 @@ tags:
 
 [Jest](https://jestjs.io/) is a common testing framework for [[JavaScript]] and [[TypeScript]] projects.
 
+## Configuration
+
+### TypeScript
+
+You can run Jest tests written in TypeScript with either Babel or `ts-jest`.
+
+#### Using Babel
+
+Install all of Babel's dependencies:
+```shell
+npm install -D babel-jest @babel/core @babel/preset-env @babel/preset-typescript
+```
+
+#### Using `ts-jest`
+
+To set up `ts-jest`:
+```shell
+# Install ts-jest
+npm install -D jest typescript ts-jest @types/jest
+
+# Init a config
+npx ts-jest config:init
+```
+
+If the initial config doesn't work, try:
+```shell
+npx jest --init
+```
+
+Then set the `preset` option to `"ts-jest"`.
+
+See [Using TypeScript from the Jest documentation](https://jestjs.io/docs/getting-started#using-typescript)
+
 ## Usage
 
 ### Mocking
@@ -114,3 +147,4 @@ This is generally done in one of two ways:
 
 1. [`jest.mock()`](https://jestjs.io/docs/jest-object#jestmockmodulename-factory-options) - useful for if you don't need any original functionality, unit tests
 2. [`jest.spyOn()`](https://jestjs.io/docs/jest-object#jestspyonobject-methodname) - for when you do need the original functionality, integration tests
+
