@@ -79,6 +79,8 @@ See [TypeScript setup from the Webpack documentation](https://webpack.js.org/gui
 
 See [Webpack cant resolve TypeScript modules](https://stackoverflow.com/questions/43595555/webpack-cant-resolve-typescript-modules)
 
+### Enable HMR
+
 ## Troubleshooting
 
 ### TypeError: Unknown file extension ".ts" for ./webpack.config.ts
