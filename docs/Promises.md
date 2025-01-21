@@ -8,6 +8,35 @@ A Promise is a [[JavaScript]] object which runs asynchronously to the main threa
 
 Until you unwrap it in some way, a Promise is always a Promise.
 
+## Making a Promise
+
+```
+new Promise((resolve, reject) => {});
+```
+
+The Promise constructor is meant to wrap callback-based systems that don't have support for it yet.
+
+It takes in a single function (called the "executor"), which takes in two functions:
+- `resolve(value)`, callback for success - `value` is the value the Promise will resolve to.
+- `reject(reason)`, callback for failure - `reason` is the Error that happened to cause the fail.
+
+```ts
+const iPromiseYou = async () => {
+    return new Promise((resolve, reject) => {
+        try {
+            let result;
+            /* do some really long process 😴 */
+
+            resolve(result);
+        } catch (err) {
+            reject(err);
+        }
+    });
+}
+```
+
+See [Promise() constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/Promise)
+
 ## Async await
 
 There are three rules around async/await in functions:
