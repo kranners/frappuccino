@@ -16,14 +16,14 @@ ESLint requires [[Node]] version `>=16.0.0`.
 
 With that, you can install and configure ESLint with
 ```shell
-yarn init @eslint/config
+npm init @eslint/config
 ```
 
 ### Installation with [[TypeScript]]
 
 To install with [[TypeScript]], you'll need a few extra plugins, one for parsing and one for linting rules:
 ```shell
-yarn add -D @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript
+npm install -D @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript
 ```
 
 ## Configuration
@@ -35,7 +35,7 @@ Analysis of imports is handled by plugins such as [eslint-plugin-import](https:/
 To install for TypeScript resolution, it's
 ```shell
 # Install both plugins, resolver-typescript is just an addon for plugin-import.
-yarn add -D eslint-plugin-import eslint-import-resolver-typescript
+npm install -D eslint-plugin-import eslint-import-resolver-typescript
 ```
 
 To configure, add to your ESLint configuration
