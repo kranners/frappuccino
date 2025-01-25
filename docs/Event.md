@@ -33,10 +33,17 @@ All events have shared properties like `Event.type` or `Event.timeStamp`.
 
 There are a number of builtin events for responding to common browser happenings, like mouse clicks or key presses.
 
-All keyboard related events use [`KeyboardEvent`](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent).
 All mouse related events use [`MouseEvent`](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent).
 
 See [Event reference](https://developer.mozilla.org/en-US/docs/Web/Events)
+
+#### Keyboard events
+
+All keyboard related events use [`KeyboardEvent`](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent).
+
+To get the key from a KeyboardEvent, [use the `.key` property.](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key)
+
+See [Key values for keyboard events - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/UI_Events/Keyboard_event_key_values)
 
 See [Key.js for keycodes relating to keyboard events](https://keyjs.dev/)
 
