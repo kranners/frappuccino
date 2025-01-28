@@ -249,7 +249,7 @@ kill_pid() {
 }
 ```
 
-To check for matches against a regular expression (regex pattern), use [the `=~` matching operator](tldp.org/LDP/abs/html/bashver3.html#REGEXMATCHREF):
+To check for matches against a regular expression (regex pattern), use [the `=~` matching operator](https://tldp.org/LDP/abs/html/bashver3.html#REGEXMATCHREF):
 
 ```shell
 NUMBER_IN_QUOTES='"3"'

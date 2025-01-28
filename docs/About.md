@@ -9,8 +9,6 @@ tags:
 
 # About
 
-![Coffee cup notebook](/cup.png)
-
 [This wiki](index) is a collection of my personal notes for various things, mostly development.
 
 It is [automatically updated and deployed](https://github.com/kranners/frappuccino/actions) as I write new notes.
