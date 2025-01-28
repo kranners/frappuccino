@@ -10,13 +10,13 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "vitepress build --outDir dist",
+    "build": "vitepress build docs --outDir dist",
     "preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "markdown-it-wikilinks": "^1.3.0",
-    "typescript": "^5.1.6",
-    "vitepress": "^1.4.0",
-    "vitepress-sidebar": "^1.10.0"
+    "markdown-it-wikilinks": "^1.4.0",
+    "typescript": "^5.7.3",
+    "vitepress": "^1.6.3",
+    "vitepress-sidebar": "^1.30.2"
   }
 }
