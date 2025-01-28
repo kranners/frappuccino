@@ -10,7 +10,7 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs --outDir dist",
+    "build": "vitepress build docs && ls -la",
     "preview": "vitepress preview docs"
   },
   "devDependencies": {

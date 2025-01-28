@@ -183,6 +183,8 @@
   },
   "active": "e92c507b5a822168",
   "lastOpenFiles": [
+    "404.html",
+    "404.md",
     "Chrome Inspector.md",
     "TypeScript Omit utility type.md",
     "Zero to linting and formatting.md",
@@ -207,8 +209,6 @@
     "Open and iterate over file Python.md",
     "Split string on delimeter Python.md",
     "Iterate over multiple lists Python.md",
-    "Braces type TypeScript.md",
-    "DefinitelyTyped.md",
     "2024/10",
     "2024",
     "public/cup.png",
