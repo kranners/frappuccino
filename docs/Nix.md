@@ -117,6 +117,14 @@ greeting = lib.strings.concatStrings WORDS;
 
 [Nix supports interpolation in strings, paths, and attribute _names_.](https://nix.dev/manual/nix/2.23/language/string-interpolation#interpolated-expression)
 
+#### Checking if a string contains a substring
+
+[This is `lib.strings.hasInfix`:](https://ryantm.github.io/nixpkgs/functions/library/strings/#function-library-lib.strings.hasInfix)
+```nix
+hasInfix "bc" "abcd"
+=> true
+```
+
 #### Interpolated expressions
 
 When an expression is used in interpolation, it's called an [interpolated expression](https://nix.dev/manual/nix/2.23/language/string-interpolation#interpolated-expression).
