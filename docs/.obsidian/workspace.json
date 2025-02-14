@@ -39,12 +39,24 @@
               "state": {
                 "currentVersion": "1.7.7"
               },
-              "icon": "lucide-file",
+              "icon": "lucide-book-up",
               "title": "Release Notes 1.7.7"
+            }
+          },
+          {
+            "id": "a6ed6587c0844ada",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.4"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -63,7 +75,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -181,7 +194,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e92c507b5a822168",
+  "active": "a6ed6587c0844ada",
   "lastOpenFiles": [
     "Node release schedule.md",
     "404.html",
