@@ -196,6 +196,7 @@
   },
   "active": "a6ed6587c0844ada",
   "lastOpenFiles": [
+    "render-markdown.md",
     "Node release schedule.md",
     "404.html",
     "404.md",
@@ -222,7 +223,6 @@
     "Get name of main branch in Git.md",
     "Open and iterate over file Python.md",
     "Split string on delimeter Python.md",
-    "Iterate over multiple lists Python.md",
     "2024/10",
     "2024",
     "public/cup.png",
