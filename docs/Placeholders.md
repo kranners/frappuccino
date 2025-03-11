@@ -15,7 +15,12 @@ For patterns / textures, check out [Hero Patterns](https://heropatterns.com/). Y
 
 ### Placeholder images
 
-For placeholder images, you can use tools like [**Lorem Picsum**](https://picsum.photos/) (for more generic images), or **[placekitten](https://placekitten.com/)** (for cats).
+For placeholder images, you can use tools like [**Lorem Picsum**](https://picsum.photos/) (for more generic images), or ~**[placekitten](https://placekitten.com/)**~ (for cats).
+
+:::info
+Looks like placekitten is gone 😭
+Now there is [placecat](https://placecats.com/)
+:::
 
 ```html
 <!-- This tag will get you a random 200x200 image -->

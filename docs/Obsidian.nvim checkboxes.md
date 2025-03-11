@@ -33,3 +33,4 @@ See: [The `toggle_checkbox()` documentation](https://github.com/epwalsh/obsidian
 [Option documentation here in Nixvim](https://nix-community.github.io/nixvim/plugins/obsidian/settings/ui/checkboxes.html)
 
 [Defined here under the Obsidian options](https://github.com/nix-community/nixvim/blob/main/plugins/by-name/obsidian/options.nix#L368)
+

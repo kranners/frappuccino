@@ -36,7 +36,7 @@ export default tseslint.config(
 );
 ```
 
-:::warn
+:::warning
 Unconfigured ESLint will run against all valid source files it can find.
 
 You probably have a build folder or some files to ignore, to ignore files, add
