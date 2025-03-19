@@ -5,6 +5,33 @@ date: "16 March, 2025"
 
 # Making a new Python project
 
+:::warning
+For [[NixOS]] users, you'll need to add [nix-ld to your system configuration.](https://github.com/nix-community/nix-ld?tab=readme-ov-file)
+
+nix-ld hooks into C library imports and will point it to the relevant library
+in the nix store based on whatever libraries you configure to be installed.
+
+```nix
+{ config, pkgs, ... }: {
+  # Enable nix ld
+  programs.nix-ld.enable = true;
+
+  # Sets up all the libraries to load
+  programs.nix-ld.libraries = with pkgs; [
+    stdenv.cc.cc
+    zlib # numpy requires zlib
+    fuse3
+    icu
+    nss
+    openssl
+    curl
+    expat
+    # ...
+  ];
+}
+```
+:::
+
 ### Make your directory
 
 ```shell
