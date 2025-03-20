@@ -9,6 +9,36 @@ TLDR: **Use `userEvent` for representing user input. Use `fireEvent` for special
 
 [See the Testing Library docs on user-event](https://testing-library.com/docs/user-event/intro/#differences-from-fireevent)
 
+Ensure `@testing-library/user-event` is installed before trying to use this.
+```shell
+npm install -D @testing-library/user-event
+```
+
+### Usage
+
+Testing Library recommends calling `userEvent.setup()` before rendering in your test cases.
+```tsx
+import userEvent from '@testing-library/user-event';
+
+test('i clicka da button', async () => {
+    const user = userEvent.setup();
+    render(<DaButton />);
+
+    const daButtonElement = screen.getByRole('button');
+    await user.click(daButtonElement);
+
+    expect(somethingCool).not.isUndefined()l
+});
+```
+
+They also suggest using a `setup()` function to do this:
+```tsx
+const setup = (ui) => ({
+    user: userEvent.setup(),
+    ...render(ui),
+});
+```
+
 ### fireEvent
 
 `fireEvent` came first, and uses [the regular generic `dispatchEvent()` API](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/dispatchEvent) to fire an event on an element in the DOM. And only that event.
