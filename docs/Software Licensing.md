@@ -29,7 +29,7 @@ In a case where you (as the software creator) want to simply opt-out of all lice
 
 The `license` key in a [[Node]] project's package.json file represents to the [[npm]] repository what license your package falls under.
 
-Its value should be set to any [SPDX license ID](https://spdx.org/licenses/).
+Its value should be set to any [SPDX license ID](https://spdx.org/licensesj/).
 
 ```json
 {
@@ -56,6 +56,8 @@ The [MIT license](https://choosealicense.com/licenses/mit/) is possible the most
 ### GPLv3
 
 The [GNU GPLv3 license](https://choosealicense.com/licenses/gpl-3.0/) provides full usage rights with no warranty, so long as all future derivative works are fully open source - and also use the GPLv3 license.
+
+Its SPDX key is `GPL-3.0-or-later`.
 
 ### Unlicense
 
