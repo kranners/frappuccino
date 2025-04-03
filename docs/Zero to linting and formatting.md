@@ -23,7 +23,7 @@ npm install -D jiti
 Then configure them:
 
 _eslint.config.ts_
-```shell
+```typescript
 import prettier from "eslint-plugin-prettier/recommended";
 import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
@@ -41,7 +41,7 @@ Unconfigured ESLint will run against all valid source files it can find.
 
 You probably have a build folder or some files to ignore, to ignore files, add
 them to the flat config like:
-```ts
+```typescript
 export default tseslint.config(
     /* ..., */
     {
