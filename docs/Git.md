@@ -447,6 +447,9 @@ git push origin --delete bleh-bad-name
 
 # Make a new remote for the branch
 git push origin HEAD:new-and-cool
+
+# Set your upstream to that
+git branch -u origin/new-and-cool
 ```
 
 [The Stack Overflow response has SO many upvotes.](https://stackoverflow.com/questions/6591213/how-can-i-rename-a-local-git-branch)
