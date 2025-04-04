@@ -10,4 +10,5 @@ date: "02 April, 2025"
 You generally interact with this plugin through commands.
 
 See [the command reference from the README.](https://github.com/pwntester/octo.nvim#-commands)
+Or you can use `:Octo repo view pwntester/octo.nvim` 🐙
 
