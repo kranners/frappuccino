@@ -55,7 +55,7 @@ This is a pretty simple just `npm init` or `npm innit` for the British.
 Chuck a `--yes` on the end to skip all the questions and just generate the package.json.
 Like:
 ```shell
-# British version 🫖
+# British version 🫖 (this is a valid alias)
 npm innit --yes
 ```
 
