@@ -25,6 +25,15 @@ User.parse(invalid); // { success: false, error: ZodError }
 User.safeParse(invalid); // { success: false, error: ZodError }
 ```
 
+## Records
+
+The `Record` [[TypeScript]] [equivalent here is `z.record()`](https://zod.dev/?id=records)
+```ts
+const UserStore = z.record(z.string(), User);
+type UserStore = z.infer<typeof UserStore>;
+// => Record<string, { name: string }>
+```
+
 # Type Coercion and Transformation
 
 Coercion is the method of passing a given value through JS's native constructor for that particular type before doing Zod parsing as normal.
