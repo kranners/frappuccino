@@ -10,15 +10,15 @@ Arrays are the typical way to manage groups of values in [[JavaScript]].
 
 ## Get the last element
 
-To get the last element of an array, use `.slice(-1)`.
-It returns a shallow clone of the array.
+To get the last element of an array, use `.at(-1)`.
 
 ```javascript
 const stuff = [1, 2, 3, 4];
 
-// [ 4 ]
-stuff.slice(-1);
+stuff.at(-1); // 4
 ```
+
+See [Array.prototype.at() - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/at)
 
 # Adding stuff to Arrays
 
