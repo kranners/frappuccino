@@ -11,11 +11,12 @@ Arrays are the typical way to manage groups of values in [[JavaScript]].
 ## Get the last element
 
 To get the last element of an array, use `.slice(-1)`.
+It returns a shallow clone of the array.
 
 ```javascript
 const stuff = [1, 2, 3, 4];
 
-// 4
+// [ 4 ]
 stuff.slice(-1);
 ```
 
