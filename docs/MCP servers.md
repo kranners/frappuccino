@@ -86,4 +86,10 @@ await client.close();
 await transport.close();
 ```
 
+## Registering tools
+
+Probably the main thing you'll be doing with an MCP server is registering
+tools.
+
+
 
