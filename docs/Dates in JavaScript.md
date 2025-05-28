@@ -39,6 +39,22 @@ Unfortunately, outside of the [Date time string format](https://developer.mozill
 
 This means that you'll often be required to parse your own string, into a date.
 
+### Timestamp
+
+To just get the current timestamp, that is `Date.now()`.
+```js
+// Milliseconds since the funny year
+const millis = Date.now();
+```
+
+That is also the default timestamp passed into the Date constructor.
+So, getting the time of the default Date also works:
+```js
+const now = new Date();
+const millis = now.getTime();
+```
+
+
 ## Timezones
 
 Timezones are a bastard, and always have been in [[JavaScript]].
