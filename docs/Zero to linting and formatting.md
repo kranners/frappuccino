@@ -20,6 +20,12 @@ Optionally install jiti for having the config file in TypeScript:
 npm install -D jiti
 ```
 
+To install all of the above:
+```shell
+
+npm install -D eslint @eslint/js typescript typescript-eslint eslint-plugin-prettier eslint-config-prettier jiti
+```
+
 Then configure them:
 
 _eslint.config.ts_
