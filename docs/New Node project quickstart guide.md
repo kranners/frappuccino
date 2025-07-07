@@ -69,14 +69,17 @@ npx tsc --init
 
 I like to remove all the comments and empty lines from the templated tsconfig, to keep it minimal.
 ```shell
+# These are for MacOS sed.
+# If you're on Linux, omit the ''.
+
 # Remove all the comments
-sed -i 's:/.*$::g' tsconfig.json 
+sed -i '' 's:/.*$::g' tsconfig.json 
 
 # Remove all the empty lines
-sed -i '/^\s*$/d' tsconfig.json 
+sed -i '' '/^\s*$/d' tsconfig.json 
 
 # Remove all the trailing whitespace
-sed -i 's:\s*$::' tsconfig.json  
+sed -i '' 's:\s*$::' tsconfig.json  
 ```
 
 ### Optionally - Pick a license
