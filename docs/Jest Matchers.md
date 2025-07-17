@@ -41,24 +41,6 @@ Where `precision` is the number of decimal places to use for comparision. It def
 
 [See the Jest source for `toBeCloseTo`](https://github.com/jestjs/jest/blob/main/packages/expect/src/matchers.ts#L144)
 
-### Exceptions
-
-To check for exceptions, you'll need to both wrap the excepting function in a anonymous function, and use `toThrow`.
-
-```js
-const iThrowErrors = () => {
-    throw new Error("Oh NO!");
-}
-
-it("throws errors", () => {
-    // This passes
-    expect(() => iThrowErrors()).toThrow():
-
-    // This also passes!
-    expect(() => iThrowErrors()).toThrow("Oh NO!"):
-})
-```
-
 ### jest-dom
 
 Common DOM matchers like `.toBeVisible()` or `.toBeInTheDocument()` come from the companion library [jest-dom](https://github.com/testing-library/jest-dom).
