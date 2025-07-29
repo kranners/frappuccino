@@ -82,6 +82,15 @@ sed -i '' '/^\s*$/d' tsconfig.json
 sed -i '' 's:\s*$::' tsconfig.json  
 ```
 
+To do all of this in one line:
+```
+npm install -D typescript ;
+    npx tsc --init ;
+    sed -i '' 's:/.*$::g' tsconfig.json ;
+    sed -i '' '/^\s*$/d' tsconfig.json ;
+    sed -i '' 's:\s*$::' tsconfig.json
+```
+
 ### Optionally - Pick a license
 
 See [[Software Licensing]] for what to pick here.
