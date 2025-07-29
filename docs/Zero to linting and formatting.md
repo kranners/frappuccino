@@ -22,7 +22,6 @@ npm install -D jiti
 
 To install all of the above:
 ```shell
-
 npm install -D eslint @eslint/js typescript typescript-eslint eslint-plugin-prettier eslint-config-prettier jiti
 ```
 
