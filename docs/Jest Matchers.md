@@ -60,3 +60,17 @@ setupFilesAfterEnv: ['<rootDir>/path/to/jest-setup.[j|t]s']
 
 [See jest-dom on the Jest documentation](https://testing-library.com/docs/ecosystem-jest-dom/)
 
+If you're using [[TypeScript]], you should then add the jest-dom types to your
+tsconfig:
+```json
+{
+    "compilerOptions": {
+        "types": [
+            /* ... any of your existing types ... */,
+            "jest",
+            "@testing-library/jest-dom"
+        ]
+    }
+}
+```
+
