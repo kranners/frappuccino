@@ -26,7 +26,34 @@ Optionally, create a new one or grab an existing .gitignore file from [Github](h
 wget https://raw.githubusercontent.com/github/gitignore/refs/heads/main/Node.gitignore -O .gitignore
 ```
 
-### Set up a Nix shell, maybe one from [[Nix Dev Template]]
+### Set up your build tooling
+
+You need [[Node]] to be installed one way or another.
+
+If your project just needs Node, then you only need a `.node-version` file.
+
+If your project is dependent on multiple different binaries, languages,
+toolchains, whatever, then you should consider setting up a Nix development
+shell.
+
+#### Set up a node-version
+
+You likely just want the latest LTS version of Node.
+
+Using [[fnm]], you can install this, use it, and set the `.node-version` like:
+
+```shell
+# Install and use latest LTS version
+fnm install lts-latest
+fnm use lts-latest
+
+# Output the version to a .node-version
+fnm current > .node-version
+```
+
+If you need a more specific version, use that in place of `lts-latest`.
+
+#### Set up a Nix shell, maybe one from [[Nix Dev Template]]
 ```shell
 # To accept a bunch of defaults, use:
 nix flake init --template "https://flakehub.com/f/the-nix-way/dev-templates/*#node"
