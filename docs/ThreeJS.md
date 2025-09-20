@@ -72,3 +72,4 @@ At this point, ThreeJS will be set up. But not rendering anything!
 To render something, use `renderer.setAnimationLoop()`, passing in a `() => void` function for what to do on each render cycle.
 
 Generally this will just be `renderer.render(scene, camera)` with a Scene and Camera object referenced earlier.
+
