@@ -23,8 +23,4 @@ cd packages/my-new-package
 pnpm init
 ```
 
-Then edit your package.json as usual. Most new packages will want:
-- An _eslint.config.ts_
-- A _tsconfig.json_
-- A _vitest.config.ts_
-
+Then edit your package.json as usual.
