@@ -10,7 +10,7 @@ tags: web, terminology, programming, javascript
 
 Modern hydration is usually achieved through a kind of lazy-loading of [[JavaScript]] whenever the user actually interacts with an interactive component.
 
-An example of hydration can be seen with the [Astro islands concept](Astro#Islands).
+An example of hydration can be seen with the [Astro islands concept](Astro.md#Islands).
 
 ## SSR
 

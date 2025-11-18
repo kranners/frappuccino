@@ -103,7 +103,7 @@ NextJS comes with several default styles for their demo app, which can all be fo
 If you just need to make something render on the client, use the [React 'use client' directive](https://react.dev/reference/react/use-client).
 :::
 
-[Client-side rendering](https://nextjs.org/docs/pages/building-your-application/rendering/client-side-rendering) in Next is (seemingly) enabled on a page-by-page basis. Imagine this like [Astros islands](Astro#Islands) only less explicit.
+[Client-side rendering](https://nextjs.org/docs/pages/building-your-application/rendering/client-side-rendering) in Next is (seemingly) enabled on a page-by-page basis. Imagine this like [Astros islands](Astro.md#Islands) only less explicit.
 
 Next will enable CSR for any page which contains a `useEffect()` hook.
 
