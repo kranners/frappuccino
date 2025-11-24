@@ -43,3 +43,14 @@ Negative indices are `length of array + 1 + index`.
 -- Get current buffers lines
 local lines = vim.api.nvim_buf_get_lines(0, 0, -1, false)
 ```
+
+# Neovim get current line content
+
+`vim.api.nvim_get_current_line()` gets the current line contents as a string
+
+```lua
+-- If you were sitting on this line <---
+
+-- Then this is "-- If you were sitting on this line <---"
+local line_content = vim.api.nvim_get_current_line()
+```
