@@ -83,3 +83,5 @@ const result = formatRelative(subDays(new Date(), 6), new Date())
 formatDuration({ months: 9, days: 2 })
 ```
 
+For custom format strings
+
