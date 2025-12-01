@@ -60,6 +60,18 @@ import "reflect-metadata";
 import "es6-shim";
 ```
 
+To support decorators in TypeScript, you'll need to add to your tsconfig.json:
+```json
+{
+    "compilerOptions": {
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true
+    }
+}
+```
+
+You'll also need to `target` at least `"ES5"`.
+
 ## Usage
 
 Basic usage:
