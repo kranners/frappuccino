@@ -97,7 +97,7 @@ import { Fruit } from "./entity/Fruit"
 const myDataSource = new DataSource(/*...*/);
 const { manager } = myDataSource;
 
-const fruits = await manager.find(Fruit, { id: 1 });
+const fruits = await manager.find(Fruit, where: { id: 1 });
 ```
 
 [See EntityManager](https://typeorm.io/docs/working-with-entity-manager/working-with-entity-manager/)
