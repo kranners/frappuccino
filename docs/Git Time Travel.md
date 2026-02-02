@@ -24,7 +24,8 @@ git log <file>
 git rebase -i <commit-hash>~1
 ```
 
-to go back to that commit.
+And set the commit in question to `edit` or `e` from `pick` to go back to that
+commit.
 
 3. Reset the changes on that commit with
 
