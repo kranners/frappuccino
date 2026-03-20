@@ -34,3 +34,9 @@ Combine this all together with:
 # Where <port> is the port you want to kill.
 kill -15 $(lsof -i :<port> | awk 'NR > 1 {print $2}')
 ``` 
+
+Or or `netstat`:
+```shell
+netstat -vanp tcp | grep 3000
+```
+
