@@ -38,6 +38,15 @@ date: "01 May, 2026"
 
 [See Text selection in the Bootstrap documentation.](https://getbootstrap.com/docs/5.3/utilities/interactions/#text-selection)
 
+### Pointer events
+
+```html
+<a href="#" class="pe-none">This link</a> can not be clicked.
+<a href="#" class="pe-auto">This link</a> can be clicked (this is default behavior).
+```
+
+[See Pointer events in the Bootstrap documentation.](https://getbootstrap.com/docs/5.2/utilities/interactions/#pointer-events)
+
 ## Border
 
 To add or remove borders:
