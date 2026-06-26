@@ -90,7 +90,7 @@ To color or set opacity on a border:
 <span class="align-text-top">text-top</span>
 <span class="align-text-bottom">text-bottom</span>
 ```
-- [ ] 
+
 [See Vertical alignment in the Bootstrap documentation.](https://getbootstrap.com/docs/5.3/utilities/vertical-align/)
 
 ## Position
